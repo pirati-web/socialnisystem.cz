@@ -1,0 +1,4 @@
+psycopg2-binary
+Django
+dsnparse
+django-webpack-loader
