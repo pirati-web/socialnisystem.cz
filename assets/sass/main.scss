@@ -1,8 +1,15 @@
+// General config
 @import 'settings';
 @import 'fonts';
 
+// Mixins
 @import 'mixins/typography';
 
+// Foundation config
 @import 'foundation';
 
+// Base typography
 @import 'typography';
+
+// Components
+@import 'components/sitenav';
