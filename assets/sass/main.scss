@@ -5,11 +5,22 @@
 // Mixins
 @import 'mixins/typography';
 
-// Foundation config
+// Libs config
 @import 'foundation';
+@import 'fontawesome';
 
 // Base typography
 @import 'typography';
+@import 'utils';
 
 // Components
+@import 'components/button';
+@import 'components/footer';
+@import 'components/hero';
+@import 'components/layout';
+@import 'components/page';
+@import 'components/productleader';
 @import 'components/sitenav';
+
+// Views
+@import 'views/about';

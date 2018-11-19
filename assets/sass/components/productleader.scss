@@ -1,0 +1,39 @@
+.productleader {
+    display: flex;
+}
+
+.productleader__avatar {
+    border-radius: 50%;
+    height: 13rem;
+    width: 13rem;
+}
+
+.productleader__basics {
+    flex-shrink: 0;
+    text-align: center;
+    margin-right: 3rem;
+}
+
+.productleader__about {
+    font-size: 1.2rem;
+}
+
+.productleader__name {
+    margin: 1rem 0 0;
+
+    @include headerStyle('h5', alt);
+
+    @include breakpoint(medium up) {
+        @include headerStyle('h4', sub);
+    }
+}
+
+.productleader__job {
+    margin: 0;
+
+    @include headerStyle('h5', alt);
+
+    @include breakpoint(medium up) {
+        @include headerStyle('h4', alt);
+    }
+}

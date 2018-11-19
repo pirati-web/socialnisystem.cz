@@ -1,0 +1,31 @@
+.hero {
+    padding: 3rem 0;
+    background: linear-gradient(140deg, #72079e, #000e50);
+    color: map-get($foundation-palette, light);
+    text-align: center;
+
+    @include breakpoint(medium up) {
+        padding: 10rem 0 6rem;
+        text-align: left;
+    }
+}
+
+.hero__headline {
+    @include headerStyle('h4', super);
+
+    @include breakpoint(medium up) {
+        @include headerStyle('h2', super);
+    }
+}
+
+.hero__caption {
+    @include headerStyle('h5', alt);
+
+    @include breakpoint(medium up) {
+        @include headerStyle('h4', alt);
+    }
+}
+
+.hero__cta {
+    margin: 0;
+}

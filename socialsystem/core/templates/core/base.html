@@ -12,8 +12,7 @@
 
     {% render_bundle 'main' 'css' %}
 </head>
-<body>
-
+<body class="layout">
     <!-- The page header typically contains items such as your site heading, logo and possibly the main site navigation -->
     <!-- ARIA: the landmark role "banner" is set as it is the prime heading or internal title of the page -->
     <header role="banner" class="sitenav">
@@ -29,26 +28,58 @@
                             <h2 class="sitenav-site__sub">pomocník pro vaši orientaci v džungli sociálního systému</h2>
                         </div>
                     </div>
-                    <a class="sitenav-groups__group button primary">Zjistit můj nárok</a>
+                    <a class="sitenav-groups__group button primary show-for-medium">Zjistit můj nárok</a>
                 </nav>
             </div>
         </div>
     </header>
 
-    {% block content %}{% endblock %}
+    <main role="main" class="layout__main">
+        {% block content %}{% endblock %}
+    </main>
 
     <!-- The main page footer can contain items such as copyright and contact information. It can also contain a duplicated navigation of your site which is not usually contained within a <nav> -->
     <!-- ARIA: the landmark role "contentinfo" is added here as it contains metadata that applies to the parent document -->
-    <footer role="contentinfo">
-        <div class="row">
-            <div class="small-12 columns">
-                <!-- The <address> element contains contact information for the nearest <article> or <body> element. This example is for the <body> -->
-                <address>
-                <p>For further information, please contact <a href="mailto:admin@example.com">Max Mustermann</a>.</p>
-                </address>
+    <footer role="contentinfo" class="footer">
+        <div class="row footer__main footer-nav">
+            <div class="small-12 medium-4 columns">
+                <a href="/"><img src="{% webpack_static "img/brand/logo_napis_white.svg" %}" alt="" class="footer__brand"></a>
+                <h3 class="t-h5-sub">Socialnisystem.cz</h3>
+                <ul class="no-bullet">
+                    <li><a href="mailto:info@socialnisystem.cz">info@socialnisystem.cz</a></li>
+                    <li><a href="tel:+420776278860">+420&nbsp;776&nbsp;278&nbsp;860</a></li>
+                </ul>
+            </div>
+            <div class="small-12 medium-4 columns">
+                <h3 class="footer-nav__headline">Další informace</h3>
+                <ul class="no-bullet">
+                    <li><a href="">Orientační přehled dávek</a></li>
+                    <li><a href="">Výpočet životního minima</a></li>
+                    <li><a href="">Rizikové skupiny</a></li>
+                    <li><a href="">Zdroje</a></li>
+                </ul>
+            </div>
+            <div class="small-12 medium-4 columns">
+                <h3 class="footer-nav__headline">Nástroje</h3>
+                <ul class="no-bullet">
+                    <li><a href="">Kalkulačka sociálních dávek</a></li>
+                    <li><a href="">Integrovaný portál MPSV</a></li>
+                </ul>
+            </div>
+        </div>
 
-                <!-- Copyright information can be contained within the <small> element. The <time> element is used here to indicate that the '2018' is a date -->
-                <small>Copyright &copy; <time>2018</time></small>
+        <div class="footer__sub">
+            <div class="row">
+                <div class="small-12 columns">
+                    <span class="u-mirror-horizontally">©</span>&nbsp;Piráti,&nbsp;2018. Všechna práva vyhlazena. Sdílejte a nechte ostatní sdílet za stejných podmínek.
+                </div>
+            </div>
+            <div class="row">
+                <div class="small-12 columns footer__social">
+                    <a href=""><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                </div>
             </div>
         </div>
     </footer>

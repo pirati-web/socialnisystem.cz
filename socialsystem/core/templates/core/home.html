@@ -1,54 +1,64 @@
-{% extends "core/default.html" %}
+{% extends "core/base.html" %}
+{% load webpack_static from webpack_loader %}
 
-{% block body %}
-<!-- The <main> element is used to enclose the main content, i.e. that which contains the central topic of a document -->
-<!-- ARIA: the landmark role "main" is added here as it contains the main content of the document, and it is recommended to add it to the
-<main> element until user agents implement the required role mapping. -->
-<main role="main">
+{% block content %}
+<section class="hero">
+    <div class="row">
+        <div class="small-12 columns">
+            <h1 class="hero__headline">Nacházíte se v obtížné životní situaci?</h1>
+            <p class="hero__caption">V životě každého z nás se děje ledacos. Pomůžeme vám vyznat se v džungli českého sociálního systému.</p>
+            <p><a href="" class="hero__cta button primary large">Zjistit na co mám nárok</a></p>
+        </div>
+    </div>
+</section>
 
-    <!-- The <section> element can be used to enclose content that comes under a related heading.
-    NOTE: The <section> element can contain <article> elements and vice versa, if you think the content warrants it. -->
-    <section>
-
-        <!-- This is the section's header. It contains the heading and navigation links for within the section -->
-        <header>
-            <h2>Getting Started</h2>
-            <!-- ARIA: the landmark role "navigation" is added here as the element contains page navigation -->
-            <nav role="navigation">
-                <ul>
-                    <li><a href="#introduction">Introduction</a></li>
-                    <li><a href="#instructions">Instructions</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <!-- The <article> element can be used to enclose content that still makes sense on its own and is therefore "reusable" -->
-        <article id="introduction">
-
-            <!-- A <header> element is not required here as the heading only contains a single <h3> element -->
-            <h3>Introduction</h3>
-
-            <!-- Content -->
-            <p>Welcome to <abbr title="HyperText Markup Language 5">HTML5</abbr> Bones. This is a template that contains comments to aid you with setting up your <abbr title="HyperText Markup Language 5">HTML5</abbr> document.</p>
-
-        </article>
-
-        <!-- The <article> element can be used to enclose content that still makes sense on its own and is therefore "reusable" -->
-        <article id="instructions">
-
-            <!-- A <header> element is not required here as the heading only contains a single <h3> element -->
-            <h3>Instructions</h3>
-
-            <!-- Content -->
-            <ol>
-                <li>Read the comments in this template</li>
-                <li>Decide how you think your content may fit into the template</li>
-                <li>Start building your document</li>
-            </ol>
-
-        </article>
-
+<div class="page">
+    <section class="row">
+        <div class="small-12 medium-6 columns">
+            <h2 class="t-h4-sub">Jak se vyznat v sociálním systému?</h2>
+            <ul>
+                <li>Nevyznáte se v českém systému dávek?</li>
+                <li>Myslíte si, že máme v ČR sociálních dávek příliš mnoho?</li>
+                <li>Nebo vám naopak v systému něco chybí?</li>
+                <li>Chcete se zapojit do diskuze o změnách v tomto systému?</li>
+            </ul>
+            <p>Potom právě Vás bude patrně zajímat tento web.</p>
+        </div>
+        <div class="small-12 medium-6 columns">
+            <h2 class="t-h4-sub">Výchozí situace</h2>
+            <p>V současné době (srpen 2018) je jedna z nejnižších úrovní nezaměstnanosti na světě právě u nás. I přesto je více než 200 000 lidí registrováno na Úřadě práce jako nezaměstnaní (v červenci 2018 to bylo 211 tisíc!).</p>
+            <p>Úřad práce však kromě nezaměstnaných eviduje také lidi v hmotné nouzi, zdravotně postižené podstupující pracovní rehabilitaci či posuzování zdravotního stavu pro uznání invalidity nebo pěstouny a rodiče malých dětí. Byť se tyto skupiny občas vzájemně prolínají, rozhodně ne všichni, kdo chodí na Úřad práce, jsou nezaměstnaní a mohou pracovat.</p>
+        </div>
+        <div class="small-12 medium-6 columns">
+            <h2 class="t-h4-sub">Kdo má na co nárok?</h2>
+            <p>Na co vše má kdo nárok mnozí nevědí. Stejně tak je řada dávek nastavená demotivačně: je snazší je pobírat a zůstat v závislosti na solidaritě ostatních, než se postupně osamostatňovat (systém to ztěžuje). Proto vznikl tento přehled současného stavu, který obsahuje i navrhované cesty vpřed, jež Piráti diskutují s odborníky i širokou veřejností.</p>
+        </div>
+        <div class="small-12 medium-6 columns">
+            <h2 class="t-h4-sub">Cíl tohoto webu</h2>
+            <p>Chceme poskytnout ucelený přehled sociálních dávek v ČR a zahájit diskuzi potřebnou pro práci Pirátů v této oblasti v Poslanecké sněmovně.</p>
+            <p>Celý web je členěn na tematické části poskytující přehled životních situací, v nichž lidé potřebují pomoc. Popis je doplněn možnými návrhy řešení.</p>
+        </div>
     </section>
 
-</main>
+    <section class="v-about">
+        <div class="row">
+            <div class="small-12 columns">
+                <h2 class="t-h3-sub v-about__headline">Kdo za tímto projektem stojí?</h2>
+            </div>
+            <div class="small-12 medium-8 medium-offset-2 columns">
+                <div class="productleader">
+                    <div class="productleader__basics">
+                        <img class="productleader__avatar" src="{% webpack_static "img/olga-richterova-150x150.jpg" %}" alt="PhDr. Olga Richterová, PhD.">
+                        <h3 class="productleader__name">PhDr. Olga Richterová, PhD.</h3>
+                        <h4 class="productleader__job">poslankyně za Piráty</h4>
+                    </div>
+                    <div class="productleader__about">
+                        <p>PhDr. Olga Richterová, PhD. (* 21. ledna 1985) je poslankyně Parlamentu ČR za Piráty.</p>
+                        <p>Je místopředsedkyní Výboru pro sociální politiku, členkou Výboru zdravotního a Stálé komise pro rodinu, rovné příležitosti a národnostní menšiny. Věnuje se také problematice dostupného bydlení.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
 {% endblock %}
