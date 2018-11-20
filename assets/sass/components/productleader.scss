@@ -1,5 +1,9 @@
 .productleader {
     display: flex;
+
+    @include breakpoint(medium down) {
+        flex-direction: column;
+    }
 }
 
 .productleader__avatar {
@@ -15,13 +19,19 @@
 }
 
 .productleader__about {
-    font-size: 1.2rem;
+    margin-top: 2rem;
+    font-size: 1.1rem;
+
+    @include breakpoint(large up) {
+        font-size: 1.2rem;
+        margin-top: 0;
+    }
 }
 
 .productleader__name {
     margin: 1rem 0 0;
 
-    @include headerStyle('h5', alt);
+    @include headerStyle('h5', sub);
 
     @include breakpoint(medium up) {
         @include headerStyle('h4', sub);

@@ -1,0 +1,29 @@
+version: '3.4'
+
+services:
+    db:
+        image: postgres:9.6.10-alpine
+        volumes:
+            - dbdata:/var/lib/postgresql
+        restart: always
+        ports:
+            - "55432:5432"
+        environment:
+            POSTGRES_USER: socialsystem
+            POSTGRES_PASS: socialsystem
+            POSTGRES_DB: socialsystem
+
+    website:
+        build:
+            context: .
+        volumes:
+            - ./socialsystem:/socialsystem/socialsystem
+        ports:
+            - "8000:80"
+        restart: always
+        environment:
+            DEBUG: 1
+            DATABASE_DSN: postgresql://socialsystem:socialsystem@db:5432/socialsystem
+
+volumes:
+    dbdata:

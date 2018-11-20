@@ -13,3 +13,4 @@ package-lock.json
 assets/bundles
 db.sqlite3
 webpack-stats.json
+static
