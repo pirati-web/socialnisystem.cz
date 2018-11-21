@@ -1,7 +1,7 @@
 .hero {
     padding: 3rem 0;
     // background: linear-gradient(140deg, #9b9b9b, #000e50);
-    background: linear-gradient(140deg, #00b8ff 0%, #0b106e 90%);
+    background: linear-gradient(140deg, map-get($custom-palette, accent-main) 0%, map-get($custom-palette, accent-sub) 90%);
     color: map-get($foundation-palette, light);
     text-align: center;
 

@@ -1,0 +1,415 @@
+- model: core.stateoffice
+  pk: 1
+  fields: {name: "\xDA\u0159ad pr\xE1ce", short_name: "\xDAP"}
+- model: core.stateoffice
+  pk: 2
+  fields: {name: "Okresn\xED spr\xE1va soci\xE1ln\xEDho zabezpe\u010Den\xED", short_name: OSSZ}
+- model: core.lifecondition
+  pk: 1
+  fields: {title: "T\u011Bhotenstv\xED a porod", description: ''}
+- model: core.lifecondition
+  pk: 2
+  fields: {title: "P\xE9\u010De o d\xEDt\u011B", description: ''}
+- model: core.lifecondition
+  pk: 3
+  fields: {title: "P\xE9\u010De o ohro\u017Een\xE9 d\xEDt\u011B", description: ''}
+- model: core.lifecondition
+  pk: 4
+  fields: {title: "Nemoc/\xFAraz", description: ''}
+- model: core.lifecondition
+  pk: 5
+  fields: {title: "Nemoc/\xFAraz bl\xEDzk\xE9 osoby", description: ''}
+- model: core.lifecondition
+  pk: 6
+  fields: {title: "Nezam\u011Bstnanost", description: ''}
+- model: core.lifecondition
+  pk: 7
+  fields: {title: "Bytov\xE1 nouze", description: ''}
+- model: core.lifecondition
+  pk: 8
+  fields: {title: Chudoba, description: ''}
+- model: core.lifecondition
+  pk: 9
+  fields: {title: Krize, description: ''}
+- model: core.lifecondition
+  pk: 10
+  fields: {title: "St\xE1\u0159\xED", description: ''}
+- model: core.lifecondition
+  pk: 11
+  fields: {title: Smrt, description: ''}
+- model: core.benefit
+  pk: 1
+  fields:
+    name: "Pen\u011B\u017Eit\xE1 pomoc v mate\u0159stv\xED"
+    related_law: "187/2006 Sb., o nemocensk\xE9m poji\u0161t\u011Bn\xED"
+    base_description: '...'
+    usecase_description: '...'
+    claim_description: '...'
+    other_description: ''
+    responsible_office: 2
+    condition: 1
+    attachments: []
+- model: core.benefit
+  pk: 2
+  fields:
+    name: "Otcovsk\xE1"
+    related_law: "187/2006 Sb., o nemocensk\xE9m poji\u0161t\u011Bn\xED"
+    base_description: '...'
+    usecase_description: '...'
+    claim_description: '...'
+    other_description: ''
+    responsible_office: 2
+    condition: 1
+    attachments: []
+- model: core.benefit
+  pk: 3
+  fields:
+    name: "Vyrovn\xE1vac\xED p\u0159\xEDsp\u011Bvek v t\u011Bhotenstv\xED a mate\u0159stv\xED"
+    related_law: "187/2006 Sb., o nemocensk\xE9m poji\u0161t\u011Bn\xED"
+    base_description: '...'
+    usecase_description: '...'
+    claim_description: '...'
+    other_description: ''
+    responsible_office: 2
+    condition: 1
+    attachments: []
+- model: core.benefit
+  pk: 4
+  fields:
+    name: "Porodn\xE9"
+    related_law: "117/1995 Sb., o st\xE1tn\xED soci\xE1ln\xED podpo\u0159e"
+    base_description: '...'
+    usecase_description: '...'
+    claim_description: '...'
+    other_description: ''
+    responsible_office: 1
+    condition: 1
+    attachments: []
+- model: core.benefit
+  pk: 5
+  fields:
+    name: "Rodi\u010Dovsk\xFD p\u0159\xEDsp\u011Bvek"
+    related_law: "117/1995 Sb., o st\xE1tn\xED soci\xE1ln\xED podpo\u0159e"
+    base_description: '...'
+    usecase_description: '...'
+    claim_description: '...'
+    other_description: ''
+    responsible_office: 1
+    condition: 2
+    attachments: []
+- model: core.benefit
+  pk: 6
+  fields:
+    name: "P\u0159\xEDsp\u011Bvek na d\xEDt\u011B"
+    related_law: "117/1995 Sb., o st\xE1tn\xED soci\xE1ln\xED podpo\u0159e"
+    base_description: '...'
+    usecase_description: '...'
+    claim_description: '...'
+    other_description: ''
+    responsible_office: 1
+    condition: 2
+    attachments: []
+- model: core.benefit
+  pk: 7
+  fields:
+    name: "P\u0159\xEDsp\u011Bvek na \xFAhradu pot\u0159eb d\xEDt\u011Bte"
+    related_law: "359/1999 Sb., o soci\xE1ln\u011B-pr\xE1vn\xED ochran\u011B d\u011Bt\xED"
+    base_description: '...'
+    usecase_description: '...'
+    claim_description: '...'
+    other_description: ''
+    responsible_office: 1
+    condition: 3
+    attachments: []
+- model: core.benefit
+  pk: 8
+  fields:
+    name: "Odm\u011Bna p\u011Bstouna"
+    related_law: "359/1999 Sb., o soci\xE1ln\u011B-pr\xE1vn\xED ochran\u011B d\u011Bt\xED"
+    base_description: '...'
+    usecase_description: '...'
+    claim_description: '...'
+    other_description: ''
+    responsible_office: 1
+    condition: 3
+    attachments: []
+- model: core.benefit
+  pk: 9
+  fields:
+    name: "P\u0159\xEDsp\u011Bvek p\u0159i p\u0159evzet\xED d\xEDt\u011Bte"
+    related_law: "359/1999 Sb., o soci\xE1ln\u011B-pr\xE1vn\xED ochran\u011B d\u011Bt\xED"
+    base_description: '...'
+    usecase_description: '...'
+    claim_description: '...'
+    other_description: ''
+    responsible_office: 1
+    condition: 3
+    attachments: []
+- model: core.benefit
+  pk: 10
+  fields:
+    name: "P\u0159\xEDsp\u011Bvek na zakoupen\xED osobn\xEDho motorov\xE9ho vozidla"
+    related_law: "359/1999 Sb., o soci\xE1ln\u011B-pr\xE1vn\xED ochran\u011B d\u011Bt\xED"
+    base_description: '...'
+    usecase_description: '...'
+    claim_description: '...'
+    other_description: ''
+    responsible_office: 1
+    condition: 3
+    attachments: []
+- model: core.benefit
+  pk: 11
+  fields:
+    name: "P\u0159\xEDsp\u011Bvek p\u0159i ukon\u010Den\xED p\u011Bstounsk\xE9 p\xE9\u010De"
+    related_law: "359/1999 Sb., o soci\xE1ln\u011B-pr\xE1vn\xED ochran\u011B d\u011Bt\xED"
+    base_description: '...'
+    usecase_description: '...'
+    claim_description: '...'
+    other_description: ''
+    responsible_office: 1
+    condition: 3
+    attachments: []
+- model: core.benefit
+  pk: 12
+  fields:
+    name: "Nemocensk\xE1"
+    related_law: "187/2006 Sb., o nemocensk\xE9m poji\u0161t\u011Bn\xED"
+    base_description: '...'
+    usecase_description: '...'
+    claim_description: '...'
+    other_description: ''
+    responsible_office: 2
+    condition: 4
+    attachments: []
+- model: core.benefit
+  pk: 13
+  fields:
+    name: "Invalidn\xED d\u016Fchod"
+    related_law: "155/1995 Sb., o d\u016Fchodov\xE9m poji\u0161t\u011Bn\xED"
+    base_description: '...'
+    usecase_description: '...'
+    claim_description: '...'
+    other_description: ''
+    responsible_office: 2
+    condition: 4
+    attachments: []
+- model: core.benefit
+  pk: 14
+  fields:
+    name: "P\u0159\xEDsp\u011Bvek na mobilitu"
+    related_law: "329/2011 Sb., o poskytov\xE1n\xED d\xE1vek osob\xE1m se zdravotn\xEDm
+      posti\u017Een\xEDm"
+    base_description: '...'
+    usecase_description: '...'
+    claim_description: '...'
+    other_description: ''
+    responsible_office: 1
+    condition: 4
+    attachments: []
+- model: core.benefit
+  pk: 15
+  fields:
+    name: "P\u0159\xEDsp\u011Bvek na zvl\xE1\u0161tn\xED pom\u016Fcku"
+    related_law: "329/2011 Sb., o poskytov\xE1n\xED d\xE1vek osob\xE1m se zdravotn\xEDm
+      posti\u017Een\xEDm"
+    base_description: '...'
+    usecase_description: '...'
+    claim_description: '...'
+    other_description: ''
+    responsible_office: 1
+    condition: 4
+    attachments: []
+- model: core.benefit
+  pk: 16
+  fields:
+    name: "P\u0159\xEDsp\u011Bvek na p\xE9\u010Di"
+    related_law: "108/2006 Sb., o soci\xE1ln\xEDch slu\u017Eb\xE1ch"
+    base_description: '...'
+    usecase_description: '...'
+    claim_description: '...'
+    other_description: ''
+    responsible_office: 1
+    condition: 4
+    attachments: []
+- model: core.benefit
+  pk: 17
+  fields:
+    name: "O\u0161et\u0159ovn\xE9"
+    related_law: "187/2006 Sb., o nemocensk\xE9m poji\u0161t\u011Bn\xED"
+    base_description: '...'
+    usecase_description: '...'
+    claim_description: '...'
+    other_description: ''
+    responsible_office: 2
+    condition: 5
+    attachments: []
+- model: core.benefit
+  pk: 18
+  fields:
+    name: "Dlouhodob\xE9 o\u0161et\u0159ovn\xE9"
+    related_law: "187/2006 Sb., o nemocensk\xE9m poji\u0161t\u011Bn\xED"
+    base_description: '...'
+    usecase_description: '...'
+    claim_description: '...'
+    other_description: ''
+    responsible_office: 2
+    condition: 5
+    attachments: []
+- model: core.benefit
+  pk: 19
+  fields:
+    name: "Podpora v nezam\u011Bstnanosti"
+    related_law: "435/2004 Sb., o zam\u011Bstnanosti"
+    base_description: '...'
+    usecase_description: '...'
+    claim_description: '...'
+    other_description: ''
+    responsible_office: 1
+    condition: 6
+    attachments: []
+- model: core.benefit
+  pk: 20
+  fields:
+    name: "Podpora p\u0159i rekvalifikaci"
+    related_law: "435/2004 Sb., o zam\u011Bstnanosti"
+    base_description: '...'
+    usecase_description: '...'
+    claim_description: '...'
+    other_description: ''
+    responsible_office: 1
+    condition: 6
+    attachments: []
+- model: core.benefit
+  pk: 21
+  fields:
+    name: "P\u0159\xEDsp\u011Bvek na bydlen\xED"
+    related_law: "117/1995 Sb., o st\xE1tn\xED soci\xE1ln\xED podpo\u0159e"
+    base_description: '...'
+    usecase_description: '...'
+    claim_description: '...'
+    other_description: ''
+    responsible_office: 1
+    condition: 7
+    attachments: []
+- model: core.benefit
+  pk: 22
+  fields:
+    name: "Doplatek na bydlen\xED"
+    related_law: "111/2006 Sb., o pomoci v hmotn\xE9 nouzi"
+    base_description: '...'
+    usecase_description: "\u0158e\u0161\xED nedostatek p\u0159\xEDjmu k uhrazen\xED
+      n\xE1klad\u016F na bydlen\xED tam, kde nevznik\xE1 n\xE1rok na p\u0159\xEDsp\u011Bvek
+      na bydlen\xED nebo pokud nesta\u010D\xED vlastn\xED p\u0159\xEDjmy osoby \u010Di
+      rodiny v\u010Detn\u011B p\u0159\xEDsp\u011Bvku na bydlen\xED ze syst\xE9mu st\xE1tn\xED
+      soci\xE1ln\xED podpory."
+    claim_description: "- D\xE1vka je poskytov\xE1na vlastn\xEDku u\u017E\xEDvaj\xEDc\xEDmu
+      byt, nebo jin\xE9 osob\u011B, kter\xE1 u\u017E\xEDv\xE1 byt na z\xE1klad\u011B
+      smlouvy, rozhodnut\xED, nebo jin\xE9ho pr\xE1vn\xEDho titulu.\r\n- D\xE1vku
+      lze tak\xE9 poskytnout vlastn\xEDku stavby pro individu\xE1ln\xED \u010Di rodinnou
+      rekreaci, kter\xE1 spl\u0148uje z\xE1konem dan\xE9 stavebn\u011B technick\xE9
+      standardy kvality bydlen\xED.\r\n- Z\xE1kon o pomoci v hmotn\xE9 nouzi pamatuje
+      i na specifick\xE9 situace spojen\xE9 s bydlen\xEDm. V p\u0159\xEDpadech hodn\xFDch
+      zvl\xE1\u0161tn\xEDho z\u0159etele m\u016F\u017Ee org\xE1n pomoci v hmotn\xE9
+      nouzi doplatek na bydlen\xED poskytnout do \u010D\xE1sti bytu, po spln\u011Bn\xED
+      hygienick\xFDch podm\xEDnek a ud\u011Blen\xED souhlasu obce do ubytovac\xEDho
+      za\u0159\xEDzen\xED a po spln\u011Bn\xED stavebn\u011B technick\xFDch standard\u016F
+      kvality bydlen\xED do jin\xE9ho ne\u017E obytn\xE9ho prostoru. Jako p\u0159\xEDpad
+      hodn\xFD zvl\xE1\u0161tn\xEDho z\u0159etele se v\u017Edy pova\u017Euje ubytov\xE1n\xED
+      v pobytov\xFDch soci\xE1ln\xEDch slu\u017Eb\xE1ch (nap\u0159. azylov\xFD d\u016Fm,
+      domov pro seniory, chr\xE1n\u011Bn\xE9 bydlen\xED).\r\n- Podm\xEDnkou n\xE1roku
+      na doplatek na bydlen\xED je z\xEDsk\xE1n\xED n\xE1roku na p\u0159\xEDsp\u011Bvek
+      na \u017Eivobyt\xED.\r\n- Z\xE1kon umo\u017E\u0148uje poskytnout doplatek na
+      bydlen\xED (s p\u0159ihl\xE9dnut\xEDm k celkov\xFDm soci\xE1ln\xEDm a majetkov\xFDm
+      pom\u011Br\u016Fm), i v p\u0159\xEDpad\u011B, \u017Ee p\u0159\xEDsp\u011Bvek
+      na \u017Eivobyt\xED nebyl p\u0159izn\xE1n z d\u016Fvodu, \u017Ee p\u0159\xEDjem
+      osoby a spole\u010Dn\u011B posuzovan\xFDch osob p\u0159es\xE1hl \u010D\xE1stku
+      \u017Eivobyt\xED osoby a spole\u010Dn\u011B posuzovan\xFDch osob, ale nep\u0159es\xE1hl
+      1,3n\xE1sobek \u010D\xE1stky \u017Eivobyt\xED osoby a spole\u010Dn\u011B posuzovan\xFDch
+      osob\r\n- V\xFD\u0161e doplatku na bydlen\xED je stanovena tak, aby po zaplacen\xED
+      od\u016Fvodn\u011Bn\xFDch n\xE1klad\u016F na bydlen\xED (tj. n\xE1jmu, slu\u017Eeb
+      s bydlen\xEDm spojen\xFDch a n\xE1klad\u016F za dod\xE1vky energi\xED) z\u016Fstala
+      osob\u011B \u010Di rodin\u011B \u010D\xE1stka \u017Eivobyt\xED.\r\n- V\xFD\u0161e
+      doplatku na bydlen\xED je d\xE1le limitov\xE1na stejn\xFDmi normativy na bydlen\xED
+      jako p\u0159\xEDsp\u011Bvek na bydlen\xED (dle velikosti obce a po\u010Dtu osob
+      v dom\xE1cnosti), jen je tento strop d\xE1le sn\xED\u017Een, a to na 90 % v
+      p\u0159\xEDpad\u011B zahradn\xEDch chatek (u vlastn\xEDk\u016F t\u011Bchto rekrea\u010Dn\xEDch
+      objekt\u016F), 80 % p\u0159i u\u017E\xEDv\xE1n\xED jednotky na ubytovn\u011B
+      nebo p\u0159i ob\xFDv\xE1n\xED jin\xE9ho ne\u017E obytn\xE9ho prostoru."
+    other_description: "Po\u010Det vyplacen\xFDch d\xE1vek: **prosinec 2017 \u2013
+      \ 50 000**\r\n\r\nV\xFDdaje na d\xE1vku: **prosinec 2017** \u2013 0,193 mld.
+      K\u010D, **za cel\xFD rok 2017** \u2013 2,423 mld. K\u010D"
+    responsible_office: 1
+    condition: 7
+    attachments: []
+- model: core.benefit
+  pk: 23
+  fields:
+    name: "P\u0159\xEDsp\u011Bvek na \u017Eivobyt\xED"
+    related_law: "111/2006 Sb., o pomoci v hmotn\xE9 nouzi"
+    base_description: '...'
+    usecase_description: '...'
+    claim_description: '...'
+    other_description: ''
+    responsible_office: 1
+    condition: 8
+    attachments: []
+- model: core.benefit
+  pk: 24
+  fields:
+    name: "Mimo\u0159\xE1dn\xE1 okam\u017Eit\xE1 pomoc"
+    related_law: "111/2006 Sb., o pomoci v hmotn\xE9 nouzi"
+    base_description: '...'
+    usecase_description: '...'
+    claim_description: '...'
+    other_description: ''
+    responsible_office: 1
+    condition: 9
+    attachments: []
+- model: core.benefit
+  pk: 25
+  fields:
+    name: "Starobn\xED d\u016Fchod"
+    related_law: "155/1995 Sb., o d\u016Fchodov\xE9m poji\u0161t\u011Bn\xED"
+    base_description: '...'
+    usecase_description: '...'
+    claim_description: '...'
+    other_description: ''
+    responsible_office: 2
+    condition: 10
+    attachments: []
+- model: core.benefit
+  pk: 26
+  fields:
+    name: "Poh\u0159ebn\xE9"
+    related_law: "117/1995 Sb., o st\xE1tn\xED soci\xE1ln\xED podpo\u0159e"
+    base_description: '...'
+    usecase_description: '...'
+    claim_description: '...'
+    other_description: ''
+    responsible_office: 1
+    condition: 11
+    attachments: []
+- model: core.benefit
+  pk: 27
+  fields:
+    name: "Vdovsk\xFD a vdoveck\xFD d\u016Fchod"
+    related_law: "155/1995 Sb., o d\u016Fchodov\xE9m poji\u0161t\u011Bn\xED"
+    base_description: '...'
+    usecase_description: '...'
+    claim_description: '...'
+    other_description: ''
+    responsible_office: 2
+    condition: 11
+    attachments: []
+- model: core.benefit
+  pk: 28
+  fields:
+    name: "Sirot\u010D\xED d\u016Fchod"
+    related_law: "155/1995 Sb., o d\u016Fchodov\xE9m poji\u0161t\u011Bn\xED"
+    base_description: '...'
+    usecase_description: '...'
+    claim_description: '...'
+    other_description: ''
+    responsible_office: 2
+    condition: 11
+    attachments: []

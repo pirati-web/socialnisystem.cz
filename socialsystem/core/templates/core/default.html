@@ -1,7 +1,7 @@
 {% extends "core/base.html" %}
 
 {% block content %}
-<div class="row">
+<div class="row {% block wrapper_classes %}{% endblock %}">
     <div class="small-12 columns">
         {% block body %}{% endblock %}
     </div>

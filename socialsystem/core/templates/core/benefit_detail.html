@@ -1,0 +1,51 @@
+{% extends "core/page.html" %}
+{% load markdown_deux_tags %}
+
+{% block page_title %}{{ object }}{% endblock %}
+
+{% block header %}
+    <div class="page__backnav"><a href="{% url 'core:benefit-overview' %}">Přehled dávek &raquo;</a></div>
+    <h1 class="page__headline">{{ object }}</h1>
+    <div class="page__headline-sub">dle {{ object.related_law }}</div>
+{% endblock %}
+
+{% block article %}
+<div class="v-benefit-detail row">
+    <div class="small-12 medium-8 columns">
+        <div class="v-benefit-detail__desc content-block">
+            {{ object.base_description | markdown }}
+        </div>
+
+        <div class="v-benefit-detail__usecase content-block">
+            <h2 class="t-h4">K čemu slouží</h2>
+            {{ object.usecase_description | markdown }}
+        </div>
+
+        <div class="v-benefit-detail__claim content-block">
+            <h2 class="t-h4">Kdo má nárok</h2>
+            {{ object.claim_description | markdown }}
+        </div>
+    </div>
+    <aside class="page__sidebar small-12 medium-4 columns">
+        {% if object.other_description %}
+            <div class="page__sidebar-body content-block">
+                <h2 class="t-h4">Další informace</h4>
+                {{ object.other_description | markdown }}
+            </div>
+        {% endif %}
+
+        {% with object.attachments.all as attachments %}
+            {% if attachments %}
+                <div class="page__sidebar-body content-block">
+                    <h2 class="t-h4">Přílohy</h2>
+                    <ul>
+                        {% for attachment in object.attachments.all %}
+                        <li><a href="{{ attachment.file.url }}">{{ attachment }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            {% endif %}
+        {% endwith %}
+    </aside>
+</div>
+{% endblock %}

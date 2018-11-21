@@ -11,12 +11,12 @@ run:
 migrate:
 	DEBUG=1 python manage.py migrate
 
-# build:
-# 	docker build -t openlobby/openlobby-server:latest .
+build:
+	docker build -t xaralis/socialsystem:latest .
 
-# push:
-# 	docker push openlobby/openlobby-server:latest
+push:
+	docker push xaralis/socialsystem:latest
 
-# release:
-# 	make build
-# 	make push
+release:
+	make build
+	make push

@@ -1,0 +1,53 @@
+.benefit-overview__benefit {
+    display: relative;
+}
+
+.benefit-overview__section {
+    margin-bottom: 2rem;
+}
+
+.benefit-overview__section-body {
+    $color1: map-get($custom-palette, accent-main);
+    $color2: map-get($custom-palette, accent-sub);
+
+    height: 100%;
+    padding: 1rem;
+    background: $light-gray;
+    // background: linear-gradient(140deg, $color1 0%, $color2 90%);
+}
+
+.benefit-overview__section-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.benefit-overview__section-headline,
+.benefit-overview__benefit-headline {
+    flex: 1;
+    margin: 0;
+}
+
+.benefit-overview__benefit-header {
+    display: flex;
+    align-items: flex-start;
+}
+
+.benefit-overview__benefit-headline {
+    // line-height: 2rem;
+    padding-right: 1rem;
+
+    @include anchorStyle();
+}
+
+.benefit-overview__benefit-officebadge {
+    background: map-get($custom-palette, accent-main);
+    padding: 0 .5rem;
+    color: $white;
+
+    @include headerStyle('h6', main);
+}
+
+.benefit-overview__benefit-rellaw {
+    font-size: 90%;
+}

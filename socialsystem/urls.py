@@ -18,5 +18,7 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('socialsystem.core.urls')),
+    path('markdownx/', include('markdownx.urls')),
+
+    path('', include('socialsystem.core.urls', namespace='core')),
 ]

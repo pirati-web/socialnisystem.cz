@@ -2,4 +2,7 @@ psycopg2-binary
 Django
 dsnparse
 django-webpack-loader
+django-markdownx
+django-markdown-deux
 gunicorn
+pyaml

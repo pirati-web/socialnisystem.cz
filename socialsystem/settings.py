@@ -48,8 +48,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'webpack_loader',
+    'markdownx', # A markdown editor
+    'markdown_deux', # Markdown rendering template tags
 
-    'socialsystem.core',
+    'socialsystem.core.apps.CoreConfig',
 ]
 
 MIDDLEWARE = [
@@ -75,6 +77,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'socialsystem.core.context_processors.siteinfo',
             ],
         },
     },
@@ -154,6 +157,18 @@ LOGGING = {
 
 # Custom settings
 # ---------------
+
+SITEINFO = {
+    'name': 'SocialniSystem.cz',
+    'claim': 'pomocník pro vaši orientaci v džungli sociálního systému',
+    'description': '',
+    'keywords': (),
+    'phone': '+420776278860',
+    'email': 'info@socialnisystem.cz',
+    'fb_profile_url': 'https://facebook.com',
+    'twitter_profile_url': 'https://twitter.com',
+    'instagram_profile_url': 'https://instagram.com',
+}
 
 # Webpack-built assets
 
