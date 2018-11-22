@@ -6,3 +6,4 @@ django-markdownx
 django-markdown-deux
 gunicorn
 pyaml
+git+ssh://git@github.com/disqus/django-bitfield.git@master

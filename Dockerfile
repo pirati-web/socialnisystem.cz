@@ -12,6 +12,8 @@ RUN apk add --no-cache \
     git \
     openssh \
     postgresql-dev \
+    jpeg-dev \
+    zlib-dev \
     build-base && \
     mkdir -p /build/wheels
 
@@ -50,6 +52,8 @@ RUN apk add --no-cache \
     bash \
     postgresql-dev \
     build-base \
+    jpeg-dev \
+    zlib-dev \
     nginx \
     supervisor && \
     rm /etc/nginx/conf.d/default.conf && \

@@ -1,6 +1,8 @@
 from django.contrib import admin
 from django.db.models import TextField
 
+from bitfield import BitField
+from bitfield.forms import BitFieldCheckboxSelectMultiple
 from markdownx.widgets import AdminMarkdownxWidget
 
 from . import models
@@ -40,6 +42,7 @@ class BenefitAdmin(admin.ModelAdmin):
     ]
 
     formfield_overrides = {
+        BitField: {'widget': BitFieldCheckboxSelectMultiple},
         TextField: {'widget': AdminMarkdownxWidget},
     }
 

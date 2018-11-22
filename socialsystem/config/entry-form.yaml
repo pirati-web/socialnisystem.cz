@@ -1,0 +1,30 @@
+- id: osobni_situace
+  question: Jaká je vaše osobní situace?
+  options:
+    - label: svobodný/svobodná
+      value: svobodny_svobodna
+    - label: ženatý/vdaná
+      value: zenaty_vdana
+    - label: v neformálním vztahu
+      value: neformalni_vztah
+    - label: rozvedený/rozvedená
+      value: rozvedeny_rozvedena
+    - label: vdovec/vdova
+      value: vdovec_vdova
+    - label: jsem student/studentka
+      value: student
+    - label: jsem nezaměstnaný/nezaměstnaná
+      value: nezamestnany
+    - label: pečuji o osobu se zdravotním postižením
+      value: pece_o_ozp
+    - label: jsem OZP
+      value: ozp
+    - label: jsem důchodce
+      value: duchodce
+- id: rodina
+  question: Čekáte rodinu?
+  options:
+    - label: ano
+      value: ano
+    - label: ne
+      value: ne

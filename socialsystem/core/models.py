@@ -2,6 +2,10 @@ from django.db import models
 from django.template.defaultfilters import slugify
 from django.urls import reverse
 
+from bitfield import BitField
+
+from .entryform import entry_form_config
+
 
 class StateOffice(models.Model):
     """
@@ -76,6 +80,18 @@ class Benefit(models.Model):
     responsible_office = models.ForeignKey(to='core.StateOffice', on_delete=models.PROTECT, verbose_name='Žádost se podává na')
     condition = models.ForeignKey(to='core.LifeCondition', related_name='benefits', on_delete=models.PROTECT, verbose_name='Situace')
     attachments = models.ManyToManyField(to='core.BenefitAttachment', blank=True, related_name='benefits')
+
+    # Individual requirements are represented as binary number instead of bunch of
+    # boolean properties. This has several advantages:
+    # - saves space in DB
+    # - makes requirements easier to manage, code is cleaner
+    #
+    # Queries are made using bitwise flags, e.g.:
+    # Benefit.objects.filter(
+    #   Q(requirements=Benefit.requirements.osobni_situace__svobodny_svobodna) |
+    #   Q(requirements=Benefit.requirements.osobni_situace__zenaty_vdana)
+    # )
+    requirements = BitField(flags=entry_form_config.get_bitfield_flags(), verbose_name='Požadavky na získání dávky', default=0)
 
     class Meta:
         app_label = 'core'
