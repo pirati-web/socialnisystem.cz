@@ -1,0 +1,18 @@
+{% extends "core/page.html" %}
+{% load markdown_deux_tags %}
+
+{% block page_title %}{% block headline %}Na co mám nárok?{% endblock %}{% endblock %}
+
+
+{% block article %}
+<div class="v-benefit-claim row">
+    <div class="small-12 medium-8 columns">
+        <p>Abychom mohli zjistit na co máte nárok, budeme od vás potřebovat <strong>pár informací</strong>. Vyplnění dotazníku zabere jen <strong>pár minut</strong></p>
+
+        <form action="." method="GET" class="form">
+            {{ form.as_p }}
+        </form>
+
+    </div>
+</div>
+{% endblock %}

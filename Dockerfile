@@ -50,6 +50,7 @@ RUN addgroup -g 1001 socialsystem && \
 # Install dependencies
 RUN apk add --no-cache \
     bash \
+    git \
     postgresql-dev \
     build-base \
     jpeg-dev \

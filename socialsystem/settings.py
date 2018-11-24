@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'django.forms',
 
     'django.contrib.staticfiles',
 
@@ -54,6 +55,8 @@ INSTALLED_APPS = [
 
     'socialsystem.core.apps.CoreConfig',
 ]
+
+FORM_RENDERER = 'django.forms.renderers.TemplatesSetting'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

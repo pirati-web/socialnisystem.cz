@@ -1,0 +1,5 @@
+.form {
+    p > label {
+        @include headerStyle('h4', main);
+    }
+}
