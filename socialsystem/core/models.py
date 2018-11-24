@@ -1,3 +1,6 @@
+from functools import reduce
+from operator import or_
+
 from django.db import models
 from django.template.defaultfilters import slugify
 from django.urls import reverse
@@ -65,6 +68,26 @@ class BenefitAttachment(models.Model):
         return self.title
 
 
+class BenefitManager(models.Manager):
+    def find_claimable(self, flags):
+        """
+        Searches `Benefit` objects whose requirements are satisfied by
+        provided flag selection.
+
+        Individual benefits can have multiple `BenefitRequirements` records.
+        Benefit is only matched, if provided flags satisfy all the related
+        `BenefitRequirement` records.
+
+        `BenefitRequirement` is considered to be satisfied if any of the flags
+        on `BenefitRequirement` record is  present in the provided flags.
+        """
+        query = reduce(or_, (models.Q(flags=f) for f in flags), models.Q())
+        # Select all requirements that were not matched
+        non_matched_requirements = BenefitRequirement.objects.exclude(query)
+        # Select all benefits except those which have some unmatched requirement
+        return self.get_queryset().exclude(requirements__pk__in=models.Subquery(non_matched_requirements.values('pk')))
+
+
 class Benefit(models.Model):
     """
     A benefit from state social system.
@@ -81,17 +104,7 @@ class Benefit(models.Model):
     condition = models.ForeignKey(to='core.LifeCondition', related_name='benefits', on_delete=models.PROTECT, verbose_name='Situace')
     attachments = models.ManyToManyField(to='core.BenefitAttachment', blank=True, related_name='benefits')
 
-    # Individual requirements are represented as binary number instead of bunch of
-    # boolean properties. This has several advantages:
-    # - saves space in DB
-    # - makes requirements easier to manage, code is cleaner
-    #
-    # Queries are made using bitwise flags, e.g.:
-    # Benefit.objects.filter(
-    #   Q(requirements=Benefit.requirements.osobni_situace__svobodny_svobodna) |
-    #   Q(requirements=Benefit.requirements.osobni_situace__zenaty_vdana)
-    # )
-    requirements = BitField(flags=entry_form_config.get_bitfield_flags(), verbose_name='Požadavky na získání dávky', default=0)
+    objects = BenefitManager()
 
     class Meta:
         app_label = 'core'
@@ -105,3 +118,25 @@ class Benefit(models.Model):
     def get_absolute_url(self):
         return reverse('core:benefit-detail', kwargs={'pk': self.pk, 'slug': slugify(self.name)})
 
+
+class BenefitRequirement(models.Model):
+    # Individual requirements are represented as binary number instead of bunch of
+    # boolean properties. This has several advantages:
+    # - saves space in DB
+    # - makes requirements easier to manage, code is cleaner
+    benefit = models.ForeignKey(to='core.Benefit', on_delete=models.CASCADE, verbose_name='Dávka', related_name='requirements')
+    flags = BitField(
+        flags=entry_form_config.get_bitfield_flags(),
+        verbose_name='Požadavky',
+        help_text='Požadavky v rámci jednoho záznamu mají logický význam NEBO. '
+                  'Dohoromady jsou pak spojeny logickou podmínkou A ZÁROVEŇ.',
+        default=0
+    )
+
+    class Meta:
+        app_label = 'core'
+        verbose_name = 'Požadavek na získání dávky'
+        verbose_name_plural = 'Požadavky na získání dávky'
+
+    def __str__(self):
+        return 'Sada požadavků dávky %s' % self.benefit

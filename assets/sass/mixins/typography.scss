@@ -10,7 +10,7 @@
   $settings: map-get($headers, $type);
 
   @each $breakpointSize, $headers in map-get($settings, sizes) {
-    @include breakpoint($breakpointSize) {
+    @include breakpoint($breakpointSize up) {
       font-family: #{map-get($settings, family)};
       font-size: rem-calc(map-get($headers, $header));
       font-weight: map-get($settings, weight);

@@ -1,0 +1,33 @@
+.card {
+    margin-bottom: 2rem;
+}
+
+.card__body {
+    height: 100%;
+    padding: 1rem;
+    background: $light-gray;
+}
+
+.card__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.card__headline,
+.card__sub-headline {
+    flex: 1;
+    margin: 0;
+}
+
+.card__sub-header {
+    display: flex;
+    align-items: flex-start;
+}
+
+.card__sub-headline {
+    // line-height: 2rem;
+    padding-right: 1rem;
+
+    @include anchorStyle();
+}

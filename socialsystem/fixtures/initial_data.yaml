@@ -100,7 +100,7 @@
 - model: core.benefit
   pk: 6
   fields:
-    name: "P\u0159\xEDsp\u011Bvek na d\xEDt\u011B"
+    name: "P\u0159\xEDdavek na d\xEDt\u011B"
     related_law: "117/1995 Sb., o st\xE1tn\xED soci\xE1ln\xED podpo\u0159e"
     base_description: '...'
     usecase_description: '...'
@@ -286,7 +286,7 @@
     related_law: "117/1995 Sb., o st\xE1tn\xED soci\xE1ln\xED podpo\u0159e"
     base_description: '...'
     usecase_description: '...'
-    claim_description: '...'
+    claim_description: '* test'
     other_description: ''
     responsible_office: 1
     condition: 7
@@ -413,3 +413,114 @@
     responsible_office: 2
     condition: 11
     attachments: []
+- model: core.benefitrequirement
+  pk: 1
+  fields: {benefit: 22, flags: '16384'}
+- model: core.benefitrequirement
+  pk: 2
+  fields: {benefit: 22, flags: '65536'}
+- model: core.benefitrequirement
+  pk: 4
+  fields: {benefit: 21, flags: '65536'}
+- model: core.benefitrequirement
+  pk: 5
+  fields: {benefit: 23, flags: '16384'}
+- model: core.benefitrequirement
+  pk: 6
+  fields: {benefit: 24, flags: '147456'}
+- model: core.benefitrequirement
+  pk: 7
+  fields: {benefit: 13, flags: '3670016'}
+- model: core.benefitrequirement
+  pk: 8
+  fields: {benefit: 12, flags: '1572864'}
+- model: core.benefitrequirement
+  pk: 9
+  fields: {benefit: 14, flags: '3145728'}
+- model: core.benefitrequirement
+  pk: 10
+  fields: {benefit: 16, flags: '3145728'}
+- model: core.benefitrequirement
+  pk: 11
+  fields: {benefit: 15, flags: '3145728'}
+- model: core.benefitrequirement
+  pk: 12
+  fields: {benefit: 18, flags: '12582912'}
+- model: core.benefitrequirement
+  pk: 13
+  fields: {benefit: 17, flags: '3145728'}
+- model: core.benefitrequirement
+  pk: 14
+  fields: {benefit: 20, flags: '8192'}
+- model: core.benefitrequirement
+  pk: 15
+  fields: {benefit: 19, flags: '8192'}
+- model: core.benefitrequirement
+  pk: 16
+  fields: {benefit: 6, flags: '4'}
+- model: core.benefitrequirement
+  pk: 17
+  fields: {benefit: 6, flags: '32768'}
+- model: core.benefitrequirement
+  pk: 18
+  fields: {benefit: 6, flags: '67109104'}
+- model: core.benefitrequirement
+  pk: 19
+  fields: {benefit: 6, flags: '0'}
+- model: core.benefitrequirement
+  pk: 20
+  fields: {benefit: 5, flags: '7'}
+- model: core.benefitrequirement
+  pk: 21
+  fields: {benefit: 5, flags: '16'}
+- model: core.benefitrequirement
+  pk: 22
+  fields: {benefit: 8, flags: '4096'}
+- model: core.benefitrequirement
+  pk: 23
+  fields: {benefit: 10, flags: '4096'}
+- model: core.benefitrequirement
+  pk: 24
+  fields: {benefit: 7, flags: '2048'}
+- model: core.benefitrequirement
+  pk: 25
+  fields: {benefit: 7, flags: '4096'}
+- model: core.benefitrequirement
+  pk: 26
+  fields: {benefit: 9, flags: '4096'}
+- model: core.benefitrequirement
+  pk: 27
+  fields: {benefit: 11, flags: '2048'}
+- model: core.benefitrequirement
+  pk: 28
+  fields: {benefit: 26, flags: '33554432'}
+- model: core.benefitrequirement
+  pk: 29
+  fields: {benefit: 28, flags: '1024'}
+- model: core.benefitrequirement
+  pk: 30
+  fields: {benefit: 27, flags: '512'}
+- model: core.benefitrequirement
+  pk: 31
+  fields: {benefit: 25, flags: '256'}
+- model: core.benefitrequirement
+  pk: 32
+  fields: {benefit: 2, flags: '5'}
+- model: core.benefitrequirement
+  pk: 33
+  fields: {benefit: 2, flags: '67108864'}
+- model: core.benefitrequirement
+  pk: 34
+  fields: {benefit: 1, flags: '6'}
+- model: core.benefitrequirement
+  pk: 35
+  fields: {benefit: 1, flags: '67108872'}
+- model: core.benefitrequirement
+  pk: 36
+  fields: {benefit: 4, flags: '67108870'}
+- model: core.benefitrequirement
+  pk: 37
+  fields: {benefit: 3, flags: '6'}
+- model: core.benefitrequirement
+  pk: 38
+  fields: {benefit: 3, flags: '67108872'}

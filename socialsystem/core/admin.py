@@ -30,6 +30,17 @@ class BenefitAttachmentInline(admin.TabularInline):
     verbose_name_plural = 'Přílohy'
 
 
+class BenefitRequirementInline(admin.StackedInline):
+    model = models.BenefitRequirement
+    extra = 0
+    verbose_name = 'Požadavek'
+    verbose_name_plural = 'Požadavky'
+
+    formfield_overrides = {
+        BitField: {'widget': BitFieldCheckboxSelectMultiple},
+    }
+
+
 @admin.register(models.Benefit)
 class BenefitAdmin(admin.ModelAdmin):
     exclude = ('attachments',)
@@ -38,11 +49,11 @@ class BenefitAdmin(admin.ModelAdmin):
     list_filter = ('condition', 'responsible_office')
 
     inlines = [
+        BenefitRequirementInline,
         BenefitAttachmentInline,
     ]
 
     formfield_overrides = {
-        BitField: {'widget': BitFieldCheckboxSelectMultiple},
         TextField: {'widget': AdminMarkdownxWidget},
     }
 

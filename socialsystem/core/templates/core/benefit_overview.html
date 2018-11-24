@@ -3,19 +3,18 @@
 {% block headline %}{% block page_title %}Přehled dávek{% endblock %}{% endblock %}
 
 {% block article %}
-    <div class="benefit-overview row">
+    <div class="benefit-overview cards row">
         {% for condition, benefits in life_conditions %}
-            <section class="benefit-overview__section small-12 middle-6 large-4 columns">
-                <div class="benefit-overview__section-body">
-                    <div class="benefit-overview__section-header">
-                        <h2 class="t-h4 benefit-overview__section-headline">{{ condition }}</h2>
-                        {% comment %} <a href="" class="benefit-overview__section-toggle"><i class="fas fa-plus-circle"></i></a> {% endcomment %}
+            <section class="card small-12 middle-6 large-4 columns">
+                <div class="card__body">
+                    <div class="card__header">
+                        <h2 class="t-h4 card__headline">{{ condition }}</h2>
                     </div>
                     <ul class="no-bullet">
                         {% for benefit in benefits %}
-                        <li class="benefit-overview__benefit">
-                            <div class="benefit-overview__benefit-header">
-                                <h3 class="benefit-overview__benefit-headline t-h5-alt"><a href="{{ benefit.get_absolute_url }}">{{ benefit }}</a></h3>
+                        <li class="card__sub">
+                            <div class="card__sub-header">
+                                <h3 class="card__sub-headline t-h5-alt"><a href="{{ benefit.get_absolute_url }}">{{ benefit }}</a></h3>
                                 <span class="benefit-overview__benefit-officebadge" title="{{ benefit.responsible_office.name }}">{{ benefit.responsible_office }}</span>
                             </div>
                             <p class="benefit-overview__benefit-rellaw">dle {{ benefit.related_law }}</p>

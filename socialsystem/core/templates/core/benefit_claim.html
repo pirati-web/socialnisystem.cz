@@ -1,18 +1,44 @@
 {% extends "core/page.html" %}
 {% load markdown_deux_tags %}
 
-{% block page_title %}{% block headline %}Na co mám nárok?{% endblock %}{% endblock %}
+{% block page_title %}{% if submitted %}Vaše nároky{% else %}Na co mohu mít nárok?{% endif %}{% endblock %}
+
+{% block headline %}{% if submitted %}Hotovo! Můžete mít nárok na následující dávky{% else %}Na co mohu mít nárok?{% endif %}{% endblock %}
 
 
 {% block article %}
 <div class="v-benefit-claim row">
-    <div class="small-12 medium-8 columns">
-        <p>Abychom mohli zjistit na co máte nárok, budeme od vás potřebovat <strong>pár informací</strong>. Vyplnění dotazníku zabere jen <strong>pár minut</strong></p>
+    <div class="small-12 columns">
 
-        <form action="." method="GET" class="form">
+        {% if submitted %}
+            <div class="row">
+                {% for benefit in claimable_benefits %}
+                    <section class="card small-12 middle-6 large-4 columns">
+                        <div class="card__body content-block">
+                            <div class="card__header">
+                                <h2 class="card__headline t-h4"><a href="{{ benefit.get_absolute_url }}">{{ benefit }}</a></h2>
+                            </div>
+                            <p>{{ benefit.base_description }}</p>
+                            <a href="{{ benefit.get_absolute_url }}">Zjistit více &raquo;</a>
+                        </div>
+                    </section>
+                {% empty %}
+                    <p>Je nám líto. Bohužel nesplňujete kritéria pro žádnou dávku.</p>
+                {% endfor %}
+            </div>
+            <hr>
+        {% endif %}
+
+        <p>Abychom mohli zjistit na co máte nárok, budeme od vás potřebovat <strong>pár informací</strong>. Vyplnění dotazníku zabere jen <strong>pár minut</strong>.</p>
+
+        <form action="." method="POST" class="form">
+            {% csrf_token %}
             {{ form.as_p }}
-        </form>
 
+            <div class="form__submit-row">
+                <button type="submit" class="button primary large">Odeslat</button>
+            </div>
+        </form>
     </div>
 </div>
 {% endblock %}

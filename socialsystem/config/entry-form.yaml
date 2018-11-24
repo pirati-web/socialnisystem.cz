@@ -1,30 +1,82 @@
-- id: osobni_situace
-  question: Jaká je vaše osobní situace?
-  options:
-    - label: svobodný/svobodná
-      value: svobodny_svobodna
-    - label: ženatý/vdaná
-      value: zenaty_vdana
-    - label: v neformálním vztahu
-      value: neformalni_vztah
-    - label: rozvedený/rozvedená
-      value: rozvedeny_rozvedena
-    - label: vdovec/vdova
-      value: vdovec_vdova
-    - label: jsem student/studentka
-      value: student
-    - label: jsem nezaměstnaný/nezaměstnaná
-      value: nezamestnany
-    - label: pečuji o osobu se zdravotním postižením
-      value: pece_o_ozp
-    - label: jsem OZP
-      value: ozp
-    - label: jsem důchodce
-      value: duchodce
-- id: rodina
-  question: Čekáte rodinu?
-  options:
-    - label: ano
-      value: ano
-    - label: ne
-      value: ne
+- id: 0
+  ord: 0
+  question: Jsem svobodný/rozvedený, samoživitel
+- id: 1
+  ord: 1
+  question: Jsem svobodná/rozvedená samoživitelka
+- id: 2
+  ord: 2
+  question: Jsme rodina
+- id: 3
+  ord: 3
+  question: Čekám dítě
+- id: 4
+  ord: 27
+  question: Jsem čerstvý rodič
+- id: 5
+  ord: 5
+  question: Mám dítě do 4 let
+- id: 6
+  ord: 6
+  question: Mám dítě do 6 let
+- id: 7
+  ord: 7
+  question: Mám dítě do 18 let
+- id: 8
+  ord: 8
+  question: Máme doma studenta do 26 let
+- id: 9
+  ord: 9
+  question: Jsem senior
+- id: 10
+  ord: 10
+  question: Jsem vdova/vdovec
+- id: 11
+  ord: 11
+  question: Situace osamělého dítěte
+- id: 12
+  ord: 12
+  question: Situace ohroženého dítěte
+- id: 13
+  ord: 13
+  question: Jsem pěstoun
+- id: 14
+  ord: 14
+  question: Jsem nezaměstnaný
+- id: 15
+  ord: 15
+  question: Chybí mi peníze na živobytí
+- id: 16
+  ord: 16
+  question: Příjem mojí domácnosti je nižší než 2,7 násobek životního minima
+- id: 17
+  ord: 17
+  question: Nemám prostředky na placení nájmu
+- id: 18
+  ord: 18
+  question: Nemám prostředky na kauci na nájem
+- id: 19
+  ord: 19
+  question: Jsem v obtížné životní situaci
+  description: vyhořeli jsme, vyplavila nás velká voda, apod.
+- id: 20
+  ord: 20
+  question: Jsem nemocný
+- id: 21
+  ord: 21
+  question: Jsem po úrazu
+- id: 22
+  ord: 22
+  question: Mám zdravotní hendikep
+- id: 23
+  ord: 23
+  question: Pečuji o blízkou osobu, která je nemocná
+- id: 24
+  ord: 24
+  question: Pečuji o blízkou osobu, která je po úrazu
+- id: 25
+  ord: 25
+  question: Pečuji o blízkou osobu, která je zdravotně znevýhodněná
+- id: 26
+  ord: 26
+  question: V rodině došlo k úmrtí

@@ -5,8 +5,14 @@ init-env:
 install:
 	pip install --upgrade -r requirements.txt && npm install
 
+install-test:
+	pip install --upgrade -r requirements-test.txt
+
 run:
 	DEBUG=1 ./node_modules/.bin/concurrently -r -k "python manage.py runserver 8080" "./node_modules/.bin/webpack --config webpack.config.js --mode development --watch"
+
+test:
+	pytest
 
 migrate:
 	DEBUG=1 python manage.py migrate
