@@ -3,11 +3,12 @@
 
 .form__field-label > label,
 .form__field .input__label {
-    @include headerStyle('h5', alt);
+    @include headerStyle('h6', alt);
 }
 
 .form__field-help {
     color: $dark-gray;
+    font-size: 80%;
 }
 
 .form__field-control {
