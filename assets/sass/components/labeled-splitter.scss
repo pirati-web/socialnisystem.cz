@@ -1,0 +1,40 @@
+.labeled-splitter {
+    border-bottom: $hr-border;
+    text-align: center;
+    margin: 0 0 2rem;
+}
+
+.labeled-splitter__label {
+    position: relative;
+    display: inline-block;
+    background-color: $light-gray;
+    padding: 0 3rem;
+    line-height: 2.5rem;
+    font-weight: bold;
+    transition: background-color .3s ease-in-out;
+
+    /* render a triangle */
+    &:after {
+        $size: .75rem;
+
+        position: absolute;
+        bottom: $size * -1;
+        left: 50%;
+        margin-left: -1 * $size;
+        content: '';
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: $size $size 0 $size;
+        transition: border-color .3s ease-in-out;
+        border-color: $light-gray transparent transparent transparent;
+    }
+
+    &:hover {
+        background-color: $medium-gray;
+    }
+
+    &:hover:after {
+        border-color: $medium-gray transparent transparent transparent;
+    }
+}

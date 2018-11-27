@@ -43,9 +43,11 @@ class EntryForm(forms.Form):
 
         for question in entry_form_config:
             kwargs = {
-                'widget': ButtonRadio(choices=((True, 'Ano'), (False, 'Ne'))),
+                # 'widget': ButtonRadio(choices=((True, 'Ano'), (False, 'Ne'))),
+                'widget': forms.RadioSelect(choices=((True, 'Ano'), (False, 'Ne'))),
                 'required': False,
-                'label': question['question']
+                'label': question['question'],
+                'initial': False,
             }
 
             if 'description' in question:

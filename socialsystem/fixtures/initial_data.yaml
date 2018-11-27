@@ -42,10 +42,43 @@
   fields:
     name: "Pen\u011B\u017Eit\xE1 pomoc v mate\u0159stv\xED"
     related_law: "187/2006 Sb., o nemocensk\xE9m poji\u0161t\u011Bn\xED"
-    base_description: '...'
-    usecase_description: '...'
-    claim_description: '...'
-    other_description: ''
+    base_description: "M\xE1 vynahradit p\u0159\xEDjem matky v obdob\xED p\u0159ed
+      porodem a t\u011Bsn\u011B po porodu a matce, nebo otci (p\u0159i p\u0159evzet\xED
+      d\xEDt\u011Bte do p\xE9\u010De) p\u0159\xEDjem p\u0159i p\xE9\u010Di o d\xEDt\u011B."
+    claim_description: "- V den, od n\u011Bho\u017E je d\xE1vka p\u0159izn\xE1v\xE1na,
+      mus\xED trvat \xFA\u010Dast na nemocensk\xE9m poji\u0161t\u011Bn\xED nebo ochrann\xE1
+      lh\u016Fta a v posledn\xEDch dvou letech p\u0159ed t\xEDmto dnem mus\xED trvat
+      \xFA\u010Dast na nemocensk\xE9m poji\u0161t\u011Bn\xED po dobu aspo\u0148 270
+      dn\u016F. U OSV\u010C je dal\u0161\xED podm\xEDnkou \xFA\u010Dast na nemocensk\xE9m
+      poji\u0161t\u011Bn\xED po dobu aspo\u0148 180 kalend\xE1\u0159n\xEDch dn\u016F
+      v posledn\xEDm roce p\u0159ede dnem po\u010D\xE1tku podp\u016Fr\u010D\xED doby.\r\n-
+      U \u017Een, jejich\u017E poji\u0161t\u011Bn\xE9 zam\u011Bstn\xE1n\xED skon\u010Dilo
+      v dob\u011B t\u011Bhotenstv\xED, \u010Din\xED ochrann\xE1 lh\u016Fta pro vznik
+      n\xE1roku na pen\u011B\u017Eitou pomoc v mate\u0159stv\xED tolik kalend\xE1\u0159n\xEDch
+      dn\u016F, kolik \u010Dinilo toto jejich posledn\xED zam\u011Bstn\xE1n\xED, maxim\xE1ln\u011B
+      v\u0161ak 180 kalend\xE1\u0159n\xEDch dn\u016F.\r\n- N\xE1stup na pen\u011B\u017Eitou
+      pomoc v mate\u0159stv\xED nast\xE1v\xE1 dnem, kter\xFD poji\u0161t\u011Bnka
+      ur\u010D\xED v obdob\xED od po\u010D\xE1tku 8. do po\u010D\xE1tku 6. t\xFDdne
+      p\u0159ed o\u010Dek\xE1van\xFDm dnem porodu. Podp\u016Fr\u010D\xED doba \u010Din\xED
+      28 t\xFDdn\u016F (u poji\u0161t\u011Bnky, kter\xE1 porodila z\xE1rove\u0148
+      dv\u011B nebo v\xEDce d\u011Bt\xED \u010Din\xED podp\u016Fr\u010D\xED doba 37
+      t\xFDdn\u016F).\r\n- Pen\u011B\u017Eitou pomoc v mate\u0159stv\xED je mo\u017Eno
+      pob\xEDrat nejd\xE9le do 1 roku v\u011Bku d\xEDt\u011Bte, jde-li o d\xE1vku
+      n\xE1le\u017Eej\xEDc\xED z titulu porodu d\xEDt\u011Bte. Jde-li o d\xE1vku n\xE1le\u017Eej\xEDc\xED
+      z titulu p\u0159evzet\xED d\xEDt\u011Bte do n\xE1hradn\xED p\xE9\u010De \u2013
+      do 7 let v\u011Bku a 31 t\xFDdn\u016F.\r\n\r\nZ\xE1kon umo\u017E\u0148uje st\u0159\xEDd\xE1n\xED
+      matky d\xEDt\u011Bte s jej\xEDm man\u017Eelem \u010Di otcem d\xEDt\u011Bte v
+      p\xE9\u010Di o d\xEDt\u011B, a to na z\xE1klad\u011B p\xEDsemn\xE9 dohody,.St\u0159\xEDd\xE1n\xED
+      se umo\u017E\u0148uje od po\u010D\xE1tku 7. t\xFDdne ode dne porodu a \u010Detnost
+      st\u0159\xEDd\xE1n\xED omezena nen\xED.U mu\u017Ee je t\u0159eba p\u0159itom
+      splnit podm\xEDnku, \u017Ee bude pe\u010Dovat o d\xEDt\u011B nejm\xE9n\u011B
+      7 kalend\xE1\u0159n\xEDch dn\u016F po sob\u011B jdouc\xEDch."
+    other_description: "V\xFD\u0161e p\u0159\xEDsp\u011Bvku se odv\xEDj\xED od v\xFD\u0161e
+      p\u0159\xEDjm\u016F \u017Eadatele. P\u0159i minim\xE1ln\xED hrub\xE9 mzd\u011B
+      9 200 K\u010D \u010Din\xED pen\u011B\u017Eit\xE1 pomoc v mate\u0159stv\xED 6
+      390 K\u010D m\u011Bs\xED\u010Dn\u011B. Nejvy\u0161\u0161\xED nemocensk\xE9 32
+      640 K\u010D lze dos\xE1hnout p\u0159i pr\u016Fm\u011Brn\xE9 m\u011Bs\xED\u010Dn\xED
+      hrub\xE9 mzd\u011B 80 900 K\u010D."
     responsible_office: 2
     condition: 1
     attachments: []
@@ -54,9 +87,26 @@
   fields:
     name: "Otcovsk\xE1"
     related_law: "187/2006 Sb., o nemocensk\xE9m poji\u0161t\u011Bn\xED"
-    base_description: '...'
-    usecase_description: '...'
-    claim_description: '...'
+    base_description: "M\xE1 vynahradit otci p\u0159\xEDjem p\u0159i p\xE9\u010Di
+      o d\xEDt\u011B."
+    claim_description: "- Otec d\xEDt\u011Bte, kter\xFD o d\xEDt\u011B pe\u010Duje
+      a osoba (mu\u017E nebo \u017Eena), kter\xE1 p\u0159evzala d\xEDt\u011B do p\xE9\u010De
+      nahrazuj\xEDc\xED p\xE9\u010Di rodi\u010D\u016F, na z\xE1klad\u011B rozhodnut\xED
+      p\u0159\xEDslu\u0161n\xE9ho org\xE1nu. Za otce d\xEDt\u011Bte je pro \xFA\u010Dely
+      t\xE9to d\xE1vky pova\u017Eov\xE1n ten, kdo je v matrice (knize narozen\xED)
+      zaps\xE1n jako otec.\r\n- Otcovsk\xE1 n\xE1le\u017E\xED, jen nastal-li n\xE1stup
+      na otcovskou v obdob\xED 6 t\xFDdn\u016F ode dne narozen\xED d\xEDt\u011Bte,
+      anebo ode dne p\u0159evzet\xED d\xEDt\u011Bte do p\xE9\u010De, jestli\u017Ee
+      takov\xE9 d\xEDt\u011B nedos\xE1hlo 7 let v\u011Bku. Otcovsk\xE1 n\xE1le\u017E\xED
+      jen jednou a to i v p\u0159\xEDpadech, kdy poji\u0161t\u011Bnec pe\u010Duje
+      o v\xEDce d\u011Bt\xED narozen\xFDch sou\u010Dasn\u011B nebo o v\xEDce d\u011Bt\xED
+      p\u0159evzat\xFDch sou\u010Dasn\u011B do p\xE9\u010De.\r\n- N\xE1rok na otcovskou
+      nevznikne, jestli\u017Ee k n\xE1stupu na otcovskou dojde po z\xE1niku poji\u0161t\u011Bn\xED,
+      to znamen\xE1, \u017Ee u otcovsk\xE9 neplyne ochrann\xE1 lh\u016Fta.\r\n- Podp\u016Fr\u010D\xED
+      doba (tj. doba v\xFDplaty d\xE1vky) \u010Din\xED u otcovsk\xE9 maxim\xE1ln\u011B
+      1 t\xFDden bez mo\u017Enosti p\u0159eru\u0161en\xED a za\u010D\xEDn\xE1 dnem
+      n\xE1stupu na otcovskou.\r\n- Pro volno v zam\u011Bstn\xE1n\xED vyu\u017Eij\xED
+      otcov\xE9 rodi\u010Dovskou dovolenou."
     other_description: ''
     responsible_office: 2
     condition: 1
@@ -66,10 +116,24 @@
   fields:
     name: "Vyrovn\xE1vac\xED p\u0159\xEDsp\u011Bvek v t\u011Bhotenstv\xED a mate\u0159stv\xED"
     related_law: "187/2006 Sb., o nemocensk\xE9m poji\u0161t\u011Bn\xED"
-    base_description: '...'
-    usecase_description: '...'
-    claim_description: '...'
-    other_description: ''
+    base_description: "Vyrovn\xE1vac\xED p\u0159\xEDsp\u011Bvek v t\u011Bhotenstv\xED
+      a mate\u0159stv\xED n\xE1le\u017E\xED zam\u011Bstnankyni, kter\xE1 byla z d\u016Fvodu
+      t\u011Bhotenstv\xED, mate\u0159stv\xED nebo kojen\xED p\u0159evedena na jinou
+      pr\xE1ci a z tohoto d\u016Fvodu dosahuje bez sv\xE9ho zavin\u011Bn\xED ni\u017E\u0161\xEDho
+      p\u0159\xEDjmu ne\u017E p\u0159ed p\u0159eveden\xEDm."
+    claim_description: "- T\u011Bhotn\xE1 zam\u011Bstnankyn\u011B za kalend\xE1\u0159n\xED
+      dny, v nich\u017E trvalo p\u0159eveden\xED na jinou pr\xE1ci, nejd\xE9le do
+      po\u010D\xE1tku 6. t\xFDdne p\u0159ed o\u010Dek\xE1van\xFDm dnem porodu\r\n-
+      Ve stanoven\xFDch p\u0159\xEDpadech se vypl\xE1c\xED t\xE9\u017E matk\xE1m po
+      porodu p\u0159i p\u0159eveden\xED na jinou pr\xE1ci."
+    other_description: "Vypl\xE1c\xED od data p\u0159eveden\xED na jinou pr\xE1ci
+      do doby n\xE1stupu na pen\u011B\u017Eitou pomoc v mate\u0159stv\xED.\r\n\r\nVyrovn\xE1vac\xED
+      p\u0159\xEDsp\u011Bvek v t\u011Bhotenstv\xED a mate\u0159stv\xED se stanov\xED
+      jako rozd\xEDl mezi denn\xEDm vym\u011B\u0159ovac\xEDm z\xE1kladem zji\u0161t\u011Bn\xFDm
+      ke dni p\u0159eveden\xED zam\u011Bstnankyn\u011B na jinou pr\xE1ci a pr\u016Fm\u011Brem
+      jej\xEDch zapo\u010Ditateln\xFDch p\u0159\xEDjm\u016F p\u0159ipadaj\xEDc\xEDm
+      na jeden kalend\xE1\u0159n\xED den v jednotliv\xFDch kalend\xE1\u0159n\xEDch
+      m\u011Bs\xEDc\xEDch po tomto p\u0159eveden\xED."
     responsible_office: 2
     condition: 1
     attachments: []
@@ -78,10 +142,23 @@
   fields:
     name: "Porodn\xE9"
     related_law: "117/1995 Sb., o st\xE1tn\xED soci\xE1ln\xED podpo\u0159e"
-    base_description: '...'
-    usecase_description: '...'
-    claim_description: '...'
-    other_description: ''
+    base_description: "Porodn\xE9 je d\xE1vka poskytovan\xE1 v z\xE1vislosti na v\xFD\u0161i
+      p\u0159\xEDjmu, kterou se rodin\u011B s n\xEDzk\xFDmi p\u0159\xEDjmy jednor\xE1zov\u011B
+      p\u0159isp\xEDv\xE1 na n\xE1klady souvisej\xEDc\xED s narozen\xEDm prvn\xEDho
+      nebo druh\xE9ho \u017Eiv\xE9ho d\xEDt\u011Bte."
+    claim_description: "Rodina, jej\xED\u017E p\u0159\xEDjmy  v kalend\xE1\u0159n\xEDm
+      \u010Dtvrtlet\xED p\u0159edch\xE1zej\xEDc\xEDm kalend\xE1\u0159n\xEDmu \u010Dtvrtlet\xED,
+      ve kter\xE9m se d\xEDt\u011B narodilo, byly ni\u017E\u0161\xED ne\u017E 2,7n\xE1sobek
+      \u017Eivotn\xEDho minima rodiny.  Nezapo\u010D\xEDt\xE1v\xE1 se rodi\u010Dovsk\xFD
+      p\u0159\xEDsp\u011Bvek a p\u0159\xEDdavek na d\xEDt\u011B."
+    other_description: "P\u0159\xEDsp\u011Bvek je jednor\xE1zov\xFD. U prvn\xEDho
+      d\xEDt\u011Bte \u010Din\xED 13 000 K\u010D, u druh\xE9ho d\xEDt\u011Bte 10 000
+      K\u010D a p\u0159i narozen\xED dvoj\u010Dat 23 000 K\u010D, P\u0159i narozen\xED
+      dvoj\u010Dat pot\xE9, co ji\u017E jedno d\xEDt\u011B v rodin\u011B je, n\xE1le\u017E\xED
+      p\u0159\xEDsp\u011Bvek jen na \u201Eprvn\xED z nich\u201C, kter\xE9 je druh\xFDm
+      d\xEDt\u011Btem v rodin\u011B, tj. jen 10.000 K\u010D. P\u0159i narozen\xED
+      dvoj\u010Dat jako v po\u0159ad\xED t\u0159et\xEDho a \u010Dtvrt\xE9ho d\xEDt\u011Bte
+      pak nic."
     responsible_office: 1
     condition: 1
     attachments: []
@@ -90,10 +167,44 @@
   fields:
     name: "Rodi\u010Dovsk\xFD p\u0159\xEDsp\u011Bvek"
     related_law: "117/1995 Sb., o st\xE1tn\xED soci\xE1ln\xED podpo\u0159e"
-    base_description: '...'
-    usecase_description: '...'
-    claim_description: '...'
-    other_description: ''
+    base_description: "Rodi\u010Dovsk\xFD p\u0159\xEDsp\u011Bvek je ekvivalentem \u201Emzdy\u201C
+      za p\xE9\u010Di o d\xEDt\u011B po zvolenou dobu, max. do 4 let v\u011Bku d\xEDt\u011Bte.
+      Pom\xE1h\xE1 rodi\u010D\u016Fm sladit sv\xE9 profesn\xED zapojen\xED s p\xE9\u010D\xED
+      o mal\xE9 d\xEDt\u011B.  V pob\xEDr\xE1n\xED rodi\u010Dovsk\xE9ho p\u0159\xEDsp\u011Bvku
+      se rodi\u010De mohou st\u0159\xEDdat."
+    claim_description: "- N\xE1rok na rodi\u010Dovsk\xFD p\u0159\xEDsp\u011Bvek m\xE1
+      rodi\u010D, kter\xFD po cel\xFD kalend\xE1\u0159n\xED m\u011Bs\xEDc osobn\u011B
+      celodenn\u011B a \u0159\xE1dn\u011B pe\u010Duje o d\xEDt\u011B, kter\xE9 je
+      nejmlad\u0161\xED v rodin\u011B, a to a\u017E do vy\u010Derp\xE1n\xED celkov\xE9
+      \u010D\xE1stky 220 000 K\u010D, nejd\xE9le do 4 let v\u011Bku tohoto d\xEDt\u011Bte.
+      V p\u0159\xEDpad\u011B, \u017Ee nejmlad\u0161\xEDm d\xEDt\u011Btem v rodin\u011B
+      jsou 2 a v\xEDce d\u011Bt\xED narozen\xFDch sou\u010Dasn\u011B, m\xE1 rodi\u010D
+      n\xE1rok a\u017E na vy\u010Derp\xE1n\xED celkov\xE9 \u010D\xE1stky 330 000 K\u010D.\r\n-
+      Na rodi\u010Dovsk\xFD p\u0159\xEDsp\u011Bvek ztr\xE1c\xED rodi\u010D n\xE1rok
+      p\u0159i um\xEDst\u011Bn\xED d\xEDt\u011Bte mlad\u0161\xEDho 2 let do za\u0159\xEDzen\xED
+      p\xE9\u010De o d\u011Bti na dobu del\u0161\xED ne\u017E 46 hodin v m\u011Bs\xEDci.\r\n\r\n(viz
+      \xA731, odst. 3: Podm\xEDnka osobn\xED celodenn\xED p\xE9\u010De se t\xE9\u017E
+      pova\u017Euje za spln\u011Bnou a rodi\u010Dovsk\xFD p\u0159\xEDsp\u011Bvek n\xE1le\u017E\xED,
+      jestli\u017Ee a) d\xEDt\u011B, kter\xE9 nedos\xE1hlo 2 let v\u011Bku, nav\u0161t\u011Bvuje
+      jesle, mate\u0159skou \u0161kolu nebo jin\xE9 obdobn\xE9 za\u0159\xEDzen\xED
+      pro d\u011Bti v rozsahu nep\u0159evy\u0161uj\xEDc\xEDm 46 hodin v kalend\xE1\u0159n\xEDm
+      m\u011Bs\xEDc)"
+    other_description: "- Jestli\u017Ee lze alespo\u0148 jednomu z rodi\u010D\u016F
+      v rodin\u011B stanovit k datu narozen\xED nejmlad\u0161\xEDho d\xEDt\u011Bte
+      v rodin\u011B 70 % 30n\xE1sobku denn\xEDho vym\u011B\u0159ovac\xEDho z\xE1kladu
+      v \u010D\xE1stce p\u0159evy\u0161uj\xEDc\xED 7 600 K\u010D, m\u016F\u017Ee rodi\u010D
+      volit m\u011Bs\xED\u010Dn\xED v\xFD\u0161i \u010Derp\xE1n\xED rodi\u010Dovsk\xE9ho
+      p\u0159\xEDsp\u011Bvku a\u017E do t\xE9to v\xFD\u0161e. Pokud \u017E\xE1d\xE1
+      o rodi\u010Dovsk\xFD p\u0159\xEDsp\u011Bvek na dv\u011B a v\xEDce sou\u010Dasn\u011B
+      narozen\xE9 d\u011Bti, m\u016F\u017Ee prov\xE9st volbu a\u017E do v\xFD\u0161e
+      1,5n\xE1sobku 70% 30n\xE1sobku denn\xEDho vym\u011B\u0159ovac\xEDho z\xE1kladu.\r\n-
+      Po\u010D\xEDt\xE1 se u toho z rodi\u010D\u016F, kdo m\xE1 vy\u0161\u0161\xED
+      vym\u011B\u0159ovac\xED z\xE1klad. Rodi\u010De se mohou v pr\u016Fb\u011Bhu
+      m\u011Bnit. M\u016F\u017Ee se m\u011Bnit d\xE9lka \u010Derp\xE1n\xED (1x za
+      t\u0159i m\u011Bs\xEDce).\r\n- P\u0159\xEDsp\u011Bvek je mo\u017En\xE9 vy\u010Derpat
+      nejm\xE9n\u011B 6 m\u011Bs\xEDc\u016F, nejd\xE9le do 4 let v\u011Bku d\xEDt\u011Bte.
+      Zanik\xE1 s narozen\xEDm dal\u0161\xEDho d\xEDt\u011Bte (ale vznik\xE1 u nov\u011B
+      narozen\xE9ho)."
     responsible_office: 1
     condition: 2
     attachments: []
@@ -102,10 +213,18 @@
   fields:
     name: "P\u0159\xEDdavek na d\xEDt\u011B"
     related_law: "117/1995 Sb., o st\xE1tn\xED soci\xE1ln\xED podpo\u0159e"
-    base_description: '...'
-    usecase_description: '...'
-    claim_description: '...'
-    other_description: ''
+    base_description: "P\u0159\xEDdavek na d\xEDt\u011B je z\xE1kladn\xED, dlouhodobou
+      d\xE1vkou, poskytovanou rodin\xE1m s d\u011Btmi, kter\xE1 jim pom\xE1h\xE1 kr\xFDt
+      n\xE1klady, spojen\xE9 s v\xFDchovou a v\xFD\u017Eivou nezaopat\u0159en\xFDch
+      d\u011Bt\xED."
+    claim_description: "N\xE1rok na p\u0159\xEDdavek na d\xEDt\u011B m\xE1 nezaopat\u0159en\xE9
+      d\xEDt\u011B, kter\xE9 \u017Eije v rodin\u011B, jej\xED\u017E rozhodn\xFD p\u0159\xEDjem
+      je ni\u017E\u0161\xED ne\u017E  2,7n\xE1sobek \u010D\xE1stky \u017Eivotn\xEDho
+      minima rodiny. Pro n\xE1rok na d\xE1vku se posuzuje p\u0159\xEDjem za p\u0159edchoz\xED
+      kalend\xE1\u0159n\xED \u010Dtvrtlet\xED, za p\u0159\xEDjem se pova\u017Euje
+      i rodi\u010Dovsk\xFD p\u0159\xEDsp\u011Bvek."
+    other_description: "P\u0159\xEDdavek je vypl\xE1cen ve t\u0159ech v\xFD\u0161\xEDch
+      podle v\u011Bku nezaopat\u0159en\xE9ho d\xEDt\u011Bte."
     responsible_office: 1
     condition: 2
     attachments: []
@@ -114,9 +233,20 @@
   fields:
     name: "P\u0159\xEDsp\u011Bvek na \xFAhradu pot\u0159eb d\xEDt\u011Bte"
     related_law: "359/1999 Sb., o soci\xE1ln\u011B-pr\xE1vn\xED ochran\u011B d\u011Bt\xED"
-    base_description: '...'
-    usecase_description: '...'
-    claim_description: '...'
+    base_description: "Z t\xE9to d\xE1vky by m\u011Bl hradit osobn\xED pot\u0159eby
+      d\xEDt\u011Bte, stravov\xE1n\xED, n\xE1klady na oble\u010Den\xED, obuv, osobn\xED
+      vybaven\xED n\xE1bytkem, spot\u0159ebu energi\xED aj. medi\xED, ale i zdravotn\xED
+      pom\u016Fcky, l\xE9ky, cvi\u010Den\xED, plav\xE1n\xED atd. V\xFD\u0161e je odstup\u0148ov\xE1na
+      podle v\u011Bku a p\u0159\xEDpadn\u011B posti\u017Een\xED d\xEDt\u011Bte. D\xE1vka
+      nen\xED zda\u0148ov\xE1na."
+    claim_description: "N\xE1rok na p\u0159\xEDsp\u011Bvek na \xFAhradu pot\u0159eb
+      d\xEDt\u011Bte m\xE1 nezletil\xE9 nezaopat\u0159en\xE9 d\xEDt\u011B sv\u011B\u0159en\xE9
+      do p\u011Bstounsk\xE9 p\xE9\u010De. N\xE1rok je zachov\xE1n i po dosa\u017Een\xED
+      zletilosti d\xEDt\u011Bte, nejd\xE9le v\u0161ak do dvac\xE1t\xE9ho \u0161est\xE9ho
+      roku jeho v\u011Bku, jde-li o nezaopat\u0159en\xE9 d\xEDt\u011B podle z\xE1kona
+      upravuj\xEDc\xEDho st\xE1tn\xED soci\xE1ln\xED podporu, kter\xE9 trvale \u017Eije
+      a spole\u010Dn\u011B uhrazuje n\xE1klady na sv\xE9 pot\u0159eby s osobou, kter\xE1
+      byla do dosa\u017Een\xED jeho zletilosti osobou pe\u010Duj\xEDc\xED."
     other_description: ''
     responsible_office: 1
     condition: 3
@@ -127,9 +257,42 @@
     name: "Odm\u011Bna p\u011Bstouna"
     related_law: "359/1999 Sb., o soci\xE1ln\u011B-pr\xE1vn\xED ochran\u011B d\u011Bt\xED"
     base_description: '...'
-    usecase_description: '...'
-    claim_description: '...'
-    other_description: ''
+    claim_description: "N\xE1rok na odm\u011Bnu p\u011Bstouna m\xE1 **osoba pe\u010Duj\xEDc\xED
+      a osoba v evidenci** (osoba pe\u010Duj\xEDc\xED i po dosa\u017Een\xED zletilosti
+      d\xEDt\u011Bte, pokud m\xE1 d\xEDt\u011B n\xE1rok na p\u0159\xEDsp\u011Bvek
+      na \xFAhradu pot\u0159eb d\xEDt\u011Bte). Pokud jsou oba man\u017Eel\xE9 osobou
+      pe\u010Duj\xEDc\xED nebo osobou v evidenci, n\xE1le\u017E\xED odm\u011Bna p\u011Bstouna
+      pouze jednomu z nich."
+    other_description: "V\xFD\u0161e odm\u011Bny p\u011Bstouna u osob pe\u010Duj\xEDc\xEDch
+      \u010Din\xED za kalend\xE1\u0159n\xED m\u011Bs\xEDc:\r\n\r\n* 12 000 K\u010D,
+      je-li pe\u010Dov\xE1no o 1 d\xEDt\u011B,\r\n* 18 000 K\u010D, je-li pe\u010Dov\xE1no
+      o 2 d\u011Bti,\r\n* 30 000 K\u010D,\r\n    * je-li pe\u010Dov\xE1no alespo\u0148
+      o 3 d\u011Bti,\r\n    * je-li pe\u010Dov\xE1no alespo\u0148 o jedno d\xEDt\u011B,
+      kter\xE9 je osobou z\xE1vislou na pomoci jin\xE9 fyzick\xE9 osoby ve stupni
+      II (st\u0159edn\u011B t\u011B\u017Ek\xE1 z\xE1vislost) nebo ve stupni III (t\u011B\u017Ek\xE9
+      z\xE1vislost) nebo ve stupni IV (\xFApln\xE1 z\xE1vislost).\r\n\r\nZa ka\u017Ed\xE9
+      dal\u0161\xED d\xEDt\u011B sv\u011B\u0159en\xE9 do p\xE9\u010De osoby pe\u010Duj\xEDc\xED
+      se odm\u011Bna p\u011Bstouna podle odstavce 1 p\xEDsm. c) bod\u016F 1 a 2 zvy\u0161uje
+      o polovinu \u010D\xE1stky uveden\xE9 v odstavci 1 p\xEDsm. a).\r\n\r\nV p\u0159\xEDpad\u011B
+      osob v evidenci (p\u011Bstoun\u016F na p\u0159echodnou dobu) \u010Din\xED odm\u011Bna
+      p\u011Bstouna 20 000 K\u010D za m\u011Bs\xEDc, a to i v p\u0159\xEDpad\u011B,
+      \u017Ee aktu\xE1ln\u011B nepe\u010Duje o \u017E\xE1dn\xE9 d\xEDt\u011B. Pokud
+      m\xE1 osoba v evidenci sv\u011B\u0159eno do jin\xE9 p\xE9\u010De, ne\u017E je
+      p\u011Bstounsk\xE1 p\xE9\u010De na p\u0159echodnou dobu, dal\u0161\xED d\xEDt\u011B,
+      odm\u011Bna p\u011Bstouna se zvy\u0161uje o 6 000 K\u010D.\r\n\r\nTato d\xE1vka
+      je zda\u0148ov\xE1na, v\u010D. odvod\u016F soc. a zdrav. poji\u0161t\u011Bn\xED.
+      Ve v\xFDpo\u010Dtech nejsou da\u0148ov\xE9 bonusy na d\u011Bti.\r\n\r\nD\xE1le
+      je pot\u0159eba rozli\u0161it, zda je p\u011Bstoun v\xFDhradn\u011B p\u011Bstounem
+      \u2013 pak uplatn\xED odpo\u010Det za da\u0148ov\xE9ho poplatn\xEDka u odm\u011Bny
+      PP pokud m\xE1 je\u0161t\u011B dal\u0161\xED zam\u011Bstn\xE1n\xED , odpo\u010Det
+      za da\u0148ov\xE9ho poplatn\xEDka neuplatn\xED.\r\n\r\n**P\u0159\xEDklady \u010Derp\xE1n\xED**\r\n\r\n*
+      **P\xE9\u010De o jedno zdrav\xE9 d\xEDt\u011B**:  12 000,- hrub\xE9ho \u2013
+      v\xFDhradn\u011B p\u011Bstounsk\xE1 p\xE9\u010De 10 335,- p\u0159\xEDpadn\u011B
+      nutnost doplatit 13,5% ZP \u2013 p\u0159i soub\u011Bhu s dal\u0161\xEDm zdaniteln\xFDm
+      p\u0159\xEDjmem 8 263,-\r\n* **P\xE9\u010De o dv\u011B zdrav\xE9 d\u011Bti**:
+      \ 20 000,- hrub\xE9ho \u2013 v\xFDhradn\u011B p\u011Bstounsk\xE1 p\xE9\u010De
+      14 460,- \u2013 p\u0159i soub\u011Bhu s dal\u0161\xEDm zdaniteln\xFDm p\u0159\xEDjmem
+      12 390,-"
     responsible_office: 1
     condition: 3
     attachments: []
@@ -138,10 +301,16 @@
   fields:
     name: "P\u0159\xEDsp\u011Bvek p\u0159i p\u0159evzet\xED d\xEDt\u011Bte"
     related_law: "359/1999 Sb., o soci\xE1ln\u011B-pr\xE1vn\xED ochran\u011B d\u011Bt\xED"
-    base_description: '...'
-    usecase_description: '...'
-    claim_description: '...'
-    other_description: ''
+    base_description: "Z t\xE9to d\xE1vky by m\u011Bl po\u0159\xEDdit n\xE1bytek a
+      dal\u0161\xED vybaven\xED do \u010Dasto po\u017Eadovan\xE9 samostatn\xE9 m\xEDstnosti,
+      po\u010D\xE1te\u010Dn\xED osobn\xED oble\u010Den\xED, obuv, l\u016F\u017Ekoviny."
+    claim_description: "N\xE1rok na p\u0159\xEDsp\u011Bvek p\u0159i p\u0159evzet\xED
+      d\xEDt\u011Bte m\xE1 **osoba pe\u010Duj\xEDc\xED**, kter\xE1 p\u0159evzala d\xEDt\u011B
+      do p\u011Bstounsk\xE9 p\xE9\u010De."
+    other_description: "V\xFD\u0161e p\u0159\xEDsp\u011Bvku p\u0159i p\u0159evzet\xED
+      d\xEDt\u011Bte \u010Din\xED, jde-li o d\xEDt\u011B ve v\u011Bku:\r\n\r\n* do
+      6 let, 8 000 K\u010D,\r\n* od 6 let do 12 let, 9 000 K\u010D,\r\n* od 12 let
+      do 18 let, 10 000 K\u010D."
     responsible_office: 1
     condition: 3
     attachments: []
@@ -151,9 +320,17 @@
     name: "P\u0159\xEDsp\u011Bvek na zakoupen\xED osobn\xEDho motorov\xE9ho vozidla"
     related_law: "359/1999 Sb., o soci\xE1ln\u011B-pr\xE1vn\xED ochran\u011B d\u011Bt\xED"
     base_description: '...'
-    usecase_description: '...'
-    claim_description: '...'
-    other_description: ''
+    claim_description: "Na p\u0159\xEDsp\u011Bvek m\xE1 n\xE1rok **osoba pe\u010Duj\xEDc\xED**,
+      kter\xE1 m\xE1 v p\u011Bstounsk\xE9 p\xE9\u010Di nejm\xE9n\u011B 3 d\u011Bti
+      nebo m\xE1 n\xE1rok na odm\u011Bnu p\u011Bstouna z d\u016Fvodu p\xE9\u010De
+      o 3 d\u011Bti, v\u010Detn\u011B zletil\xFDch nezaopat\u0159en\xFDch d\u011Bt\xED,
+      je\u017E zakl\xE1daj\xED osob\u011B pe\u010Duj\xEDc\xED n\xE1rok na odm\u011Bnu
+      p\u011Bstouna."
+    other_description: "V\xFD\u0161e p\u0159\xEDsp\u011Bvku na zakoupen\xED motorov\xE9ho
+      vozidla \u010Din\xED 70 % po\u0159izovac\xED ceny motorov\xE9ho vozidla nebo
+      prok\xE1zan\xFDch v\xFDdaj\u016F na opravy, nejv\xFD\u0161e v\u0161ak 100 000
+      K\u010D. Podm\xEDnkou d\xE1le je, \u017Ee osoba pe\u010Duj\xEDc\xED nesm\xED
+      motorov\xE9 vozidlo pou\u017E\xEDvat k v\xFDd\u011Ble\u010Dn\xE9 \u010Dinnosti."
     responsible_office: 1
     condition: 3
     attachments: []
@@ -163,9 +340,12 @@
     name: "P\u0159\xEDsp\u011Bvek p\u0159i ukon\u010Den\xED p\u011Bstounsk\xE9 p\xE9\u010De"
     related_law: "359/1999 Sb., o soci\xE1ln\u011B-pr\xE1vn\xED ochran\u011B d\u011Bt\xED"
     base_description: '...'
-    usecase_description: '...'
-    claim_description: '...'
-    other_description: ''
+    claim_description: "N\xE1rok na p\u0159\xEDsp\u011Bvek p\u0159i ukon\u010Den\xED
+      p\u011Bstounsk\xE9 p\xE9\u010De m\xE1 fyzick\xE1 osoba, kter\xE1 byla ke dni
+      dosa\u017Een\xED zletilosti v p\u011Bstounsk\xE9 p\xE9\u010Di, a to ke dni z\xE1niku
+      n\xE1roku t\xE9to osoby na p\u0159\xEDsp\u011Bvek na \xFAhradu pot\u0159eb d\xEDt\u011Bte."
+    other_description: "V\xFD\u0161e jednor\xE1zov\xE9ho p\u0159\xEDsp\u011Bvku \u010Din\xED
+      25 000 K\u010D."
     responsible_office: 1
     condition: 3
     attachments: []
@@ -174,10 +354,83 @@
   fields:
     name: "Nemocensk\xE1"
     related_law: "187/2006 Sb., o nemocensk\xE9m poji\u0161t\u011Bn\xED"
-    base_description: '...'
-    usecase_description: '...'
-    claim_description: '...'
-    other_description: ''
+    base_description: "Finan\u010Dn\xED zaji\u0161t\u011Bn\xED po dobu nemoci."
+    claim_description: "- Zam\u011Bstnanec nebo OSV\u010C, kter\xFD je uzn\xE1n o\u0161et\u0159uj\xEDc\xEDm
+      l\xE9ka\u0159em do\u010Dasn\u011B pr\xE1ce neschopn\xFDm, m\xE1 n\xE1rok na
+      nemocensk\xE9 od 15. kalend\xE1\u0159n\xEDho dne trv\xE1n\xED jeho do\u010Dasn\xE9
+      pracovn\xED neschopnosti do konce do\u010Dasn\xE9 pracovn\xED neschopnosti,
+      maxim\xE1ln\u011B v\u0161ak 380 kalend\xE1\u0159n\xEDch dn\u016F. OSV\u010C
+      v\u0161ak mus\xED b\xFDt \xFA\u010Dastna dobrovoln\xE9ho nemocensk\xE9ho poji\u0161t\u011Bn\xED
+      OSV\u010C alespo\u0148 po dobu 3 m\u011Bs\xEDc\u016F bezprost\u0159edn\u011B
+      p\u0159edch\xE1zej\xEDc\xEDch dni vzniku do\u010Dasn\xE9 pracovn\xED neschopnosti.\r\n-
+      Po dobu prvn\xEDch 14 kalend\xE1\u0159n\xEDch dn\u016F je zam\u011Bstnanec (nikoli
+      OSV\u010C) zabezpe\u010Den n\xE1hradou mzdy, kterou poskytuje zam\u011Bstnavatel
+      podle z\xE1kon\xEDku pr\xE1ce. N\xE1hrada mzdy n\xE1le\u017E\xED za pracovn\xED
+      dny, od 4. pracovn\xEDho dne (p\u0159i karant\xE9n\u011B od prvn\xEDho pracovn\xEDho
+      dne).\r\n- Po\u017Eivateli starobn\xEDho d\u016Fchodu nebo invalidn\xEDho d\u016Fchodu
+      pro invaliditu 3. stupn\u011B se nemocensk\xE9 vypl\xE1c\xED od 15. kalend\xE1\u0159n\xEDho
+      dne trv\xE1n\xED do\u010Dasn\xE9 pracovn\xED neschopnosti (karant\xE9ny) po
+      dobu nejv\xFD\u0161e 70 kalend\xE1\u0159n\xEDch dn\u016F, nejd\xE9le v\u0161ak
+      do dne, j\xEDm\u017E kon\u010D\xED poji\u0161t\u011Bn\xE1 \u010Dinnost.\r\n-
+      Nemocensk\xE9 n\xE1le\u017E\xED rovn\u011B\u017E ve stanoven\xFDch p\u0159\xEDpadech,
+      jestli\u017Ee ke vzniku do\u010Dasn\xE9 pracovn\xED neschopnosti (karant\xE9ny)
+      do\u0161lo po skon\u010Den\xED poji\u0161t\u011Bn\xE9ho zam\u011Bstn\xE1n\xED
+      v tzv. ochrann\xE9 lh\u016Ft\u011B. \xDA\u010Delem ochrann\xE9 lh\u016Fty je
+      zajistit b\xFDval\xE9ho zam\u011Bstnance po stanovenou dobu po skon\u010Den\xED
+      poji\u0161t\u011Bn\xED pro p\u0159\xEDpad vzniku soci\xE1ln\xED ud\xE1losti
+      (do\u010Dasn\xE9 pracovn\xED neschopnosti) d\u0159\xEDve, ne\u017E op\u011Bt
+      nastoup\xED dal\u0161\xED zam\u011Bstn\xE1n\xED. Ochrann\xE1 lh\u016Fta v p\u0159\xEDpad\u011B
+      uplat\u0148ov\xE1n\xED n\xE1roku na nemocensk\xE9 \u010Din\xED 7 kalend\xE1\u0159n\xEDch
+      dn\u016F ode dne skon\u010Den\xED zam\u011Bstn\xE1n\xED, kter\xE9 zakl\xE1dalo
+      \xFA\u010Dast na nemocensk\xE9m poji\u0161t\u011Bn\xED. U zam\u011Bstn\xE1n\xED
+      krat\u0161\xEDch ne\u017E 7 kalend\xE1\u0159n\xEDch dn\u016F \u010Din\xED ochrann\xE1
+      lh\u016Fta pouze tolik dn\u016F, kolik \u010Dinilo toto posledn\xED zam\u011Bstn\xE1n\xED.\r\n\r\n**Ochrann\xE1
+      lh\u016Fta neplyne:**\r\n\r\n- z poji\u0161t\u011Bn\xE9 \u010Dinnosti po\u017Eivatele
+      starobn\xEDho d\u016Fchodu nebo invalidn\xEDho d\u016Fchodu pro invaliditu 3.
+      stupn\u011B,\r\n- z dal\u0161\xEDho zam\u011Bstn\xE1n\xED sjednan\xE9ho jen
+      na dobu dovolen\xE9 v jin\xE9m zam\u011Bstn\xE1n\xED,\r\n- ze zam\u011Bstn\xE1n\xED
+      zam\u011Bstnance \u010Dinn\xE9ho na z\xE1klad\u011B dohody o proveden\xED pr\xE1ce,\r\n-
+      ze zam\u011Bstn\xE1n\xED mal\xE9ho rozsahu,\r\n- ze zam\u011Bstn\xE1n\xED, kter\xE9
+      si \u017E\xE1k nebo student sjednali v\xFDlu\u010Dn\u011B na dobu \u0161koln\xEDch
+      pr\xE1zdnin nebo jejich \u010D\xE1st,\r\nv p\u0159\xEDpad\u011B, \u017Ee poji\u0161t\u011Bn\xED
+      odsouzen\xE9ho skon\u010D\xED v dob\u011B jeho \xFAt\u011Bku z m\xEDsta v\xFDkonu
+      trestu odn\u011Bt\xED svobody."
+    other_description: "D\xE1vky se po\u010D\xEDtaj\xED z denn\xEDho vym\u011B\u0159ovac\xEDho
+      z\xE1kladu, kter\xFD se zjist\xED tak, \u017Ee zapo\u010Ditateln\xFD p\u0159\xEDjem
+      z\xFA\u010Dtovan\xFD zam\u011Bstnanci v rozhodn\xE9m obdob\xED (zpravidla obdob\xED
+      12 kalend\xE1\u0159n\xEDch m\u011Bs\xEDc\u016F p\u0159ed kalend\xE1\u0159n\xEDm
+      m\u011Bs\xEDcem, ve kter\xE9m vznikla soci\xE1ln\xED ud\xE1lost) se d\u011Bl\xED
+      po\u010Dtem \u201Ezapo\u010Ditateln\xFDch\u201C kalend\xE1\u0159n\xEDch dn\u016F
+      p\u0159ipadaj\xEDc\xEDch na toto rozhodn\xE9 obdob\xED. Takto stanoven\xFD pr\u016Fm\u011Brn\xFD
+      denn\xED p\u0159\xEDjem se upravuje (redukuje) pomoc\xED t\u0159\xED reduk\u010Dn\xEDch
+      hranic na denn\xED vym\u011B\u0159ovac\xED z\xE1klad.\r\n\r\nV\xFD\u0161i t\u0159\xED
+      reduk\u010Dn\xEDch hranic platn\xFDch od 1. ledna kalend\xE1\u0159n\xEDho roku
+      vyhla\u0161uje Ministerstvo pr\xE1ce a soci\xE1ln\xEDch v\u011Bc\xED formou
+      Sd\u011Blen\xED ve Sb\xEDrce z\xE1kon\u016F.\r\n\r\nV roce 2018 \u010Din\xED
+      1. reduk\u010Dn\xED hranice 1 000 K\u010D, 2. reduk\u010Dn\xED hranice 1 499
+      K\u010D, 3. reduk\u010Dn\xED hranice 2 998 K\u010D.\r\n\r\nRedukce se provede
+      tak, \u017Ee se zapo\u010Dte\r\n\r\n* do prvn\xED reduk\u010Dn\xED hranice 90
+      % denn\xEDho vym\u011B\u0159ovac\xEDho z\xE1kladu,\r\n* z \u010D\xE1sti denn\xEDho
+      vym\u011B\u0159ovac\xEDho z\xE1kladu mezi prvn\xED a druhou reduk\u010Dn\xED
+      hranic\xED se zapo\u010Dte 60 %,\r\n* z \u010D\xE1sti mezi druhou a t\u0159et\xED
+      reduk\u010Dn\xED hranic\xED se zapo\u010Dte 30 %,\r\n* k \u010D\xE1sti nad t\u0159et\xED
+      reduk\u010Dn\xED hranici se nep\u0159ihl\xE9dne.\r\n\r\nV\xFD\u0161e nemocensk\xE9ho
+      \u010Din\xED 60 % denn\xEDho vym\u011B\u0159ovac\xEDho z\xE1kladu od 15. kalend\xE1\u0159n\xEDho
+      dne trv\xE1n\xED do\u010Dasn\xE9 pracovn\xED neschopnosti do 30. kalend\xE1\u0159n\xEDho
+      dne do\u010Dasn\xE9 pracovn\xED neschopnosti, od 31. kalend\xE1\u0159n\xEDho
+      dne do\u010Dasn\xE9 pracovn\xED neschopnosti nebo karant\xE9ny sazba \u010Din\xED
+      66 % denn\xEDho vym\u011B\u0159ovac\xEDho z\xE1kladu a d\xE1le od 61. kalend\xE1\u0159n\xEDho
+      dne do\u010Dasn\xE9 pracovn\xED neschopnosti nebo karant\xE9ny \u010Din\xED
+      sazba nemocensk\xE9ho 72 % denn\xEDho vym\u011B\u0159ovac\xEDho z\xE1kladu.\r\n\r\nV\xFD\u0161e
+      nemocensk\xE9ho u dobrovoln\xFDch \u010Dlen\u016F integrovan\xE9ho z\xE1chrann\xE9ho
+      syst\xE9mu (nap\u0159. u dobrovoln\xFDch hasi\u010D\u016F) n\xE1le\u017E\xED
+      nemocensk\xE9 ve v\xFD\u0161i 100 % denn\xEDho vym\u011B\u0159ovac\xEDho z\xE1kladu,
+      pokud tato do\u010Dasn\xE1 pracovn\xED neschopnost nebo karant\xE9na vznikla
+      v d\u016Fsledku z\xE1sahu (tj. v d\u016Fsledku prov\xE1d\u011Bn\xED z\xE1chrann\xFDch
+      a likvida\u010Dn\xEDch prac\xED), k n\u011Bmu\u017E byla jednotka nebo slo\u017Eka
+      integrovan\xE9ho z\xE1chrann\xE9ho syst\xE9mu povol\xE1na. Tuto skute\u010Dnost
+      poji\u0161t\u011Bnci potvrd\xED opera\u010Dn\xED st\u0159edisko integrovan\xE9ho
+      z\xE1chrann\xE9ho syst\xE9mu."
     responsible_office: 2
     condition: 4
     attachments: []
@@ -186,9 +439,43 @@
   fields:
     name: "Invalidn\xED d\u016Fchod"
     related_law: "155/1995 Sb., o d\u016Fchodov\xE9m poji\u0161t\u011Bn\xED"
-    base_description: '...'
-    usecase_description: '...'
-    claim_description: '...'
+    base_description: "Zaji\u0161t\u011Bn\xED p\u0159\xEDjmu u lid\xED zdravotn\u011B
+      znev\xFDhodn\u011Bn\xFDch."
+    claim_description: "Poji\u0161t\u011Bnec m\xE1 n\xE1rok na invalidn\xED d\u016Fchod,
+      jestli\u017Ee nedos\xE1hl v\u011Bku 65 let a stal se\r\n\r\n- invalidn\xEDm
+      a z\xEDskal pot\u0159ebnou dobu poji\u0161t\u011Bn\xED, pokud nesplnil ke dni
+      vzniku invalidity podm\xEDnky n\xE1roku na \u0159\xE1dn\xFD starobn\xED d\u016Fchod,
+      pop\u0159\xEDpad\u011B, byl-li p\u0159izn\xE1n p\u0159ed\u010Dasn\xFD trvale
+      kr\xE1cen\xFD starobn\xED d\u016Fchod, pokud nedos\xE1hl d\u016Fchodov\xE9ho
+      v\u011Bku, nebo\r\n- invalidn\xEDm n\xE1sledkem pracovn\xEDho \xFArazu.\r\n\r\n###
+      Invalidita (\xA7 39 z\xE1kona o d\u016Fchodov\xE9m poji\u0161t\u011Bn\xED)\r\n\r\nPoji\u0161t\u011Bnec
+      je invalidn\xED, jestli\u017Ee z d\u016Fvodu dlouhodob\u011B nep\u0159\xEDzniv\xE9ho
+      zdravotn\xEDho stavu nastal pokles jeho pracovn\xED schopnosti nejm\xE9n\u011B
+      o 35 %.\r\n\r\nJestli\u017Ee pracovn\xED schopnost poji\u0161t\u011Bnce poklesla\r\n\r\n*
+      nejm\xE9n\u011B o 35 %, av\u0161ak nejv\xEDce o 49 %, jedn\xE1 se o invaliditu
+      prvn\xEDho stupn\u011B,\r\n* nejm\xE9n\u011B o 50 %, av\u0161ak nejv\xEDce o
+      69 %, jedn\xE1 se o invaliditu druh\xE9ho stupn\u011B,\r\n* nejm\xE9n\u011B
+      o 70 %, jedn\xE1 se o invaliditu t\u0159et\xEDho stupn\u011B.\r\n\r\n### Pot\u0159ebn\xE1
+      doba poji\u0161t\u011Bn\xED pro n\xE1rok na invalidn\xED d\u016Fchod (\xA7 40
+      z\xE1kona o d\u016Fchodov\xE9m poji\u0161t\u011Bn\xED)\r\n\r\nPot\u0159ebn\xE1
+      doba poji\u0161t\u011Bn\xED \u010Din\xED u poji\u0161t\u011Bnce ve v\u011Bku:\r\n\r\n*
+      do 20 let m\xE9n\u011B ne\u017E jeden rok,\r\n* od 20 let do 22 let jeden rok,\r\n*
+      od 22 let do 24 let dva roky,\r\n* od 24 let do 26 let t\u0159i roky,\r\n* od
+      26 let do 28 let \u010Dty\u0159i roky a\r\n* nad 28 let p\u011Bt rok\u016F.\r\n\r\nPot\u0159ebn\xE1
+      doba poji\u0161t\u011Bn\xED se zji\u0161\u0165uje z obdob\xED p\u0159ed vznikem
+      invalidity, a jde-li o poji\u0161t\u011Bnce ve v\u011Bku nad 28 let, z posledn\xEDch
+      10 let p\u0159ed vznikem invalidity. V p\u0159\xEDpad\u011B poji\u0161t\u011Bnce
+      star\u0161\xEDho 38 let se podm\xEDnka pot\u0159ebn\xE9 doby poji\u0161t\u011Bn\xED
+      pro n\xE1rok na invalidn\xED d\u016Fchod pova\u017Euje rovn\u011B\u017E za spln\u011Bnou,
+      byla-li tato doba z\xEDsk\xE1na v obdob\xED posledn\xEDch 20 let p\u0159ed vznikem
+      invalidity; pot\u0159ebn\xE1 doba poji\u0161t\u011Bn\xED \u010Din\xED p\u0159itom
+      10 rok\u016F. Podm\xEDnka pot\u0159ebn\xE9 doby poji\u0161t\u011Bn\xED se pova\u017Euje
+      za spln\u011Bnou, byla-li z\xEDsk\xE1na v kter\xE9mkoliv obdob\xED 10 rok\u016F
+      po vzniku invalidity (u poji\u0161t\u011Bnce mlad\u0161\xEDho 24 let \u010Din\xED
+      p\u0159itom pot\u0159ebn\xE1 doba poji\u0161t\u011Bn\xED dva roky). Podm\xEDnka
+      pot\u0159ebn\xE9 doby poji\u0161t\u011Bn\xED se pova\u017Euje za spln\u011Bnou,
+      vznikla-li pln\xE1 invalidita n\xE1sledkem pracovn\xEDho \xFArazu (nemoci z
+      povol\xE1n\xED)."
     other_description: ''
     responsible_office: 2
     condition: 4
@@ -200,9 +487,29 @@
     related_law: "329/2011 Sb., o poskytov\xE1n\xED d\xE1vek osob\xE1m se zdravotn\xEDm
       posti\u017Een\xEDm"
     base_description: '...'
-    usecase_description: '...'
-    claim_description: '...'
-    other_description: ''
+    claim_description: "(1) N\xE1rok na p\u0159\xEDsp\u011Bvek na mobilitu m\xE1 osoba
+      star\u0161\xED 1 roku, kter\xE1 m\xE1 n\xE1rok na pr\u016Fkaz osoby se zdravotn\xEDm
+      posti\u017Een\xEDm ozna\u010Den\xFD symbolem \u201EZTP\u201C nebo \u201EZTP/P\u201C,
+      kter\xFD byl p\u0159izn\xE1n podle p\u0159edpis\u016F \xFA\u010Dinn\xFDch od
+      1. ledna 2014, opakovan\u011B se v kalend\xE1\u0159n\xEDm m\u011Bs\xEDci za
+      \xFAhradu dopravuje nebo je dopravov\xE1na a nejsou j\xED poskytov\xE1ny pobytov\xE9
+      soci\xE1ln\xED slu\u017Eby podle z\xE1kona o soci\xE1ln\xEDch slu\u017Eb\xE1ch7)
+      v domov\u011B pro osoby se zdravotn\xEDm posti\u017Een\xEDm, v domov\u011B pro
+      seniory, v domov\u011B se zvl\xE1\u0161tn\xEDm re\u017Eimem nebo ve zdravotnick\xE9m
+      za\u0159\xEDzen\xED \xFAstavn\xED p\xE9\u010De.\r\n\r\n(2) Podm\xEDnky n\xE1roku
+      na p\u0159\xEDsp\u011Bvek na mobilitu podle odstavce 1, s v\xFDjimkou podm\xEDnky
+      opakovan\xE9ho dopravov\xE1n\xED za \xFAhradu, mus\xED b\xFDt spln\u011Bny po
+      cel\xFD kalend\xE1\u0159n\xED m\u011Bs\xEDc.\r\n\r\n(3) Spln\u011Bn\xED podm\xEDnky
+      opakovan\xE9ho dopravov\xE1n\xED za \xFAhradu prokazuje \u017Eadatel \u010Destn\xFDm
+      prohl\xE1\u0161en\xEDm.\r\n\r\n(4) Z d\u016Fvod\u016F hodn\xFDch zvl\xE1\u0161tn\xEDho
+      z\u0159etele m\u016F\u017Ee b\xFDt p\u0159\xEDsp\u011Bvek na mobilitu p\u0159izn\xE1n
+      i osob\u011B, kter\xE9 jsou poskytov\xE1ny pobytov\xE9 soci\xE1ln\xED slu\u017Eby
+      uveden\xE9 v odstavci 1, pokud spl\u0148uje ostatn\xED podm\xEDnky uveden\xE9
+      v odstavci 1. Zp\u016Fsob prokazov\xE1n\xED podm\xEDnky opakovan\xE9ho dopravov\xE1n\xED
+      podle odstavce 3 se v t\u011Bchto p\u0159\xEDpadech nepou\u017Eije a postupuje
+      se podle \xA7 26 odst. 1 p\xEDsm. b)."
+    other_description: "V\xFD\u0161e p\u0159\xEDsp\u011Bvku na mobilitu \u010Din\xED
+      za kalend\xE1\u0159n\xED m\u011Bs\xEDc 550 K\u010D."
     responsible_office: 1
     condition: 4
     attachments: []
@@ -213,9 +520,177 @@
     related_law: "329/2011 Sb., o poskytov\xE1n\xED d\xE1vek osob\xE1m se zdravotn\xEDm
       posti\u017Een\xEDm"
     base_description: '...'
-    usecase_description: '...'
-    claim_description: '...'
-    other_description: ''
+    claim_description: "(1) N\xE1rok na p\u0159\xEDsp\u011Bvek na zvl\xE1\u0161tn\xED
+      pom\u016Fcku m\xE1 osoba, kter\xE1 m\xE1 t\u011B\u017Ekou vadu nosn\xE9ho nebo
+      pohybov\xE9ho \xFAstroj\xED nebo t\u011B\u017Ek\xE9 sluchov\xE9 posti\u017Een\xED
+      anebo t\u011B\u017Ek\xE9 zrakov\xE9 posti\u017Een\xED charakteru dlouhodob\u011B
+      nep\u0159\xEDzniv\xE9ho zdravotn\xEDho stavu, a jej\xED zdravotn\xED stav nevylu\u010Duje
+      p\u0159izn\xE1n\xED tohoto p\u0159\xEDsp\u011Bvku.\r\n\r\n(2) N\xE1rok na p\u0159\xEDsp\u011Bvek
+      na zvl\xE1\u0161tn\xED pom\u016Fcku poskytovan\xFD na po\u0159\xEDzen\xED motorov\xE9ho
+      vozidla nebo speci\xE1ln\xEDho z\xE1dr\u017En\xEDho syst\xE9mu m\xE1 osoba,
+      kter\xE1 m\xE1 t\u011B\u017Ekou vadu nosn\xE9ho nebo pohybov\xE9ho \xFAstroj\xED
+      anebo t\u011B\u017Ekou nebo hlubokou ment\xE1ln\xED retardaci charakteru dlouhodob\u011B
+      nep\u0159\xEDzniv\xE9ho zdravotn\xEDho stavu, a jej\xED zdravotn\xED stav nevylu\u010Duje
+      p\u0159izn\xE1n\xED tohoto p\u0159\xEDsp\u011Bvku.\r\n\r\n(3) Za dlouhodob\u011B
+      nep\u0159\xEDzniv\xFD zdravotn\xED stav se pro \xFA\u010Dely tohoto z\xE1kona
+      pova\u017Euje nep\u0159\xEDzniv\xFD zdravotn\xED stav, kter\xFD podle poznatk\u016F
+      l\xE9ka\u0159sk\xE9 v\u011Bdy trv\xE1 nebo m\xE1 trvat d\xE9le ne\u017E 1 rok.\r\n\r\n(4)
+      Zdravotn\xED posti\u017Een\xED charakteru dlouhodob\u011B nep\u0159\xEDzniv\xE9ho
+      zdravotn\xEDho stavu od\u016Fvod\u0148uj\xEDc\xED p\u0159izn\xE1n\xED p\u0159\xEDsp\u011Bvku
+      na zvl\xE1\u0161tn\xED pom\u016Fcku a zdravotn\xED stavy vylu\u010Duj\xEDc\xED
+      jeho p\u0159izn\xE1n\xED jsou uvedeny v p\u0159\xEDloze k tomuto z\xE1konu.\r\n\r\n(5)
+      Podm\xEDnkou pro poskytnut\xED p\u0159\xEDsp\u011Bvku na zvl\xE1\u0161tn\xED
+      pom\u016Fcku d\xE1le je, \u017Ee\r\n\r\n- a) osoba je star\u0161\xED\r\n    -
+      3 let, je-li tento p\u0159\xEDsp\u011Bvek poskytov\xE1n na po\u0159\xEDzen\xED
+      motorov\xE9ho vozidla, schodolezu, stropn\xEDho zvedac\xEDho syst\xE9mu, svisl\xE9
+      zdvihac\xED plo\u0161iny, \u0161ikm\xE9 zvedac\xED plo\u0161iny, schodi\u0161\u0165ov\xE9
+      seda\u010Dky nebo na \xFApravu bytu,\r\n    - 15 let, je-li tento p\u0159\xEDsp\u011Bvek
+      poskytov\xE1n na po\u0159\xEDzen\xED vodic\xEDho psa, nebo\r\n    - 1 roku v
+      ostatn\xEDch p\u0159\xEDpadech,\r\n- b) zvl\xE1\u0161tn\xED pom\u016Fcka umo\u017En\xED
+      osob\u011B sebeobsluhu nebo ji pot\u0159ebuje k realizaci pracovn\xEDho uplatn\u011Bn\xED,
+      k p\u0159\xEDprav\u011B na budouc\xED povol\xE1n\xED, k z\xEDsk\xE1v\xE1n\xED
+      informac\xED, vzd\u011Bl\xE1v\xE1n\xED anebo ke styku s okol\xEDm; p\u0159itom
+      se p\u0159ihl\xED\u017E\xED i k dal\u0161\xEDm pom\u016Fck\xE1m, zdravotnick\xFDm
+      prost\u0159edk\u016Fm, \xFAprav\xE1m a p\u0159edm\u011Bt\u016Fm, kter\xE9 osoba
+      vyu\u017E\xEDv\xE1,\r\n- c) osoba m\u016F\u017Ee zvl\xE1\u0161tn\xED pom\u016Fcku
+      vyu\u017E\xEDvat nebo m\u016F\u017Ee zvl\xE1\u0161tn\xED pom\u016Fcku vyu\u017E\xEDvat
+      ve sv\xE9m soci\xE1ln\xEDm prost\u0159ed\xED.\r\n\r\n(6) Je-li p\u0159\xEDsp\u011Bvek
+      na zvl\xE1\u0161tn\xED pom\u016Fcku poskytov\xE1n na po\u0159\xEDzen\xED motorov\xE9ho
+      vozidla, je rovn\u011B\u017E podm\xEDnkou, \u017Ee se osoba opakovan\u011B v
+      kalend\xE1\u0159n\xEDm m\u011Bs\xEDci dopravuje a \u017Ee je schopna \u0159\xEDdit
+      motorov\xE9 vozidlo nebo je schopna b\xFDt p\u0159ev\xE1\u017Eena motorov\xFDm
+      vozidlem; spln\u011Bn\xED podm\xEDnky opakovan\xE9ho dopravov\xE1n\xED prokazuje
+      \u017Eadatel \u010Destn\xFDm prohl\xE1\u0161en\xEDm.\r\n\r\n(7) Je-li p\u0159\xEDsp\u011Bvek
+      na zvl\xE1\u0161tn\xED pom\u016Fcku poskytov\xE1n na po\u0159\xEDzen\xED svisl\xE9
+      zdvihac\xED plo\u0161iny, \u0161ikm\xE9 zvedac\xED plo\u0161iny, schodi\u0161\u0165ov\xE9
+      seda\u010Dky nebo stropn\xEDho zvedac\xEDho syst\xE9mu, je rovn\u011B\u017E
+      podm\xEDnkou souhlas vlastn\xEDka nemovitosti s proveden\xEDm instalace tohoto
+      za\u0159\xEDzen\xED a jeho provozem, nen\xED-li vlastn\xEDkem nemovitosti osoba,
+      kter\xE9 je tento p\u0159\xEDsp\u011Bvek poskytov\xE1n. Souhlas vlastn\xEDka
+      nemovitosti m\u016F\u017Ee b\xFDt nahrazen rozhodnut\xEDm soudu.\r\n\r\n(8)
+      P\u0159\xEDsp\u011Bvek na zvl\xE1\u0161tn\xED pom\u016Fcku nelze poskytnout,
+      jestli\u017Ee zvl\xE1\u0161tn\xED pom\u016Fcka je zdravotnick\xFDm prost\u0159edkem,
+      kter\xFD je pln\u011B hrazen z ve\u0159ejn\xE9ho zdravotn\xEDho poji\u0161t\u011Bn\xED
+      anebo je osob\u011B zap\u016Fj\u010Den p\u0159\xEDslu\u0161nou zdravotn\xED
+      poji\u0161\u0165ovnou. Tento p\u0159\xEDsp\u011Bvek nelze rovn\u011B\u017E poskytnout
+      na po\u0159\xEDzen\xED zvl\xE1\u0161tn\xED pom\u016Fcky, kter\xE1 nen\xED osob\u011B
+      hrazena z ve\u0159ejn\xE9ho zdravotn\xEDho poji\u0161t\u011Bn\xED nebo zap\u016Fj\u010Dena
+      zdravotn\xED poji\u0161\u0165ovnou z d\u016Fvodu nedostate\u010Dn\xE9 zdravotn\xED
+      indikace.\r\n\r\n(9) P\u0159\xEDsp\u011Bvek na zvl\xE1\u0161tn\xED pom\u016Fcku
+      nelze poskytnout, jestli\u017Ee zvl\xE1\u0161tn\xED pom\u016Fcka je zdravotnick\xFDm
+      prost\u0159edkem, kter\xFD je \u010D\xE1ste\u010Dn\u011B hrazen z ve\u0159ejn\xE9ho
+      zdravotn\xEDho poji\u0161t\u011Bn\xED.\r\n\r\n(10) P\u0159\xEDsp\u011Bvek se
+      poskytuje na zvl\xE1\u0161tn\xED pom\u016Fcku v z\xE1kladn\xEDm proveden\xED,
+      kter\xE9 osob\u011B vzhledem k jej\xEDmu zdravotn\xEDmu posti\u017Een\xED pln\u011B
+      vyhovuje a spl\u0148uje podm\xEDnku nejmen\u0161\xED ekonomick\xE9 n\xE1ro\u010Dnosti.
+      Tato podm\xEDnka se nevy\u017Eaduje, je-li p\u0159\xEDsp\u011Bvek na zvl\xE1\u0161tn\xED
+      pom\u016Fcku poskytov\xE1n na po\u0159\xEDzen\xED motorov\xE9ho vozidla nebo
+      je-li opr\xE1vn\u011Bnou osobou d\xEDt\u011B6). P\u0159\xEDsp\u011Bvek na zvl\xE1\u0161tn\xED
+      pom\u016Fcku na po\u0159\xEDzen\xED svisl\xE9 zdvihac\xED plo\u0161iny nebo
+      \u0161ikm\xE9 zvedac\xED plo\u0161iny se poskytne, jen jestli\u017Ee odstran\u011Bn\xED
+      bari\xE9ry nelze dos\xE1hnout prost\u0159ednictv\xEDm schodolezu. Jde-li o poskytnut\xED
+      p\u0159\xEDsp\u011Bvku na zvl\xE1\u0161tn\xED pom\u016Fcku na po\u0159\xEDzen\xED
+      svisl\xE9 zdvihac\xED plo\u0161iny, \u0161ikm\xE9 zvedac\xED plo\u0161iny, schodi\u0161\u0165ov\xE9
+      seda\u010Dky nebo stropn\xEDho zvedac\xEDho syst\xE9mu, je osoba povinna pro
+      \xFA\u010Dely posouzen\xED spln\u011Bn\xED podm\xEDnky uveden\xE9 ve v\u011Bt\u011B
+      prvn\xED p\u0159edlo\u017Eit na v\xFDzvu krajsk\xE9 pobo\u010Dky \xDA\u0159adu
+      pr\xE1ce alespo\u0148 2 n\xE1vrhy \u0159e\u0161en\xED odstran\u011Bn\xED bari\xE9ry,
+      v\u010Detn\u011B ceny.\r\n\r\n(11) P\u0159\xEDsp\u011Bvek na zvl\xE1\u0161tn\xED
+      pom\u016Fcku, kter\xFD je poskytov\xE1n na po\u0159\xEDzen\xED motorov\xE9ho
+      vozidla, se op\u011Btovn\u011B poskytne p\u0159i spln\u011Bn\xED podm\xEDnek
+      uveden\xFDch v odstavc\xEDch 2, 5 a 6 nejd\u0159\xEDve po uplynut\xED 84 kalend\xE1\u0159n\xEDch
+      m\u011Bs\xEDc\u016F po sob\u011B jdouc\xEDch, po\u010D\xEDnaje od kalend\xE1\u0159n\xEDho
+      m\u011Bs\xEDce n\xE1sleduj\xEDc\xEDho po kalend\xE1\u0159n\xEDm m\u011Bs\xEDci,
+      ve kter\xE9m nabylo pr\xE1vn\xED moci p\u0159edchoz\xED rozhodnut\xED o tomto
+      p\u0159\xEDsp\u011Bvku; to neplat\xED, jestli\u017Ee osoba tento p\u0159\xEDsp\u011Bvek
+      nebo jeho pom\u011Brnou \u010D\xE1st vr\xE1tila, pop\u0159\xEDpad\u011B j\xED
+      jeho vr\xE1cen\xED bylo prominuto.\r\n\r\n(12) P\u0159\xEDsp\u011Bvek na zvl\xE1\u0161tn\xED
+      pom\u016Fcku, kter\xFD je poskytov\xE1n na po\u0159\xEDzen\xED vodic\xEDho psa,
+      se poskytne jen na po\u0159\xEDzen\xED psa, kter\xFD byl vycvi\u010Den a p\u0159ed\xE1n
+      pr\xE1vnickou nebo fyzickou osobou, kter\xE1 je \u010Dlenem mezin\xE1rodn\xED
+      organizace sdru\u017Euj\xEDc\xED v\xFDcvikov\xE9 \u0161koly. Podm\xEDnka \u010Dlenstv\xED
+      v mezin\xE1rodn\xED organizaci sdru\u017Euj\xEDc\xED v\xFDcvikov\xE9 \u0161koly
+      se pova\u017Euje za spln\u011Bnou, i pokud nen\xED pr\xE1vnick\xE1 nebo fyzick\xE1
+      osoba jej\xEDm \u010Dlenem, av\u0161ak podala p\u0159ihl\xE1\u0161ku za \u010Dlena,
+      nejd\xE9le v\u0161ak po dobu 2 let ode dne pod\xE1n\xED t\xE9to p\u0159ihl\xE1\u0161ky.
+      Prov\xE1d\u011Bc\xED pr\xE1vn\xED p\u0159edpis stanov\xED dovednosti vodic\xEDho
+      psa, kter\xE9 mus\xED spl\u0148ovat.\r\n\r\n(13) Seznam druh\u016F a typ\u016F
+      zvl\xE1\u0161tn\xEDch pom\u016Fcek ur\u010Den\xFDch osob\xE1m s t\u011B\u017Ekou
+      vadou nosn\xE9ho nebo pohybov\xE9ho \xFAstroj\xED, t\u011B\u017Ece sluchov\u011B
+      posti\u017Een\xFDm osob\xE1m, t\u011B\u017Ece zrakov\u011B posti\u017Een\xFDm
+      osob\xE1m a osob\xE1m s t\u011B\u017Ekou nebo hlubokou ment\xE1ln\xED retardac\xED,
+      na jejich\u017E po\u0159\xEDzen\xED se poskytuje p\u0159\xEDsp\u011Bvek, stanov\xED
+      prov\xE1d\u011Bc\xED pr\xE1vn\xED p\u0159edpis.\r\n\r\n(14) P\u0159i rozhodov\xE1n\xED
+      o poskytnut\xED p\u0159\xEDsp\u011Bvku na zvl\xE1\u0161tn\xED pom\u016Fcku,
+      kter\xE1 nen\xED uvedena v seznamu podle odstavce 13, se posuzuje, zda je tato
+      konkr\xE9tn\xED zvl\xE1\u0161tn\xED pom\u016Fcka z hlediska vyu\u017Eit\xED
+      srovnateln\xE1 s druhy a typy zvl\xE1\u0161tn\xEDch pom\u016Fcek uveden\xFDmi
+      v seznamu podle odstavce 13."
+    other_description: "(1) Na po\u0159\xEDzen\xED zvl\xE1\u0161tn\xED pom\u016Fcky,
+      jej\xED\u017E cena je ni\u017E\u0161\xED ne\u017E 10000 K\u010D, se p\u0159\xEDsp\u011Bvek
+      na zvl\xE1\u0161tn\xED pom\u016Fcku poskytne v p\u0159\xEDpad\u011B, je-li p\u0159\xEDjem
+      osoby a p\u0159\xEDjem osob s n\xED spole\u010Dn\u011B posuzovan\xFDch ni\u017E\u0161\xED
+      ne\u017E osmin\xE1sobek \u017Eivotn\xEDho minima jednotlivce nebo \u017Eivotn\xEDho
+      minima spole\u010Dn\u011B posuzovan\xFDch osob podle z\xE1kona o \u017Eivotn\xEDm
+      a existen\u010Dn\xEDm minimu9). Z d\u016Fvod\u016F hodn\xFDch zvl\xE1\u0161tn\xEDho
+      z\u0159etele, zejm\xE9na \u017E\xE1d\xE1-li osoba opakovan\u011B o p\u0159\xEDsp\u011Bvek
+      na r\u016Fzn\xE9 zvl\xE1\u0161tn\xED pom\u016Fcky, jejich\u017E cena je ni\u017E\u0161\xED
+      ne\u017E 10000 K\u010D, lze tento p\u0159\xEDsp\u011Bvek poskytnout, i kdy\u017E
+      p\u0159\xEDjem osoby a p\u0159\xEDjem osob s n\xED spole\u010Dn\u011B posuzovan\xFDch
+      p\u0159esahuje \u010D\xE1stku \u017Eivotn\xEDho minima podle v\u011Bty prvn\xED.\r\n\r\n(2)
+      V\xFD\u0161e p\u0159\xEDsp\u011Bvku na zvl\xE1\u0161tn\xED pom\u016Fcku podle
+      odstavce 1 se stanov\xED tak, aby spolu\xFA\u010Dast osoby \u010Dinila 10 %
+      z p\u0159edpokl\xE1dan\xE9 nebo ji\u017E zaplacen\xE9 ceny zvl\xE1\u0161tn\xED
+      pom\u016Fcky, nejm\xE9n\u011B v\u0161ak 1000 K\u010D.\r\n\r\n(3) V\xFD\u0161e
+      p\u0159\xEDsp\u011Bvku na po\u0159\xEDzen\xED zvl\xE1\u0161tn\xED pom\u016Fcky,
+      jej\xED\u017E cena je vy\u0161\u0161\xED ne\u017E 10000 K\u010D, se stanov\xED
+      tak, aby spolu\xFA\u010Dast osoby \u010Dinila 10 % z p\u0159edpokl\xE1dan\xE9
+      nebo ji\u017E zaplacen\xE9 ceny zvl\xE1\u0161tn\xED pom\u016Fcky. Maxim\xE1ln\xED
+      v\xFD\u0161e p\u0159\xEDsp\u011Bvku na zvl\xE1\u0161tn\xED pom\u016Fcku \u010Din\xED
+      350000 K\u010D, s v\xFDjimkou p\u0159\xEDsp\u011Bvku na zvl\xE1\u0161tn\xED
+      pom\u016Fcku poskytovan\xE9ho na po\u0159\xEDzen\xED svisl\xE9 zdvihac\xED plo\u0161iny
+      nebo \u0161ikm\xE9 zvedac\xED plo\u0161iny, jeho\u017E maxim\xE1ln\xED v\xFD\u0161e
+      \u010Din\xED 400000 K\u010D.\r\n\r\n(4) Jestli\u017Ee osoba nem\xE1 dostatek
+      finan\u010Dn\xEDch prost\u0159edk\u016F ke spolu\xFA\u010Dasti podle odstavce
+      3, krajsk\xE1 pobo\u010Dka \xDA\u0159adu pr\xE1ce s p\u0159ihl\xE9dnut\xEDm
+      k m\xED\u0159e vyu\u017E\xEDv\xE1n\xED zvl\xE1\u0161tn\xED pom\u016Fcky, k p\u0159\xEDjmu
+      osoby a p\u0159\xEDjmu osob s n\xED spole\u010Dn\u011B posuzovan\xFDch podle
+      z\xE1kona o \u017Eivotn\xEDm a existen\u010Dn\xEDm minimu9) ur\u010D\xED ni\u017E\u0161\xED
+      v\xFD\u0161i spolu\xFA\u010Dasti, minim\xE1ln\u011B v\u0161ak 1000 K\u010D.\r\n\r\n(5)
+      V\xFD\u0161e p\u0159\xEDsp\u011Bvku na zvl\xE1\u0161tn\xED pom\u016Fcku poskytovan\xE9ho
+      na po\u0159\xEDzen\xED motorov\xE9ho vozidla \u010Din\xED:\r\n\r\n- a) 200000
+      K\u010D, je-li p\u0159\xEDjem osoby a p\u0159\xEDjem osob s n\xED spole\u010Dn\u011B
+      posuzovan\xFDch ni\u017E\u0161\xED nebo roven -osmin\xE1sobku \u010D\xE1stky
+      \u017Eivotn\xEDho minima jednotlivce nebo \u017Eivotn\xEDho minima spole\u010Dn\u011B
+      posuzovan\xFDch osob podle z\xE1kona o \u017Eivotn\xEDm a existen\u010Dn\xEDm
+      minimu9) nebo je-li tento p\u0159\xEDsp\u011Bvek poskytov\xE1n nezletil\xE9
+      osob\u011B,\r\n- b) 180000 K\u010D, je-li p\u0159\xEDjem osoby a p\u0159\xEDjem
+      osob s n\xED spole\u010Dn\u011B posuzovan\xFDch vy\u0161\u0161\xED ne\u017E
+      osmin\xE1sobek \u010D\xE1stky \u017Eivotn\xEDho minima uveden\xE9ho v p\xEDsmenu
+      a), av\u0161ak ni\u017E\u0161\xED nebo roven dev\xEDtin\xE1sobku t\xE9to \u010D\xE1stky,\r\n-
+      c) 160000 K\u010D, je-li p\u0159\xEDjem osoby a p\u0159\xEDjem osob s n\xED
+      spole\u010Dn\u011B posuzovan\xFDch vy\u0161\u0161\xED ne\u017E dev\xEDtin\xE1sobek
+      \u010D\xE1stky \u017Eivotn\xEDho minima uveden\xE9ho v p\xEDsmenu a), av\u0161ak
+      ni\u017E\u0161\xED nebo roven desetin\xE1sobku t\xE9to \u010D\xE1stky,\r\n-
+      d) 140000 K\u010D, je-li p\u0159\xEDjem osoby a p\u0159\xEDjem osob s n\xED
+      spole\u010Dn\u011B posuzovan\xFDch vy\u0161\u0161\xED ne\u017E desetin\xE1sobek
+      \u010D\xE1stky \u017Eivotn\xEDho minima uveden\xE9ho v p\xEDsmenu a), av\u0161ak
+      ni\u017E\u0161\xED nebo roven jeden\xE1ctin\xE1sobku t\xE9to \u010D\xE1stky,\r\n-
+      e) 120000 K\u010D, je-li p\u0159\xEDjem osoby a p\u0159\xEDjem osob s n\xED
+      spole\u010Dn\u011B posuzovan\xFDch vy\u0161\u0161\xED ne\u017E jeden\xE1ctin\xE1sobek
+      \u010D\xE1stky \u017Eivotn\xEDho minima uveden\xE9ho v p\xEDsmenu a), av\u0161ak
+      ni\u017E\u0161\xED nebo roven dvan\xE1ctin\xE1sobku t\xE9to \u010D\xE1stky,\r\n-
+      f) 100000 K\u010D, je-li p\u0159\xEDjem osoby a p\u0159\xEDjem osob s n\xED
+      spole\u010Dn\u011B posuzovan\xFDch vy\u0161\u0161\xED ne\u017E dvan\xE1ctin\xE1sobek
+      \u010D\xE1stky \u017Eivotn\xEDho minima uveden\xE9ho v p\xEDsmenu a).\r\n\r\n(6)
+      Sou\u010Det vyplacen\xFDch p\u0159\xEDsp\u011Bvk\u016F na zvl\xE1\u0161tn\xED
+      pom\u016Fcku nesm\xED v 60 kalend\xE1\u0159n\xEDch m\u011Bs\xEDc\xEDch po sob\u011B
+      jdouc\xEDch p\u0159es\xE1hnout \u010D\xE1stku 800000 K\u010D nebo 850000 K\u010D,
+      jestli\u017Ee byl v t\xE9to dob\u011B poskytnut p\u0159\xEDsp\u011Bvek na zvl\xE1\u0161tn\xED
+      pom\u016Fcku na po\u0159\xEDzen\xED svisl\xE9 zdvihac\xED plo\u0161iny nebo
+      \u0161ikm\xE9 zvedac\xED plo\u0161iny. Od vyplacen\xFDch \u010D\xE1stek se p\u0159i
+      ur\u010Dov\xE1n\xED sou\u010Dtu ode\u010D\xEDtaj\xED \u010D\xE1stky, kter\xE9
+      osoba v tomto obdob\xED vr\xE1tila nebo jejich\u017E vr\xE1cen\xED bylo prominuto."
     responsible_office: 1
     condition: 4
     attachments: []
@@ -224,10 +699,16 @@
   fields:
     name: "P\u0159\xEDsp\u011Bvek na p\xE9\u010Di"
     related_law: "108/2006 Sb., o soci\xE1ln\xEDch slu\u017Eb\xE1ch"
-    base_description: '...'
-    usecase_description: '...'
-    claim_description: '...'
-    other_description: ''
+    base_description: "P\u0159\xEDsp\u011Bvkem na p\xE9\u010Di st\xE1t pom\xE1h\xE1
+      zajistit komfort osob\xE1m s nep\u0159\xEDzniv\xFDm zdravotn\xEDm stavem."
+    claim_description: "N\xE1rok na p\u0159\xEDsp\u011Bvek na p\xE9\u010Di maj\xED
+      osoby, kter\xE9 z d\u016Fvodu dlouhodob\u011B nep\u0159\xEDzniv\xE9ho zdravotn\xEDho
+      stavu vy\u017Eaduj\xED pomoc jin\xE9 osoby. Stav \u017Eadatele posuzuje \xFA\u0159ad
+      pr\xE1ce a Spr\xE1va soci\xE1ln\xEDho zabezpe\u010Den\xED."
+    other_description: "V\xFD\u0161e p\u0159\xEDsp\u011Bvku se odv\xEDj\xED od stupn\u011B
+      z\xE1vislosti a v\u011Bku \u017Eadatele. S v\xFDjimkou \xFApln\xE9 z\xE1vislosti
+      plat\xED, \u017Ee \u017Eadatel\xE9 do 18 let maj\xED n\xE1rok na vy\u0161\u0161\xED
+      p\u0159\xEDsp\u011Bvek."
     responsible_office: 1
     condition: 4
     attachments: []
@@ -236,9 +717,26 @@
   fields:
     name: "O\u0161et\u0159ovn\xE9"
     related_law: "187/2006 Sb., o nemocensk\xE9m poji\u0161t\u011Bn\xED"
-    base_description: '...'
-    usecase_description: '...'
-    claim_description: '...'
+    base_description: "M\xE1 vynahradit p\u0159\xEDjem zam\u011Bstnance, kter\xFD
+      o\u0161et\u0159uje nemocn\xE9ho \u010Dlena dom\xE1cnosti."
+    claim_description: "Zam\u011Bstnanec, kter\xFD nem\u016F\u017Ee pracovat z d\u016Fvodu,
+      \u017Ee mus\xED:\r\n\r\n- o\u0161et\u0159ovat nemocn\xE9ho \u010Dlena dom\xE1cnosti,
+      nebo\r\n- pe\u010Dovat o zdrav\xE9 d\xEDt\u011B mlad\u0161\xED 10 let, proto\u017Ee
+      \u0161kolsk\xE9 nebo d\u011Btsk\xE9 za\u0159\xEDzen\xED bylo uzav\u0159eno (z
+      d\u016Fvodu hav\xE1rie, epidemie, jin\xE9 nep\u0159edv\xEDdan\xE9 ud\xE1losti),
+      d\xEDt\u011Bti byla na\u0159\xEDzena karant\xE9na, nebo osoba, kter\xE1 jinak
+      o d\xEDt\u011B pe\u010Duje, sama onemocn\u011Bla.\r\n\r\n\u010Cerp\xE1 jen jeden
+      z rodi\u010D\u016F.\r\n\r\nNelze \u010Derpat, pokud ji\u017E druh\xFD z rodi\u010D\u016F
+      uplatnil n\xE1rok na pen\u011B\u017Eitou pomoc v mate\u0159stv\xED nebo rodi\u010Dovsk\xFD
+      p\u0159\xEDsp\u011Bvek; to neplat\xED, pokud tato jin\xE1 osoba onemocn\u011Bla,
+      utrp\u011Bla \xFAraz, nastaly u n\xED situace z\xE1konem stanoven\xE9, porodila
+      nebo j\xED byla na\u0159\xEDzena karant\xE9na, a proto nem\u016F\u017Ee o d\xEDt\u011B
+      pe\u010Dovat.\r\n\r\nZm\u011Bna druhu onemocn\u011Bn\xED (diagn\xF3zy) se nepova\u017Euje
+      za nov\xFD p\u0159\xEDpad o\u0161et\u0159ov\xE1n\xED.\r\n\r\n\u010Cerpat lze
+      nejd\xE9le 9 kalend\xE1\u0159n\xEDch dn\u016F. U osam\u011Bl\xE9ho zam\u011Bstnance,
+      kter\xFD m\xE1 v trval\xE9 p\xE9\u010Di aspo\u0148 jedno d\xEDt\u011B ve v\u011Bku
+      do 16 let, kter\xE9 neukon\u010Dilo povinnou \u0161koln\xED doch\xE1zku, nejd\xE9le
+      16 kalend\xE1\u0159n\xEDch dn\u016F."
     other_description: ''
     responsible_office: 2
     condition: 5
@@ -248,9 +746,46 @@
   fields:
     name: "Dlouhodob\xE9 o\u0161et\u0159ovn\xE9"
     related_law: "187/2006 Sb., o nemocensk\xE9m poji\u0161t\u011Bn\xED"
-    base_description: '...'
-    usecase_description: '...'
-    claim_description: '...'
+    base_description: "K n\xE1hrad\u011B p\u0159\xEDjm\u016F v p\u0159\xEDpad\u011B
+      dlouhodob\xE9ho o\u0161et\u0159ov\xE1n\xED nemocn\xE9ho \u010Dlena dom\xE1cnosti/rodiny."
+    claim_description: "- U o\u0161et\u0159ovan\xE9 osoby muselo doj\xEDt k z\xE1va\u017En\xE9mu
+      zhor\u0161en\xED zdravotn\xEDho stavu, kter\xFD vy\u017Eadoval alespo\u0148
+      7 denn\xED hospitalizaci v nemocnici a v den propu\u0161t\u011Bn\xED bude potvrzeno,
+      \u017Ee pot\u0159eba celodenn\xED p\xE9\u010De bude trvat nejm\xE9n\u011B dal\u0161\xEDch
+      30 dn\u016F. O\u0161et\u0159ovan\xE1 osoba mus\xED d\xE1t p\xEDsemn\xFD souhlas
+      k o\u0161et\u0159ov\xE1n\xED konkr\xE9tn\xED osob\u011B.\r\n- O\u0161et\u0159uj\xEDc\xED
+      osoba m\u016F\u017Ee b\xFDt man\u017Eelem (man\u017Eelkou) o\u0161et\u0159ovan\xE9
+      osoby nebo registrovan\xFDm partnerem (registrovanou partnerkou) o\u0161et\u0159ovan\xE9
+      osoby, p\u0159\xEDbuzn\xFDm v linii p\u0159\xEDm\xE9 s o\u0161et\u0159ovanou
+      osobou nebo je jej\xED sourozenec, tchyn\u011B, tch\xE1n, snacha, ze\u0165,
+      nete\u0159, synovec, teta nebo str\xFDc. U t\u011Bchto p\u0159\xEDbuzn\xFDch
+      se nevy\u017Eaduje podm\xEDnka spole\u010Dn\xE9 dom\xE1cnosti. D\xE1le se m\u016F\u017Ee
+      jednat o man\u017Eela (man\u017Eelku), registrovan\xE9ho partnera (registrovanou
+      partnerku) nebo druha (dru\u017Eku) fyzick\xE9 osoby v\xFD\u0161e uveden\xE9,
+      nebo druha (dru\u017Eku) o\u0161et\u0159ovan\xE9 osoby nebo jinou fyzickou osobou
+      \u017Eij\xEDc\xED s o\u0161et\u0159ovanou osobou v dom\xE1cnosti. Tyto osoby
+      mus\xED m\xEDt shodn\xE9 m\xEDsto trval\xE9ho pobytu.\r\n- U o\u0161et\u0159uj\xEDc\xED
+      osoby se vy\u017Eaduje \u010Dekac\xED doba; nemocensk\xE9 poji\u0161t\u011Bn\xED
+      muselo u zam\u011Bstnance trvat v posledn\xEDch 4 m\u011Bs\xEDc\xEDch alespo\u0148
+      90 dn\u016F, OSV\u010C musela b\xFDt nemocensky poji\u0161t\u011Bna v posledn\xEDch
+      3 m\u011Bs\xEDc\xEDch. O\u0161et\u0159uj\xEDc\xED osoba nesm\xED po dobu o\u0161et\u0159ov\xE1n\xED
+      vykon\xE1vat \u017E\xE1dnou v\xFDd\u011Ble\u010Dnou \u010Dinnost, ani nepoji\u0161t\u011Bnou.\r\n-
+      V pr\u016Fb\u011Bhu 90 dn\u016F se mohou o\u0161et\u0159uj\xEDc\xED osoby libovoln\u011B
+      st\u0159\xEDdat v o\u0161et\u0159ov\xE1n\xED osoby vy\u017Eaduj\xEDc\xED dlouhodobou
+      p\xE9\u010Di po cel\xFDch dnech. P\u0159i st\u0159\xEDd\xE1n\xED a opakovan\xE9m
+      poskytov\xE1n\xED p\xE9\u010De se d\xE1vka nevypo\u010D\xEDt\xE1v\xE1 znovu.\r\n-
+      V\xFDplata d\xE1vky nen\xE1le\u017E\xED po dobu, kdy byla o\u0161et\u0159ovan\xE1
+      osoba znovu hospitalizov\xE1na.\r\nN\xE1rok na dal\u0161\xED dlouhodob\xE9 o\u0161et\u0159ovn\xE9
+      vznikne o\u0161et\u0159uj\xEDc\xED osob\u011B nejd\u0159\xEDve po uplynut\xED
+      12 m\u011Bs\xEDc\u016F od skon\u010Den\xED p\u0159edchoz\xED dlouhodob\xE9 p\xE9\u010De.\r\n-
+      Podp\u016Fr\u010D\xED doba (doba v\xFDplaty d\xE1vky) \u010Din\xED maxim\xE1ln\u011B
+      90 kalend\xE1\u0159n\xEDch dn\u016F. Doba t\u011Bchto 90 dn\u016F se neprodlu\u017Euje
+      ani z d\u016Fvodu hospitalizace o\u0161et\u0159ovan\xE9 osoby v pr\u016Fb\u011Bhu
+      podp\u016Fr\u010D\xED doby.\r\nN\xE1rok na dlouhodob\xE9 o\u0161et\u0159ovn\xE9
+      nemaj\xED zam\u011Bstnanci \u010Dinn\xED na z\xE1klad\u011B dohody o proveden\xED
+      pr\xE1ce, zam\u011Bstnanci vykon\xE1vaj\xEDc\xED zam\u011Bstn\xE1n\xED mal\xE9ho
+      rozsahu, \u017E\xE1ci a studenti jen v dob\u011B \u0161koln\xEDch pr\xE1zdnin
+      a p\u011Bstouni."
     other_description: ''
     responsible_office: 2
     condition: 5
@@ -260,10 +795,65 @@
   fields:
     name: "Podpora v nezam\u011Bstnanosti"
     related_law: "435/2004 Sb., o zam\u011Bstnanosti"
-    base_description: '...'
-    usecase_description: '...'
-    claim_description: '...'
-    other_description: ''
+    base_description: "Podporou v nezam\u011Bstnanosti st\xE1t kr\xE1tkodob\u011B
+      pom\xE1h\xE1 ob\u010Dan\u016Fm, kte\u0159\xED se ocitli bez pr\xE1ce."
+    claim_description: "N\xE1rok m\xE1 uchaze\u010D o zam\u011Bstn\xE1n\xED, kter\xFD:\r\n\r\n-
+      m\xE1 trval\xE9 bydli\u0161t\u011B na \xFAzem\xED \u010CR\r\n- nepob\xEDr\xE1
+      starobn\xED d\u016Fchod\r\n- b\u011Bhem posledn\xEDch dvou let si hradil d\u016Fchodov\xE9
+      poji\u0161t\u011Bn\xED po dobu alespo\u0148 12 m\u011Bs\xEDc\u016F jako zam\u011Bstnanec
+      nebo OSV\u010C. Zapo\u010D\xEDt\xE1vaj\xED se i tzv. n\xE1hradn\xED doby (p\xE9\u010De
+      o d\xEDt\u011B do 4 let, invalidn\xED d\u016Fchod p\u0159i 3. stupni invalidity,
+      v\xFDkon dobrovolnick\xE9 slu\u017Eby v rozsahu alespo\u0148 20 hodin t\xFDdn\u011B
+      atd.)\r\n\r\nN\xE1rok nem\xE1 uchaze\u010D o zam\u011Bstn\xE1n\xED:\r\n\r\n-
+      se kter\xFDm byl v dob\u011B posledn\xEDch 6 m\u011Bs\xEDc\u016F p\u0159ed za\u0159azen\xEDm
+      do evidence uchaze\u010D\u016F o zam\u011Bstn\xE1n\xED zam\u011Bstnavatelem
+      skon\u010Den pracovn\u011Bpr\xE1vn\xED vztah z d\u016Fvodu poru\u0161en\xED
+      povinnosti vypl\xFDvaj\xEDc\xED z pr\xE1vn\xEDch p\u0159edpis\u016F vztahuj\xEDc\xEDch
+      se k j\xEDm vykon\xE1van\xE9 pr\xE1ci zvl\xE1\u0161\u0165 hrub\xFDm zp\u016Fsobem);
+      to plat\xED i v p\u0159\xEDpad\u011B skon\u010Den\xED jin\xE9ho pracovn\xEDho
+      vztahu z obdobn\xE9ho d\u016Fvodu,\r\n- se kter\xFDm byl v dob\u011B posledn\xEDch
+      6 m\u011Bs\xEDc\u016F p\u0159ed za\u0159azen\xEDm do evidence uchaze\u010D\u016F
+      o zam\u011Bstn\xE1n\xED zam\u011Bstnavatelem skon\u010Den pracovn\u011Bpr\xE1vn\xED
+      vztah z d\u016Fvodu poru\u0161en\xED jin\xE9 povinnosti zam\u011Bstnance podle
+      \xA7 301a z\xE1kon\xEDku pr\xE1ce zvl\xE1\u0161\u0165 hrub\xFDm zp\u016Fsobem),\r\n-
+      kter\xE9mu vznikl n\xE1rok na v\xFDsluhov\xFD p\u0159\xEDsp\u011Bvek podle zvl\xE1\u0161tn\xEDch
+      pr\xE1vn\xEDch p\u0159edpis\u016F) a tento p\u0159\xEDsp\u011Bvek je vy\u0161\u0161\xED
+      ne\u017E podpora v nezam\u011Bstnanosti, kter\xE1 by uchaze\u010Di o zam\u011Bstn\xE1n\xED
+      n\xE1le\u017Eela, pokud by nem\u011Bl n\xE1rok na v\xFDsluhov\xFD p\u0159\xEDsp\u011Bvek,\r\n-
+      kter\xFD ke dni, k n\u011Bmu\u017E m\xE1 b\xFDt podpora v nezam\u011Bstnanosti
+      p\u0159izn\xE1na, je v pr\xE1vn\xEDm vztahu vznikl\xE9m k v\xFDkonu n\u011Bkter\xE9
+      z \u010Dinnost\xED podle \xA7 25 odst. 3, (tj. uchaze\u010Di, kter\xFD vykon\xE1v\xE1
+      tzv. nekoliduj\xEDc\xED zam\u011Bstn\xE1n\xED, kdy si m\u016F\u017Ee jako nezam\u011Bstnan\xFD
+      p\u0159ivyd\u011Blat formou DP\u010C nebo \u010D\xE1ste\u010Dn\xE9ho \xFAvazku
+      a\u017E polovinu minim\xE1ln\xED mzdy),\r\n- kter\xFD je ke dni, k n\u011Bmu\u017E
+      m\xE1 b\xFDt podpora v nezam\u011Bstnanosti p\u0159izn\xE1na, v postaven\xED
+      n\u011Bkter\xE9 z osob uveden\xFDch v \xA7 25 odst. 1 p\xEDsm. c) a\u017E f)
+      a s); k v\xFD\u0161i p\u0159\xEDjmu nebo odm\u011Bny se p\u0159itom nep\u0159ihl\xED\u017E\xED,
+      to neplat\xED pro \u010Dlena bytov\xE9ho dru\u017Estva, kter\xFD vykon\xE1v\xE1
+      pr\xE1ci nebo \u010Dinnost pro bytov\xE9 dru\u017Estvo mimo pracovn\u011Bpr\xE1vn\xED
+      vztah nebo je pov\u011B\u0159en obchodn\xEDm veden\xEDm bytov\xE9ho dru\u017Estva,\r\n-
+      kter\xFD pob\xEDr\xE1 odstupn\xE9 (na podporu v nezam\u011Bstnanosti vznikne
+      n\xE1rok a\u017E po uplynut\xED p\u0159\xEDslu\u0161n\xE9ho po\u010Dtu m\u011Bs\xEDc\u016F
+      podle toho, jak\xFD n\xE1sobek m\u011Bs\xED\u010Dn\xEDho p\u0159\xEDjmu odstupn\xE9
+      p\u0159edstavuje)."
+    other_description: "V\xFD\u0161e podpory v nezam\u011Bstnanosti se odv\xEDj\xED
+      od pr\u016Fm\u011Brn\xE9ho m\u011Bs\xED\u010Dn\xEDho v\xFDd\u011Blku. Maxim\xE1ln\xED
+      v\xFD\u0161e podpory v roce 2018 je 16 680 K\u010D m\u011Bs\xED\u010Dn\u011B.
+      Po\u010D\xEDt\xE1 se bu\u010F z pr\u016Fm\u011Brn\xE9ho \u010Dist\xE9ho m\u011Bs\xED\u010Dn\xEDho
+      v\xFDd\u011Blku nebo (v p\u0159\xEDpad\u011B ochrann\xFDch dob) z pr\u016Fm\u011Brn\xE9
+      mzdy v n\xE1rodn\xEDm hospod\xE1\u0159stv\xED v 1.-3. \u010Dtvrtlet\xED p\u0159edchoz\xEDho
+      kalend\xE1\u0159n\xEDho roku.\r\n\r\nPodporu v nezam\u011Bstnanosti pob\xEDraj\xED
+      osoby do 50 let v\u011Bku po dobu 5 m\u011Bs\xEDc\u016F, lid\xE9 ve v\u011Bku
+      50 \u2013 55 let po dobu 8 m\u011Bs\xEDc\u016F a osoby star\u0161\xED 55 let
+      11 m\u011Bs\xEDc\u016F. Procentu\xE1ln\u011B pob\xEDraj\xED v\u0161ichni po
+      tuto dobu 45 % pr\u016Fm\u011Brn\xE9ho m\u011Bs\xED\u010Dn\xEDho \u010Dist\xE9ho
+      v\xFDd\u011Blku z posledn\xEDho pracovn\u011Bpr\xE1vn\xEDho vztahu, skon\u010Di-li
+      dohodou nebo ze strany zam\u011Bstnance. Pouze v p\u0159\xEDpad\u011B v\xFDpov\u011Bdi
+      ze strany zam\u011Bstnavatele m\xE1 nezam\u011Bstnan\xFD n\xE1rok na 60 % pr\u016Fm\u011Brn\xE9ho
+      m\u011Bs\xED\u010Dn\xEDho \u010Dist\xE9ho v\xFDd\u011Blku po dobu prvn\xEDch
+      dvou m\u011Bs\xEDc\u016F podp\u016Fr\u010D\xED doby, 50 % po dobu dal\u0161\xEDch
+      dvou m\u011Bs\xEDc\u016F a 45 % po zb\xFDvaj\xEDc\xED podp\u016Fr\u010D\xED
+      dobu (osoby do 50 let tedy ji\u017E jen posledn\xED m\u011Bs\xEDc)."
     responsible_office: 1
     condition: 6
     attachments: []
@@ -272,10 +862,27 @@
   fields:
     name: "Podpora p\u0159i rekvalifikaci"
     related_law: "435/2004 Sb., o zam\u011Bstnanosti"
-    base_description: '...'
-    usecase_description: '...'
-    claim_description: '...'
-    other_description: ''
+    base_description: "Podpora nezam\u011Bstnan\xFDch b\u011Bhem doby, po kterou se
+      \xFA\u010Dastn\xED rekvalifikace."
+    claim_description: "Uchaze\u010D o zam\u011Bstn\xE1n\xED, kter\xFD se \xFA\u010Dastn\xED
+      rekvalifikace zabezpe\u010Dovan\xE9 krajskou pobo\u010Dkou \xDA\u0159adu pr\xE1ce
+      (\xA7 109) a ke dni, k n\u011Bmu\u017E m\xE1 b\xFDt podpora p\u0159i rekvalifikaci
+      p\u0159izn\xE1na, nen\xED po\u017Eivatelem starobn\xEDho d\u016Fchodu.\r\n\r\nPokud
+      si uchaze\u010D zvol\xED n\u011Bjakou rekvalifikaci s\xE1m (tzv. zvolen\xE1
+      rekvalifikace), n\xE1rok na podporu p\u0159i rekvalifikaci nem\xE1. \xDA\u0159ad
+      pr\xE1ce se v takov\xE9m p\u0159\xEDpad\u011B pouze rozhodne, jestli uchaze\u010Di
+      proplat\xED cenu kurzu, pokud jej \xFAsp\u011B\u0161n\u011B absolvuje."
+    other_description: "V\xFD\u0161e podpory v nezam\u011Bstnanosti a podpory p\u0159i
+      rekvalifikaci se stanov\xED sazbou 60% z pr\u016Fm\u011Brn\xE9ho m\u011Bs\xED\u010Dn\xEDho
+      \u010Dist\xE9ho v\xFDd\u011Blku, (v p\u0159\xEDpad\u011B ochrann\xE9 doby z
+      pr\u016Fm\u011Brn\xE9 mzdy v n\xE1rodn\xEDm hospod\xE1\u0159stv\xED v 1.-3.
+      \u010Dtvrtlet\xED p\u0159edchoz\xEDho kalend\xE1\u0159n\xEDho roku).\r\n\r\nV\xFD\u0161e
+      podpory v nezam\u011Bstnanosti a podpory p\u0159i rekvalifikaci u uchaze\u010De
+      o zam\u011Bstn\xE1n\xED, kter\xFD naposledy p\u0159ed za\u0159azen\xEDm do evidence
+      uchaze\u010D\u016F o zam\u011Bstn\xE1n\xED vykon\xE1val samostatnou v\xFDd\u011Ble\u010Dnou
+      \u010Dinnost, se stanov\xED procentn\xED sazbou z posledn\xEDho vym\u011B\u0159ovac\xEDho
+      z\xE1kladu v rozhodn\xE9m obdob\xED p\u0159epo\u010Dten\xE9ho na 1 kalend\xE1\u0159n\xED
+      m\u011Bs\xEDc."
     responsible_office: 1
     condition: 6
     attachments: []
@@ -284,10 +891,29 @@
   fields:
     name: "P\u0159\xEDsp\u011Bvek na bydlen\xED"
     related_law: "117/1995 Sb., o st\xE1tn\xED soci\xE1ln\xED podpo\u0159e"
-    base_description: '...'
-    usecase_description: '...'
-    claim_description: '* test'
-    other_description: ''
+    base_description: "P\u0159\xEDsp\u011Bvek na bydlen\xED p\u0159isp\xEDv\xE1 na
+      kryt\xED n\xE1klad\u016F na bydlen\xED rodin\xE1m \u010Di jednotlivc\u016Fm
+      s n\xEDzk\xFDmi p\u0159\xEDjmy."
+    claim_description: "Na p\u0159\xEDsp\u011Bvek na bydlen\xED m\xE1 n\xE1rok vlastn\xEDk
+      nebo n\xE1jemce bytu, kter\xFD je v byt\u011B nebo rodinn\xE9m dom\u011B p\u0159ihl\xE1\u0161en
+      k trval\xE9mu pobytu, jestli\u017Ee\r\n\r\n- jeho n\xE1klady na bydlen\xED p\u0159esahuj\xED
+      \u010D\xE1stku sou\u010Dinu rozhodn\xE9ho p\u0159\xEDjmu v rodin\u011B a koeficientu
+      0,30 (na \xFAzem\xED hlavn\xEDho m\u011Bsta Prahy koeficientu 0,35), a z\xE1rove\u0148\r\n-
+      sou\u010Din rozhodn\xE9ho p\u0159\xEDjmu v rodin\u011B a koeficientu 0,30 (na
+      \xFAzem\xED hlavn\xEDho m\u011Bsta Prahy koeficientu 0,35) nen\xED vy\u0161\u0161\xED
+      ne\u017E \u010D\xE1stka normativn\xEDch n\xE1klad\u016F na bydlen\xED."
+    other_description: "Posuzuj\xED se p\u0159\xEDjmy dom\xE1cnosti za posledn\xED
+      \u010Dtvrtlet\xED, zahrnuty jsou v\u0161echny osoby a trval\xFDm pobytem v byt\u011B.\r\n\r\nV\xFD\u0161e
+      p\u0159\xEDsp\u011Bvku na bydlen\xED \u010Din\xED za kalend\xE1\u0159n\xED m\u011Bs\xEDc
+      rozd\xEDl mezi normativn\xEDmi n\xE1klady na bydlen\xED a rozhodn\xFDm p\u0159\xEDjmem
+      rodiny vyn\xE1soben\xFDm koeficientem 0,30, a na \xFAzem\xED hlavn\xEDho m\u011Bsta
+      Prahy koeficientem 0,35. Pokud jsou skute\u010Dn\xE9 n\xE1klady na bydlen\xED
+      ni\u017E\u0161\xED ne\u017E normativn\xED n\xE1klady na bydlen\xED, n\xE1le\u017E\xED
+      p\u0159\xEDsp\u011Bvek na bydlen\xED ve v\xFD\u0161i rozd\xEDlu mezi t\u011Bmito
+      n\xE1klady na bydlen\xED a rozhodn\xFDm p\u0159\xEDjmem rodiny vyn\xE1soben\xFDm
+      koeficientem 0,30, resp. 0,35.\r\n\r\nNormativy jsou odstup\u0148ov\xE1ny podle
+      velikosti m\u011Bsta/obce a po\u010Dtu osob v dom\xE1cnosti (maximum je 4 a
+      v\xEDce osob, pak se \u201Estrop\u201C d\xE1le nezvy\u0161uje."
     responsible_office: 1
     condition: 7
     attachments: []
@@ -296,12 +922,11 @@
   fields:
     name: "Doplatek na bydlen\xED"
     related_law: "111/2006 Sb., o pomoci v hmotn\xE9 nouzi"
-    base_description: '...'
-    usecase_description: "\u0158e\u0161\xED nedostatek p\u0159\xEDjmu k uhrazen\xED
-      n\xE1klad\u016F na bydlen\xED tam, kde nevznik\xE1 n\xE1rok na p\u0159\xEDsp\u011Bvek
-      na bydlen\xED nebo pokud nesta\u010D\xED vlastn\xED p\u0159\xEDjmy osoby \u010Di
-      rodiny v\u010Detn\u011B p\u0159\xEDsp\u011Bvku na bydlen\xED ze syst\xE9mu st\xE1tn\xED
-      soci\xE1ln\xED podpory."
+    base_description: "\u0158e\u0161\xED nedostatek p\u0159\xEDjmu k uhrazen\xED n\xE1klad\u016F
+      na bydlen\xED tam, kde nevznik\xE1 n\xE1rok na p\u0159\xEDsp\u011Bvek na bydlen\xED
+      nebo pokud nesta\u010D\xED vlastn\xED p\u0159\xEDjmy osoby \u010Di rodiny v\u010Detn\u011B
+      p\u0159\xEDsp\u011Bvku na bydlen\xED ze syst\xE9mu st\xE1tn\xED soci\xE1ln\xED
+      podpory."
     claim_description: "- D\xE1vka je poskytov\xE1na vlastn\xEDku u\u017E\xEDvaj\xEDc\xEDmu
       byt, nebo jin\xE9 osob\u011B, kter\xE1 u\u017E\xEDv\xE1 byt na z\xE1klad\u011B
       smlouvy, rozhodnut\xED, nebo jin\xE9ho pr\xE1vn\xEDho titulu.\r\n- D\xE1vku
@@ -325,19 +950,20 @@
       osoby a spole\u010Dn\u011B posuzovan\xFDch osob p\u0159es\xE1hl \u010D\xE1stku
       \u017Eivobyt\xED osoby a spole\u010Dn\u011B posuzovan\xFDch osob, ale nep\u0159es\xE1hl
       1,3n\xE1sobek \u010D\xE1stky \u017Eivobyt\xED osoby a spole\u010Dn\u011B posuzovan\xFDch
-      osob\r\n- V\xFD\u0161e doplatku na bydlen\xED je stanovena tak, aby po zaplacen\xED
-      od\u016Fvodn\u011Bn\xFDch n\xE1klad\u016F na bydlen\xED (tj. n\xE1jmu, slu\u017Eeb
-      s bydlen\xEDm spojen\xFDch a n\xE1klad\u016F za dod\xE1vky energi\xED) z\u016Fstala
-      osob\u011B \u010Di rodin\u011B \u010D\xE1stka \u017Eivobyt\xED.\r\n- V\xFD\u0161e
-      doplatku na bydlen\xED je d\xE1le limitov\xE1na stejn\xFDmi normativy na bydlen\xED
-      jako p\u0159\xEDsp\u011Bvek na bydlen\xED (dle velikosti obce a po\u010Dtu osob
-      v dom\xE1cnosti), jen je tento strop d\xE1le sn\xED\u017Een, a to na 90 % v
-      p\u0159\xEDpad\u011B zahradn\xEDch chatek (u vlastn\xEDk\u016F t\u011Bchto rekrea\u010Dn\xEDch
-      objekt\u016F), 80 % p\u0159i u\u017E\xEDv\xE1n\xED jednotky na ubytovn\u011B
-      nebo p\u0159i ob\xFDv\xE1n\xED jin\xE9ho ne\u017E obytn\xE9ho prostoru."
-    other_description: "Po\u010Det vyplacen\xFDch d\xE1vek: **prosinec 2017 \u2013
-      \ 50 000**\r\n\r\nV\xFDdaje na d\xE1vku: **prosinec 2017** \u2013 0,193 mld.
-      K\u010D, **za cel\xFD rok 2017** \u2013 2,423 mld. K\u010D"
+      osob"
+    other_description: "- V\xFD\u0161e doplatku na bydlen\xED je stanovena tak, aby
+      po zaplacen\xED od\u016Fvodn\u011Bn\xFDch n\xE1klad\u016F na bydlen\xED (tj.
+      n\xE1jmu, slu\u017Eeb s bydlen\xEDm spojen\xFDch a n\xE1klad\u016F za dod\xE1vky
+      energi\xED) z\u016Fstala osob\u011B \u010Di rodin\u011B \u010D\xE1stka \u017Eivobyt\xED.\r\n-
+      V\xFD\u0161e doplatku na bydlen\xED je d\xE1le limitov\xE1na stejn\xFDmi normativy
+      na bydlen\xED jako p\u0159\xEDsp\u011Bvek na bydlen\xED (dle velikosti obce
+      a po\u010Dtu osob v dom\xE1cnosti), jen je tento strop d\xE1le sn\xED\u017Een,
+      a to na 90 % v p\u0159\xEDpad\u011B zahradn\xEDch chatek (u vlastn\xEDk\u016F
+      t\u011Bchto rekrea\u010Dn\xEDch objekt\u016F), 80 % p\u0159i u\u017E\xEDv\xE1n\xED
+      jednotky na ubytovn\u011B nebo p\u0159i ob\xFDv\xE1n\xED jin\xE9ho ne\u017E
+      obytn\xE9ho prostoru.\r\n\r\n---\r\n\r\nPo\u010Det vyplacen\xFDch d\xE1vek:
+      **prosinec 2017 \u2013  50 000**\r\n\r\nV\xFDdaje na d\xE1vku: **prosinec 2017**
+      \u2013 0,193 mld. K\u010D, **za cel\xFD rok 2017** \u2013 2,423 mld. K\u010D"
     responsible_office: 1
     condition: 7
     attachments: []
@@ -346,10 +972,100 @@
   fields:
     name: "P\u0159\xEDsp\u011Bvek na \u017Eivobyt\xED"
     related_law: "111/2006 Sb., o pomoci v hmotn\xE9 nouzi"
-    base_description: '...'
-    usecase_description: '...'
-    claim_description: '...'
-    other_description: ''
+    base_description: "Je z\xE1kladn\xED d\xE1vkou pomoci v hmotn\xE9 nouzi, kter\xE1
+      pom\xE1h\xE1 osob\u011B \u010Di rodin\u011B p\u0159i nedostate\u010Dn\xE9m p\u0159\xEDjmu."
+    claim_description: "N\xE1rok na p\u0159\xEDsp\u011Bvek na \u017Eivobyt\xED vznik\xE1
+      osob\u011B \u010Di rodin\u011B, pokud po ode\u010Dten\xED p\u0159im\u011B\u0159en\xFDch
+      n\xE1klad\u016F na bydlen\xED nedosahuje p\u0159\xEDjem t\xE9to osoby \u010Di
+      rodiny \u010D\xE1stky \u017Eivobyt\xED. POZOR! \u010C\xE1ska \u017Eivobyt\xED
+      nen\xED tot\xE9\u017E co \u017Eivotn\xED minimum rodiny, ale zpravidla jde o
+      kombinaci \u017Eivotn\xEDho a existen\u010Dn\xEDho minima spole\u010Dn\u011B
+      posuzovan\xFDch osob. Existen\u010Dn\xED minimum je \u010D\xE1stkou \u017Eivobyt\xED
+      nap\u0159. pro osoby dlu\u017E\xEDc\xED na v\xFD\u017Eivn\xE9m, osoby cel\xFD
+      m\u011Bs\xEDc hospitalizovan\xE9 nebo pro ty, kter\xE9 neodpracuj\xED alespo\u0148
+      20 hodin m\u011Bs\xED\u010Dn\u011B ve ve\u0159ejn\xE9 slu\u017Eb\u011B, a\u010Dkoli
+      je z\xE1kon pova\u017Euje za schopn\xE9 prok\xE1zat snahu o zv\xFD\u0161en\xED
+      p\u0159\xEDjmu prac\xED.\r\n\r\n\u010C\xE1stka \u017Eivobyt\xED je stanovena
+      pro ka\u017Edou osobu individu\xE1ln\u011B, a to na z\xE1klad\u011B hodnocen\xED
+      jej\xED snahy a mo\u017Enost\xED. Hodnot\xED se p\u0159edev\u0161\xEDm mo\u017Enost
+      zv\xFD\u0161en\xED p\u0159\xEDjmu vlastn\xED prac\xED, \u0159\xE1dn\xFDm uplatn\u011Bn\xEDm
+      n\xE1rok\u016F a pohled\xE1vek, prodejem nebo jin\xFDm vyu\u017Eit\xEDm majetku.
+      Pro stanoven\xED \u017Eivobyt\xED rodiny se jednotliv\xE9 \u010D\xE1stky \u017Eivobyt\xED
+      osob s\u010D\xEDtaj\xED. \u010C\xE1stka \u017Eivobyt\xED se odv\xEDj\xED od
+      \u010D\xE1stek existen\u010Dn\xEDho a \u017Eivotn\xEDho minima.\r\n\r\n\u010C\xE1stka
+      \u017Eivobyt\xED osoby se zvy\u0161uje, pokud zdravotn\xED stav osoby vy\u017Eaduje
+      podle doporu\u010Den\xED p\u0159\xEDslu\u0161n\xE9ho odborn\xE9ho l\xE9ka\u0159e
+      zv\xFD\u0161en\xE9 n\xE1klady na dietn\xED stravov\xE1n\xED.\r\n\r\n\u010C\xE1stka
+      \u017Eivobyt\xED u osoby, kter\xE1 dlu\u017E\xED na v\xFD\u017Eivn\xE9m pro
+      nezletil\xE9 d\xEDt\u011B \u010D\xE1stku vy\u0161\u0161\xED ne\u017E trojn\xE1sobek
+      stanoven\xE9 m\u011Bs\xED\u010Dn\xED spl\xE1tky, \u010Din\xED \u010D\xE1stku
+      existen\u010Dn\xEDho minima, p\u0159\xEDpadn\u011B zv\xFD\u0161enou z d\u016Fvodu
+      dietn\xEDho stravov\xE1n\xED.\r\n\r\n\u010C\xE1stka \u017Eivobyt\xED u osoby,
+      kter\xE1 je vedena v evidenci uchaze\u010D\u016F o zam\u011Bstn\xE1n\xED a v
+      posledn\xEDch 6 kalend\xE1\u0159n\xEDch m\u011Bs\xEDc\xEDch p\u0159ed pod\xE1n\xEDm
+      \u017E\xE1dosti o d\xE1vku pomoci v hmotn\xE9 nouzi j\xED byl skon\u010Den z\xE1kladn\xED
+      pracovn\u011Bpr\xE1vn\xED vztah z d\u016Fvodu poru\u0161en\xED povinnosti vypl\xFDvaj\xEDc\xED
+      z pr\xE1vn\xEDch p\u0159edpis\u016F vztahuj\xEDc\xEDch se k j\xED vykon\xE1van\xE9
+      pr\xE1ci zvl\xE1\u0161\u0165 hrub\xFDm zp\u016Fsobem nebo s n\xED byl skon\u010Den
+      jin\xFD pracovn\xED vztah z obdobn\xE9ho d\u016Fvodu, \u010Din\xED \u010D\xE1stku
+      existen\u010Dn\xEDho minima, p\u0159\xEDpadn\u011B zv\xFD\u0161enou z d\u016Fvodu
+      dietn\xEDho stravov\xE1n\xED.\r\n\r\n\u010C\xE1stka \u017Eivobyt\xED u osoby,
+      kter\xE9 je poskytov\xE1na zdravotn\xED p\xE9\u010De ve zdravotnick\xE9m za\u0159\xEDzen\xED
+      po cel\xFD kalend\xE1\u0159n\xED m\u011Bs\xEDc, \u010Din\xED \u010D\xE1stku
+      existen\u010Dn\xEDho minima, p\u0159\xEDpadn\u011B zv\xFD\u0161enou z d\u016Fvodu
+      dietn\xEDho stravov\xE1n\xED.\r\n\u010C\xE1stka \u017Eivobyt\xED u osoby, kter\xE1
+      pob\xEDr\xE1 p\u0159\xEDsp\u011Bvek na \u017Eivobyt\xED d\xE9le ne\u017E 6 kalend\xE1\u0159n\xEDch
+      m\u011Bs\xEDc\u016F, \u010Din\xED \u010D\xE1stku existen\u010Dn\xEDho minima,
+      p\u0159\xEDpadn\u011B zv\xFD\u0161enou z d\u016Fvodu dietn\xEDho stravov\xE1n\xED.
+      Uveden\xE9 neplat\xED pro osobu, kter\xE1 je:\r\n\r\n- v\xFDd\u011Ble\u010Dn\u011B
+      \u010Dinn\xE1 (alespo\u0148 v rozsahu 20 hodin m\u011Bs\xED\u010Dn\u011B a m\xE1
+      p\u0159\xEDjem z t\xE9to \u010Dinnosti),\r\n- \xFA\u010Dastna v projektech organizovan\xFDch
+      \xDA\u0159adem pr\xE1ce \u010CR,\r\n- s n\xE1rokem na podporu v nezam\u011Bstnanosti
+      nebo p\u0159i rekvalifikaci,\r\n- vykonala ve\u0159ejnou slu\u017Ebu v rozsahu
+      alespo\u0148 20 hodin m\u011Bs\xED\u010Dn\u011B,\r\n- star\u0161\xED 68 let,\r\n-
+      po\u017Eivatelem starobn\xEDho d\u016Fchodu,\r\n- invalidn\xED ve 2. a 3. stupni
+      invalidity,\r\n- pob\xEDr\xE1 pen\u011B\u017Eit\xE9 d\xE1vky nemocensk\xE9ho
+      poji\u0161t\u011Bn\xED z d\u016Fvodu t\u011Bhotenstv\xED a mate\u0159stv\xED,\r\n-
+      rodi\u010Dem celodenn\u011B, osobn\u011B a \u0159\xE1dn\u011B pe\u010Duj\xEDc\xEDm
+      alespo\u0148 o 1 d\xEDt\u011B a z d\u016Fvodu t\xE9to p\xE9\u010De pob\xEDr\xE1
+      rodi\u010Dovsk\xFD p\u0159\xEDsp\u011Bvek,\r\n- rodi\u010Dem, kter\xFD z v\xE1\u017En\xFDch
+      d\u016Fvod\u016F nem\u016F\u017Ee um\xEDstit d\xEDt\u011B v jesl\xEDch nebo
+      v mate\u0159sk\xE9 \u0161kole nebo obdobn\xE9m za\u0159\xEDzen\xED (v\xE1\u017En\xFDmi
+      d\u016Fvody se rozum\xED d\u016Fvody zdravotn\xED na stran\u011B d\xEDt\u011Bte,
+      nikoli d\u016Fvody kapacitn\xED),\r\nosobou pe\u010Duj\xEDc\xED o d\xEDt\u011B
+      ve v\u011Bku do 10 let s n\xE1rokem na p\u0159\xEDsp\u011Bvek na p\xE9\u010Di
+      v 1. stupni (tzn. rodi\u010D zdrav\xE9ho d\xEDt\u011Bte mlad\u0161\xEDho ne\u017E
+      10 let, stejn\u011B jako rodi\u010D d\xEDt\u011Bte 11let\xE9ho v 1. stupni z\xE1vislosti
+      si mus\xED sv\xE9 \u017Eivotn\xED minimum odpracovat ve ve\u0159ejn\xE9 slu\u017Eb\u011B
+      prac\xED zdarma pro obec),\r\n- osobou pe\u010Duj\xEDc\xED osobu s n\xE1rokem
+      na p\u0159\xEDsp\u011Bvek na p\xE9\u010Di ve 2. a\u017E 4. stupni (tzn. kdo
+      pe\u010Duje o bl\xEDzkou osobu v 1. stupni z\xE1vislosti (d\xEDt\u011B nebo
+      dosp\u011Bl\xE9ho, nap\u0159. o seniora), mus\xED si ka\u017Ed\xFD m\u011Bs\xEDc
+      odsko\u010Dit odpracovat 20 hodin m\u011Bs\xED\u010Dn\u011B prac\xED zdarma
+      pro obec, aby mu bylo zachov\xE1no \u017Eivotn\xED, nikoli jen existen\u010Dn\xED,
+      minimum),\r\n- po\u017Eivatelem p\u0159\xEDsp\u011Bvku na p\xE9\u010Di ve 2.
+      a\u017E 4. stupni (tzn. po\u017Eivatel p\u0159\xEDsp\u011Bvku v 1. stupni z\xE1vislosti
+      na p\xE9\u010Di jin\xE9 osoby m\xE1 sm\u016Flu a sv\xE9 \u017Eivotn\xED minimum
+      si mus\xED odpracovat. Jinak z\u016Fst\xE1v\xE1 po \u0161esti m\u011Bs\xEDc\xEDch
+      na minimu existen\u010Dn\xEDm),\r\n- nezaopat\u0159en\xFDm d\xEDt\u011Btem,\r\n-
+      uzn\xE1na do\u010Dasn\u011B pr\xE1ce neschopnou,\r\n- pr\xE1ce neschopn\xE1
+      z d\u016Fvodu, kter\xFD by byl u poji\u0161t\u011Bnce poji\u0161t\u011Bn\xE9ho
+      podle z\xE1kona o nemocensk\xE9m poji\u0161t\u011Bn\xED d\u016Fvodem pro rozhodnut\xED
+      o\u0161et\u0159uj\xEDc\xEDho l\xE9ka\u0159e o vzniku do\u010Dasn\xE9 pracovn\xED
+      neschopnosti,\r\nzam\u011Bstnancem, jemu\u017E zam\u011Bstnavatel nevyplatil
+      mzdu, plat, odm\u011Bnu za pr\xE1ci nebo jejich n\xE1hradu v term\xEDnu jejich
+      splatnosti."
+    other_description: "V\xFD\u0161e p\u0159\xEDsp\u011Bvku na \u017Eivobyt\xED se
+      stanovuje jako rozd\xEDl mezi \u017Eivobyt\xEDm osoby \u010Di rodiny a jejich
+      p\u0159\xEDjmem, od kter\xE9ho se ode\u010Dtou p\u0159im\u011B\u0159en\xE9 n\xE1klady
+      na bydlen\xED. (P\u0159im\u011B\u0159en\xE9 n\xE1klady na bydlen\xED jsou od\u016Fvodn\u011Bn\xE9
+      n\xE1klady na bydlen\xED, maxim\xE1ln\u011B v\u0161ak do v\xFD\u0161e 30 %,
+      v Praze 35 %, p\u0159\xEDjmu osoby \u010Di rodiny).\r\n\r\nU osoby, kter\xE1
+      vykonala ve\u0159ejnou slu\u017Ebu v rozsahu alespo\u0148 30 hodin m\u011Bs\xED\u010Dn\u011B,
+      bude \u010D\xE1stka \u017Eivobyt\xED nav\xFD\u0161ena o 605 K\u010D.\r\n\r\n---\r\n\r\nPo\u010Det
+      vyplacen\xFDch d\xE1vek: prosinec 2017 \u2013  92 200\r\n\r\nV\xFDdaje na d\xE1vku:
+      prosinec 2017 \u2013 0,349 mld. K\u010D, za cel\xFD rok 2017 \u2013 4,850 mld.
+      K\u010D"
     responsible_office: 1
     condition: 8
     attachments: []
@@ -358,9 +1074,43 @@
   fields:
     name: "Mimo\u0159\xE1dn\xE1 okam\u017Eit\xE1 pomoc"
     related_law: "111/2006 Sb., o pomoci v hmotn\xE9 nouzi"
-    base_description: '...'
-    usecase_description: '...'
-    claim_description: '...'
+    base_description: "Je poskytov\xE1na osob\xE1m, kter\xE9 se ocitnou v situac\xEDch,
+      kter\xE9 je nutno bezodkladn\u011B \u0159e\u0161it."
+    claim_description: "Z\xE1kon stanov\xED \u0161est takov\xFDch situac\xED:\r\n\r\n1.
+      Nejsou pln\u011Bny podm\xEDnky pro poskytnut\xED opakovan\xFDch d\xE1vek, ale
+      v p\u0159\xEDpad\u011B neposkytnut\xED pomoci osob\u011B hroz\xED v\xE1\u017En\xE1
+      \xFAjma na zdrav\xED. D\xE1vku lze poskytnout v \u010D\xE1stce, kter\xE1 dopln\xED
+      p\u0159\xEDjem osoby do v\xFD\u0161e existen\u010Dn\xEDho minima (v p\u0159\xEDpad\u011B
+      nezaopat\u0159en\xE9ho d\xEDt\u011Bte do \u017Eivotn\xEDho minima).\r\n2. Posti\u017Een\xED
+      v\xE1\u017Enou mimo\u0159\xE1dnou ud\xE1lost\xED (\u017Eiveln\xED pohroma, v\u011Btrn\xE1
+      pohroma, ekologick\xE1 hav\xE1rie, po\u017E\xE1r apod.) D\xE1vku lze poskytnout
+      a\u017E do v\xFD\u0161e 15n\xE1sobku \u010D\xE1stky \u017Eivotn\xEDho minima
+      jednotlivce, tj. a\u017E do v\xFD\u0161e 51 150 K\u010D.\r\n2. Nedostatek prost\u0159edk\u016F
+      k \xFAhrad\u011B jednor\xE1zov\xE9ho v\xFDdaje spojen\xE9ho nap\u0159. se zaplacen\xEDm
+      poplatku za vystaven\xED duplik\xE1t\u016F osobn\xEDch doklad\u016F nebo v p\u0159\xEDpad\u011B
+      ztr\xE1ty pen\u011B\u017En\xEDch prost\u0159edk\u016F. D\xE1vku lze poskytnout
+      a\u017E do v\xFD\u0161e tohoto jednor\xE1zov\xE9ho v\xFDdaje.\r\n3. Nedostatek
+      prost\u0159edk\u016F k n\xE1kupu nebo oprav\u011B p\u0159edm\u011Bt\u016F dlouhodob\xE9
+      pot\u0159eby. D\xE1vku lze poskytnout a\u017E do v\xFD\u0161e t\u011Bchto v\xFDdaj\u016F,
+      maxim\xE1ln\u011B v\u0161ak v pr\u016Fb\u011Bhu kalend\xE1\u0159n\xEDho roku
+      do v\xFD\u0161e 10n\xE1sobku \u010D\xE1stky \u017Eivotn\xEDho minima jednotlivce,
+      tj. a\u017E do \u010D\xE1stky 34 100 K\u010D.\r\n4. Nedostatek prost\u0159edk\u016F
+      k uhrazen\xED od\u016Fvodn\u011Bn\xFDch n\xE1klad\u016F vznikaj\xEDc\xEDch v
+      souvislosti se vzd\u011Bl\xE1n\xEDm nebo se z\xE1jmovou \u010Dinnost\xED nezaopat\u0159en\xFDch
+      d\u011Bt\xED a na zaji\u0161t\u011Bn\xED nezbytn\xFDch \u010Dinnost\xED souvisej\xEDc\xEDch
+      se soci\xE1ln\u011B-pr\xE1vn\xED ochranou d\u011Bt\xED. D\xE1vku lze poskytnout
+      a\u017E do v\xFD\u0161e t\u011Bchto v\xFDdaj\u016F, maxim\xE1ln\u011B v\u0161ak
+      v pr\u016Fb\u011Bhu kalend\xE1\u0159n\xEDho roku do v\xFD\u0161e 10n\xE1sobku
+      \u010D\xE1stky \u017Eivotn\xEDho minima jednotlivce, tj. a\u017E do \u010D\xE1stky
+      34 100 K\u010D. (nap\u0159. p\u0159\xEDsp\u011Bvek na t\xE1bor apod.)\r\n5.
+      Ohro\u017Een\xED soci\xE1ln\xEDm vylou\u010Den\xEDm. Jde nap\u0159. o situace
+      osob vracej\xEDc\xEDch se z v\u011Bzen\xED, z d\u011Btsk\xE9ho domova a z p\u011Bstounsk\xE9
+      p\xE9\u010De po dosa\u017Een\xED zletilosti nebo po ukon\u010Den\xED l\xE9\u010Dby
+      chorobn\xFDch z\xE1vislost\xED. D\xE1vku lze poskytnout a\u017E do v\xFD\u0161e
+      1000 K\u010D. V pr\u016Fb\u011Bhu roku m\u016F\u017Ee b\xFDt poskytnuta opakovan\u011B,
+      sou\u010Det v\u0161ak nesm\xED p\u0159ekro\u010Dit 4n\xE1sobek \u010D\xE1stky
+      \u017Eivotn\xEDho minima jednotlivce, tj. maxim\xE1ln\u011B \u010D\xE1stku 13
+      640 K\u010D."
     other_description: ''
     responsible_office: 1
     condition: 9
@@ -371,8 +1121,50 @@
     name: "Starobn\xED d\u016Fchod"
     related_law: "155/1995 Sb., o d\u016Fchodov\xE9m poji\u0161t\u011Bn\xED"
     base_description: '...'
-    usecase_description: '...'
-    claim_description: '...'
+    claim_description: "Poji\u0161t\u011Bnec m\xE1 n\xE1rok na starobn\xED d\u016Fchod,
+      jestli\u017Ee z\xEDskal dobu poji\u0161t\u011Bn\xED nejm\xE9n\u011B\r\n\r\n-
+      25 let a dos\xE1hl aspo\u0148 v\u011Bku pot\u0159ebn\xE9ho pro vznik n\xE1roku
+      na starobn\xED d\u016Fchod (d\xE1le jen \u201Ed\u016Fchodov\xFD v\u011Bk\u201C)
+      p\u0159ed rokem 2010,\r\n- 26 let a dos\xE1hl d\u016Fchodov\xE9ho v\u011Bku
+      v roce 2010,\r\n- 27 let a dos\xE1hl d\u016Fchodov\xE9ho v\u011Bku v roce 2011,\r\n-
+      28 let a dos\xE1hl d\u016Fchodov\xE9ho v\u011Bku v roce 2012,\r\n- 29 let a
+      dos\xE1hl d\u016Fchodov\xE9ho v\u011Bku v roce 2013,\r\n- 30 let a dos\xE1hl
+      d\u016Fchodov\xE9ho v\u011Bku v roce 2014,\r\n- 31 let a dos\xE1hl d\u016Fchodov\xE9ho
+      v\u011Bku v roce 2015,\r\n- 32 let a dos\xE1hl d\u016Fchodov\xE9ho v\u011Bku
+      v roce 2016,\r\n- 33 let a dos\xE1hl d\u016Fchodov\xE9ho v\u011Bku v roce 2017,\r\n-
+      34 let a dos\xE1hl d\u016Fchodov\xE9ho v\u011Bku v roce 2018,\r\n- 35 let a
+      dos\xE1hl d\u016Fchodov\xE9ho v\u011Bku po roce 2018.\r\n\r\nPoji\u0161t\u011Bnec
+      m\xE1 n\xE1rok na starobn\xED d\u016Fchod, pokud nesplnil podm\xEDnky uveden\xE9
+      pod bodem 1., tak\xE9 tehdy, jestli\u017Ee z\xEDskal dobu poji\u0161t\u011Bn\xED
+      nejm\xE9n\u011B\r\n\r\n- 15 let a dos\xE1hl p\u0159ed rokem 2010 v\u011Bku aspo\u0148
+      65 let,\r\n- 16 let a dos\xE1hl v roce 2010 v\u011Bku aspo\u0148 o 5 let vy\u0161\u0161\xEDho,
+      ne\u017E je d\u016Fchodov\xFD v\u011Bk stanoven\xFD podle \xA7 32 pro mu\u017Ee
+      stejn\xE9ho data narozen\xED,\r\n- 17 let a dos\xE1hl v roce 2011 v\u011Bku
+      aspo\u0148 o 5 let vy\u0161\u0161\xEDho, ne\u017E je d\u016Fchodov\xFD v\u011Bk
+      stanoven\xFD podle \xA7 32 pro mu\u017Ee stejn\xE9ho data narozen\xED,\r\n-
+      18 let a dos\xE1hl v roce 2012 v\u011Bku aspo\u0148 o 5 let vy\u0161\u0161\xEDho,
+      ne\u017E je d\u016Fchodov\xFD v\u011Bk stanoven\xFD podle \xA7 32 pro mu\u017Ee
+      stejn\xE9ho data narozen\xED,\r\n- 19 let a dos\xE1hl v roce 2013 v\u011Bku
+      aspo\u0148 o 5 let vy\u0161\u0161\xEDho, ne\u017E je d\u016Fchodov\xFD v\u011Bk
+      stanoven\xFD podle \xA7 32 pro mu\u017Ee stejn\xE9ho data narozen\xED,\r\n-
+      20 let a dos\xE1hl po roce 2013 v\u011Bku aspo\u0148 o 5 let vy\u0161\u0161\xEDho,
+      ne\u017E je d\u016Fchodov\xFD v\u011Bk stanoven\xFD podle \xA7 32 pro mu\u017Ee
+      stejn\xE9ho data narozen\xED.\r\n\r\nPoji\u0161t\u011Bnec, kter\xFD nespl\u0148uje
+      podm\xEDnky uveden\xE9 v bod\u011B 1. p\xEDsm. g) a\u017E k), m\xE1 n\xE1rok
+      na starobn\xED d\u016Fchod t\xE9\u017E, jestli\u017Ee dos\xE1hl d\u016Fchodov\xE9ho
+      v\u011Bku po roce 2014 a z\xEDskal aspo\u0148 30 let doby poji\u0161t\u011Bn\xED
+      bez n\xE1hradn\xEDch dob poji\u0161t\u011Bn\xED.\r\n\r\nPoji\u0161t\u011Bnec,
+      kter\xFD nespl\u0148uje podm\xEDnky uveden\xE9 v bod\u011B 2, p\xEDsm. b) a\u017E
+      f) m\xE1 n\xE1rok na starobn\xED d\u016Fchod t\xE9\u017E, jestli\u017Ee dos\xE1hl
+      v\u011Bku aspo\u0148 o p\u011Bt let vy\u0161\u0161\xEDho, ne\u017E je d\u016Fchodov\xFD
+      v\u011Bk stanoven\xFD pro mu\u017Ee stejn\xE9ho data narozen\xED a z\xEDskal
+      aspo\u0148 15 let doby poji\u0161t\u011Bn\xED uveden\xE9 v \xA7 11 a \xA7 13
+      odst. 1 z\xE1kona o d\u016Fchodov\xE9m poji\u0161t\u011Bn\xED, tj. doby, za
+      kterou se plat\xED pojistn\xE9 na d\u016Fchodov\xE9 poji\u0161t\u011Bn\xED.\r\nPoji\u0161t\u011Bnec,
+      kter\xFD nespl\u0148uje podm\xEDnky stanoven\xE9 v bodech 1, 2 nebo 3, m\xE1
+      n\xE1rok na starobn\xED d\u016Fchod t\xE9\u017E, jestli\u017Ee dos\xE1hl v\u011Bku
+      65 let a splnil podm\xEDnky n\xE1roku na invalidn\xED d\u016Fchod stanoven\xE9
+      z\xE1konem o d\u016Fchodov\xE9m poji\u0161t\u011Bn\xED."
     other_description: ''
     responsible_office: 2
     condition: 10
@@ -382,10 +1174,13 @@
   fields:
     name: "Poh\u0159ebn\xE9"
     related_law: "117/1995 Sb., o st\xE1tn\xED soci\xE1ln\xED podpo\u0159e"
-    base_description: '...'
-    usecase_description: '...'
-    claim_description: '...'
-    other_description: ''
+    base_description: "Poh\u0159ebn\xE9 pom\xE1h\xE1 p\u0159\xEDjemci finan\u010Dn\xED
+      pomoci pokr\xFDt n\xE1klady na poh\u0159eb zem\u0159el\xE9ho."
+    claim_description: "N\xE1rok na poh\u0159ebn\xE9 m\xE1 osoba, kter\xE1 vyprav\xED
+      poh\u0159eb nezaopat\u0159en\xE9mu d\xEDt\u011Bti, nebo rodi\u010Di takov\xE9ho
+      d\xEDt\u011Bte.\r\nPodm\xEDnkou je trval\xFD pobyt na \xFAzem\xED \u010CR."
+    other_description: "Poh\u0159ebn\xE9 je vypl\xE1ceno jednor\xE1zov\u011B v \u010D\xE1stce
+      5 000 K\u010D."
     responsible_office: 1
     condition: 11
     attachments: []
@@ -395,8 +1190,26 @@
     name: "Vdovsk\xFD a vdoveck\xFD d\u016Fchod"
     related_law: "155/1995 Sb., o d\u016Fchodov\xE9m poji\u0161t\u011Bn\xED"
     base_description: '...'
-    usecase_description: '...'
-    claim_description: '...'
+    claim_description: "Vdova/vdovec m\xE1 n\xE1rok na vdovsk\xFD/vdoveck\xFD d\u016Fchod
+      po zem\u0159el\xE9m man\u017Eelovi/man\u017Eelce, kter\xFD/\xE1\r\n\r\n- byl/a
+      po\u017Eivatelem starobn\xEDho nebo invalidn\xEDho d\u016Fchodu, nebo\r\n- splnil/a
+      ke dni smrti podm\xEDnku pot\u0159ebn\xE9 doby poji\u0161t\u011Bn\xED pro n\xE1rok
+      na invalidn\xED d\u016Fchod nebo podm\xEDnky n\xE1roku na starobn\xED d\u016Fchod
+      anebo zem\u0159el/a n\xE1sledkem pracovn\xEDho \xFArazu (nemoci z povol\xE1n\xED).\r\n\r\nVdovsk\xFD/vdoveck\xFD
+      d\u016Fchod n\xE1le\u017E\xED po dobu jednoho roku od smrti man\u017Eela. Po
+      uplynut\xED t\xE9to doby m\xE1 vdova/vdovec n\xE1rok na vdovsk\xFD/vdoveck\xFD
+      d\u016Fchod, jestli\u017Ee\r\n\r\n- pe\u010Duje o nezaopat\u0159en\xE9 d\xEDt\u011B,\r\n-
+      pe\u010Duje o d\xEDt\u011B, kter\xE9 je z\xE1visl\xE9 na pomoci jin\xE9 osoby
+      ve stupni II a\u017E IV,\r\n- pe\u010Duje o sv\xE9ho rodi\u010De nebo rodi\u010De
+      zem\u0159el\xE9ho man\u017Eela/man\u017Eelky, kter\xFD s n\xED \u017Eije v dom\xE1cnosti
+      a je z\xE1visl\xFD na pomoci jin\xE9 osoby ve stupni II a\u017E IV,\r\n- je
+      invalidn\xED ve t\u0159et\xEDm stupni,\r\n- dos\xE1hla alespo\u0148 v\u011Bku
+      o 4 roky ni\u017E\u0161\xEDho, ne\u017E \u010Din\xED d\u016Fchodov\xFD v\u011Bk
+      pro mu\u017Ee stejn\xE9ho data narozen\xED nebo d\u016Fchodov\xE9ho v\u011Bku,
+      je-li d\u016Fchodov\xFD v\u011Bk ni\u017E\u0161\xED.\r\n\r\nN\xE1rok na vdovsk\xFD
+      d\u016Fchod vznikne znovu, jestli\u017Ee se spln\xED n\u011Bkter\xE1 z uveden\xFDch
+      podm\xEDnek do dvou rok\u016F po z\xE1niku d\u0159\xEDv\u011Bj\u0161\xEDho n\xE1roku
+      na vdovsk\xFD d\u016Fchod."
     other_description: ''
     responsible_office: 2
     condition: 11
@@ -407,8 +1220,40 @@
     name: "Sirot\u010D\xED d\u016Fchod"
     related_law: "155/1995 Sb., o d\u016Fchodov\xE9m poji\u0161t\u011Bn\xED"
     base_description: '...'
-    usecase_description: '...'
-    claim_description: '...'
+    claim_description: "N\xE1rok na sirot\u010D\xED d\u016Fchod m\xE1 nezaopat\u0159en\xE9
+      d\xEDt\u011B, zem\u0159el-li\r\n\r\n- rodi\u010D (osvojitel), nebo\r\n- osoba,
+      kter\xE1 p\u0159evzala d\xEDt\u011B do p\xE9\u010De nahrazuj\xEDc\xED p\xE9\u010Di
+      rodi\u010D\u016F na z\xE1klad\u011B rozhodnut\xED soudu o sv\u011B\u0159en\xED
+      d\xEDt\u011Bte do p\xE9\u010De jin\xE9 osoby\r\n\r\nPodm\xEDnka pot\u0159ebn\xE9
+      doby poji\u0161t\u011Bn\xED pro n\xE1rok na invalidn\xED d\u016Fchod se pro
+      \xFA\u010Dely vzniku n\xE1roku na sirot\u010D\xED d\u016Fchod pova\u017Euje
+      za spln\u011Bnou, byla-li z\xEDsk\xE1na aspo\u0148 polovina pot\u0159ebn\xE9
+      doby poji\u0161t\u011Bn\xED pro n\xE1rok na invalidn\xED d\u016Fchod zem\u0159el\xE9ho
+      (plat\xED od 1. 1. 2012). N\xE1rok vznikne i tehdy, pokud zem\u0159el\xFD z\xEDskal
+      jen kr\xE1tkou dobu d\u016Fchodov\xE9ho poji\u0161t\u011Bn\xED, a to aspo\u0148
+      jeden rok, pop\u0159\xEDpad\u011B u poji\u0161t\u011Bnce star\u0161\xEDho 38
+      let aspo\u0148 dva roky \u2013 mus\xED v\u0161ak j\xEDt o dobu, za kterou se
+      plat\xED pojistn\xE9 na d\u016Fchodov\xE9 poji\u0161t\u011Bn\xED (plat\xED od
+      1. 2. 2018).\r\n\r\nJestli\u017Ee rodi\u010D (osvojitel) nebo osoba uveden\xE1
+      pod p\xEDsmenem b) byli po\u017Eivateli starobn\xEDho nebo invalidn\xEDho d\u016Fchodu
+      nebo ke dni smrti splnili podm\xEDnku pot\u0159ebn\xE9 doby poji\u0161t\u011Bn\xED
+      pro n\xE1rok na invalidn\xED d\u016Fchod nebo podm\xEDnky n\xE1roku na starobn\xED
+      d\u016Fchod anebo zem\u0159eli n\xE1sledkem pracovn\xEDho \xFArazu (nemoci z
+      povol\xE1n\xED).\r\n\r\nOboustrann\u011B osi\u0159el\xE9 d\xEDt\u011B m\xE1
+      n\xE1rok na sirot\u010D\xED d\u016Fchod po ka\u017Ed\xE9m ze zem\u0159el\xFDch
+      rodi\u010D\u016F.\r\n\r\nN\xE1rok na sirot\u010D\xED d\u016Fchod nevznik\xE1
+      po p\u011Bstounovi nebo jeho man\u017Eelovi.\r\n\r\nN\xE1rok na sirot\u010D\xED
+      d\u016Fchod zanik\xE1 osvojen\xEDm. Dojde-li ke zru\u0161en\xED osvojen\xED,
+      vznikne n\xE1rok na sirot\u010D\xED d\u016Fchod znovu.\r\n\r\n### V\xFD\u0161e
+      sirot\u010D\xEDho d\u016Fchodu (\xA7 53 z\xE1kona o d\u016Fchodov\xE9m poji\u0161t\u011Bn\xED)\r\n\r\nV\xFD\u0161e
+      d\u016Fchodu se skl\xE1d\xE1 ze dvou slo\u017Eek, a to ze z\xE1kladn\xED v\xFDm\u011Bry
+      a z procentn\xED v\xFDm\u011Bry.\r\n\r\nV\xFD\u0161e z\xE1kladn\xED v\xFDm\u011Bry
+      d\u016Fchodu je stanovena procentn\xED sazbou z pr\u016Fm\u011Brn\xE9 mzdy \u2013
+      9 % pr\u016Fm\u011Brn\xE9 mzdy (po p\u0159\xEDslu\u0161n\xE9m zaokrouhlen\xED);
+      v p\u0159\xEDpad\u011B oboustrann\xE9ho sirotka n\xE1le\u017E\xED z\xE1kladn\xED
+      v\xFDm\u011Bra pouze jednou.\r\n\r\nV\xFD\u0161e procentn\xED v\xFDm\u011Bry
+      d\u016Fchodu \u010Din\xED 40 % procentn\xED v\xFDm\u011Bry d\u016Fchodu, na
+      kter\xFD m\u011Bl nebo by m\u011Bl n\xE1rok zem\u0159el\xFD v dob\u011B smrti."
     other_description: ''
     responsible_office: 2
     condition: 11

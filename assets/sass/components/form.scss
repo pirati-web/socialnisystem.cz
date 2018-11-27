@@ -1,5 +1,119 @@
 .form {
-    p > label {
-        @include headerStyle('h4', main);
+}
+
+.form__field-label > label,
+.form__field .input__label {
+    @include headerStyle('h5', alt);
+}
+
+.form__field-help {
+    color: $dark-gray;
+}
+
+.form__field-control {
+    /* radio */
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        display: inline-block;
+        list-style: none;
+    }
+
+    .input__wrapper {
+        .input__label {
+            display: flex;
+            align-items: center;
+            position: relative;
+            cursor: pointer;
+
+            &:before {
+                content: '';
+                display: inline-block;
+                width: 1.5rem;
+                height: 1.5rem;
+                margin-right: .5rem;
+                border-radius: 100%;
+                background: $light-gray;
+                transition: background-color .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+            }
+
+            &:after {
+                content: '';
+                position: absolute;
+                display: inline-block;
+                width: .75rem;
+                height: .75rem;
+                left: .375rem;
+                border-radius: 100%;
+                background: $medium-gray;
+                transition: background-color .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+            }
+        }
+
+        input[type='radio'] {
+            opacity: 0;
+            position: absolute;
+
+            &:checked ~ .input__label {
+                &:before {
+                    background: $medium-gray;
+                }
+
+                &:after {
+                    background: $black;
+                }
+            }
+        }
     }
 }
+
+
+.form__submit-row {
+    margin: 3rem 0;
+}
+
+.form__submit-button {
+    margin: 0;
+}
+
+
+.form--horizontal {
+    .form__field {
+        display: flex;
+        margin-bottom: 1rem;
+        flex-direction: column;
+
+        @include breakpoint(medium up) {
+            flex-direction: row;
+            align-items: flex-start;
+            margin-bottom: 2rem;
+        }
+    }
+
+    .form__field-label {
+        flex: 1;
+        padding-right: 0;
+        text-align: left;
+
+        @include breakpoint(medium up) {
+            text-align: right;
+            padding-right: 2rem;
+        }
+    }
+
+    .form__field-control {
+        flex: 1;
+
+        li + li {
+            margin-left: 1rem;
+        }
+    }
+
+    .form__submit-row {
+        text-align: center;
+    }
+}
+

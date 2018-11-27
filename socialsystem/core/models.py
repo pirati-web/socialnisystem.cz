@@ -96,7 +96,6 @@ class Benefit(models.Model):
     related_law = models.CharField('Související zákon(y)', max_length=255)
 
     base_description = models.TextField('Základní popis', blank=False)
-    usecase_description = models.TextField('K čemu slouží', blank=False)
     claim_description = models.TextField('Kdo má nárok', blank=False)
     other_description = models.TextField('Další informace', blank=True)
 

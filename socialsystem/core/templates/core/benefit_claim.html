@@ -7,11 +7,16 @@
 
 
 {% block article %}
-<div class="v-benefit-claim row">
+<div class="v-benefit-claim row js-benefit-claim-form {% if submitted %}js-benefit-claim-form--submitted{% endif %}">
     <div class="small-12 columns">
-
         {% if submitted %}
+            {% if claimable_benefits|length > 0 %}
             <div class="row">
+                <div class="small-12 columns"><p>Máme pro vás <strong>dobré zprávy</strong>! Zdá se, že máte nárok na následující dávky:</p></div>
+            </div>
+            {% endif %}
+
+            <div class="row js-benefit-claim-form__results">
                 {% for benefit in claimable_benefits %}
                     <section class="card small-12 middle-6 large-4 columns">
                         <div class="card__body content-block">
@@ -23,22 +28,70 @@
                         </div>
                     </section>
                 {% empty %}
-                    <p>Je nám líto. Bohužel nesplňujete kritéria pro žádnou dávku.</p>
+                    <div class="small-12 columns">
+                        <h2 class="t-h4-alt">Je nám líto, zdá se, že bohužel nesplňujete kritéria pro žádnou z dávek. Nezoufejte!</h2>
+                        <p>Možná jste jen dotazník vyplnil/a špatně? Pokud si nevíte rady, kontaktujte nás. Pokusíme se vám pomoci.</p>
+                        <h3 class="t-h4">Kontakt</h3>
+                        <ul class="no-bullet">
+                            <li><a href="mailto:{{ siteinfo.email }}">{{ siteinfo.email }}</a></li>
+                            <li><a href="tel:{{ siteinfo.phone }}">{{ siteinfo.phone }}</a></li>
+                        </ul>
+                        <br><br>
+                    </div>
                 {% endfor %}
             </div>
-            <hr>
+            <div class="labeled-splitter content-block js-benefit-claim-form__toggle-wrap">
+                <a href="" class="labeled-splitter__label js-benefit-claim-form__toggle">Vyplnit znovu</a>
+            </div>
+
+            <hr class="v-benefit-claim__divider js-benefit-claim-form__divider hide">
         {% endif %}
 
-        <p>Abychom mohli zjistit na co máte nárok, budeme od vás potřebovat <strong>pár informací</strong>. Vyplnění dotazníku zabere jen <strong>pár minut</strong>.</p>
+        <div class="row js-benefit-claim-form__container {% if submitted %}hide{% endif %}">
+            <div class="small-12 medium-8 columns">
+                <form action="." method="POST" class="form form--horizontal">
+                    {% csrf_token %}
 
-        <form action="." method="POST" class="form">
-            {% csrf_token %}
-            {{ form.as_p }}
+                    {{ form.non_field_errors }}
 
-            <div class="form__submit-row">
-                <button type="submit" class="button primary large">Odeslat</button>
+                    {% for field in form %}
+                        <div class="form__field">
+                            <div class="form__field-label">
+                                {{ field.label_tag }}
+
+                                {% if field.help_text %}
+                                    <div class="form__field-help"><i class="fas fa-question-circle"></i>&nbsp;{{ field.help_text }}</div>
+                                {% endif %}
+                            </div>
+                            <div class="form__field-control">
+                                {{ field }}
+                            </div>
+
+                            {% if field.errors %}<div class="form__field-errors">{{ field.errors }}</div>{% endif %}
+                        </div>
+                    {% endfor %}
+
+                    <div class="form__submit-row">
+                        <button type="submit" class="button primary large form__submit-button">Zjistit na co mám nárok</button>
+                    </div>
+                </form>
             </div>
-        </form>
+            <div class="small-12 medium-4 columns last">
+                <aside class="page__sidebar-body content-block">
+                    <h2 class="t-h4">Žádný strach</h4>
+                    <p>Abychom mohli zjistit na co máte nárok, budeme od vás potřebovat <strong>pár informací</strong>. Vyplnění dotazníku zabere jen <strong>pár minut</strong>.</p>
+                    <p>Vámi vyplněné informace <strong>nikam neukládáme</strong>. Budou použity pouze pro účely vyhodnocení vašeho nároku na sociální podporu.</p>
+                </aside>
+                <aside class="page__sidebar-body content-block">
+                    <h2 class="t-h4">Potřebujete poradit?</h4>
+                    <p>Nevíte si rady jak správně dotazník vyplnit? Kontaktujte nás!</p>
+                    <ul class="no-bullet">
+                        <li><a href="mailto:{{ siteinfo.email }}">{{ siteinfo.email }}</a></li>
+                        <li><a href="tel:{{ siteinfo.phone }}">{{ siteinfo.phone }}</a></li>
+                    </ul>
+                </aside>
+            </div>
+        </div>
     </div>
 </div>
 {% endblock %}
