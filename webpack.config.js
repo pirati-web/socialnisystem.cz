@@ -2,7 +2,7 @@ const path = require('path');
 const webpack = require('webpack');
 const BundleTracker = require('webpack-bundle-tracker');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
 module.exports = (env, argv) => {
@@ -18,10 +18,9 @@ module.exports = (env, argv) => {
 
         optimization: {
             minimizer: prodMode ? [
-                new UglifyJsPlugin({
+                new TerserPlugin({
                     cache: true,
                     parallel: true,
-                    sourceMap: true // set to true if you want JS source maps
                 }),
                 new OptimizeCSSAssetsPlugin({})
             ] : [],
