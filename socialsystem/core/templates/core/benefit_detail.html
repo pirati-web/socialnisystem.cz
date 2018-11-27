@@ -17,18 +17,24 @@
         </div>
 
         <div class="v-benefit-detail__claim content-block">
-            <h2 class="t-h2">Kdo má nárok</h2>
+            <h2 class="t-h3">Kdo má nárok</h2>
             {{ object.claim_description | markdown }}
         </div>
-    </div>
-    <aside class="page__sidebar small-12 medium-4 columns">
+
         {% if object.other_description %}
-            <div class="page__sidebar-body content-block">
+            <div class="v-benefit-detail__other content-block">
                 <h2 class="t-h3">Další informace</h4>
                 {{ object.other_description | markdown }}
             </div>
         {% endif %}
-
+    </div>
+    <aside class="page__sidebar small-12 medium-4 columns">
+        {% if object.context_description %}
+            <div class="page__sidebar-body content-block">
+                <h2 class="t-h3">Situace</h4>
+                {{ object.context_description | markdown }}
+            </div>
+        {% endif %}
         {% with object.attachments.all as attachments %}
             {% if attachments %}
                 <div class="page__sidebar-body content-block">

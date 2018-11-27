@@ -98,6 +98,7 @@ class Benefit(models.Model):
     base_description = models.TextField('Základní popis', blank=False)
     claim_description = models.TextField('Kdo má nárok', blank=False)
     other_description = models.TextField('Další informace', blank=True)
+    context_description = models.TextField('Kontextové informace', blank=True, help_text='Počet udělených dávek apod.')
 
     responsible_office = models.ForeignKey(to='core.StateOffice', on_delete=models.PROTECT, verbose_name='Žádost se podává na')
     condition = models.ForeignKey(to='core.LifeCondition', related_name='benefits', on_delete=models.PROTECT, verbose_name='Situace')

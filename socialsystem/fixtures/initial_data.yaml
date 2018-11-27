@@ -79,6 +79,7 @@
       390 K\u010D m\u011Bs\xED\u010Dn\u011B. Nejvy\u0161\u0161\xED nemocensk\xE9 32
       640 K\u010D lze dos\xE1hnout p\u0159i pr\u016Fm\u011Brn\xE9 m\u011Bs\xED\u010Dn\xED
       hrub\xE9 mzd\u011B 80 900 K\u010D."
+    context_description: ''
     responsible_office: 2
     condition: 1
     attachments: []
@@ -108,6 +109,7 @@
       n\xE1stupu na otcovskou.\r\n- Pro volno v zam\u011Bstn\xE1n\xED vyu\u017Eij\xED
       otcov\xE9 rodi\u010Dovskou dovolenou."
     other_description: ''
+    context_description: ''
     responsible_office: 2
     condition: 1
     attachments: []
@@ -134,6 +136,7 @@
       jej\xEDch zapo\u010Ditateln\xFDch p\u0159\xEDjm\u016F p\u0159ipadaj\xEDc\xEDm
       na jeden kalend\xE1\u0159n\xED den v jednotliv\xFDch kalend\xE1\u0159n\xEDch
       m\u011Bs\xEDc\xEDch po tomto p\u0159eveden\xED."
+    context_description: ''
     responsible_office: 2
     condition: 1
     attachments: []
@@ -159,6 +162,7 @@
       d\xEDt\u011Btem v rodin\u011B, tj. jen 10.000 K\u010D. P\u0159i narozen\xED
       dvoj\u010Dat jako v po\u0159ad\xED t\u0159et\xEDho a \u010Dtvrt\xE9ho d\xEDt\u011Bte
       pak nic."
+    context_description: ''
     responsible_office: 1
     condition: 1
     attachments: []
@@ -205,6 +209,7 @@
       nejm\xE9n\u011B 6 m\u011Bs\xEDc\u016F, nejd\xE9le do 4 let v\u011Bku d\xEDt\u011Bte.
       Zanik\xE1 s narozen\xEDm dal\u0161\xEDho d\xEDt\u011Bte (ale vznik\xE1 u nov\u011B
       narozen\xE9ho)."
+    context_description: ''
     responsible_office: 1
     condition: 2
     attachments: []
@@ -225,6 +230,7 @@
       i rodi\u010Dovsk\xFD p\u0159\xEDsp\u011Bvek."
     other_description: "P\u0159\xEDdavek je vypl\xE1cen ve t\u0159ech v\xFD\u0161\xEDch
       podle v\u011Bku nezaopat\u0159en\xE9ho d\xEDt\u011Bte."
+    context_description: ''
     responsible_office: 1
     condition: 2
     attachments: []
@@ -248,6 +254,7 @@
       a spole\u010Dn\u011B uhrazuje n\xE1klady na sv\xE9 pot\u0159eby s osobou, kter\xE1
       byla do dosa\u017Een\xED jeho zletilosti osobou pe\u010Duj\xEDc\xED."
     other_description: ''
+    context_description: ''
     responsible_office: 1
     condition: 3
     attachments: []
@@ -293,6 +300,7 @@
       \ 20 000,- hrub\xE9ho \u2013 v\xFDhradn\u011B p\u011Bstounsk\xE1 p\xE9\u010De
       14 460,- \u2013 p\u0159i soub\u011Bhu s dal\u0161\xEDm zdaniteln\xFDm p\u0159\xEDjmem
       12 390,-"
+    context_description: ''
     responsible_office: 1
     condition: 3
     attachments: []
@@ -311,6 +319,7 @@
       d\xEDt\u011Bte \u010Din\xED, jde-li o d\xEDt\u011B ve v\u011Bku:\r\n\r\n* do
       6 let, 8 000 K\u010D,\r\n* od 6 let do 12 let, 9 000 K\u010D,\r\n* od 12 let
       do 18 let, 10 000 K\u010D."
+    context_description: ''
     responsible_office: 1
     condition: 3
     attachments: []
@@ -331,6 +340,7 @@
       prok\xE1zan\xFDch v\xFDdaj\u016F na opravy, nejv\xFD\u0161e v\u0161ak 100 000
       K\u010D. Podm\xEDnkou d\xE1le je, \u017Ee osoba pe\u010Duj\xEDc\xED nesm\xED
       motorov\xE9 vozidlo pou\u017E\xEDvat k v\xFDd\u011Ble\u010Dn\xE9 \u010Dinnosti."
+    context_description: ''
     responsible_office: 1
     condition: 3
     attachments: []
@@ -346,6 +356,7 @@
       n\xE1roku t\xE9to osoby na p\u0159\xEDsp\u011Bvek na \xFAhradu pot\u0159eb d\xEDt\u011Bte."
     other_description: "V\xFD\u0161e jednor\xE1zov\xE9ho p\u0159\xEDsp\u011Bvku \u010Din\xED
       25 000 K\u010D."
+    context_description: ''
     responsible_office: 1
     condition: 3
     attachments: []
@@ -431,6 +442,7 @@
       integrovan\xE9ho z\xE1chrann\xE9ho syst\xE9mu povol\xE1na. Tuto skute\u010Dnost
       poji\u0161t\u011Bnci potvrd\xED opera\u010Dn\xED st\u0159edisko integrovan\xE9ho
       z\xE1chrann\xE9ho syst\xE9mu."
+    context_description: ''
     responsible_office: 2
     condition: 4
     attachments: []
@@ -447,7 +459,7 @@
       vzniku invalidity podm\xEDnky n\xE1roku na \u0159\xE1dn\xFD starobn\xED d\u016Fchod,
       pop\u0159\xEDpad\u011B, byl-li p\u0159izn\xE1n p\u0159ed\u010Dasn\xFD trvale
       kr\xE1cen\xFD starobn\xED d\u016Fchod, pokud nedos\xE1hl d\u016Fchodov\xE9ho
-      v\u011Bku, nebo\r\n- invalidn\xEDm n\xE1sledkem pracovn\xEDho \xFArazu.\r\n\r\n###
+      v\u011Bku, nebo\r\n- invalidn\xEDm n\xE1sledkem pracovn\xEDho \xFArazu.\r\n\r\n####
       Invalidita (\xA7 39 z\xE1kona o d\u016Fchodov\xE9m poji\u0161t\u011Bn\xED)\r\n\r\nPoji\u0161t\u011Bnec
       je invalidn\xED, jestli\u017Ee z d\u016Fvodu dlouhodob\u011B nep\u0159\xEDzniv\xE9ho
       zdravotn\xEDho stavu nastal pokles jeho pracovn\xED schopnosti nejm\xE9n\u011B
@@ -455,7 +467,7 @@
       nejm\xE9n\u011B o 35 %, av\u0161ak nejv\xEDce o 49 %, jedn\xE1 se o invaliditu
       prvn\xEDho stupn\u011B,\r\n* nejm\xE9n\u011B o 50 %, av\u0161ak nejv\xEDce o
       69 %, jedn\xE1 se o invaliditu druh\xE9ho stupn\u011B,\r\n* nejm\xE9n\u011B
-      o 70 %, jedn\xE1 se o invaliditu t\u0159et\xEDho stupn\u011B.\r\n\r\n### Pot\u0159ebn\xE1
+      o 70 %, jedn\xE1 se o invaliditu t\u0159et\xEDho stupn\u011B.\r\n\r\n#### Pot\u0159ebn\xE1
       doba poji\u0161t\u011Bn\xED pro n\xE1rok na invalidn\xED d\u016Fchod (\xA7 40
       z\xE1kona o d\u016Fchodov\xE9m poji\u0161t\u011Bn\xED)\r\n\r\nPot\u0159ebn\xE1
       doba poji\u0161t\u011Bn\xED \u010Din\xED u poji\u0161t\u011Bnce ve v\u011Bku:\r\n\r\n*
@@ -477,6 +489,7 @@
       vznikla-li pln\xE1 invalidita n\xE1sledkem pracovn\xEDho \xFArazu (nemoci z
       povol\xE1n\xED)."
     other_description: ''
+    context_description: ''
     responsible_office: 2
     condition: 4
     attachments: []
@@ -510,6 +523,7 @@
       se podle \xA7 26 odst. 1 p\xEDsm. b)."
     other_description: "V\xFD\u0161e p\u0159\xEDsp\u011Bvku na mobilitu \u010Din\xED
       za kalend\xE1\u0159n\xED m\u011Bs\xEDc 550 K\u010D."
+    context_description: ''
     responsible_office: 1
     condition: 4
     attachments: []
@@ -691,6 +705,7 @@
       \u0161ikm\xE9 zvedac\xED plo\u0161iny. Od vyplacen\xFDch \u010D\xE1stek se p\u0159i
       ur\u010Dov\xE1n\xED sou\u010Dtu ode\u010D\xEDtaj\xED \u010D\xE1stky, kter\xE9
       osoba v tomto obdob\xED vr\xE1tila nebo jejich\u017E vr\xE1cen\xED bylo prominuto."
+    context_description: ''
     responsible_office: 1
     condition: 4
     attachments: []
@@ -709,6 +724,7 @@
       z\xE1vislosti a v\u011Bku \u017Eadatele. S v\xFDjimkou \xFApln\xE9 z\xE1vislosti
       plat\xED, \u017Ee \u017Eadatel\xE9 do 18 let maj\xED n\xE1rok na vy\u0161\u0161\xED
       p\u0159\xEDsp\u011Bvek."
+    context_description: ''
     responsible_office: 1
     condition: 4
     attachments: []
@@ -738,6 +754,7 @@
       do 16 let, kter\xE9 neukon\u010Dilo povinnou \u0161koln\xED doch\xE1zku, nejd\xE9le
       16 kalend\xE1\u0159n\xEDch dn\u016F."
     other_description: ''
+    context_description: ''
     responsible_office: 2
     condition: 5
     attachments: []
@@ -787,6 +804,7 @@
       rozsahu, \u017E\xE1ci a studenti jen v dob\u011B \u0161koln\xEDch pr\xE1zdnin
       a p\u011Bstouni."
     other_description: ''
+    context_description: ''
     responsible_office: 2
     condition: 5
     attachments: []
@@ -854,6 +872,7 @@
       dvou m\u011Bs\xEDc\u016F podp\u016Fr\u010D\xED doby, 50 % po dobu dal\u0161\xEDch
       dvou m\u011Bs\xEDc\u016F a 45 % po zb\xFDvaj\xEDc\xED podp\u016Fr\u010D\xED
       dobu (osoby do 50 let tedy ji\u017E jen posledn\xED m\u011Bs\xEDc)."
+    context_description: ''
     responsible_office: 1
     condition: 6
     attachments: []
@@ -883,6 +902,7 @@
       \u010Dinnost, se stanov\xED procentn\xED sazbou z posledn\xEDho vym\u011B\u0159ovac\xEDho
       z\xE1kladu v rozhodn\xE9m obdob\xED p\u0159epo\u010Dten\xE9ho na 1 kalend\xE1\u0159n\xED
       m\u011Bs\xEDc."
+    context_description: ''
     responsible_office: 1
     condition: 6
     attachments: []
@@ -914,6 +934,7 @@
       koeficientem 0,30, resp. 0,35.\r\n\r\nNormativy jsou odstup\u0148ov\xE1ny podle
       velikosti m\u011Bsta/obce a po\u010Dtu osob v dom\xE1cnosti (maximum je 4 a
       v\xEDce osob, pak se \u201Estrop\u201C d\xE1le nezvy\u0161uje."
+    context_description: ''
     responsible_office: 1
     condition: 7
     attachments: []
@@ -961,9 +982,10 @@
       a to na 90 % v p\u0159\xEDpad\u011B zahradn\xEDch chatek (u vlastn\xEDk\u016F
       t\u011Bchto rekrea\u010Dn\xEDch objekt\u016F), 80 % p\u0159i u\u017E\xEDv\xE1n\xED
       jednotky na ubytovn\u011B nebo p\u0159i ob\xFDv\xE1n\xED jin\xE9ho ne\u017E
-      obytn\xE9ho prostoru.\r\n\r\n---\r\n\r\nPo\u010Det vyplacen\xFDch d\xE1vek:
-      **prosinec 2017 \u2013  50 000**\r\n\r\nV\xFDdaje na d\xE1vku: **prosinec 2017**
-      \u2013 0,193 mld. K\u010D, **za cel\xFD rok 2017** \u2013 2,423 mld. K\u010D"
+      obytn\xE9ho prostoru."
+    context_description: "Po\u010Det vyplacen\xFDch d\xE1vek: **prosinec 2017 \u2013
+      \ 50 000**\r\n\r\nV\xFDdaje na d\xE1vku: **prosinec 2017** \u2013 0,193 mld.
+      K\u010D, **za cel\xFD rok 2017** \u2013 2,423 mld. K\u010D"
     responsible_office: 1
     condition: 7
     attachments: []
@@ -1062,10 +1084,10 @@
       n\xE1klady na bydlen\xED, maxim\xE1ln\u011B v\u0161ak do v\xFD\u0161e 30 %,
       v Praze 35 %, p\u0159\xEDjmu osoby \u010Di rodiny).\r\n\r\nU osoby, kter\xE1
       vykonala ve\u0159ejnou slu\u017Ebu v rozsahu alespo\u0148 30 hodin m\u011Bs\xED\u010Dn\u011B,
-      bude \u010D\xE1stka \u017Eivobyt\xED nav\xFD\u0161ena o 605 K\u010D.\r\n\r\n---\r\n\r\nPo\u010Det
-      vyplacen\xFDch d\xE1vek: prosinec 2017 \u2013  92 200\r\n\r\nV\xFDdaje na d\xE1vku:
-      prosinec 2017 \u2013 0,349 mld. K\u010D, za cel\xFD rok 2017 \u2013 4,850 mld.
-      K\u010D"
+      bude \u010D\xE1stka \u017Eivobyt\xED nav\xFD\u0161ena o 605 K\u010D."
+    context_description: "Po\u010Det vyplacen\xFDch d\xE1vek: prosinec 2017 \u2013
+      \ 92 200\r\n\r\nV\xFDdaje na d\xE1vku: prosinec 2017 \u2013 0,349 mld. K\u010D,
+      za cel\xFD rok 2017 \u2013 4,850 mld. K\u010D"
     responsible_office: 1
     condition: 8
     attachments: []
@@ -1112,6 +1134,7 @@
       \u017Eivotn\xEDho minima jednotlivce, tj. maxim\xE1ln\u011B \u010D\xE1stku 13
       640 K\u010D."
     other_description: ''
+    context_description: ''
     responsible_office: 1
     condition: 9
     attachments: []
@@ -1166,6 +1189,7 @@
       65 let a splnil podm\xEDnky n\xE1roku na invalidn\xED d\u016Fchod stanoven\xE9
       z\xE1konem o d\u016Fchodov\xE9m poji\u0161t\u011Bn\xED."
     other_description: ''
+    context_description: ''
     responsible_office: 2
     condition: 10
     attachments: []
@@ -1181,6 +1205,7 @@
       d\xEDt\u011Bte.\r\nPodm\xEDnkou je trval\xFD pobyt na \xFAzem\xED \u010CR."
     other_description: "Poh\u0159ebn\xE9 je vypl\xE1ceno jednor\xE1zov\u011B v \u010D\xE1stce
       5 000 K\u010D."
+    context_description: ''
     responsible_office: 1
     condition: 11
     attachments: []
@@ -1211,6 +1236,7 @@
       podm\xEDnek do dvou rok\u016F po z\xE1niku d\u0159\xEDv\u011Bj\u0161\xEDho n\xE1roku
       na vdovsk\xFD d\u016Fchod."
     other_description: ''
+    context_description: ''
     responsible_office: 2
     condition: 11
     attachments: []
@@ -1244,7 +1270,7 @@
       rodi\u010D\u016F.\r\n\r\nN\xE1rok na sirot\u010D\xED d\u016Fchod nevznik\xE1
       po p\u011Bstounovi nebo jeho man\u017Eelovi.\r\n\r\nN\xE1rok na sirot\u010D\xED
       d\u016Fchod zanik\xE1 osvojen\xEDm. Dojde-li ke zru\u0161en\xED osvojen\xED,
-      vznikne n\xE1rok na sirot\u010D\xED d\u016Fchod znovu.\r\n\r\n### V\xFD\u0161e
+      vznikne n\xE1rok na sirot\u010D\xED d\u016Fchod znovu.\r\n\r\n#### V\xFD\u0161e
       sirot\u010D\xEDho d\u016Fchodu (\xA7 53 z\xE1kona o d\u016Fchodov\xE9m poji\u0161t\u011Bn\xED)\r\n\r\nV\xFD\u0161e
       d\u016Fchodu se skl\xE1d\xE1 ze dvou slo\u017Eek, a to ze z\xE1kladn\xED v\xFDm\u011Bry
       a z procentn\xED v\xFDm\u011Bry.\r\n\r\nV\xFD\u0161e z\xE1kladn\xED v\xFDm\u011Bry
@@ -1255,6 +1281,7 @@
       d\u016Fchodu \u010Din\xED 40 % procentn\xED v\xFDm\u011Bry d\u016Fchodu, na
       kter\xFD m\u011Bl nebo by m\u011Bl n\xE1rok zem\u0159el\xFD v dob\u011B smrti."
     other_description: ''
+    context_description: ''
     responsible_office: 2
     condition: 11
     attachments: []
