@@ -41,7 +41,7 @@
   pk: 1
   fields:
     name: "Pen\u011B\u017Eit\xE1 pomoc v mate\u0159stv\xED"
-    related_law: "187/2006 Sb., o nemocensk\xE9m poji\u0161t\u011Bn\xED"
+    related_law: "[187/2006 Sb., o nemocensk\xE9m poji\u0161t\u011Bn\xED](https://zakonyprolidi.cz/cs/2006-187)"
     base_description: "M\xE1 vynahradit p\u0159\xEDjem matky v obdob\xED p\u0159ed
       porodem a t\u011Bsn\u011B po porodu a matce, nebo otci (p\u0159i p\u0159evzet\xED
       d\xEDt\u011Bte do p\xE9\u010De) p\u0159\xEDjem p\u0159i p\xE9\u010Di o d\xEDt\u011B."
@@ -87,7 +87,7 @@
   pk: 2
   fields:
     name: "Otcovsk\xE1"
-    related_law: "187/2006 Sb., o nemocensk\xE9m poji\u0161t\u011Bn\xED"
+    related_law: "[187/2006 Sb., o nemocensk\xE9m poji\u0161t\u011Bn\xED](https://zakonyprolidi.cz/cs/2006-187)"
     base_description: "M\xE1 vynahradit otci p\u0159\xEDjem p\u0159i p\xE9\u010Di
       o d\xEDt\u011B."
     claim_description: "- Otec d\xEDt\u011Bte, kter\xFD o d\xEDt\u011B pe\u010Duje
@@ -117,7 +117,7 @@
   pk: 3
   fields:
     name: "Vyrovn\xE1vac\xED p\u0159\xEDsp\u011Bvek v t\u011Bhotenstv\xED a mate\u0159stv\xED"
-    related_law: "187/2006 Sb., o nemocensk\xE9m poji\u0161t\u011Bn\xED"
+    related_law: "[187/2006 Sb., o nemocensk\xE9m poji\u0161t\u011Bn\xED](https://zakonyprolidi.cz/cs/2006-187)"
     base_description: "Vyrovn\xE1vac\xED p\u0159\xEDsp\u011Bvek v t\u011Bhotenstv\xED
       a mate\u0159stv\xED n\xE1le\u017E\xED zam\u011Bstnankyni, kter\xE1 byla z d\u016Fvodu
       t\u011Bhotenstv\xED, mate\u0159stv\xED nebo kojen\xED p\u0159evedena na jinou
@@ -144,7 +144,7 @@
   pk: 4
   fields:
     name: "Porodn\xE9"
-    related_law: "117/1995 Sb., o st\xE1tn\xED soci\xE1ln\xED podpo\u0159e"
+    related_law: "[117/1995 Sb., o st\xE1tn\xED soci\xE1ln\xED podpo\u0159e](https://zakonyprolidi.cz/cs/1995-117)"
     base_description: "Porodn\xE9 je d\xE1vka poskytovan\xE1 v z\xE1vislosti na v\xFD\u0161i
       p\u0159\xEDjmu, kterou se rodin\u011B s n\xEDzk\xFDmi p\u0159\xEDjmy jednor\xE1zov\u011B
       p\u0159isp\xEDv\xE1 na n\xE1klady souvisej\xEDc\xED s narozen\xEDm prvn\xEDho
@@ -170,7 +170,7 @@
   pk: 5
   fields:
     name: "Rodi\u010Dovsk\xFD p\u0159\xEDsp\u011Bvek"
-    related_law: "117/1995 Sb., o st\xE1tn\xED soci\xE1ln\xED podpo\u0159e"
+    related_law: "[117/1995 Sb., o st\xE1tn\xED soci\xE1ln\xED podpo\u0159e](https://zakonyprolidi.cz/cs/1995-117)"
     base_description: "Rodi\u010Dovsk\xFD p\u0159\xEDsp\u011Bvek je ekvivalentem \u201Emzdy\u201C
       za p\xE9\u010Di o d\xEDt\u011B po zvolenou dobu, max. do 4 let v\u011Bku d\xEDt\u011Bte.
       Pom\xE1h\xE1 rodi\u010D\u016Fm sladit sv\xE9 profesn\xED zapojen\xED s p\xE9\u010D\xED
@@ -217,7 +217,7 @@
   pk: 6
   fields:
     name: "P\u0159\xEDdavek na d\xEDt\u011B"
-    related_law: "117/1995 Sb., o st\xE1tn\xED soci\xE1ln\xED podpo\u0159e"
+    related_law: "[117/1995 Sb., o st\xE1tn\xED soci\xE1ln\xED podpo\u0159e](https://zakonyprolidi.cz/cs/1995-117)"
     base_description: "P\u0159\xEDdavek na d\xEDt\u011B je z\xE1kladn\xED, dlouhodobou
       d\xE1vkou, poskytovanou rodin\xE1m s d\u011Btmi, kter\xE1 jim pom\xE1h\xE1 kr\xFDt
       n\xE1klady, spojen\xE9 s v\xFDchovou a v\xFD\u017Eivou nezaopat\u0159en\xFDch
@@ -227,7 +227,13 @@
       je ni\u017E\u0161\xED ne\u017E  2,7n\xE1sobek \u010D\xE1stky \u017Eivotn\xEDho
       minima rodiny. Pro n\xE1rok na d\xE1vku se posuzuje p\u0159\xEDjem za p\u0159edchoz\xED
       kalend\xE1\u0159n\xED \u010Dtvrtlet\xED, za p\u0159\xEDjem se pova\u017Euje
-      i rodi\u010Dovsk\xFD p\u0159\xEDsp\u011Bvek."
+      i rodi\u010Dovsk\xFD p\u0159\xEDsp\u011Bvek.\r\n\r\n\r\n| V\u011Bk d\xEDt\u011Bte
+      \     | V\xFD\u0161e p\u0159\xEDdavku v K\u010D - z\xE1kladn\xED v\xFDm\u011Bra
+      | V\xFD\u0161e p\u0159\xEDdavku v K\u010D - zv\xFD\u0161en\xE1 v\xFDm\u011Bra
+      |\r\n|-----------------|--------------------------------------|-------------------------------------|\r\n|
+      do 6 let        | 500                                  | 800                                 |\r\n|
+      od 6 do 15 let  | 610                                  | 910                                 |\r\n|
+      od 15 do 26 let | 700                                  | 1000                                |"
     other_description: "P\u0159\xEDdavek je vypl\xE1cen ve t\u0159ech v\xFD\u0161\xEDch
       podle v\u011Bku nezaopat\u0159en\xE9ho d\xEDt\u011Bte."
     context_description: ''
@@ -238,7 +244,7 @@
   pk: 7
   fields:
     name: "P\u0159\xEDsp\u011Bvek na \xFAhradu pot\u0159eb d\xEDt\u011Bte"
-    related_law: "359/1999 Sb., o soci\xE1ln\u011B-pr\xE1vn\xED ochran\u011B d\u011Bt\xED"
+    related_law: "[359/1999 Sb., o soci\xE1ln\u011B-pr\xE1vn\xED ochran\u011B d\u011Bt\xED](https://zakonyprolidi.cz/cs/1999-359)"
     base_description: "Z t\xE9to d\xE1vky by m\u011Bl hradit osobn\xED pot\u0159eby
       d\xEDt\u011Bte, stravov\xE1n\xED, n\xE1klady na oble\u010Den\xED, obuv, osobn\xED
       vybaven\xED n\xE1bytkem, spot\u0159ebu energi\xED aj. medi\xED, ale i zdravotn\xED
@@ -262,7 +268,7 @@
   pk: 8
   fields:
     name: "Odm\u011Bna p\u011Bstouna"
-    related_law: "359/1999 Sb., o soci\xE1ln\u011B-pr\xE1vn\xED ochran\u011B d\u011Bt\xED"
+    related_law: "[359/1999 Sb., o soci\xE1ln\u011B-pr\xE1vn\xED ochran\u011B d\u011Bt\xED](https://zakonyprolidi.cz/cs/1999-359)"
     base_description: '...'
     claim_description: "N\xE1rok na odm\u011Bnu p\u011Bstouna m\xE1 **osoba pe\u010Duj\xEDc\xED
       a osoba v evidenci** (osoba pe\u010Duj\xEDc\xED i po dosa\u017Een\xED zletilosti
@@ -308,7 +314,7 @@
   pk: 9
   fields:
     name: "P\u0159\xEDsp\u011Bvek p\u0159i p\u0159evzet\xED d\xEDt\u011Bte"
-    related_law: "359/1999 Sb., o soci\xE1ln\u011B-pr\xE1vn\xED ochran\u011B d\u011Bt\xED"
+    related_law: "[359/1999 Sb., o soci\xE1ln\u011B-pr\xE1vn\xED ochran\u011B d\u011Bt\xED](https://zakonyprolidi.cz/cs/1999-359)"
     base_description: "Z t\xE9to d\xE1vky by m\u011Bl po\u0159\xEDdit n\xE1bytek a
       dal\u0161\xED vybaven\xED do \u010Dasto po\u017Eadovan\xE9 samostatn\xE9 m\xEDstnosti,
       po\u010D\xE1te\u010Dn\xED osobn\xED oble\u010Den\xED, obuv, l\u016F\u017Ekoviny."
@@ -327,7 +333,7 @@
   pk: 10
   fields:
     name: "P\u0159\xEDsp\u011Bvek na zakoupen\xED osobn\xEDho motorov\xE9ho vozidla"
-    related_law: "359/1999 Sb., o soci\xE1ln\u011B-pr\xE1vn\xED ochran\u011B d\u011Bt\xED"
+    related_law: "[359/1999 Sb., o soci\xE1ln\u011B-pr\xE1vn\xED ochran\u011B d\u011Bt\xED](https://zakonyprolidi.cz/cs/1999-359)"
     base_description: '...'
     claim_description: "Na p\u0159\xEDsp\u011Bvek m\xE1 n\xE1rok **osoba pe\u010Duj\xEDc\xED**,
       kter\xE1 m\xE1 v p\u011Bstounsk\xE9 p\xE9\u010Di nejm\xE9n\u011B 3 d\u011Bti
@@ -348,7 +354,7 @@
   pk: 11
   fields:
     name: "P\u0159\xEDsp\u011Bvek p\u0159i ukon\u010Den\xED p\u011Bstounsk\xE9 p\xE9\u010De"
-    related_law: "359/1999 Sb., o soci\xE1ln\u011B-pr\xE1vn\xED ochran\u011B d\u011Bt\xED"
+    related_law: "[359/1999 Sb., o soci\xE1ln\u011B-pr\xE1vn\xED ochran\u011B d\u011Bt\xED](https://zakonyprolidi.cz/cs/1999-359)"
     base_description: '...'
     claim_description: "N\xE1rok na p\u0159\xEDsp\u011Bvek p\u0159i ukon\u010Den\xED
       p\u011Bstounsk\xE9 p\xE9\u010De m\xE1 fyzick\xE1 osoba, kter\xE1 byla ke dni
@@ -364,7 +370,7 @@
   pk: 12
   fields:
     name: "Nemocensk\xE1"
-    related_law: "187/2006 Sb., o nemocensk\xE9m poji\u0161t\u011Bn\xED"
+    related_law: "[187/2006 Sb., o nemocensk\xE9m poji\u0161t\u011Bn\xED](https://zakonyprolidi.cz/cs/2006-187)"
     base_description: "Finan\u010Dn\xED zaji\u0161t\u011Bn\xED po dobu nemoci."
     claim_description: "- Zam\u011Bstnanec nebo OSV\u010C, kter\xFD je uzn\xE1n o\u0161et\u0159uj\xEDc\xEDm
       l\xE9ka\u0159em do\u010Dasn\u011B pr\xE1ce neschopn\xFDm, m\xE1 n\xE1rok na
@@ -450,7 +456,7 @@
   pk: 13
   fields:
     name: "Invalidn\xED d\u016Fchod"
-    related_law: "155/1995 Sb., o d\u016Fchodov\xE9m poji\u0161t\u011Bn\xED"
+    related_law: "[155/1995 Sb., o d\u016Fchodov\xE9m poji\u0161t\u011Bn\xED](https://zakonyprolidi.cz/cs/1995-155)"
     base_description: "Zaji\u0161t\u011Bn\xED p\u0159\xEDjmu u lid\xED zdravotn\u011B
       znev\xFDhodn\u011Bn\xFDch."
     claim_description: "Poji\u0161t\u011Bnec m\xE1 n\xE1rok na invalidn\xED d\u016Fchod,
@@ -497,8 +503,8 @@
   pk: 14
   fields:
     name: "P\u0159\xEDsp\u011Bvek na mobilitu"
-    related_law: "329/2011 Sb., o poskytov\xE1n\xED d\xE1vek osob\xE1m se zdravotn\xEDm
-      posti\u017Een\xEDm"
+    related_law: "[329/2011 Sb., o poskytov\xE1n\xED d\xE1vek osob\xE1m se zdravotn\xEDm
+      posti\u017Een\xEDm](https://zakonyprolidi.cz/cs/2011-329)"
     base_description: '...'
     claim_description: "(1) N\xE1rok na p\u0159\xEDsp\u011Bvek na mobilitu m\xE1 osoba
       star\u0161\xED 1 roku, kter\xE1 m\xE1 n\xE1rok na pr\u016Fkaz osoby se zdravotn\xEDm
@@ -531,8 +537,8 @@
   pk: 15
   fields:
     name: "P\u0159\xEDsp\u011Bvek na zvl\xE1\u0161tn\xED pom\u016Fcku"
-    related_law: "329/2011 Sb., o poskytov\xE1n\xED d\xE1vek osob\xE1m se zdravotn\xEDm
-      posti\u017Een\xEDm"
+    related_law: "[329/2011 Sb., o poskytov\xE1n\xED d\xE1vek osob\xE1m se zdravotn\xEDm
+      posti\u017Een\xEDm](https://zakonyprolidi.cz/cs/2011-329)"
     base_description: '...'
     claim_description: "(1) N\xE1rok na p\u0159\xEDsp\u011Bvek na zvl\xE1\u0161tn\xED
       pom\u016Fcku m\xE1 osoba, kter\xE1 m\xE1 t\u011B\u017Ekou vadu nosn\xE9ho nebo
@@ -713,7 +719,7 @@
   pk: 16
   fields:
     name: "P\u0159\xEDsp\u011Bvek na p\xE9\u010Di"
-    related_law: "108/2006 Sb., o soci\xE1ln\xEDch slu\u017Eb\xE1ch"
+    related_law: "[108/2006 Sb., o soci\xE1ln\xEDch slu\u017Eb\xE1ch](https://zakonyprolidi.cz/cs/2006-108)"
     base_description: "P\u0159\xEDsp\u011Bvkem na p\xE9\u010Di st\xE1t pom\xE1h\xE1
       zajistit komfort osob\xE1m s nep\u0159\xEDzniv\xFDm zdravotn\xEDm stavem."
     claim_description: "N\xE1rok na p\u0159\xEDsp\u011Bvek na p\xE9\u010Di maj\xED
@@ -732,7 +738,7 @@
   pk: 17
   fields:
     name: "O\u0161et\u0159ovn\xE9"
-    related_law: "187/2006 Sb., o nemocensk\xE9m poji\u0161t\u011Bn\xED"
+    related_law: "[187/2006 Sb., o nemocensk\xE9m poji\u0161t\u011Bn\xED](https://zakonyprolidi.cz/cs/2006-187)"
     base_description: "M\xE1 vynahradit p\u0159\xEDjem zam\u011Bstnance, kter\xFD
       o\u0161et\u0159uje nemocn\xE9ho \u010Dlena dom\xE1cnosti."
     claim_description: "Zam\u011Bstnanec, kter\xFD nem\u016F\u017Ee pracovat z d\u016Fvodu,
@@ -762,7 +768,7 @@
   pk: 18
   fields:
     name: "Dlouhodob\xE9 o\u0161et\u0159ovn\xE9"
-    related_law: "187/2006 Sb., o nemocensk\xE9m poji\u0161t\u011Bn\xED"
+    related_law: "[187/2006 Sb., o nemocensk\xE9m poji\u0161t\u011Bn\xED](https://zakonyprolidi.cz/cs/2006-187)"
     base_description: "K n\xE1hrad\u011B p\u0159\xEDjm\u016F v p\u0159\xEDpad\u011B
       dlouhodob\xE9ho o\u0161et\u0159ov\xE1n\xED nemocn\xE9ho \u010Dlena dom\xE1cnosti/rodiny."
     claim_description: "- U o\u0161et\u0159ovan\xE9 osoby muselo doj\xEDt k z\xE1va\u017En\xE9mu
@@ -812,7 +818,7 @@
   pk: 19
   fields:
     name: "Podpora v nezam\u011Bstnanosti"
-    related_law: "435/2004 Sb., o zam\u011Bstnanosti"
+    related_law: "[435/2004 Sb., o zam\u011Bstnanosti](https://zakonyprolidi.cz/cs/2004-435)"
     base_description: "Podporou v nezam\u011Bstnanosti st\xE1t kr\xE1tkodob\u011B
       pom\xE1h\xE1 ob\u010Dan\u016Fm, kte\u0159\xED se ocitli bez pr\xE1ce."
     claim_description: "N\xE1rok m\xE1 uchaze\u010D o zam\u011Bstn\xE1n\xED, kter\xFD:\r\n\r\n-
@@ -880,7 +886,7 @@
   pk: 20
   fields:
     name: "Podpora p\u0159i rekvalifikaci"
-    related_law: "435/2004 Sb., o zam\u011Bstnanosti"
+    related_law: "[435/2004 Sb., o zam\u011Bstnanosti](https://zakonyprolidi.cz/cs/2004-435)"
     base_description: "Podpora nezam\u011Bstnan\xFDch b\u011Bhem doby, po kterou se
       \xFA\u010Dastn\xED rekvalifikace."
     claim_description: "Uchaze\u010D o zam\u011Bstn\xE1n\xED, kter\xFD se \xFA\u010Dastn\xED
@@ -910,7 +916,7 @@
   pk: 21
   fields:
     name: "P\u0159\xEDsp\u011Bvek na bydlen\xED"
-    related_law: "117/1995 Sb., o st\xE1tn\xED soci\xE1ln\xED podpo\u0159e"
+    related_law: "[117/1995 Sb., o st\xE1tn\xED soci\xE1ln\xED podpo\u0159e](https://zakonyprolidi.cz/cs/1995-117)"
     base_description: "P\u0159\xEDsp\u011Bvek na bydlen\xED p\u0159isp\xEDv\xE1 na
       kryt\xED n\xE1klad\u016F na bydlen\xED rodin\xE1m \u010Di jednotlivc\u016Fm
       s n\xEDzk\xFDmi p\u0159\xEDjmy."
@@ -942,7 +948,7 @@
   pk: 22
   fields:
     name: "Doplatek na bydlen\xED"
-    related_law: "111/2006 Sb., o pomoci v hmotn\xE9 nouzi"
+    related_law: "[111/2006 Sb., o pomoci v hmotn\xE9 nouzi](https://zakonyprolidi.cz/cs/2006-111)"
     base_description: "\u0158e\u0161\xED nedostatek p\u0159\xEDjmu k uhrazen\xED n\xE1klad\u016F
       na bydlen\xED tam, kde nevznik\xE1 n\xE1rok na p\u0159\xEDsp\u011Bvek na bydlen\xED
       nebo pokud nesta\u010D\xED vlastn\xED p\u0159\xEDjmy osoby \u010Di rodiny v\u010Detn\u011B
@@ -983,9 +989,12 @@
       t\u011Bchto rekrea\u010Dn\xEDch objekt\u016F), 80 % p\u0159i u\u017E\xEDv\xE1n\xED
       jednotky na ubytovn\u011B nebo p\u0159i ob\xFDv\xE1n\xED jin\xE9ho ne\u017E
       obytn\xE9ho prostoru."
-    context_description: "Po\u010Det vyplacen\xFDch d\xE1vek: **prosinec 2017 \u2013
-      \ 50 000**\r\n\r\nV\xFDdaje na d\xE1vku: **prosinec 2017** \u2013 0,193 mld.
-      K\u010D, **za cel\xFD rok 2017** \u2013 2,423 mld. K\u010D"
+    context_description: "#### Pod\xE1n\xED \u017E\xE1dost\r\n\r\n\u017D\xE1dost lze
+      podat na p\u0159\xEDslu\u0161n\xE9m \xDA\u0159adu pr\xE1ce.\r\n\r\n<a href=\"\"
+      class=\"button primary\">Podat \u017E\xE1dost o doplatek na bydlen\xED</a>\r\n\r\n---\r\n\r\nPo\u010Det
+      vyplacen\xFDch d\xE1vek: **prosinec 2017 \u2013  50 000**\r\n\r\nV\xFDdaje na
+      d\xE1vku: **prosinec 2017** \u2013 0,193 mld. K\u010D, **za cel\xFD rok 2017**
+      \u2013 2,423 mld. K\u010D"
     responsible_office: 1
     condition: 7
     attachments: []
@@ -993,7 +1002,7 @@
   pk: 23
   fields:
     name: "P\u0159\xEDsp\u011Bvek na \u017Eivobyt\xED"
-    related_law: "111/2006 Sb., o pomoci v hmotn\xE9 nouzi"
+    related_law: "[111/2006 Sb., o pomoci v hmotn\xE9 nouzi](https://zakonyprolidi.cz/cs/2006-111)"
     base_description: "Je z\xE1kladn\xED d\xE1vkou pomoci v hmotn\xE9 nouzi, kter\xE1
       pom\xE1h\xE1 osob\u011B \u010Di rodin\u011B p\u0159i nedostate\u010Dn\xE9m p\u0159\xEDjmu."
     claim_description: "N\xE1rok na p\u0159\xEDsp\u011Bvek na \u017Eivobyt\xED vznik\xE1
@@ -1095,7 +1104,7 @@
   pk: 24
   fields:
     name: "Mimo\u0159\xE1dn\xE1 okam\u017Eit\xE1 pomoc"
-    related_law: "111/2006 Sb., o pomoci v hmotn\xE9 nouzi"
+    related_law: "[111/2006 Sb., o pomoci v hmotn\xE9 nouzi](https://zakonyprolidi.cz/cs/2006-111)"
     base_description: "Je poskytov\xE1na osob\xE1m, kter\xE9 se ocitnou v situac\xEDch,
       kter\xE9 je nutno bezodkladn\u011B \u0159e\u0161it."
     claim_description: "Z\xE1kon stanov\xED \u0161est takov\xFDch situac\xED:\r\n\r\n1.
@@ -1142,7 +1151,7 @@
   pk: 25
   fields:
     name: "Starobn\xED d\u016Fchod"
-    related_law: "155/1995 Sb., o d\u016Fchodov\xE9m poji\u0161t\u011Bn\xED"
+    related_law: "[155/1995 Sb., o d\u016Fchodov\xE9m poji\u0161t\u011Bn\xED](https://zakonyprolidi.cz/cs/1995-155)"
     base_description: '...'
     claim_description: "Poji\u0161t\u011Bnec m\xE1 n\xE1rok na starobn\xED d\u016Fchod,
       jestli\u017Ee z\xEDskal dobu poji\u0161t\u011Bn\xED nejm\xE9n\u011B\r\n\r\n-
@@ -1197,7 +1206,7 @@
   pk: 26
   fields:
     name: "Poh\u0159ebn\xE9"
-    related_law: "117/1995 Sb., o st\xE1tn\xED soci\xE1ln\xED podpo\u0159e"
+    related_law: "[117/1995 Sb., o st\xE1tn\xED soci\xE1ln\xED podpo\u0159e](https://zakonyprolidi.cz/cs/1995-117)"
     base_description: "Poh\u0159ebn\xE9 pom\xE1h\xE1 p\u0159\xEDjemci finan\u010Dn\xED
       pomoci pokr\xFDt n\xE1klady na poh\u0159eb zem\u0159el\xE9ho."
     claim_description: "N\xE1rok na poh\u0159ebn\xE9 m\xE1 osoba, kter\xE1 vyprav\xED
@@ -1213,7 +1222,7 @@
   pk: 27
   fields:
     name: "Vdovsk\xFD a vdoveck\xFD d\u016Fchod"
-    related_law: "155/1995 Sb., o d\u016Fchodov\xE9m poji\u0161t\u011Bn\xED"
+    related_law: "[155/1995 Sb., o d\u016Fchodov\xE9m poji\u0161t\u011Bn\xED](https://zakonyprolidi.cz/cs/1995-155)"
     base_description: '...'
     claim_description: "Vdova/vdovec m\xE1 n\xE1rok na vdovsk\xFD/vdoveck\xFD d\u016Fchod
       po zem\u0159el\xE9m man\u017Eelovi/man\u017Eelce, kter\xFD/\xE1\r\n\r\n- byl/a
@@ -1244,7 +1253,7 @@
   pk: 28
   fields:
     name: "Sirot\u010D\xED d\u016Fchod"
-    related_law: "155/1995 Sb., o d\u016Fchodov\xE9m poji\u0161t\u011Bn\xED"
+    related_law: "[155/1995 Sb., o d\u016Fchodov\xE9m poji\u0161t\u011Bn\xED](https://zakonyprolidi.cz/cs/1995-155)"
     base_description: '...'
     claim_description: "N\xE1rok na sirot\u010D\xED d\u016Fchod m\xE1 nezaopat\u0159en\xE9
       d\xEDt\u011B, zem\u0159el-li\r\n\r\n- rodi\u010D (osvojitel), nebo\r\n- osoba,

@@ -93,7 +93,7 @@ class Benefit(models.Model):
     A benefit from state social system.
     """
     name = models.CharField('Název', max_length=255)
-    related_law = models.CharField('Související zákon(y)', max_length=255)
+    related_law = models.TextField('Související zákon(y)')
 
     base_description = models.TextField('Základní popis', blank=False)
     claim_description = models.TextField('Kdo má nárok', blank=False)

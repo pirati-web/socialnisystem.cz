@@ -6,7 +6,7 @@
 {% block header %}
     <div class="page__backnav"><a href="{% url 'core:benefit-overview' %}">Přehled dávek &raquo;</a></div>
     <h1 class="page__headline">{{ object }}</h1>
-    <div class="page__headline-sub">dle {{ object.related_law }}</div>
+    <div class="page__headline-sub v-benefit-detail__rellaw-wrap content-block">dle <div class="v-benefit-detail__rellaw">{{ object.related_law|markdown:"target_blank" }}</div></div>
 {% endblock %}
 
 {% block article %}
@@ -31,7 +31,6 @@
     <aside class="page__sidebar small-12 medium-4 columns">
         {% if object.context_description %}
             <div class="page__sidebar-body content-block">
-                <h2 class="t-h3">Situace</h4>
                 {{ object.context_description | markdown }}
             </div>
         {% endif %}

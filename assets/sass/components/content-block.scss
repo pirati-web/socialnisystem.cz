@@ -1,5 +1,5 @@
 .content-block {
-    a {
+    a:not(.button) {
         @include anchorStyle();
     }
 }

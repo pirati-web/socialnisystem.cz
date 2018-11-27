@@ -188,3 +188,31 @@ WEBPACK_LOADER = {
         'IGNORE': ['.+\.hot-update.js', '.+\.map']
     }
 }
+
+# Markdown
+MARKDOWNX_MARKDOWNIFY_FUNCTION = 'socialsystem.markdown.markdownify'
+
+MARKDOWN_DEUX_STYLES = {
+    "default": {
+        "extras": {
+            "code-friendly": None,
+            "tables": None,
+            "header-ids": None,
+            "footnotes": None,
+        },
+        "safe_mode": False,
+    },
+    # "trusted": {
+    #     "safe_mode": False,
+    #     "extras": {
+    #         "tables": None,
+    #         "header-ids": None,
+    #         "footnotes": None,
+    #     },
+    # },
+    "target_blank": {
+        "extras": {
+            "target-blank-links": None,
+        },
+    }
+}

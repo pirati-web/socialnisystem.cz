@@ -31,7 +31,7 @@
 
 .page__backnav {
     display: block;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 
     a {
         color: $dark-gray;
@@ -45,7 +45,7 @@
 .page__headline-sub {
     display: block;
     color: $dark-gray;
-    margin-top: -1rem;
+    margin-top: -.5rem;
 
     @include headerStyle('h4', alt);
 }
