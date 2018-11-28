@@ -43,8 +43,8 @@ class EntryForm(forms.Form):
 
         for question in entry_form_config:
             kwargs = {
-                # 'widget': ButtonRadio(choices=((True, 'Ano'), (False, 'Ne'))),
-                'widget': forms.RadioSelect(choices=((True, 'Ano'), (False, 'Ne'))),
+                # 'widget': forms.RadioSelect(choices=((True, 'Ano'), (False, 'Ne')), attrs={'class': 'form__field-input'}),
+                'widget': forms.CheckboxInput(attrs={'class': 'form__field-input'}),
                 'required': False,
                 'label': question['question'],
                 'initial': False,

@@ -11,7 +11,7 @@
     font-size: 80%;
 }
 
-.form__field-control {
+.form__field-control.form__field-control--radio {
     /* radio */
     ul {
         margin: 0;
@@ -23,8 +23,8 @@
         list-style: none;
     }
 
-    .input__wrapper {
-        .input__label {
+    .form__field-input-wrapper {
+        .form__field-input-label {
             display: flex;
             align-items: center;
             position: relative;
@@ -58,7 +58,7 @@
             opacity: 0;
             position: absolute;
 
-            &:checked ~ .input__label {
+            &:checked ~ .form__field-input-label {
                 &:before {
                     background: $medium-gray;
                 }
@@ -66,6 +66,54 @@
                 &:after {
                     background: $black;
                 }
+            }
+        }
+    }
+}
+
+.form__field-control.form__field-control--checkbox {
+    .form__field-input-sibling {
+        display: flex;
+        align-items: center;
+        position: relative;
+        cursor: pointer;
+
+        &:before {
+            content: '';
+            display: inline-block;
+            width: 1.5rem;
+            height: 1.5rem;
+            margin-right: .5rem;
+            background: $light-gray;
+            transition: background-color .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+
+        &:after {
+            content: '\f00c';
+            font-family: "Font Awesome 5 Free";
+            position: absolute;
+            display: inline-block;
+            width: .75rem;
+            height: .75rem;
+            line-height: .75rem;
+            left: .375rem;
+            color: $medium-gray;
+            transition: color .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+    }
+
+
+    input[type='checkbox'] {
+        opacity: 0;
+        position: absolute;
+
+        &:checked ~ .form__field-input-sibling {
+            &:before {
+                background: $medium-gray;
+            }
+
+            &:after {
+                color: $black;
             }
         }
     }

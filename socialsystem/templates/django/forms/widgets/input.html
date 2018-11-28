@@ -1,0 +1,5 @@
+<input type="{{ widget.type }}" name="{{ widget.name }}"{% if widget.value != None %} value="{{ widget.value|stringformat:'s' }}"{% endif %}{% include "django/forms/widgets/attrs.html" %}>
+{% if widget.type == 'checkbox' %}
+{% comment %}Primarily for custom styling of props{% endcomment %}
+<span class="form__field-input-sibling"></span>
+{% endif %}

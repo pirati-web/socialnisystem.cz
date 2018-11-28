@@ -59,7 +59,7 @@
                                     <div class="form__field-help"><i class="fas fa-question-circle"></i>&nbsp;{{ field.help_text }}</div>
                                 {% endif %}
                             </div>
-                            <div class="form__field-control">
+                            <div class="form__field-control form__field-control--{{ field.field.widget.input_type }}">
                                 {{ field }}
                             </div>
 
