@@ -5,4 +5,8 @@
     &:hover {
         transform: scale(1.05);
     }
+
+    @include breakpoint(small down) {
+        width: 100%;
+    }
 }
