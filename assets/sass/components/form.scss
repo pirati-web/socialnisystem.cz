@@ -83,7 +83,6 @@
             display: inline-block;
             width: 1.5rem;
             height: 1.5rem;
-            margin-right: .5rem;
             background: $light-gray;
             transition: background-color .5s cubic-bezier(0.075, 0.82, 0.165, 1);
         }
@@ -133,18 +132,21 @@
     .form__field {
         display: flex;
         margin-bottom: 1rem;
-        flex-direction: column;
+        flex-direction: row;
+
+        &:not(:last-of-type) {
+            border-bottom: $hr-border;
+            padding-bottom: 1rem;
+        }
 
         @include breakpoint(medium up) {
-            flex-direction: row;
             align-items: flex-start;
-            margin-bottom: 2rem;
         }
     }
 
     .form__field-label {
         flex: 1;
-        padding-right: 0;
+        padding-right: 1rem;
         text-align: left;
 
         @include breakpoint(medium up) {
@@ -154,7 +156,7 @@
     }
 
     .form__field-control {
-        flex: 1;
+        // flex: 1;
 
         li + li {
             margin-left: 1rem;

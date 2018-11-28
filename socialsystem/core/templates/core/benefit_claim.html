@@ -3,7 +3,7 @@
 
 {% block page_title %}{% if submitted %}Vaše nároky{% else %}Na co mohu mít nárok?{% endif %}{% endblock %}
 
-{% block headline %}{% if submitted %}{% if claimable_benefits|length > 0 %}Hotovo! Můžete mít nárok na následující dávky{% else %}Hotovo, jenže ...{% endif %}{% else %}Na co mohu mít nárok?{% endif %}{% endblock %}
+{% block headline %}{% if submitted %}{% if claimable_benefits|length > 0 %}Hotovo! Zdá se, že máte nárok na následující{% else %}Hotovo, jenže ...{% endif %}{% else %}Na co mohu mít nárok?{% endif %}{% endblock %}
 
 
 {% block article %}
@@ -25,13 +25,8 @@
                     <div class="small-12 columns">
                         <div class="v-benefit-claim__noresults">
                             <h2 class="t-h4-alt">Zdá se, že bohužel nesplňujete kritéria pro žádnou z dávek. Avšak nezoufejte!</h2>
-                            <p>Možná jste jen dotazník vyplnil/a špatně? Pokud si nevíte rady, kontaktujte nás. Pokusíme se vám pomoci.</p>
+                            <p>Možná jste jen dotazník vyplnil/a špatně?</p>
                         </div>
-                        <h3 class="t-h4">Kontakt</h3>
-                        <ul class="no-bullet">
-                            <li><a href="mailto:{{ siteinfo.email }}">{{ siteinfo.email }}</a></li>
-                            <li><a href="tel:{{ siteinfo.phone }}">{{ siteinfo.phone }}</a></li>
-                        </ul>
                         <br><br>
                     </div>
                 {% endfor %}
@@ -44,47 +39,41 @@
         {% endif %}
 
         <div class="row js-benefit-claim-form__container {% if submitted %}hide{% endif %}">
-            <div class="small-12 medium-6 columns">
+            <div class="small-12 medium-6 large-5 columns">
                 <form action="." method="POST" class="form form--horizontal">
                     {% csrf_token %}
 
                     {{ form.non_field_errors }}
 
-                    {% for field in form %}
-                        <div class="form__field">
-                            <div class="form__field-label">
-                                {{ field.label_tag }}
+                    <div class="form__fields">
+                        {% for field in form %}
+                            <div class="form__field">
+                                <div class="form__field-label">
+                                    {{ field.label_tag }}
 
-                                {% if field.help_text %}
-                                    <div class="form__field-help"><i class="fas fa-question-circle"></i>&nbsp;{{ field.help_text }}</div>
-                                {% endif %}
-                            </div>
-                            <div class="form__field-control form__field-control--{{ field.field.widget.input_type }}">
-                                {{ field }}
-                            </div>
+                                    {% if field.help_text %}
+                                        <div class="form__field-help"><i class="fas fa-question-circle"></i>&nbsp;{{ field.help_text }}</div>
+                                    {% endif %}
+                                </div>
+                                <div class="form__field-control form__field-control--{{ field.field.widget.input_type }}">
+                                    {{ field }}
+                                </div>
 
-                            {% if field.errors %}<div class="form__field-errors">{{ field.errors }}</div>{% endif %}
-                        </div>
-                    {% endfor %}
+                                {% if field.errors %}<div class="form__field-errors">{{ field.errors }}</div>{% endif %}
+                            </div>
+                        {% endfor %}
+                    </div>
 
                     <div class="form__submit-row">
                         <button type="submit" class="button primary large form__submit-button">Zjistit na co mám nárok</button>
                     </div>
                 </form>
             </div>
-            <div class="small-12 medium-6 columns last">
+            <div class="small-12 medium-6 large-6 large-offset-1 columns last">
                 <aside class="page__sidebar-body content-block">
                     <h2 class="t-h4">Žádný strach</h4>
                     <p>Abychom mohli zjistit na co máte nárok, budeme od vás potřebovat <strong>pár informací</strong>. Vyplnění dotazníku zabere jen <strong>pár minut</strong>.</p>
                     <p>Vámi vyplněné informace <strong>nikam neukládáme</strong>. Budou použity pouze pro účely vyhodnocení vašeho nároku na sociální podporu.</p>
-                </aside>
-                <aside class="page__sidebar-body content-block">
-                    <h2 class="t-h4">Potřebujete poradit?</h4>
-                    <p>Nevíte si rady jak správně dotazník vyplnit? Kontaktujte nás!</p>
-                    <ul class="no-bullet">
-                        <li><a href="mailto:{{ siteinfo.email }}">{{ siteinfo.email }}</a></li>
-                        <li><a href="tel:{{ siteinfo.phone }}">{{ siteinfo.phone }}</a></li>
-                    </ul>
                 </aside>
             </div>
         </div>
