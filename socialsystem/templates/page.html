@@ -1,0 +1,19 @@
+{% extends "default.html" %}
+
+{% block wrapper_classes %}page{% endblock %}
+
+{% block body %}
+    <header class="page__header">
+        {% block header %}
+            <h1 class="page__headline">{% block headline %}{% endblock %}</h1>
+        {% endblock %}
+    </header>
+
+    <div class="page__content {% block content_wrapper_classes %}{% endblock %}">
+        <article class="page__article {% block article_classes %}{% endblock %}">
+            {% block article %}{% endblock %}
+        </article>
+
+        {% block after_article %}{% endblock %}
+    </div>
+{% endblock %}

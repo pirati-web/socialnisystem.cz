@@ -1,0 +1,128 @@
+{% load render_bundle webpack_static from webpack_loader %}
+{% load capture_tags %}
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="utf-8">
+    <title>{% capture as meta_title %}{% block page_title_full %}{% block page_title %}{% endblock %} | {{ siteinfo.name }}{% endblock %}{% endcapture %}</title>
+    <meta name="author" content="Česká pirátská strana">
+    <meta name="description" content="{% capture as meta_description %}{% block page_description %}{{ siteinfo.description }}{% endblock %}{% endcapture %}">
+    <meta name="keywords" content="{% capture as meta_keywords %}{% block page_keywords %}{% endblock %} {{ siteinfo.keywords | join:' ' }}{% endcapture %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="robots" content="index,follow">
+
+    <meta property="og:url" content="{{ request.build_absolute_uri }}">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{{ meta_title }}">
+    <meta property="og:description" content="{{ meta_description }}">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="{% webpack_static "img/favicon/apple-touch-icon-57x57.png" %}">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{% webpack_static "img/favicon/apple-touch-icon-114x114.png" %}">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{% webpack_static "img/favicon/apple-touch-icon-72x72.png" %}">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{% webpack_static "img/favicon/apple-touch-icon-144x144.png" %}">
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="{% webpack_static "img/favicon/apple-touch-icon-60x60.png" %}">
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="{% webpack_static "img/favicon/apple-touch-icon-120x120.png" %}">
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="{% webpack_static "img/favicon/apple-touch-icon-76x76.png" %}">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="{% webpack_static "img/favicon/apple-touch-icon-152x152.png" %}">
+    <link rel="icon" type="image/png" href="{% webpack_static "img/favicon/favicon-196x196.png" %}" sizes="196x196">
+    <link rel="icon" type="image/png" href="{% webpack_static "img/favicon/favicon-96x96.png" %}" sizes="96x96">
+    <link rel="icon" type="image/png" href="{% webpack_static "img/favicon/favicon-16x16.png" %}" sizes="16x16">
+    <link rel="icon" type="image/png" href="{% webpack_static "img/favicon/favicon-32x32.png" %}" sizes="32x32">
+    <link rel="icon" type="image/png" href="{% webpack_static "img/favicon/favicon-128x128.png" %}" sizes="128x128">
+    <meta name="application-name" content="{{ siteinfo.name }}">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="msapplication-TileImage" content="{% webpack_static "img/favicon/mstile-144x144.png" %}">
+    <meta name="msapplication-square70x70logo" content="{% webpack_static "img/favicon/mstile-70x70.png" %}">
+    <meta name="msapplication-square150x150logo" content="{% webpack_static "img/favicon/mstile-150x150.png" %}">
+    <meta name="msapplication-wide310x150logo" content="{% webpack_static "img/favicon/mstile-310x150.png" %}">
+    <meta name="msapplication-square310x310logo" content="{% webpack_static "img/favicon/mstile-310x310.png" %}">
+
+    <!-- preload-->
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&subset=latin-ext" as="style">
+
+    {% render_bundle 'main' 'css' %}
+</head>
+<body class="layout">
+    <header role="banner" class="sitenav">
+        <div class="row">
+            <div class="small-12 columns">
+                <nav role="navigation" class="sitenav-groups">
+                    <div class="sitenav-groups__group sitenav-groups__group--main sitenav-brand">
+                        <div class="sitenav-brand__logo">
+                            <a href="/"><img src="{% webpack_static "img/brand/logo_napis.svg" %}"></a>
+                        </div>
+                        <div class="sitenav-brand__site sitenav-site">
+                            <h1 class="sitenav-site__main"><a href="/">{{ siteinfo.name }}</a></h1>
+                            <h2 class="sitenav-site__sub">{{ siteinfo.claim }}</h2>
+                        </div>
+                    </div>
+                    <a class="sitenav-groups__group button primary show-for-medium" href="{% url 'core:benefit-claim' %}">Zjistit na co mám nárok</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main role="main" class="layout__main">
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer role="contentinfo" class="footer">
+        <div class="row footer__main footer-nav">
+            <div class="small-12 medium-4 columns">
+                <a href="/"><img src="{% webpack_static "img/brand/logo_napis_white.svg" %}" alt="" class="footer__brand"></a>
+                <h3 class="t-h5-sub">{{ siteinfo.name }}</h3>
+                <ul class="no-bullet">
+                    <li><a href="mailto:{{ siteinfo.email }}">{{ siteinfo.email }}</a></li>
+                    <li><a href="tel:{{ siteinfo.phone }}">{{ siteinfo.phone }}</a></li>
+                </ul>
+            </div>
+            {% for menu_section in footer_menu %}
+            <div class="{{ menu_section.class }}">
+                <h3 class="footer-nav__headline">{{ menu_section.title }}</h3>
+                <ul class="no-bullet">
+                    {% for type, link, title in menu_section.items %}
+                        <li><a href="{% if type == 'external' %}{{ link }}{% else %}{% url link %}{% endif %}" {% if type == 'external' %}rel="noopener" target="_blank"{% endif %}>{{ title }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+            {% endfor %}
+        </div>
+
+        <div class="footer__sub">
+            <div class="row">
+                <div class="small-12 columns">
+                    <span class="u-mirror-horizontally">©</span>&nbsp;Piráti,&nbsp;{% now "Y" %}. Všechna práva vyhlazena. Sdílejte a nechte ostatní sdílet za stejných podmínek.
+                </div>
+            </div>
+            <div class="row">
+                <div class="small-12 columns footer__social">
+                    <a href="{{ siteinfo.fb_profile_url }}"><i class="fab fa-facebook"></i></a>
+                    <a href="{{ siteinfo.twitter_profile_url }}"><i class="fab fa-twitter"></i></a>
+                    <a href="{{ siteinfo.instagram_profile_url }}"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    {% render_bundle 'main' 'js' %}
+
+    {% if siteinfo.piwik_siteid %}
+    <!-- Piwik -->
+    <script>
+        var _paq = _paq || [];
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function() {
+            var u="//piwik.pirati.cz/";
+            _paq.push(['setTrackerUrl', u+'piwik.php']);
+            _paq.push(['setSiteId', '{{ siteinfo.piwik_siteid }}']);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+        })();
+    </script>
+    <noscript><p><img src="//piwik.pirati.cz/piwik.php?idsite={{ siteinfo.piwik_siteid }}&rec=1" style="border:0;" alt="" /></p></noscript>
+    <!-- End Piwik Code -->
+    {% endif %}
+</body>
+</html>

@@ -14,11 +14,21 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
+from django.contrib.flatpages.views import flatpage
+from django.contrib.sitemaps.views import sitemap
 from django.urls import path, include
+
+from .core.sitemaps import sitemaps as core_sitemaps
+from .pages.sitemaps import sitemaps as pages_sitemaps
+
+
+sitemaps = {**core_sitemaps, **pages_sitemaps}
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('markdownx/', include('markdownx.urls')),
+    path('sitemap.xml', sitemap, {'sitemaps': sitemaps}, name='django.contrib.sitemaps.views.sitemap'),
 
     path('', include('socialsystem.core.urls', namespace='core')),
+    path('', include('socialsystem.pages.urls', namespace='pages')),
 ]

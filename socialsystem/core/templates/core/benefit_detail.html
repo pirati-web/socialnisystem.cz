@@ -1,7 +1,8 @@
-{% extends "core/page.html" %}
+{% extends "page.html" %}
 {% load markdown_deux_tags %}
 
 {% block page_title %}{{ object }}{% endblock %}
+{% block page_description %}{{ object.base_description | markdown | striptags }}{% endblock %}
 
 {% block header %}
     <div class="page__backnav"><a href="{% url 'core:benefit-overview' %}">Přehled dávek &raquo;</a></div>
@@ -9,25 +10,29 @@
     <div class="page__headline-sub v-benefit-detail__rellaw-wrap content-block">dle <div class="v-benefit-detail__rellaw">{{ object.related_law|markdown:"target_blank" }}</div></div>
 {% endblock %}
 
+{% block content_wrapper_classes %}v-benefit-detail row{% endblock %}
+
+{% block article_classes %}small-12 medium-8 columns{% endblock %}
+
 {% block article %}
-<div class="v-benefit-detail row">
-    <div class="small-12 medium-8 columns">
-        <div class="v-benefit-detail__desc content-block">
-            {{ object.base_description | markdown }}
-        </div>
-
-        <div class="v-benefit-detail__claim content-block">
-            <h2 class="t-h3">Kdo má nárok</h2>
-            {{ object.claim_description | markdown }}
-        </div>
-
-        {% if object.other_description %}
-            <div class="v-benefit-detail__other content-block">
-                <h2 class="t-h3">Další informace</h4>
-                {{ object.other_description | markdown }}
-            </div>
-        {% endif %}
+    <div class="v-benefit-detail__desc content-block">
+        {{ object.base_description | markdown }}
     </div>
+
+    <div class="v-benefit-detail__claim content-block">
+        <h2 class="t-h3">Kdo má nárok</h2>
+        {{ object.claim_description | markdown }}
+    </div>
+
+    {% if object.other_description %}
+        <div class="v-benefit-detail__other content-block">
+            <h2 class="t-h3">Další informace</h4>
+            {{ object.other_description | markdown }}
+        </div>
+    {% endif %}
+{% endblock %}
+
+{% block after_article %}
     <aside class="page__sidebar small-12 medium-4 columns">
         {% if object.context_description %}
             <div class="page__sidebar-body content-block">
@@ -47,5 +52,4 @@
             {% endif %}
         {% endwith %}
     </aside>
-</div>
 {% endblock %}

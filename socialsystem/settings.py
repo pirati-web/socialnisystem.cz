@@ -45,15 +45,20 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'django.forms',
-
+    'django.contrib.sites',
+    'django.contrib.sitemaps',
+    'django.contrib.flatpages',
     'django.contrib.staticfiles',
+
+    'django.forms',
 
     'webpack_loader',
     'markdownx', # A markdown editor
     'markdown_deux', # Markdown rendering template tags
+    'capture_tag', # Re-use same block multiple times
 
     'socialsystem.core.apps.CoreConfig',
+    'socialsystem.pages',
 ]
 
 FORM_RENDERER = 'django.forms.renderers.TemplatesSetting'
@@ -66,6 +71,9 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django.contrib.flatpages.middleware.FlatpageFallbackMiddleware',
+    'htmlmin.middleware.HtmlMinifyMiddleware',
+    'htmlmin.middleware.MarkRequestMiddleware',
 ]
 
 ROOT_URLCONF = 'socialsystem.urls'
@@ -83,7 +91,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-                'socialsystem.core.context_processors.siteinfo',
+                'socialsystem.context_processors.global_info',
             ],
         },
     },
@@ -161,6 +169,12 @@ LOGGING = {
     },
 }
 
+# Site
+SITE_ID = 1
+
+# HTML minify
+HTML_MINIFY = os.environ.get('MINIFY_HTML', DEBUG)
+
 # Custom settings
 # ---------------
 
@@ -174,7 +188,31 @@ SITEINFO = {
     'fb_profile_url': 'https://facebook.com',
     'twitter_profile_url': 'https://twitter.com',
     'instagram_profile_url': 'https://instagram.com',
+    'benefit_calculator_url': 'https://www.pracevobci.cz/kalkulacka/',
+    # 'piwik_siteid': '',
 }
+
+FOOTER_MENU = (
+    {
+        'class': 'small-12 medium-4 columns',
+        'title': 'Další informace',
+        'items': (
+            ('internal', 'core:benefit-overview', 'Orientační přehled dávek'),
+            ('external', '', 'Výpočet životního minima'),
+            ('external', '', 'Rizikové skupiny'),
+            ('external', '', 'Zdroje'),
+        )
+    },
+    {
+        'class': 'small-12 medium-4 columns',
+        'title': 'Nástroje',
+        'items': (
+            ('external', SITEINFO['benefit_calculator_url'], 'Kalkulačka sociálních dávek'),
+            ('external', 'https://portal.mpsv.cz/', 'Integrovaný portál MPSV'),
+        )
+    },
+)
+
 
 # Webpack-built assets
 
@@ -185,7 +223,7 @@ WEBPACK_LOADER = {
         'STATS_FILE': os.path.join(BASE_DIR, 'webpack-stats.json'),
         'POLL_INTERVAL': 0.1,
         'TIMEOUT': None,
-        'IGNORE': ['.+\.hot-update.js', '.+\.map']
+        'IGNORE': ['.+\.hot-update.js', '.+\.map'],
     }
 }
 

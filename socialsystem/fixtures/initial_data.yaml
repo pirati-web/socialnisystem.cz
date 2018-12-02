@@ -1405,3 +1405,6 @@
 - model: core.benefitrequirement
   pk: 38
   fields: {benefit: 3, flags: '67108872'}
+- model: sites.site
+  pk: 1
+  fields: {domain: socialnisystem.cz, name: socialnisystem.cz}
