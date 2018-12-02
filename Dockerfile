@@ -1,5 +1,3 @@
-# This file is meant to be published as adv-base image
-
 FROM python:3.7-alpine as build
 
 ENV PYTHONUNBUFFERED 1
