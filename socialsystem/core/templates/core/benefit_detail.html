@@ -5,7 +5,13 @@
 {% block page_description %}{{ object.base_description | markdown | striptags }}{% endblock %}
 
 {% block header %}
-    <div class="page__backnav"><a href="{% url 'core:benefit-overview' %}">Přehled dávek &raquo;</a></div>
+    <div class="page__backnav">
+        {% if back_link %}
+            <a href="{{ back_link }}">&laquo; Zpět</a>
+        {% else %}
+            <a href="{% url 'core:benefit-overview' %}">Přehled dávek &raquo;</a>
+        {% endif %}
+    </div>
     <h1 class="page__headline">{{ object }}</h1>
     <div class="page__headline-sub v-benefit-detail__rellaw-wrap content-block">dle <div class="v-benefit-detail__rellaw">{{ object.related_law|markdown:"target_blank" }}</div></div>
 {% endblock %}

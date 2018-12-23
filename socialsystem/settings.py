@@ -58,6 +58,7 @@ INSTALLED_APPS = [
     'webpack_loader',
     'markdownx', # A markdown editor
     'markdown_deux', # Markdown rendering template tags
+    'menu', # User-ediatable menus
     'capture_tag', # Re-use same block multiple times
 
     'socialsystem.core.apps.CoreConfig',
@@ -201,6 +202,7 @@ FOOTER_MENU = (
         'title': 'Další informace',
         'items': (
             ('internal', 'core:benefit-overview', 'Orientační přehled dávek'),
+            ('flat', '/nase-reseni/', 'Naše řešení'),
             ('external', '', 'Výpočet životního minima'),
             ('external', '', 'Rizikové skupiny'),
             ('external', '', 'Zdroje'),

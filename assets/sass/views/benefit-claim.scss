@@ -5,3 +5,8 @@
 .v-benefit-claim__noresults {
     margin: 4rem 0;
 }
+
+.v-benefit-claim__instructions {
+    margin-bottom: 4rem;
+@include headerStyle('h5');
+}

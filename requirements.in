@@ -4,6 +4,7 @@ dsnparse
 django-webpack-loader
 django-markdownx
 django-markdown-deux
+django-menu
 django-capture-tag
 django-htmlmin
 gunicorn

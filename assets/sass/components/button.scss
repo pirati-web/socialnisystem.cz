@@ -9,4 +9,16 @@
     @include breakpoint(small down) {
         width: 100%;
     }
+
+    @include headerStyle('h6', main);
+
+    &.large {
+        @include headerStyle('h5', main);
+    }
+
+    &.inverted,
+    &.inverted:hover {
+        background: map-get($foundation-palette, secondary);
+        color: map-get($foundation-palette, primary);
+    }
 }

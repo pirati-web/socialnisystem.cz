@@ -1,0 +1,70 @@
+.sidenote {
+    display: flex;
+    flex-direction: row;
+    border-top: 8px #fff solid;
+    transition: filter 1s ease-in-out;
+    filter: grayscale(40%);
+    overflow: hidden;
+
+    .sidenote__media {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        object-fit: cover;
+    }
+
+    .sidenote__body {
+        color: map-get($foundation-palette, secondary);
+        background-color: rgba(0, 0, 0, 0.7);
+
+        @include breakpoint(medium up) {
+            width: 70%;
+            margin-left: auto;
+            margin-right: 0;
+        }
+
+        @include breakpoint(large up) {
+            width: 47%;
+        }
+    }
+
+    .sidenote__headline {
+        @include headerStyle('h3', main);
+
+        @include breakpoint(medium up) {
+            @include headerStyle('h2', main);
+        }
+    }
+
+    .sidenote__content {
+        @include headerStyle('h6', alt);
+
+        @include breakpoint(medium up) {
+            @include headerStyle('h5', alt);
+        }
+    }
+
+    .sidenote__body-inner {
+        padding: 2rem;
+        margin-left: 0;
+        margin-right: auto;
+
+        @include breakpoint(medium up) {
+            padding: 6rem 4rem;
+            max-width: 40.5rem;
+        }
+    }
+
+    &:nth-child(2) {
+        .sidenote__body {
+            margin-right: auto;
+            margin-left: 0;
+        }
+
+        .sidenote__body-inner {
+            margin-left: auto;
+            margin-right: 0;
+        }
+    }
+}

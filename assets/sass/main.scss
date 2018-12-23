@@ -25,10 +25,11 @@
 @import 'components/page';
 @import 'components/productleader';
 @import 'components/radio-button';
+@import 'components/sidenote';
 @import 'components/sitenav';
 
 // Views
-@import 'views/about';
 @import 'views/benefit-claim';
 @import 'views/benefit-detail';
 @import 'views/benefit-overview';
+@import 'views/home';

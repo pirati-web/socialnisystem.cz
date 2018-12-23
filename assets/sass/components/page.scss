@@ -1,5 +1,9 @@
 .page {
     padding: 3rem 0;
+
+    &--nopad {
+        padding: 0;
+    }
 }
 
 .page__header {

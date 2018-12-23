@@ -1,4 +1,5 @@
 require('../sass/main.scss');
+require('./smoothscroll');
 
 
 function benefitClaimFormController(elem) {
@@ -16,6 +17,18 @@ function benefitClaimFormController(elem) {
 }
 
 
+function homeScroll(elem) {
+    elem.addEventListener('click', evt => {
+        evt.preventDefault();
+        const targetUrl = elem.getAttribute('href');
+        const targetId = targetUrl.substring(1);
+        const target = document.getElementById(targetId);
+        window.scroll({top: target.offsetTop, behavior: 'smooth'});
+        history.pushState({}, evt.target.text, targetUrl);
+    });
+}
+
+
 const forEachNode = (nodelist, callback, scope) => {
     for (let i = 0; i < nodelist.length; i++) {
         callback.call(scope, i, nodelist[i]); // passes back stuff we need
@@ -24,6 +37,7 @@ const forEachNode = (nodelist, callback, scope) => {
 
 const handlers = [
     {query: '.js-benefit-claim-form.js-benefit-claim-form--submitted', handler: benefitClaimFormController},
+    {query: '.js-smooth-scrollto', handler: homeScroll},
 ];
 
 handlers.forEach(handler => {

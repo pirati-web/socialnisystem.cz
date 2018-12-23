@@ -1,7 +1,7 @@
 $foundation-palette: (
     primary: #0a0a0a,
     secondary: #fff,
-    ternary: lighten(#000, 13%),
+    ternary: lighten(#000, 12%),
     success: #3adb76,
     warning: #ffae00,
     alert: #cc0303,
@@ -9,9 +9,15 @@ $foundation-palette: (
     light: #fff,
 );
 
+$sitenav-height: (
+    small: 4rem,
+    medium: 5rem,
+    large: 7rem,
+);
+
 $custom-palette: (
-    accent-main: #00b8ff,
-    accent-sub: #0b106e,
+    accent-main: #0a0a0a,
+    accent-sub: #0a0a0a,
 );
 
 $light-gray: #f3f3f3;
@@ -85,7 +91,7 @@ $headers: (
                 "h3": 1.75rem,
                 "h4": 1.414rem,
                 "h5": 1.238rem,
-                "h6": 1rem
+                "h6": 1rem,
             ),
             medium: (
                 "h1": 2.474rem,
@@ -93,7 +99,7 @@ $headers: (
                 "h3": 1.75rem,
                 "h4": 1.414rem,
                 "h5": 1.238rem,
-                "h6": 1rem
+                "h6": 1rem,
             )
         )
     ),

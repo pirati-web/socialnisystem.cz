@@ -2,9 +2,15 @@
     border-bottom: 1px $medium-gray solid;
     box-shadow: 0 .5rem 1.2rem $light-gray;
     padding: 1rem 0;
+    height: map-get($sitenav-height, small);
+
+    @include breakpoint(medium) {
+        height: map-get($sitenav-height, medium);
+    }
 
     @include breakpoint(large up) {
         padding: 2rem 0;
+        height: map-get($sitenav-height, large);
     }
 }
 
@@ -73,7 +79,9 @@
             margin: 0;
             height: 1.5rem;
         }
+    }
 
+    @include breakpoint(770px up) {
         &__sub {
             display: block;
         }

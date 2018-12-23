@@ -1,5 +1,6 @@
 .productleader {
     display: flex;
+    align-items: center;
 
     @include breakpoint(medium down) {
         flex-direction: column;
@@ -15,7 +16,10 @@
 .productleader__basics {
     flex-shrink: 0;
     text-align: center;
-    margin-right: 3rem;
+
+    @include breakpoint(large up) {
+        margin-right: 6rem;
+    }
 }
 
 .productleader__about {
@@ -31,10 +35,10 @@
 .productleader__name {
     margin: 1rem 0 0;
 
-    @include headerStyle('h5', sub);
+    @include headerStyle('h5', main);
 
     @include breakpoint(medium up) {
-        @include headerStyle('h4', sub);
+        @include headerStyle('h4', main);
     }
 }
 

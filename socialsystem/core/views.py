@@ -1,4 +1,4 @@
-from django.views.generic import TemplateView, FormView
+from django.views.generic import TemplateView, FormView, DetailView
 from django.urls import reverse
 
 from .entryform import EntryForm, entry_form_config, build_question_flag
@@ -18,9 +18,26 @@ class BenefitClaimView(FormView):
     template_name = 'core/benefit_claim.html'
     form_class = EntryForm
 
+    def get(self, request, *args, **kwargs):
+        form = self.get_form()
+
+        if form.is_valid():
+            return self.form_valid(form)
+        else:
+            return self.render_to_response(self.get_context_data())
+
     def get_form_kwargs(self, *args, **kwargs):
         kwargs = super().get_form_kwargs()
         kwargs['entry_form_config'] = entry_form_config
+
+        question_ids = {str(q['id']) for q in entry_form_config}
+        data = {
+            f'{item}': f'{value}' for item, value in self.request.GET.items() if item in question_ids
+        }
+
+        if data:
+            kwargs['data'] = data
+
         return kwargs
 
     def form_valid(self, form):
@@ -38,3 +55,16 @@ class BenefitClaimView(FormView):
             'submitted': True,
             'claimable_benefits': Benefit.objects.find_claimable(selected_flags),
         })
+
+
+class BenefitDetailView(DetailView):
+    model = Benefit
+    template_name = 'core/benefit_detail.html'
+
+    def get_context_data(self, *args, **kwargs):
+        data = super().get_context_data(*args, **kwargs)
+
+        if self.request.GET.get('back', None) is not None:
+            data['back_link'] = self.request.GET['back']
+
+        return data

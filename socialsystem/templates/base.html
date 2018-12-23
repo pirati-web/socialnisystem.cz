@@ -1,5 +1,6 @@
 {% load render_bundle webpack_static from webpack_loader %}
 {% load capture_tags %}
+{% load menubuilder %}
 <!DOCTYPE html>
 <html lang="cs">
 <head>
@@ -63,30 +64,26 @@
         </div>
     </header>
 
+    {% block main %}
     <main role="main" class="layout__main">
         {% block content %}{% endblock %}
     </main>
+    {% endblock %}
 
     <footer role="contentinfo" class="footer">
         <div class="row footer__main footer-nav">
             <div class="small-12 medium-4 columns">
-                <a href="/"><img src="{% webpack_static "img/brand/logo_napis_white.svg" %}" alt="" class="footer__brand"></a>
-                <h3 class="t-h5-sub">{{ siteinfo.name }}</h3>
+                <a href="https://www.pirati.cz" rel="noopener" target="_blank"><img src="{% webpack_static "img/brand/logo_napis_white.svg" %}" alt="" class="footer__brand"></a>
+                <h3 class="t-h5-sub"><a href="/">{{ siteinfo.name }}</a></h3>
                 <ul class="no-bullet">
                     <li><a href="mailto:{{ siteinfo.email }}">{{ siteinfo.email }}</a></li>
                     <li><a href="tel:{{ siteinfo.phone }}">{{ siteinfo.phone }}</a></li>
                 </ul>
             </div>
-            {% for menu_section in footer_menu %}
-            <div class="{{ menu_section.class }}">
-                <h3 class="footer-nav__headline">{{ menu_section.title }}</h3>
-                <ul class="no-bullet">
-                    {% for type, link, title in menu_section.items %}
-                        <li><a href="{% if type == 'external' %}{{ link }}{% else %}{% url link %}{% endif %}" {% if type == 'external' %}rel="noopener" target="_blank"{% endif %}>{{ title }}</a></li>
-                    {% endfor %}
-                </ul>
-            </div>
-            {% endfor %}
+            {% menu dalsi-informace %}
+            {% include "includes/footer_menu_section.html" with items=menuitems headline="Další informace" %}
+            {% menu nastroje %}
+            {% include "includes/footer_menu_section.html" with items=menuitems headline="Nástroje" %}
         </div>
 
         <div class="footer__sub">

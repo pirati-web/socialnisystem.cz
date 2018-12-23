@@ -8,7 +8,7 @@ from . import views
 app_name = 'core'
 
 urlpatterns = [
-    path('davky/<int:pk>-<str:slug>/', DetailView.as_view(model=models.Benefit, template_name='core/benefit_detail.html'), name='benefit-detail'),
+    path('davky/<int:pk>-<str:slug>/', views.BenefitDetailView.as_view(), name='benefit-detail'),
     path('davky/prehled/', views.BenefitOverview.as_view(), name='benefit-overview'),
     path('davky/na-co-mam-narok/', views.BenefitClaimView.as_view(), name='benefit-claim'),
 ]

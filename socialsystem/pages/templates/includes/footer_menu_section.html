@@ -1,0 +1,7 @@
+{% load is_external from core %}
+<div class="small-12 medium-4 columns">
+    <h3 class="footer-nav__headline">{{ headline }}</h3>
+    <ul class="no-bullet">
+        {% for item in items %}<li><a href="{{ item.url }}" title="{{ item.title|escape }}"{% if item.current %} class="current"{% endif %} {% if item.url|is_external %}target="_blank" rel="noopener"{% endif %}>{{ item.title }}</a></li>{% endfor %}
+    </ul>
+</div>
