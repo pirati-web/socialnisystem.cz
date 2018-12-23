@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% load webpack_static from webpack_loader %}
+{% load markdown_deux_tags %}
+
+{% block page_title_full %}{{ siteinfo.name }}{% endblock %}
+{% block page_description %}{% if flatpage.metadata %}{{ flatpage.metadata.description }}{% else %}{{ block.super }}{% endif %}{% endblock %}
+{% block page_keywords %}{% if flatpage.metadata %}{{ flatpage.metadata.keywords }}{% else %}{{ block.super }}{% endif %}{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <div class="row">
+        <div class="small-12 columns">
+            <h1 class="hero__headline">Nacházíte se v obtížné životní situaci?</h1>
+            <p class="hero__caption">V životě každého z nás se děje ledacos. Pomůžeme vám vyznat se v džungli českého sociálního systému.</p>
+            <p><a href="{% url 'core:benefit-claim' %}" class="hero__cta button primary large">Zjistit na co mám nárok</a></p>
+        </div>
+    </div>
+</section>
+
+<div class="page">
+    <div class="fp-content">
+        {{ flatpage.content | markdown }}
+    </div>
+
+    <section class="v-about">
+        <div class="row">
+            <div class="small-12 columns">
+                <h2 class="t-h3-sub v-about__headline">Kdo za tímto projektem stojí?</h2>
+            </div>
+            <div class="small-12 medium-8 medium-offset-2 columns">
+                <div class="productleader">
+                    <div class="productleader__basics">
+                        <img class="productleader__avatar" src="{% webpack_static "img/olga-richterova-150x150.jpg" %}" alt="PhDr. Olga Richterová, PhD.">
+                        <h3 class="productleader__name">PhDr. Olga Richterová, PhD.</h3>
+                        <h4 class="productleader__job">poslankyně za Piráty</h4>
+                    </div>
+                    <div class="productleader__about">
+                        <p>PhDr. Olga Richterová, PhD. (* 21. ledna 1985) je poslankyně Parlamentu ČR za Piráty.</p>
+                        <p>Je místopředsedkyní Výboru pro sociální politiku, členkou Výboru zdravotního a Stálé komise pro rodinu, rovné příležitosti a národnostní menšiny. Věnuje se také problematice dostupného bydlení.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock %}
