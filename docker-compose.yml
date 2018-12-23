@@ -24,6 +24,7 @@ services:
         environment:
             DEBUG: 1
             DATABASE_DSN: postgresql://socialsystem:socialsystem@db:5432/socialsystem
+            ALLOWED_HOSTS: '*'
 
 volumes:
     dbdata:

@@ -36,6 +36,9 @@ if not SECRET_KEY:
 
 ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', '').split(',')
 
+if not ALLOWED_HOSTS == '' and DEBUG:
+    ALLOWED_HOSTS = '*'
+
 
 # Application definition
 
