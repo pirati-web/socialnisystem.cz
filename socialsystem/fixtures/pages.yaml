@@ -75,3 +75,31 @@
 - model: menu.menu
   pk: 2
   fields: {name: "N\xE1stroje", slug: nastroje, base_url: null, description: ''}
+- model: menu.menuitem
+  pk: 1
+  fields: {menu: 1, order: 500, link_url: /davky/prehled/, title: "Orienta\u010Dn\xED
+      p\u0159ehled d\xE1vek", login_required: false, anonymous_only: false}
+- model: menu.menuitem
+  pk: 2
+  fields: {menu: 1, order: 501, link_url: /nase-reseni/, title: "Na\u0161e \u0159e\u0161en\xED",
+    login_required: false, anonymous_only: false}
+- model: menu.menuitem
+  pk: 3
+  fields: {menu: 1, order: 502, link_url: /, title: "V\xFDpo\u010Det \u017Eivotn\xEDho
+      minima", login_required: false, anonymous_only: false}
+- model: menu.menuitem
+  pk: 4
+  fields: {menu: 1, order: 503, link_url: /, title: "Rizikov\xE9 skupiny", login_required: false,
+    anonymous_only: false}
+- model: menu.menuitem
+  pk: 5
+  fields: {menu: 1, order: 504, link_url: /, title: Zdroje, login_required: false,
+    anonymous_only: false}
+- model: menu.menuitem
+  pk: 6
+  fields: {menu: 2, order: 500, link_url: 'https://www.pracevobci.cz/kalkulacka/',
+    title: "Kalkula\u010Dka soci\xE1ln\xEDch d\xE1vek", login_required: false, anonymous_only: false}
+- model: menu.menuitem
+  pk: 7
+  fields: {menu: 2, order: 501, link_url: 'https://portal.mpsv.cz/', title: "Integrovan\xFD
+      port\xE1l MPSV", login_required: false, anonymous_only: false}
