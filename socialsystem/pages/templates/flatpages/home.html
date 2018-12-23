@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 {% load webpack_static from webpack_loader %}
 {% load markdown_deux_tags %}
+{% load render_html from core %}
 
 {% block page_title_full %}{{ siteinfo.name }}{% endblock %}
 {% block page_description %}{% if flatpage.metadata %}{{ flatpage.metadata.description }}{% else %}{{ block.super }}{% endif %}{% endblock %}
@@ -27,64 +28,7 @@
 
 <div class="page page--nopad" id="v-home__sidenotes">
     <div class="v-home__sidenotes">
-        <div class="sidenote">
-            <img
-                srcset="
-                    {% webpack_static "img/pills@3x.jpg" %} 2880w,
-                    {% webpack_static "img/pills@2x.jpg" %} 1920w,
-                    {% webpack_static "img/pills@1x.jpg" %} 960w"
-                src="{% webpack_static "img/pills@1x.jpg" %}"
-                class="sidenote__media" />
-            <div class="sidenote__body">
-                <div class="sidenote__body-inner">
-                    <h2 class="sidenote__headline">Kdo má na co nárok?</h2>
-                    <div class="sidenote__content">
-                        <p>Na co vše má kdo nárok mnozí nevědí. Stejně tak je řada dávek nastavená demotivačně: je snazší je pobírat a zůstat v závislosti na solidaritě ostatních, než se postupně osamostatňovat (systém to ztěžuje). Proto vznikl tento přehled současného stavu, který obsahuje i navrhované cesty vpřed, jež Piráti diskutují s odborníky i širokou veřejností.</p>
-                        <a href="/davky/prehled/" class="button primary inverted">Zobrazit přehled dávek</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="sidenote">
-            <img
-                srcset="
-                    {% webpack_static "img/alone@3x.jpg" %} 2880w,
-                    {% webpack_static "img/alone@2x.jpg" %} 1920w,
-                    {% webpack_static "img/alone@1x.jpg" %} 960w"
-                src="{% webpack_static "img/alone@1x.jpg" %}"
-                class="sidenote__media" />
-            <div class="sidenote__body">
-                <div class="sidenote__body-inner">
-                    <h2 class="sidenote__headline">Proč to děláme?</h2>
-                    <div class="sidenote__content">
-                        <p>Chceme poskytnout ucelený přehled sociálních dávek v ČR a zahájit diskuzi potřebnou pro práci Pirátů v této oblasti v Poslanecké sněmovně.</p>
-                        <p>Celý web je členěn na tematické části poskytující přehled životních situací, v nichž lidé potřebují pomoc. Popis je doplněn možnými návrhy řešení.</p>
-                        <a href="/nase-reseni/" class="button primary inverted">Naše řešení</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="sidenote">
-            <img
-                srcset="
-                    {% webpack_static "img/aging@3x.jpg" %} 2880w,
-                    {% webpack_static "img/aging@2x.jpg" %} 1920w,
-                    {% webpack_static "img/aging@1x.jpg" %} 960w"
-                src="{% webpack_static "img/aging@1x.jpg" %}"
-                class="sidenote__media" />
-            <div class="sidenote__body">
-                <div class="sidenote__body-inner">
-                    <h2 class="sidenote__headline">Výchozí situace</h2>
-                    <div class="sidenote__content">
-                        <p>V současné době (srpen 2018) je jedna z nejnižších úrovní nezaměstnanosti na světě právě u nás. I přesto je více než 200 000 lidí registrováno na Úřadě práce jako nezaměstnaní (v červenci 2018 to bylo 211 tisíc!).</p>
-                        <p>Úřad práce však kromě nezaměstnaných eviduje také lidi v hmotné nouzi, zdravotně postižené podstupující pracovní rehabilitaci či posuzování zdravotního stavu pro uznání invalidity nebo pěstouny a rodiče malých dětí. Byť se tyto skupiny občas vzájemně prolínají, rozhodně ne všichni, kdo chodí na Úřad práce, jsou nezaměstnaní a mohou pracovat.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
+        {% render_html flatpage.content %}
     </div>
 
     <section class="v-home__about">
