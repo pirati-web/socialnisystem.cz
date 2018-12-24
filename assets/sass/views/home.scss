@@ -70,9 +70,11 @@ $color2: fade-out(map-get($custom-palette, accent-sub), 0.15);
     @media (max-height: 600px) {
         padding-top: 4rem;
         align-items: flex-start;
+    }
 
+    @include breakpoint(medium down) {
         .v-home__sidenotes-scroll {
-            bottom: 3rem;
+            bottom: 4rem;
         }
     }
 
