@@ -54,6 +54,11 @@ $text: (
     )
 );
 
+$grid-column-gutter: (
+    small: 3rem,
+    medium: 4rem,
+);
+
 $headers: (
     super: (
         family: "'Bebas Neue', Helvetica, Arial, sans-serif",

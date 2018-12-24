@@ -44,6 +44,9 @@
 .sitenav-site {
     height: 2rem;
     margin-left: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 
     &__main,
     &__sub {
@@ -81,7 +84,7 @@
         }
     }
 
-    @include breakpoint(770px up) {
+    @include breakpoint(800px up) {
         &__sub {
             display: block;
         }

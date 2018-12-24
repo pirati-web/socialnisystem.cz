@@ -1,10 +1,9 @@
 .sidenote {
     display: flex;
     flex-direction: row;
-    border-top: 8px #fff solid;
-    transition: filter 1s ease-in-out;
+    border-top: 8px map-get($foundation-palette, secondary) solid;
     filter: grayscale(40%);
-    overflow: hidden;
+    overflow: hidden; // keep bg image from overflowing
 
     .sidenote__media {
         position: absolute;
@@ -16,7 +15,7 @@
 
     .sidenote__body {
         color: map-get($foundation-palette, secondary);
-        background-color: rgba(0, 0, 0, 0.7);
+        background-color: fade-out(map-get($foundation-palette, primary), 0.3);
 
         @include breakpoint(medium up) {
             width: 70%;
@@ -52,7 +51,7 @@
 
         @include breakpoint(medium up) {
             padding: 6rem 4rem;
-            max-width: 40.5rem;
+            max-width: 35.5rem;
         }
     }
 
