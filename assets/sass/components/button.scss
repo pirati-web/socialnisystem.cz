@@ -1,9 +1,11 @@
 .button {
-    transform: scale(1);
-    transition: transform .2s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+    &:not(.no-trans) {
+        transform: scale(1);
+        transition: transform .2s cubic-bezier(0.55, 0.085, 0.68, 0.53);
 
-    &:hover {
-        transform: scale(1.05);
+        &:hover {
+            transform: scale(1.05);
+        }
     }
 
     @include breakpoint(small down) {
@@ -20,5 +22,9 @@
     &.inverted:hover {
         background: map-get($foundation-palette, secondary);
         color: map-get($foundation-palette, primary);
+
+        &.bordered {
+            border: 1px map-get($foundation-palette, primary) solid;
+        }
     }
 }

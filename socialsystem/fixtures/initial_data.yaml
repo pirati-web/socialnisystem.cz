@@ -1486,7 +1486,7 @@
     description: ''}
 - model: menu.menu
   pk: 2
-  fields: {name: "N\xE1stroje", slug: nastroje, base_url: null, description: ''}
+  fields: {name: Odkazy, slug: odkazy, base_url: null, description: ''}
 - model: menu.menuitem
   pk: 1
   fields: {menu: 1, order: 500, link_url: /davky/prehled/, title: "Orienta\u010Dn\xED
@@ -1509,9 +1509,9 @@
     anonymous_only: false}
 - model: menu.menuitem
   pk: 6
-  fields: {menu: 2, order: 500, link_url: 'https://www.pracevobci.cz/kalkulacka/',
+  fields: {menu: 2, order: 10, link_url: 'https://www.pracevobci.cz/kalkulacka/',
     title: "Kalkula\u010Dka soci\xE1ln\xEDch d\xE1vek", login_required: false, anonymous_only: false}
 - model: menu.menuitem
   pk: 7
-  fields: {menu: 2, order: 501, link_url: 'https://portal.mpsv.cz/', title: "Integrovan\xFD
+  fields: {menu: 2, order: 20, link_url: 'https://portal.mpsv.cz/', title: "Integrovan\xFD
       port\xE1l MPSV", login_required: false, anonymous_only: false}

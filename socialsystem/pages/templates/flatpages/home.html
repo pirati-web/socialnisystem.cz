@@ -21,7 +21,7 @@
         <div class="small-12 columns">
             <h1 class="hero__headline">Nacházíte se v obtížné životní situaci?</h1>
             <p class="hero__caption">V životě každého z nás se děje ledacos. Pomůžeme vám vyznat se v džungli českého sociálního systému.</p>
-            <p><a href="{% url 'core:benefit-claim' %}" class="hero__cta button primary large inverted">Zjistit na co mám nárok</a></p>
+            <p><a href="{% url 'core:benefit-claim' %}" class="hero__cta button primary large inverted">Na co mohu mít nárok?</a></p>
         </div>
     </div>
     <a href="#v-home__sidenotes" class="v-home__sidenotes-scroll js-smooth-scrollto"><i class="fas fa-arrow-circle-down"></i></a>
@@ -40,13 +40,20 @@
             <div class="small-12 medium-8 medium-offset-2 columns">
                 <div class="productleader">
                     <div class="productleader__basics">
-                        <img class="productleader__avatar" src="{% webpack_static "img/olga-richterova-624x624.jpg" %}" alt="PhDr. Olga Richterová, PhD.">
-                        <h3 class="productleader__name">PhDr. Olga Richterová, PhD.</h3>
+                        <a href="https://www.olgarichterova.cz" target="_blank" rel="noopener">
+                            <img class="productleader__avatar" src="{% webpack_static "img/olga-richterova-624x624.jpg" %}" alt="PhDr. Olga Richterová, PhD.">
+                        </a>
+                        <h3 class="productleader__name"><a href="https://www.olgarichterova.cz" class="t-anchor" target="_blank" rel="noopener">PhDr. Olga Richterová, PhD.</a></h3>
                         <h4 class="productleader__job">poslankyně za Piráty</h4>
                     </div>
                     <div class="productleader__about">
-                        <p>PhDr. Olga Richterová, PhD. (* 21. ledna 1985) je poslankyně Parlamentu ČR za Piráty.</p>
-                        <p>Je místopředsedkyní Výboru pro sociální politiku, členkou Výboru zdravotního a Stálé komise pro rodinu, rovné příležitosti a národnostní menšiny. Věnuje se také problematice dostupného bydlení.</p>
+                        <p>
+                            PhDr. Olga Richterová, PhD. (* 21. ledna 1985), poslankyně Parlamentu ČR za Piráty.
+                            Je místopředsedkyní Výboru pro sociální politiku, členkou Výboru zdravotního a Stálé komise pro rodinu, rovné příležitosti a národnostní menšiny. Věnuje se také problematice dostupného bydlení.
+                        </p>
+                        <p>
+                            <a href="http://www.bydlimevsichni.cz" class="t-anchor" target="_blank" rel="noopener">www.bydlimevsichni.cz</a>
+                        </p>
                     </div>
                 </div>
             </div>

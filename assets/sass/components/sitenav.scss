@@ -64,6 +64,10 @@
 
     &__sub {
         display: none;
+    }
+
+    &__sub a {
+        display: block;
 
         @include headerStyle('h6', alt);
 

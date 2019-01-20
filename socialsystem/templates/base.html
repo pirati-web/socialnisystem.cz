@@ -51,14 +51,15 @@
                 <nav role="navigation" class="sitenav-groups">
                     <div class="sitenav-groups__group sitenav-groups__group--main sitenav-brand">
                         <div class="sitenav-brand__logo">
-                            <a href="/"><img src="{% webpack_static "img/brand/logo_napis.svg" %}"></a>
+                            <a href="https://www.pirati.cz"><img src="{% webpack_static "img/brand/logo_napis.svg" %}"></a>
                         </div>
                         <div class="sitenav-brand__site sitenav-site">
                             <h1 class="sitenav-site__main"><a href="/">{{ siteinfo.name }}</a></h1>
-                            <h2 class="sitenav-site__sub">{{ siteinfo.claim }}</h2>
+                            <h2 class="sitenav-site__sub"><a href="/">{{ siteinfo.claim }}</a></h2>
                         </div>
                     </div>
-                    <a class="sitenav-groups__group button primary show-for-medium" href="{% url 'core:benefit-claim' %}">Zjistit na co mám nárok</a>
+                    <a class="sitenav-groups__group button primary no-trans show-for-medium" href="{% url 'core:benefit-claim' %}">Na co mohu mít nárok?</a>
+                    <a class="sitenav-groups__group button primary inverted bordered no-trans show-for-large" href="#footer">Další informace</a>
                 </nav>
             </div>
         </div>
@@ -70,20 +71,20 @@
     </main>
     {% endblock %}
 
-    <footer role="contentinfo" class="footer">
+    <footer role="contentinfo" class="footer" id="footer">
         <div class="row footer__main footer-nav">
             <div class="small-12 medium-4 columns">
                 <a href="https://www.pirati.cz" rel="noopener" target="_blank"><img src="{% webpack_static "img/brand/logo_napis_white.svg" %}" alt="" class="footer__brand"></a>
-                <h3 class="t-h5-sub"><a href="/">{{ siteinfo.name }}</a></h3>
+                <h3 class="t-h6-sub"><a href="/">{{ siteinfo.name }}</a></h3>
                 <ul class="no-bullet">
                     <li><a href="mailto:{{ siteinfo.email }}">{{ siteinfo.email }}</a></li>
                     <li><a href="tel:{{ siteinfo.phone }}">{{ siteinfo.phone }}</a></li>
                 </ul>
             </div>
             {% menu dalsi-informace %}
-            {% include "includes/footer_menu_section.html" with items=menuitems headline="Další informace" %}
-            {% menu nastroje %}
-            {% include "includes/footer_menu_section.html" with items=menuitems headline="Nástroje" %}
+            {% include "includes/footer_menu_section.html" with items=menuitems headline="Další informace" anchor="dalsi-informace" %}
+            {% menu odkazy %}
+            {% include "includes/footer_menu_section.html" with items=menuitems headline="Odkazy" anchor="odkazy" %}
         </div>
 
         <div class="footer__sub">
@@ -94,9 +95,9 @@
             </div>
             <div class="row">
                 <div class="small-12 columns footer__social">
-                    <a href="{{ siteinfo.fb_profile_url }}"><i class="fab fa-facebook"></i></a>
-                    <a href="{{ siteinfo.twitter_profile_url }}"><i class="fab fa-twitter"></i></a>
-                    <a href="{{ siteinfo.instagram_profile_url }}"><i class="fab fa-instagram"></i></a>
+                    <a href="{{ siteinfo.fb_profile_url }}" target="_blank" rel="noopener" title="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="{{ siteinfo.twitter_profile_url }}" target="_blank" rel="noopener" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="{{ siteinfo.instagram_profile_url }}" target="_blank" rel="noopener" title="Instagram"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
         </div>

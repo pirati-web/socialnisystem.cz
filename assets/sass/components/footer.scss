@@ -15,6 +15,10 @@
     @include headerStyle('h5', sub);
 }
 
+.footer-nav__item {
+    @include headerStyle('h6', sub);
+}
+
 .footer__brand {
     max-width: 9rem;
     margin-bottom: 1rem;

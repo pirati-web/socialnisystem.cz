@@ -189,9 +189,9 @@ SITEINFO = {
     'keywords': (),
     'phone': '+420776278860',
     'email': 'info@socialnisystem.cz',
-    'fb_profile_url': 'https://facebook.com',
-    'twitter_profile_url': 'https://twitter.com',
-    'instagram_profile_url': 'https://instagram.com',
+    'fb_profile_url': 'https://www.facebook.com/ceska.piratska.strana',
+    'twitter_profile_url': 'https://twitter.com/olgarichterova',
+    'instagram_profile_url': 'https://www.instagram.com/pirati.cz',
     'benefit_calculator_url': 'https://www.pracevobci.cz/kalkulacka/',
     # 'piwik_siteid': '',
 }
@@ -210,7 +210,7 @@ FOOTER_MENU = (
     },
     {
         'class': 'small-12 medium-4 columns',
-        'title': 'Nástroje',
+        'title': 'Odkazy',
         'items': (
             ('external', SITEINFO['benefit_calculator_url'], 'Kalkulačka sociálních dávek'),
             ('external', 'https://portal.mpsv.cz/', 'Integrovaný portál MPSV'),
