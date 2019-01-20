@@ -8,5 +8,9 @@
 
 .v-benefit-claim__instructions {
     margin-bottom: 4rem;
-@include headerStyle('h5');
+    @include headerStyle('h5');
+}
+
+.v-benefit-claim__resultwarn {
+    @include headerStyle('h6', alt);
 }

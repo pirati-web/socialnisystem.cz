@@ -7,6 +7,8 @@
         {% block header %}
             <h1 class="page__headline">{% block headline %}{% endblock %}</h1>
         {% endblock %}
+        {% block after_header %}
+        {% endblock %}
     </header>
 
     <div class="page__content {% block content_wrapper_classes %}{% endblock %}">

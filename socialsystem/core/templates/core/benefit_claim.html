@@ -4,7 +4,13 @@
 {% block page_title %}{% if submitted %}Vaše nároky{% else %}Na co mohu mít nárok?{% endif %}{% endblock %}
 {% block page_description %}Zjistěte si, na co máte nárok.{% endblock %}
 
-{% block headline %}{% if submitted %}{% if claimable_benefits|length > 0 %}Hotovo! Zdá se, že máte nárok na následující{% else %}Hotovo, jenže ...{% endif %}{% else %}Na co mohu mít nárok?{% endif %}{% endblock %}
+{% block headline %}{% if submitted %}{% if claimable_benefits|length > 0 %}Hotovo! Můžete mít nárok na následující:{% else %}Hotovo, jenže ...{% endif %}{% else %}Na co mohu mít nárok?{% endif %}{% endblock %}
+
+{% block after_header %}
+{% if submitted and claimable_benefits|length > 0 %}
+<div class="v-benefit-claim__resultwarn"><i class="fas fa-info-circle"></i> Výsledek je pouze orientační. Vždy je třeba kontaktovat příslušný úřad, který spočítá Váš nárok a zohlední i případné výjimky.</div>
+{% endif %}
+{% endblock %}
 
 {% block article %}
 <div class="v-benefit-claim row js-benefit-claim-form {% if submitted %}js-benefit-claim-form--submitted{% endif %}">
