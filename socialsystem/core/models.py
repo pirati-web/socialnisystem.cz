@@ -39,6 +39,7 @@ class LifeCondition(models.Model):
     """
     title = models.CharField('Název', max_length=255)
     description = models.TextField('Popis', blank=True)
+    ordering = models.PositiveSmallIntegerField('Pořadí', default=1, help_text="Čím vyšší číslo, tím později ve výpisu.")
 
     objects = LifeConditionManager()
 
@@ -46,7 +47,7 @@ class LifeCondition(models.Model):
         app_label = 'core'
         verbose_name = 'Źivotní situace'
         verbose_name_plural = 'Životní situace'
-        ordering = ('title',)
+        ordering = ('ordering', 'title',)
 
     def __str__(self):
         return self.title
