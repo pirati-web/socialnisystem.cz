@@ -6,37 +6,38 @@
   fields: {name: "Okresn\xED spr\xE1va soci\xE1ln\xEDho zabezpe\u010Den\xED", short_name: OSSZ}
 - model: core.lifecondition
   pk: 1
-  fields: {title: "T\u011Bhotenstv\xED a porod", description: ''}
+  fields: {title: "T\u011Bhotenstv\xED a porod", description: '', ordering: 1}
 - model: core.lifecondition
   pk: 2
-  fields: {title: "P\xE9\u010De o d\xEDt\u011B", description: ''}
+  fields: {title: "P\xE9\u010De o d\xEDt\u011B", description: '', ordering: 1}
 - model: core.lifecondition
   pk: 3
-  fields: {title: "P\xE9\u010De o ohro\u017Een\xE9 d\xEDt\u011B", description: ''}
+  fields: {title: "P\xE9\u010De o ohro\u017Een\xE9 d\xEDt\u011B", description: '',
+    ordering: 1}
 - model: core.lifecondition
   pk: 4
-  fields: {title: "Nemoc/\xFAraz", description: ''}
+  fields: {title: "Nemoc/\xFAraz", description: '', ordering: 1}
 - model: core.lifecondition
   pk: 5
-  fields: {title: "Nemoc/\xFAraz bl\xEDzk\xE9 osoby", description: ''}
+  fields: {title: "Nemoc/\xFAraz bl\xEDzk\xE9 osoby", description: '', ordering: 1}
 - model: core.lifecondition
   pk: 6
-  fields: {title: "Nezam\u011Bstnanost", description: ''}
+  fields: {title: "Nezam\u011Bstnanost", description: '', ordering: 1}
 - model: core.lifecondition
   pk: 7
-  fields: {title: "Bytov\xE1 nouze", description: ''}
+  fields: {title: "Bytov\xE1 nouze", description: '', ordering: 1}
 - model: core.lifecondition
   pk: 8
-  fields: {title: Chudoba, description: ''}
+  fields: {title: Chudoba, description: '', ordering: 1}
 - model: core.lifecondition
   pk: 9
-  fields: {title: Krize, description: ''}
+  fields: {title: Krize, description: '', ordering: 1}
 - model: core.lifecondition
   pk: 10
-  fields: {title: "St\xE1\u0159\xED", description: ''}
+  fields: {title: "St\xE1\u0159\xED", description: '', ordering: 1}
 - model: core.lifecondition
   pk: 11
-  fields: {title: Smrt, description: ''}
+  fields: {title: Smrt, description: '', ordering: 1}
 - model: core.benefit
   pk: 1
   fields:
@@ -87,7 +88,7 @@
   pk: 2
   fields:
     name: "Otcovsk\xE1"
-    related_law: "[187/2006 Sb., o nemocensk\xE9m poji\u0161t\u011Bn\xED](https://zakonyprolidi.cz/cs/2006-187)"
+    related_law: "[Z\xE1kona \u010D. 187/2006 Sb., o nemocensk\xE9m poji\u0161t\u011Bn\xED](https://zakonyprolidi.cz/cs/2006-187)"
     base_description: "M\xE1 vynahradit otci p\u0159\xEDjem p\u0159i p\xE9\u010Di
       o d\xEDt\u011B."
     claim_description: "- Otec d\xEDt\u011Bte, kter\xFD o d\xEDt\u011B pe\u010Duje
@@ -108,8 +109,40 @@
       1 t\xFDden bez mo\u017Enosti p\u0159eru\u0161en\xED a za\u010D\xEDn\xE1 dnem
       n\xE1stupu na otcovskou.\r\n- Pro volno v zam\u011Bstn\xE1n\xED vyu\u017Eij\xED
       otcov\xE9 rodi\u010Dovskou dovolenou."
-    other_description: ''
-    context_description: ''
+    other_description: "####V\xFD\u0161e d\xE1vky\r\n\r\n- \u010Din\xED 70% redukovan\xE9ho
+      denn\xEDho vym\u011B\u0159ovac\xEDho z\xE1kladu za kalend\xE1\u0159n\xED den.\r\n\r\n**Denn\xED
+      vym\u011B\u0159ovac\xED z\xE1klad** se u otcovsk\xE9 zjist\xED tak, \u017Ee
+      se zapo\u010Ditateln\xFD p\u0159\xEDjem (tj. ve\u0161ker\xFD p\u0159\xEDjem
+      podl\xE9haj\xEDc\xED odvodu pojistn\xE9ho na soci\xE1ln\xED zabezpe\u010Den\xED
+      a p\u0159\xEDsp\u011Bvku na st\xE1tn\xED politiku zam\u011Bstnanosti; nej\u010Dast\u011Bji
+      se bude jednat o \xFAhrn hrub\xE9 mzdy za kalend\xE1\u0159n\xED m\u011Bs\xEDce)
+      z\xFA\u010Dtovan\xFD v rozhodn\xE9m obdob\xED (zpravidla obdob\xED 12 kalend\xE1\u0159n\xEDch
+      m\u011Bs\xEDc\u016F p\u0159ed kalend\xE1\u0159n\xEDm m\u011Bs\xEDcem, ve kter\xE9m
+      zam\u011Bstnanec nastoupil na otcovskou) d\u011Bl\xED po\u010Dtem \u201Ezapo\u010Ditateln\xFDch\u201C
+      kalend\xE1\u0159n\xEDch dn\u016F p\u0159ipadaj\xEDc\xEDch na toto rozhodn\xE9
+      obdob\xED.\r\n\r\nTakto stanoven\xFD denn\xED vym\u011B\u0159ovac\xED z\xE1klad
+      podl\xE9h\xE1 redukci, kter\xE1 se u otcovsk\xE9 provede tak, \u017Ee \u010D\xE1stka
+      do prvn\xED reduk\u010Dn\xED hranice se po\u010D\xEDt\xE1 100%, z \u010D\xE1stky
+      nad prvn\xED reduk\u010Dn\xED hranici do druh\xE9 reduk\u010Dn\xED hranice se
+      po\u010D\xEDt\xE1 60 %, z \u010D\xE1stky nad druhou reduk\u010Dn\xED hranici
+      do t\u0159et\xED reduk\u010Dn\xED hranice se po\u010D\xEDt\xE1 30 % a k \u010D\xE1stce
+      nad t\u0159et\xED reduk\u010Dn\xED hranici se nep\u0159ihl\xED\u017E\xED. V\xFD\u0161i
+      reduk\u010Dn\xEDch hranic platn\xFDch od 1. 1. kalend\xE1\u0159n\xEDho roku
+      vyhla\u0161uje Ministerstvo pr\xE1ce a soci\xE1ln\xEDch v\u011Bc\xED ve Sb\xEDrce
+      z\xE1kon\u016F sd\u011Blen\xEDm. Reduk\u010Dn\xED hranice od 1. 1. 2019 \u010Din\xED:\r\n\r\n1.
+      reduk\u010Dn\xED hranice                1 090 K\u010D\r\n2. reduk\u010Dn\xED
+      hranice                1 635 K\u010D\r\n3. reduk\u010Dn\xED hranice                3
+      270 K\u010D"
+    context_description: "#### Pod\xE1n\xED \u017E\xE1dosti\r\n\r\n\u017D\xE1dost
+      se pod\xE1v\xE1 prost\u0159ednictv\xEDm zam\u011Bstnavatele, v p\u0159\xEDpad\u011B
+      OSV\u010C, kter\xE9 jsou dobrovoln\xFDmi \xFA\u010Dastn\xEDky nemocensk\xE9ho
+      poji\u0161t\u011Bn\xED, potom na p\u0159\xEDslu\u0161n\xE9m \xFA\u0159adu \u010CSSZ.\r\n\r\n<a
+      href=\"https://www.cssz.cz/NR/rdonlyres/11542DF9-C715-477C-832F-B2E298F345DC/0/ZDOPP.pdf\"
+      class=\"button primary\" target=\"_blank\" rel=\"noopener\">Formul\xE1\u0159
+      \u017D\xE1dost o d\xE1vku otcovsk\xE9 poporodn\xED p\xE9\u010De</a>\r\n\r\n---\r\n\r\n####
+      Statistiky\r\n\r\n**Po\u010Det vyplacen\xFDch d\xE1vek:**\tprosinec 2017 \u2013
+      \ 50 000\r\n\r\n**V\xFDdaje na d\xE1vku:**\t\t\tprosinec 2017\u2013 0,193 mld.
+      K\u010D, za cel\xFD rok 2017 \u2013 2,423 mld. K\u010D"
     responsible_office: 2
     condition: 1
     attachments: []
@@ -144,25 +177,40 @@
   pk: 4
   fields:
     name: "Porodn\xE9"
-    related_law: "[117/1995 Sb., o st\xE1tn\xED soci\xE1ln\xED podpo\u0159e](https://zakonyprolidi.cz/cs/1995-117)"
+    related_law: "[Z\xE1kona \u010D. 117/1995 Sb., o st\xE1tn\xED soci\xE1ln\xED podpo\u0159e](https://zakonyprolidi.cz/cs/1995-117)"
     base_description: "Porodn\xE9 je d\xE1vka poskytovan\xE1 v z\xE1vislosti na v\xFD\u0161i
-      p\u0159\xEDjmu, kterou se rodin\u011B s n\xEDzk\xFDmi p\u0159\xEDjmy jednor\xE1zov\u011B
+      p\u0159\xEDjmu, kterou se **rodin\u011B s n\xEDzk\xFDmi p\u0159\xEDjmy jednor\xE1zov\u011B
       p\u0159isp\xEDv\xE1 na n\xE1klady souvisej\xEDc\xED s narozen\xEDm prvn\xEDho
-      nebo druh\xE9ho \u017Eiv\xE9ho d\xEDt\u011Bte."
-    claim_description: "Rodina, jej\xED\u017E p\u0159\xEDjmy  v kalend\xE1\u0159n\xEDm
+      nebo druh\xE9ho \u017Eiv\xE9ho d\xEDt\u011Bte**. N\xE1le\u017E\xED i osob\u011B,
+      kter\xE1 p\u0159evzala do p\xE9\u010De d\xEDt\u011B mlad\u0161\xED jednoho roku
+      (pokud nebylo d\u0159\xEDve vyplaceno rodi\u010D\u016Fm)."
+    claim_description: "**Rodina**, jej\xED\u017E **p\u0159\xEDjmy**  v kalend\xE1\u0159n\xEDm
       \u010Dtvrtlet\xED p\u0159edch\xE1zej\xEDc\xEDm kalend\xE1\u0159n\xEDmu \u010Dtvrtlet\xED,
-      ve kter\xE9m se d\xEDt\u011B narodilo, byly ni\u017E\u0161\xED ne\u017E 2,7n\xE1sobek
-      \u017Eivotn\xEDho minima rodiny.  Nezapo\u010D\xEDt\xE1v\xE1 se rodi\u010Dovsk\xFD
+      ve kter\xE9m se d\xEDt\u011B narodilo, byly **ni\u017E\u0161\xED ne\u017E 2,7n\xE1sobek
+      \u017Eivotn\xEDho minima rodiny**.\r\n\r\nNezapo\u010D\xEDt\xE1v\xE1 se rodi\u010Dovsk\xFD
       p\u0159\xEDsp\u011Bvek a p\u0159\xEDdavek na d\xEDt\u011B."
-    other_description: "P\u0159\xEDsp\u011Bvek je jednor\xE1zov\xFD. U prvn\xEDho
-      d\xEDt\u011Bte \u010Din\xED 13 000 K\u010D, u druh\xE9ho d\xEDt\u011Bte 10 000
-      K\u010D a p\u0159i narozen\xED dvoj\u010Dat 23 000 K\u010D, P\u0159i narozen\xED
-      dvoj\u010Dat pot\xE9, co ji\u017E jedno d\xEDt\u011B v rodin\u011B je, n\xE1le\u017E\xED
-      p\u0159\xEDsp\u011Bvek jen na \u201Eprvn\xED z nich\u201C, kter\xE9 je druh\xFDm
-      d\xEDt\u011Btem v rodin\u011B, tj. jen 10.000 K\u010D. P\u0159i narozen\xED
-      dvoj\u010Dat jako v po\u0159ad\xED t\u0159et\xEDho a \u010Dtvrt\xE9ho d\xEDt\u011Bte
-      pak nic."
-    context_description: ''
+    other_description: "|Po\u010Det d\u011Bt\xED| V\xFD\u0161e p\u0159\xEDsp\u011Bvku|\r\n|---|---|\r\n|Prvn\xED
+      d\xEDt\u011B|13 000 K\u010D|\r\n|Druh\xE9 d\xEDt\u011B| 10 000 K\u010D|\r\n|Dvoj\u010Data|
+      23 000 K\u010D|\r\n|Dvoj\u010Data v rodin\u011B, kde u\u017E jedno d\xEDt\u011B
+      je| 10 000 K\u010D*|\r\n\r\n *P\u0159\xEDsp\u011Bvek rodin\u011B n\xE1le\u017E\xED
+      jen na \u201Eprvn\xED z nich\u201C, kter\xE9 je druh\xFDm d\xEDt\u011Btem v
+      rodin\u011B, tj. jen 10.000 K\u010D. P\u0159i narozen\xED dvoj\u010Dat jako
+      v po\u0159ad\xED t\u0159et\xEDho a \u010Dtvrt\xE9ho d\xEDt\u011Bte pak nic.\r\n\r\n-
+      P\u0159\xEDsp\u011Bvek je jednor\xE1zov\xFD. \r\n- Lze \u017E\xE1dat nejpozd\u011Bji
+      jeden rok zp\u011Btn\u011B."
+    context_description: "#### Pod\xE1n\xED \u017E\xE1dosti\r\n\r\n\u017D\xE1dost
+      lze podat na p\u0159\xEDslu\u0161n\xE9m \xDA\u0159adu pr\xE1ce.\r\n\r\n<a href=\"https://formulare.mpsv.cz/okdavky/cs/form/edit.jsp?FN=Porod150101105&CMD=EditForm&SSID=5DSf5RK81W0~I9yRdpP2d3LcqBFxNB2U\"
+      class=\"button primary\"target=\"_blank\" rel=\"noopener\">Formul\xE1\u0159
+      \u017D\xE1dost o porodn\xE9</a>\r\n\r\n---\r\n\r\nD\xE1le budete pot\u0159ebovat:\r\n\r\n-
+      ob\u010Dansk\xFD pr\u016Fkaz\r\n- rodn\xFD list d\xEDt\u011Bte\r\n- v p\u0159\xEDpad\u011B
+      sv\u011B\u0159en\xED d\xEDt\u011Bte do p\xE9\u010De p\u0159\xEDslu\u0161n\xE9
+      rozhodnut\xED\r\n- dolo\u017Een\xED va\u0161eho p\u0159\xEDjmu na formul\xE1\u0159i:\r\n\r\n<a
+      href=\"https://formulare.mpsv.cz/okdavky/cs/form/edit.jsp?FN=XPrijC180601214C&CMD=EditForm&SSID=uT72PBuPzcbeMBtXxo75P1x0p4_aRUgT\"
+      class=\"button primary\"target=\"_blank\" rel=\"noopener\">Formul\xE1\u0159
+      Doklad o v\xFD\u0161i \u010Dtvrtletn\xEDho p\u0159\xEDjmu</a>\r\n\r\n---\r\n\r\n####
+      Statistiky\r\n\r\n**Po\u010Det vyplacen\xFDch d\xE1vek:**\tprosinec 2017 \u2013
+      \ 50 000\r\n\r\n**V\xFDdaje na d\xE1vku:**\t\t\tprosinec 2017\u2013 0,193 mld.
+      K\u010D, za cel\xFD rok 2017 \u2013 2,423 mld. K\u010D"
     responsible_office: 1
     condition: 1
     attachments: []
@@ -217,7 +265,7 @@
   pk: 6
   fields:
     name: "P\u0159\xEDdavek na d\xEDt\u011B"
-    related_law: "[117/1995 Sb., o st\xE1tn\xED soci\xE1ln\xED podpo\u0159e](https://zakonyprolidi.cz/cs/1995-117)"
+    related_law: "[Z\xE1kona \u010D. 117/1995 Sb., o st\xE1tn\xED soci\xE1ln\xED podpo\u0159e](https://zakonyprolidi.cz/cs/1995-117)"
     base_description: "P\u0159\xEDdavek na d\xEDt\u011B je z\xE1kladn\xED, dlouhodobou
       d\xE1vkou, poskytovanou rodin\xE1m s d\u011Btmi, kter\xE1 jim pom\xE1h\xE1 kr\xFDt
       n\xE1klady, spojen\xE9 s v\xFDchovou a v\xFD\u017Eivou nezaopat\u0159en\xFDch
@@ -369,8 +417,8 @@
 - model: core.benefit
   pk: 12
   fields:
-    name: "Nemocensk\xE1"
-    related_law: "[187/2006 Sb., o nemocensk\xE9m poji\u0161t\u011Bn\xED](https://zakonyprolidi.cz/cs/2006-187)"
+    name: "Nemocensk\xE9"
+    related_law: "[Z\xE1kona \u010D. 187/2006 Sb., o nemocensk\xE9m poji\u0161t\u011Bn\xED](https://zakonyprolidi.cz/cs/2006-187)"
     base_description: "Finan\u010Dn\xED zaji\u0161t\u011Bn\xED po dobu nemoci."
     claim_description: "- Zam\u011Bstnanec nebo OSV\u010C, kter\xFD je uzn\xE1n o\u0161et\u0159uj\xEDc\xEDm
       l\xE9ka\u0159em do\u010Dasn\u011B pr\xE1ce neschopn\xFDm, m\xE1 n\xE1rok na
@@ -448,7 +496,9 @@
       integrovan\xE9ho z\xE1chrann\xE9ho syst\xE9mu povol\xE1na. Tuto skute\u010Dnost
       poji\u0161t\u011Bnci potvrd\xED opera\u010Dn\xED st\u0159edisko integrovan\xE9ho
       z\xE1chrann\xE9ho syst\xE9mu."
-    context_description: ''
+    context_description: "#### Statistiky\r\n\r\n**Po\u010Det vyplacen\xFDch d\xE1vek**:
+      prosinec 2017 \u2013 190 638\r\n\r\n**V\xFDdaje na d\xE1vku**: prosinec 2017
+      \u2013 1,569 mld. K\u010D, za cel\xFD rok 2017 \u2013 18, 290 mld. K\u010D"
     responsible_office: 2
     condition: 4
     attachments: []
@@ -456,7 +506,7 @@
   pk: 13
   fields:
     name: "Invalidn\xED d\u016Fchod"
-    related_law: "[155/1995 Sb., o d\u016Fchodov\xE9m poji\u0161t\u011Bn\xED](https://zakonyprolidi.cz/cs/1995-155)"
+    related_law: "[Z\xE1kona \u010D. 155/1995 Sb., o d\u016Fchodov\xE9m poji\u0161t\u011Bn\xED](https://zakonyprolidi.cz/cs/1995-155)"
     base_description: "Zaji\u0161t\u011Bn\xED p\u0159\xEDjmu u lid\xED zdravotn\u011B
       znev\xFDhodn\u011Bn\xFDch."
     claim_description: "Poji\u0161t\u011Bnec m\xE1 n\xE1rok na invalidn\xED d\u016Fchod,
@@ -503,8 +553,8 @@
   pk: 14
   fields:
     name: "P\u0159\xEDsp\u011Bvek na mobilitu"
-    related_law: "[329/2011 Sb., o poskytov\xE1n\xED d\xE1vek osob\xE1m se zdravotn\xEDm
-      posti\u017Een\xEDm](https://zakonyprolidi.cz/cs/2011-329)"
+    related_law: "[Z\xE1kona \u010D. 329/2011 Sb., o poskytov\xE1n\xED d\xE1vek osob\xE1m
+      se zdravotn\xEDm posti\u017Een\xEDm](https://zakonyprolidi.cz/cs/2011-329)"
     base_description: '...'
     claim_description: "(1) N\xE1rok na p\u0159\xEDsp\u011Bvek na mobilitu m\xE1 osoba
       star\u0161\xED 1 roku, kter\xE1 m\xE1 n\xE1rok na pr\u016Fkaz osoby se zdravotn\xEDm
@@ -529,7 +579,9 @@
       se podle \xA7 26 odst. 1 p\xEDsm. b)."
     other_description: "V\xFD\u0161e p\u0159\xEDsp\u011Bvku na mobilitu \u010Din\xED
       za kalend\xE1\u0159n\xED m\u011Bs\xEDc 550 K\u010D."
-    context_description: ''
+    context_description: "#### Statistiky\r\n\r\n**Po\u010Det vyplacen\xFDch d\xE1vek**:
+      prosinec 2017 \u2013  250 000\r\n\r\n**V\xFDdaje na d\xE1vku**: prosinec 2017
+      \u2013 0,1 mld. K\u010D, za cel\xFD rok 2017 \u2013 1,202 mld. K\u010D"
     responsible_office: 1
     condition: 4
     attachments: []
@@ -537,8 +589,8 @@
   pk: 15
   fields:
     name: "P\u0159\xEDsp\u011Bvek na zvl\xE1\u0161tn\xED pom\u016Fcku"
-    related_law: "[329/2011 Sb., o poskytov\xE1n\xED d\xE1vek osob\xE1m se zdravotn\xEDm
-      posti\u017Een\xEDm](https://zakonyprolidi.cz/cs/2011-329)"
+    related_law: "[Z\xE1kona \u010D. 329/2011 Sb., o poskytov\xE1n\xED d\xE1vek osob\xE1m
+      se zdravotn\xEDm posti\u017Een\xEDm](https://zakonyprolidi.cz/cs/2011-329)"
     base_description: '...'
     claim_description: "(1) N\xE1rok na p\u0159\xEDsp\u011Bvek na zvl\xE1\u0161tn\xED
       pom\u016Fcku m\xE1 osoba, kter\xE1 m\xE1 t\u011B\u017Ekou vadu nosn\xE9ho nebo
@@ -711,7 +763,9 @@
       \u0161ikm\xE9 zvedac\xED plo\u0161iny. Od vyplacen\xFDch \u010D\xE1stek se p\u0159i
       ur\u010Dov\xE1n\xED sou\u010Dtu ode\u010D\xEDtaj\xED \u010D\xE1stky, kter\xE9
       osoba v tomto obdob\xED vr\xE1tila nebo jejich\u017E vr\xE1cen\xED bylo prominuto."
-    context_description: ''
+    context_description: "#### Statistiky\r\n\r\n**Po\u010Det vyplacen\xFDch d\xE1vek**:
+      prosinec 2017 -500\r\n\r\n**V\xFDdaje na d\xE1vku**: prosinec 2017 \u2013 0,060
+      mld. K\u010D, za cel\xFD rok 2017 \u2013 0,754 mld. K\u010D"
     responsible_office: 1
     condition: 4
     attachments: []
@@ -719,7 +773,7 @@
   pk: 16
   fields:
     name: "P\u0159\xEDsp\u011Bvek na p\xE9\u010Di"
-    related_law: "[108/2006 Sb., o soci\xE1ln\xEDch slu\u017Eb\xE1ch](https://zakonyprolidi.cz/cs/2006-108)"
+    related_law: "[Z\xE1kona \u010D. 108/2006 Sb., o soci\xE1ln\xEDch slu\u017Eb\xE1ch](https://zakonyprolidi.cz/cs/2006-108)"
     base_description: "P\u0159\xEDsp\u011Bvkem na p\xE9\u010Di st\xE1t pom\xE1h\xE1
       zajistit komfort osob\xE1m s nep\u0159\xEDzniv\xFDm zdravotn\xEDm stavem."
     claim_description: "N\xE1rok na p\u0159\xEDsp\u011Bvek na p\xE9\u010Di maj\xED
@@ -730,7 +784,9 @@
       z\xE1vislosti a v\u011Bku \u017Eadatele. S v\xFDjimkou \xFApln\xE9 z\xE1vislosti
       plat\xED, \u017Ee \u017Eadatel\xE9 do 18 let maj\xED n\xE1rok na vy\u0161\u0161\xED
       p\u0159\xEDsp\u011Bvek."
-    context_description: ''
+    context_description: "#### Statistiky\r\n\r\n**Po\u010Det vyplacen\xFDch d\xE1vek**:
+      prosinec 2017 \u2013 353 500\r\n\r\n**V\xFDdaje na d\xE1vku**: prosinec 2017
+      \u2013 2,103 mld. K\u010D, za cel\xFD rok 2017 \u2013 25,120 mld. K\u010D"
     responsible_office: 1
     condition: 4
     attachments: []
@@ -738,7 +794,7 @@
   pk: 17
   fields:
     name: "O\u0161et\u0159ovn\xE9"
-    related_law: "[187/2006 Sb., o nemocensk\xE9m poji\u0161t\u011Bn\xED](https://zakonyprolidi.cz/cs/2006-187)"
+    related_law: "[Z\xE1kona \u010D. 187/2006 Sb., o nemocensk\xE9m poji\u0161t\u011Bn\xED](https://zakonyprolidi.cz/cs/2006-187)"
     base_description: "M\xE1 vynahradit p\u0159\xEDjem zam\u011Bstnance, kter\xFD
       o\u0161et\u0159uje nemocn\xE9ho \u010Dlena dom\xE1cnosti."
     claim_description: "Zam\u011Bstnanec, kter\xFD nem\u016F\u017Ee pracovat z d\u016Fvodu,
@@ -768,7 +824,7 @@
   pk: 18
   fields:
     name: "Dlouhodob\xE9 o\u0161et\u0159ovn\xE9"
-    related_law: "[187/2006 Sb., o nemocensk\xE9m poji\u0161t\u011Bn\xED](https://zakonyprolidi.cz/cs/2006-187)"
+    related_law: "[Z\xE1kona \u010D. 187/2006 Sb., o nemocensk\xE9m poji\u0161t\u011Bn\xED](https://zakonyprolidi.cz/cs/2006-187)"
     base_description: "K n\xE1hrad\u011B p\u0159\xEDjm\u016F v p\u0159\xEDpad\u011B
       dlouhodob\xE9ho o\u0161et\u0159ov\xE1n\xED nemocn\xE9ho \u010Dlena dom\xE1cnosti/rodiny."
     claim_description: "- U o\u0161et\u0159ovan\xE9 osoby muselo doj\xEDt k z\xE1va\u017En\xE9mu
@@ -818,7 +874,7 @@
   pk: 19
   fields:
     name: "Podpora v nezam\u011Bstnanosti"
-    related_law: "[435/2004 Sb., o zam\u011Bstnanosti](https://zakonyprolidi.cz/cs/2004-435)"
+    related_law: "[Z\xE1kona \u010D. 435/2004 Sb., o zam\u011Bstnanosti](https://zakonyprolidi.cz/cs/2004-435)"
     base_description: "Podporou v nezam\u011Bstnanosti st\xE1t kr\xE1tkodob\u011B
       pom\xE1h\xE1 ob\u010Dan\u016Fm, kte\u0159\xED se ocitli bez pr\xE1ce."
     claim_description: "N\xE1rok m\xE1 uchaze\u010D o zam\u011Bstn\xE1n\xED, kter\xFD:\r\n\r\n-
@@ -886,7 +942,7 @@
   pk: 20
   fields:
     name: "Podpora p\u0159i rekvalifikaci"
-    related_law: "[435/2004 Sb., o zam\u011Bstnanosti](https://zakonyprolidi.cz/cs/2004-435)"
+    related_law: "[Z\xE1kona \u010D. 435/2004 Sb., o zam\u011Bstnanosti](https://zakonyprolidi.cz/cs/2004-435)"
     base_description: "Podpora nezam\u011Bstnan\xFDch b\u011Bhem doby, po kterou se
       \xFA\u010Dastn\xED rekvalifikace."
     claim_description: "Uchaze\u010D o zam\u011Bstn\xE1n\xED, kter\xFD se \xFA\u010Dastn\xED
@@ -916,31 +972,39 @@
   pk: 21
   fields:
     name: "P\u0159\xEDsp\u011Bvek na bydlen\xED"
-    related_law: "[117/1995 Sb., o st\xE1tn\xED soci\xE1ln\xED podpo\u0159e](https://zakonyprolidi.cz/cs/1995-117)"
-    base_description: "P\u0159\xEDsp\u011Bvek na bydlen\xED p\u0159isp\xEDv\xE1 na
+    related_law: "[Z\xE1kona \u010D. 117/1995 Sb., o st\xE1tn\xED soci\xE1ln\xED podpo\u0159e](https://zakonyprolidi.cz/cs/1995-117)"
+    base_description: "P\u0159\xEDsp\u011Bvek na bydlen\xED p\u0159isp\xEDv\xE1 **na
       kryt\xED n\xE1klad\u016F na bydlen\xED rodin\xE1m \u010Di jednotlivc\u016Fm
-      s n\xEDzk\xFDmi p\u0159\xEDjmy."
-    claim_description: "Na p\u0159\xEDsp\u011Bvek na bydlen\xED m\xE1 n\xE1rok vlastn\xEDk
-      nebo n\xE1jemce bytu, kter\xFD je v byt\u011B nebo rodinn\xE9m dom\u011B p\u0159ihl\xE1\u0161en
-      k trval\xE9mu pobytu, jestli\u017Ee\r\n\r\n- jeho n\xE1klady na bydlen\xED p\u0159esahuj\xED
-      \u010D\xE1stku sou\u010Dinu rozhodn\xE9ho p\u0159\xEDjmu v rodin\u011B a koeficientu
-      0,30 (na \xFAzem\xED hlavn\xEDho m\u011Bsta Prahy koeficientu 0,35), a z\xE1rove\u0148\r\n-
-      sou\u010Din rozhodn\xE9ho p\u0159\xEDjmu v rodin\u011B a koeficientu 0,30 (na
-      \xFAzem\xED hlavn\xEDho m\u011Bsta Prahy koeficientu 0,35) nen\xED vy\u0161\u0161\xED
-      ne\u017E \u010D\xE1stka normativn\xEDch n\xE1klad\u016F na bydlen\xED."
+      s n\xEDzk\xFDmi p\u0159\xEDjmy**."
+    claim_description: "- vlastn\xEDk nebo n\xE1jemce bytu, kter\xFD je v byt\u011B
+      nebo rodinn\xE9m dom\u011B p\u0159ihl\xE1\u0161en k trval\xE9mu pobytu\r\n-
+      jeho n\xE1klady na bydlen\xED p\u0159esahuj\xED \u010D\xE1stku sou\u010Dinu
+      rozhodn\xE9ho p\u0159\xEDjmu v rodin\u011B a koeficientu 0,30 (na \xFAzem\xED
+      hlavn\xEDho m\u011Bsta Prahy koeficientu 0,35), a z\xE1rove\u0148\r\n- sou\u010Din
+      rozhodn\xE9ho p\u0159\xEDjmu v rodin\u011B a koeficientu 0,30 (na \xFAzem\xED
+      hlavn\xEDho m\u011Bsta Prahy koeficientu 0,35) nen\xED vy\u0161\u0161\xED ne\u017E
+      \u010D\xE1stka normativn\xEDch n\xE1klad\u016F na bydlen\xED"
     other_description: "Posuzuj\xED se p\u0159\xEDjmy dom\xE1cnosti za posledn\xED
-      \u010Dtvrtlet\xED, zahrnuty jsou v\u0161echny osoby a trval\xFDm pobytem v byt\u011B.\r\n\r\nV\xFD\u0161e
-      p\u0159\xEDsp\u011Bvku na bydlen\xED \u010Din\xED za kalend\xE1\u0159n\xED m\u011Bs\xEDc
-      rozd\xEDl mezi normativn\xEDmi n\xE1klady na bydlen\xED a rozhodn\xFDm p\u0159\xEDjmem
-      rodiny vyn\xE1soben\xFDm koeficientem 0,30, a na \xFAzem\xED hlavn\xEDho m\u011Bsta
-      Prahy koeficientem 0,35. Pokud jsou skute\u010Dn\xE9 n\xE1klady na bydlen\xED
-      ni\u017E\u0161\xED ne\u017E normativn\xED n\xE1klady na bydlen\xED, n\xE1le\u017E\xED
-      p\u0159\xEDsp\u011Bvek na bydlen\xED ve v\xFD\u0161i rozd\xEDlu mezi t\u011Bmito
-      n\xE1klady na bydlen\xED a rozhodn\xFDm p\u0159\xEDjmem rodiny vyn\xE1soben\xFDm
-      koeficientem 0,30, resp. 0,35.\r\n\r\nNormativy jsou odstup\u0148ov\xE1ny podle
-      velikosti m\u011Bsta/obce a po\u010Dtu osob v dom\xE1cnosti (maximum je 4 a
-      v\xEDce osob, pak se \u201Estrop\u201C d\xE1le nezvy\u0161uje."
-    context_description: ''
+      \u010Dtvrtlet\xED, zahrnuty jsou v\u0161echny osoby a trval\xFDm pobytem v byt\u011B.\r\n\r\n**V\xFD\u0161e
+      p\u0159\xEDsp\u011Bvku** na bydlen\xED \u010Din\xED za kalend\xE1\u0159n\xED
+      m\u011Bs\xEDc rozd\xEDl mezi normativn\xEDmi n\xE1klady na bydlen\xED a rozhodn\xFDm
+      p\u0159\xEDjmem rodiny vyn\xE1soben\xFDm koeficientem 0,30, a na \xFAzem\xED
+      hlavn\xEDho m\u011Bsta Prahy koeficientem 0,35. Pokud jsou skute\u010Dn\xE9
+      n\xE1klady na bydlen\xED ni\u017E\u0161\xED ne\u017E normativn\xED n\xE1klady
+      na bydlen\xED, n\xE1le\u017E\xED p\u0159\xEDsp\u011Bvek na bydlen\xED ve v\xFD\u0161i
+      rozd\xEDlu mezi t\u011Bmito n\xE1klady na bydlen\xED a rozhodn\xFDm p\u0159\xEDjmem
+      rodiny vyn\xE1soben\xFDm koeficientem 0,30, resp. 0,35.\r\n\r\nNormativy jsou
+      odstup\u0148ov\xE1ny podle velikosti m\u011Bsta/obce a po\u010Dtu osob v dom\xE1cnosti
+      (maximum je 4 a v\xEDce osob, pak se \u201Estrop\u201C d\xE1le nezvy\u0161uje."
+    context_description: "#### Pod\xE1n\xED \u017E\xE1dosti\r\n\r\n<a href=\"https://formulare.mpsv.cz/okdavky/cs/form/edit.jsp?FN=PByd150101109&CMD=EditForm&SSID=3GmpGLpkG7OUdUxmPmudB4f0xmrK_z.g\"
+      class=\"button primary\" target=\"_blank\" rel=\"noopener\">Formul\xE1\u0159:
+      \u017D\xE1dost o p\u0159\xEDsp\u011Bvek na bydlen\xED</a>\r\n\r\nD\xE1le bude
+      t\u0159eba dolo\u017Eit:\r\n\r\n<a href=\"https://formulare.mpsv.cz/okdavky/cs/form/edit.jsp?FN=XBydN180701219&CMD=EditForm&SSID=5kMOotmUEhlPrv1tQZdbPY8zco_CH49r\"
+      class=\"button primary\" target=\"_blank\" rel=\"noopener\">Formul\xE1\u0159:
+      Doklad o v\xFD\u0161i n\xE1klad\u016F na bydlen\xED</a>\r\n\r\n---\r\n\r\n####
+      Statistiky\r\n\r\n**Po\u010Det vyplacen\xFDch d\xE1vek**: prosinec 2017 \u2013
+      \ 92 200\r\n\r\n**V\xFDdaje na d\xE1vku**: prosinec 2017 \u2013 0,349 mld. K\u010D,
+      za cel\xFD rok 2017 \u2013 4,850 mld. K\u010D"
     responsible_office: 1
     condition: 7
     attachments: []
@@ -948,50 +1012,56 @@
   pk: 22
   fields:
     name: "Doplatek na bydlen\xED"
-    related_law: "[111/2006 Sb., o pomoci v hmotn\xE9 nouzi](https://zakonyprolidi.cz/cs/2006-111)"
-    base_description: "\u0158e\u0161\xED nedostatek p\u0159\xEDjmu k uhrazen\xED n\xE1klad\u016F
-      na bydlen\xED tam, kde nevznik\xE1 n\xE1rok na p\u0159\xEDsp\u011Bvek na bydlen\xED
-      nebo pokud nesta\u010D\xED vlastn\xED p\u0159\xEDjmy osoby \u010Di rodiny v\u010Detn\u011B
-      p\u0159\xEDsp\u011Bvku na bydlen\xED ze syst\xE9mu st\xE1tn\xED soci\xE1ln\xED
-      podpory."
-    claim_description: "- D\xE1vka je poskytov\xE1na vlastn\xEDku u\u017E\xEDvaj\xEDc\xEDmu
-      byt, nebo jin\xE9 osob\u011B, kter\xE1 u\u017E\xEDv\xE1 byt na z\xE1klad\u011B
-      smlouvy, rozhodnut\xED, nebo jin\xE9ho pr\xE1vn\xEDho titulu.\r\n- D\xE1vku
-      lze tak\xE9 poskytnout vlastn\xEDku stavby pro individu\xE1ln\xED \u010Di rodinnou
-      rekreaci, kter\xE1 spl\u0148uje z\xE1konem dan\xE9 stavebn\u011B technick\xE9
-      standardy kvality bydlen\xED.\r\n- **Z\xE1kon o pomoci v hmotn\xE9 nouzi** pamatuje
-      i na specifick\xE9 situace spojen\xE9 s bydlen\xEDm. V p\u0159\xEDpadech hodn\xFDch
-      zvl\xE1\u0161tn\xEDho z\u0159etele m\u016F\u017Ee org\xE1n pomoci v hmotn\xE9
-      nouzi doplatek na bydlen\xED poskytnout do \u010D\xE1sti bytu, po spln\u011Bn\xED
-      hygienick\xFDch podm\xEDnek a ud\u011Blen\xED souhlasu obce do ubytovac\xEDho
-      za\u0159\xEDzen\xED a po spln\u011Bn\xED stavebn\u011B technick\xFDch standard\u016F
-      kvality bydlen\xED do jin\xE9ho ne\u017E obytn\xE9ho prostoru. Jako p\u0159\xEDpad
-      hodn\xFD zvl\xE1\u0161tn\xEDho z\u0159etele se v\u017Edy pova\u017Euje ubytov\xE1n\xED
-      v pobytov\xFDch soci\xE1ln\xEDch slu\u017Eb\xE1ch (nap\u0159. azylov\xFD d\u016Fm,
-      domov pro seniory, chr\xE1n\u011Bn\xE9 bydlen\xED).\r\n- Podm\xEDnkou n\xE1roku
-      na doplatek na bydlen\xED je z\xEDsk\xE1n\xED n\xE1roku na p\u0159\xEDsp\u011Bvek
-      na \u017Eivobyt\xED.\r\n- Z\xE1kon umo\u017E\u0148uje poskytnout doplatek na
-      bydlen\xED (s p\u0159ihl\xE9dnut\xEDm k celkov\xFDm soci\xE1ln\xEDm a majetkov\xFDm
-      pom\u011Br\u016Fm), i v p\u0159\xEDpad\u011B, \u017Ee p\u0159\xEDsp\u011Bvek
-      na \u017Eivobyt\xED nebyl p\u0159izn\xE1n z d\u016Fvodu, \u017Ee p\u0159\xEDjem
+    related_law: "[Z\xE1kona \u010D. 111/2006 Sb., o pomoci v hmotn\xE9 nouzi](https://zakonyprolidi.cz/cs/2006-111)"
+    base_description: "\u0158e\u0161\xED **nedostatek p\u0159\xEDjmu k uhrazen\xED
+      n\xE1klad\u016F na bydlen\xED** tam, kde nevznik\xE1 n\xE1rok na p\u0159\xEDsp\u011Bvek
+      na bydlen\xED nebo pokud **nesta\u010D\xED vlastn\xED p\u0159\xEDjmy** osoby
+      \u010Di rodiny v\u010Detn\u011B p\u0159\xEDsp\u011Bvku na bydlen\xED ze syst\xE9mu
+      st\xE1tn\xED soci\xE1ln\xED podpory."
+    claim_description: "- D\xE1vka je poskytov\xE1na **vlastn\xEDku u\u017E\xEDvaj\xEDc\xEDmu
+      byt**, nebo jin\xE9 **osob\u011B, kter\xE1 u\u017E\xEDv\xE1 byt na z\xE1klad\u011B
+      smlouvy, rozhodnut\xED, nebo jin\xE9ho pr\xE1vn\xEDho titulu**. (Plat\xED pro
+      n\xE1jem, v p\u0159\xEDpad\u011B podn\xE1jmu n\xE1rok nevznik\xE1!)\r\n- D\xE1vku
+      lze tak\xE9 poskytnout **vlastn\xEDku stavby pro individu\xE1ln\xED \u010Di
+      rodinnou rekreaci**, kter\xE1 spl\u0148uje z\xE1konem dan\xE9 stavebn\u011B
+      technick\xE9 standardy kvality bydlen\xED (chata, chalupa)\r\n- Podm\xEDnkou
+      n\xE1roku na doplatek na bydlen\xED je z\xEDsk\xE1n\xED n\xE1roku na **<a href=\"/davky/23-prispevek-na-zivobyti/\"
+      target=\"_blank\" rel=\"noopener\">p\u0159\xEDsp\u011Bvek na \u017Eivobyt\xED</a>**.\r\n-
+      Z\xE1kon umo\u017E\u0148uje poskytnout doplatek na bydlen\xED (s p\u0159ihl\xE9dnut\xEDm
+      k celkov\xFDm soci\xE1ln\xEDm a majetkov\xFDm pom\u011Br\u016Fm), i v p\u0159\xEDpad\u011B,
+      \u017Ee <a href=\"/davky/23-prispevek-na-zivobyti/\" target=\"_blank\" rel=\"noopener\">p\u0159\xEDsp\u011Bvek
+      na \u017Eivobyt\xED</a> nebyl p\u0159izn\xE1n z d\u016Fvodu, \u017Ee **p\u0159\xEDjem
       osoby a spole\u010Dn\u011B posuzovan\xFDch osob p\u0159es\xE1hl \u010D\xE1stku
       \u017Eivobyt\xED osoby a spole\u010Dn\u011B posuzovan\xFDch osob, ale nep\u0159es\xE1hl
-      1,3n\xE1sobek \u010D\xE1stky \u017Eivobyt\xED osoby a spole\u010Dn\u011B posuzovan\xFDch
-      osob"
-    other_description: "- V\xFD\u0161e doplatku na bydlen\xED je stanovena tak, aby
-      po zaplacen\xED od\u016Fvodn\u011Bn\xFDch n\xE1klad\u016F na bydlen\xED (tj.
-      n\xE1jmu, slu\u017Eeb s bydlen\xEDm spojen\xFDch a n\xE1klad\u016F za dod\xE1vky
-      energi\xED) z\u016Fstala osob\u011B \u010Di rodin\u011B \u010D\xE1stka \u017Eivobyt\xED.\r\n-
-      V\xFD\u0161e doplatku na bydlen\xED je d\xE1le limitov\xE1na stejn\xFDmi normativy
-      na bydlen\xED jako p\u0159\xEDsp\u011Bvek na bydlen\xED (dle velikosti obce
+      1,3n\xE1sobek \u010D\xE1stky \u017Eivobyt\xED** osoby a spole\u010Dn\u011B posuzovan\xFDch
+      osob\r\n- Z\xE1kon pamatuje i na specifick\xE9 situace spojen\xE9 s bydlen\xEDm.
+      V **p\u0159\xEDpadech hodn\xFDch zvl\xE1\u0161tn\xEDho z\u0159etele** m\u016F\u017Ee
+      org\xE1n pomoci v hmotn\xE9 nouzi doplatek na bydlen\xED poskytnout do \u010D\xE1sti
+      bytu, po spln\u011Bn\xED hygienick\xFDch podm\xEDnek a ud\u011Blen\xED souhlasu
+      obce do ubytovac\xEDho za\u0159\xEDzen\xED a po spln\u011Bn\xED stavebn\u011B
+      technick\xFDch standard\u016F kvality bydlen\xED do jin\xE9ho ne\u017E obytn\xE9ho
+      prostoru.\r\nJako p\u0159\xEDpad hodn\xFD zvl\xE1\u0161tn\xEDho z\u0159etele
+      **se v\u017Edy pova\u017Euje ubytov\xE1n\xED v pobytov\xFDch soci\xE1ln\xEDch
+      slu\u017Eb\xE1ch** (nap\u0159. azylov\xFD d\u016Fm, domov pro seniory, chr\xE1n\u011Bn\xE9
+      bydlen\xED)."
+    other_description: "- **V\xFD\u0161e doplatku** na bydlen\xED je stanovena tak,
+      **aby po zaplacen\xED od\u016Fvodn\u011Bn\xFDch n\xE1klad\u016F na bydlen\xED**
+      (tj. n\xE1jmu, slu\u017Eeb s bydlen\xEDm spojen\xFDch a n\xE1klad\u016F za dod\xE1vky
+      energi\xED) **z\u016Fstala** osob\u011B \u010Di rodin\u011B **\u010D\xE1stka
+      \u017Eivobyt\xED** (viz <a href=\"/davky/23-prispevek-na-zivobyti/\" target=\"_blank\"
+      rel=\"noopener\">p\u0159\xEDsp\u011Bvek na \u017Eivobyt\xED</a>).\r\n- V\xFD\u0161e
+      doplatku na bydlen\xED **je d\xE1le limitov\xE1na** stejn\xFDmi **normativy
+      na bydlen\xED** jako <a href=\"/davky/21-prispevek-na-bydleni/\" target=\"_blank\"
+      rel=\"noopener\">p\u0159\xEDsp\u011Bvek na bydlen\xED</a> (dle velikosti obce
       a po\u010Dtu osob v dom\xE1cnosti), jen je tento strop d\xE1le sn\xED\u017Een,
       a to na 90 % v p\u0159\xEDpad\u011B zahradn\xEDch chatek (u vlastn\xEDk\u016F
       t\u011Bchto rekrea\u010Dn\xEDch objekt\u016F), 80 % p\u0159i u\u017E\xEDv\xE1n\xED
       jednotky na ubytovn\u011B nebo p\u0159i ob\xFDv\xE1n\xED jin\xE9ho ne\u017E
       obytn\xE9ho prostoru."
-    context_description: "#### Pod\xE1n\xED \u017E\xE1dost\r\n\r\n\u017D\xE1dost lze
-      podat na p\u0159\xEDslu\u0161n\xE9m \xDA\u0159adu pr\xE1ce.\r\n\r\n<a href=\"\"
-      class=\"button primary\">Podat \u017E\xE1dost o doplatek na bydlen\xED</a>\r\n\r\n---\r\n\r\nPo\u010Det
+    context_description: "#### Pod\xE1n\xED \u017E\xE1dosti\r\n\r\n\u017D\xE1dost
+      lze podat na p\u0159\xEDslu\u0161n\xE9m \xDA\u0159adu pr\xE1ce.\r\n\r\n<a href=\"https://formulare.mpsv.cz/oknouze/cs/form/edit.jsp?FN=DByd170701502&CMD=EditForm&SSID=LcL6cvqvxt~oHYa5R_EIfRetevfv6Hgf\"
+      class=\"button primary\" target=\"_blank\" rel=\"noopener\">Formul\xE1\u0159:
+      \u017D\xE1dost o doplatek na bydlen\xED</a>\r\n\r\n---\r\n\r\n#### Statistiky\r\n\r\nPo\u010Det
       vyplacen\xFDch d\xE1vek: **prosinec 2017 \u2013  50 000**\r\n\r\nV\xFDdaje na
       d\xE1vku: **prosinec 2017** \u2013 0,193 mld. K\u010D, **za cel\xFD rok 2017**
       \u2013 2,423 mld. K\u010D"
@@ -1002,7 +1072,7 @@
   pk: 23
   fields:
     name: "P\u0159\xEDsp\u011Bvek na \u017Eivobyt\xED"
-    related_law: "[111/2006 Sb., o pomoci v hmotn\xE9 nouzi](https://zakonyprolidi.cz/cs/2006-111)"
+    related_law: "[Z\xE1kona \u010D. 111/2006 Sb., o pomoci v hmotn\xE9 nouzi](https://zakonyprolidi.cz/cs/2006-111)"
     base_description: "Je z\xE1kladn\xED d\xE1vkou pomoci v hmotn\xE9 nouzi, kter\xE1
       pom\xE1h\xE1 osob\u011B \u010Di rodin\u011B p\u0159i nedostate\u010Dn\xE9m p\u0159\xEDjmu."
     claim_description: "N\xE1rok na p\u0159\xEDsp\u011Bvek na \u017Eivobyt\xED vznik\xE1
@@ -1094,8 +1164,11 @@
       v Praze 35 %, p\u0159\xEDjmu osoby \u010Di rodiny).\r\n\r\nU osoby, kter\xE1
       vykonala ve\u0159ejnou slu\u017Ebu v rozsahu alespo\u0148 30 hodin m\u011Bs\xED\u010Dn\u011B,
       bude \u010D\xE1stka \u017Eivobyt\xED nav\xFD\u0161ena o 605 K\u010D."
-    context_description: "Po\u010Det vyplacen\xFDch d\xE1vek: prosinec 2017 \u2013
-      \ 92 200\r\n\r\nV\xFDdaje na d\xE1vku: prosinec 2017 \u2013 0,349 mld. K\u010D,
+    context_description: "#### Pod\xE1n\xED \u017E\xE1dosti\r\n\r\n<a href=\"https://formulare.mpsv.cz/oknouze/cs/form/edit.jsp?FN=PnZ170701501&CMD=EditForm&SSID=e2okAP10yAvo5o_XWnm1ZlWJ6LeZMwpz\"
+      class=\"button primary\" target=\"_blank\" rel=\"noopener\">Formul\xE1\u0159:
+      \u017D\xE1dost o p\u0159\xEDsp\u011Bvek na \u017Eivobyt\xED</a>\r\n\r\n---\r\n\r\n####
+      Statistiky\r\n\r\n**Po\u010Det vyplacen\xFDch d\xE1vek**: prosinec 2017 \u2013
+      \ 92 200\r\n\r\n**V\xFDdaje na d\xE1vku**: prosinec 2017 \u2013 0,349 mld. K\u010D,
       za cel\xFD rok 2017 \u2013 4,850 mld. K\u010D"
     responsible_office: 1
     condition: 8
@@ -1104,7 +1177,7 @@
   pk: 24
   fields:
     name: "Mimo\u0159\xE1dn\xE1 okam\u017Eit\xE1 pomoc"
-    related_law: "[111/2006 Sb., o pomoci v hmotn\xE9 nouzi](https://zakonyprolidi.cz/cs/2006-111)"
+    related_law: "[Z\xE1kona \u010D. 111/2006 Sb., o pomoci v hmotn\xE9 nouzi](https://zakonyprolidi.cz/cs/2006-111)"
     base_description: "Je poskytov\xE1na osob\xE1m, kter\xE9 se ocitnou v situac\xEDch,
       kter\xE9 je nutno bezodkladn\u011B \u0159e\u0161it."
     claim_description: "Z\xE1kon stanov\xED \u0161est takov\xFDch situac\xED:\r\n\r\n1.
@@ -1143,7 +1216,9 @@
       \u017Eivotn\xEDho minima jednotlivce, tj. maxim\xE1ln\u011B \u010D\xE1stku 13
       640 K\u010D."
     other_description: ''
-    context_description: ''
+    context_description: "####Statistiky\r\n\r\n**Po\u010Det vyplacen\xFDch d\xE1vek**:
+      prosinec 2017 \u2013  2 500\r\n\r\n**V\xFDdaje na d\xE1vku**: prosinec 2017
+      \u2013 5,7 mil. K\u010D, za cel\xFD rok 2017 \u2013 91,1 mil. K\u010D"
     responsible_office: 1
     condition: 9
     attachments: []
@@ -1198,7 +1273,9 @@
       65 let a splnil podm\xEDnky n\xE1roku na invalidn\xED d\u016Fchod stanoven\xE9
       z\xE1konem o d\u016Fchodov\xE9m poji\u0161t\u011Bn\xED."
     other_description: ''
-    context_description: ''
+    context_description: "#### Statistiky\r\n\r\n**Po\u010Det vyplacen\xFDch d\u016Fchod\u016F**:
+      prosinec 2017 \u2013 2, 476 mil.\r\n\r\n**V\xFDdaje na d\xE1vku**: prosinec
+      2017 \u2013 28, 716 mld. K\u010D, za cel\xFD rok 2017 \u2013 333, 760 mld. K\u010D"
     responsible_office: 2
     condition: 10
     attachments: []
@@ -1214,7 +1291,9 @@
       d\xEDt\u011Bte.\r\nPodm\xEDnkou je trval\xFD pobyt na \xFAzem\xED \u010CR."
     other_description: "Poh\u0159ebn\xE9 je vypl\xE1ceno jednor\xE1zov\u011B v \u010D\xE1stce
       5 000 K\u010D."
-    context_description: ''
+    context_description: "#### Statistiky\r\n\r\n**Po\u010Det vyplacen\xFDch d\xE1vek**:
+      prosinec 2017 \u2013  200\r\n\r\n**V\xFDdaje na d\xE1vku**: prosinec 2017 \u2013
+      0,001 mld. K\u010D, za cel\xFD rok 2017 \u2013 0,013 mld. K\u010D"
     responsible_office: 1
     condition: 11
     attachments: []
@@ -1290,7 +1369,9 @@
       d\u016Fchodu \u010Din\xED 40 % procentn\xED v\xFDm\u011Bry d\u016Fchodu, na
       kter\xFD m\u011Bl nebo by m\u011Bl n\xE1rok zem\u0159el\xFD v dob\u011B smrti."
     other_description: ''
-    context_description: ''
+    context_description: "#### Statistiky\r\n\r\n**Po\u010Det vyplacen\xFDch d\u016Fchod\u016F**:
+      prosinec 2017 \u2013 40 100\r\n\r\n**V\xFDdaje na d\xE1vku**: prosinec 2017
+      \u2013 0,267 mld. K\u010D, za cel\xFD rok 2017 \u2013 3,145 mld. K\u010D"
     responsible_office: 2
     condition: 11
     attachments: []
@@ -1409,16 +1490,6 @@
   pk: 1
   fields: {domain: socialnisystem.pirati.cz, name: socialnisystem.pirati.cz}
 - model: flatpages.flatpage
-  pk: 1
-  fields:
-    url: /test/
-    title: Test
-    content: "asdasd\r\n\r\n**aaa**"
-    enable_comments: false
-    template_name: ''
-    registration_required: false
-    sites: [1]
-- model: flatpages.flatpage
   pk: 2
   fields:
     url: /
@@ -1444,28 +1515,30 @@
       class=\"sidenote__headline\">Pro\u010D to d\u011Bl\xE1me?</h2>\r\n<div class=\"sidenote__content\">\r\n<p>Chceme
       poskytnout ucelen\xFD p\u0159ehled soci\xE1ln\xEDch d\xE1vek v \u010CR a zah\xE1jit
       diskuzi pot\u0159ebnou pro pr\xE1ci Pir\xE1t\u016F v t\xE9to oblasti v Poslaneck\xE9
-      sn\u011Bmovn\u011B.</p>\r\n<p>Cel\xFD web je \u010Dlen\u011Bn na tematick\xE9
-      \u010D\xE1sti poskytuj\xEDc\xED p\u0159ehled \u017Eivotn\xEDch situac\xED, v
-      nich\u017E lid\xE9 pot\u0159ebuj\xED pomoc. Popis je dopln\u011Bn mo\u017En\xFDmi
-      n\xE1vrhy \u0159e\u0161en\xED.</p>\r\n<a href=\"/nase-reseni/\" class=\"button
-      primary inverted\">Na\u0161e \u0159e\u0161en\xED</a>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n<div
+      sn\u011Bmovn\u011B.</p>\r\n</p>C\xEDlem je zjednodu\u0161en\xED d\xE1vek a d\u016Fstojn\xFD
+      \u017Eivot pro ty, kdo nemohou pracovat, ale z\xE1rove\u0148 takov\xFD syst\xE9m,
+      v n\u011Bm\u017E se vyplat\xED chodit do pr\xE1ce. To jsme sl\xEDbili i ve volebn\xEDm
+      programu.</p>\r\n<p>Cel\xFD web je \u010Dlen\u011Bn na tematick\xE9 \u010D\xE1sti
+      poskytuj\xEDc\xED p\u0159ehled \u017Eivotn\xEDch situac\xED, v nich\u017E lid\xE9
+      pot\u0159ebuj\xED pomoc. Popis je dopln\u011Bn mo\u017En\xFDmi n\xE1vrhy \u0159e\u0161en\xED.</p>\r\n<a
+      href=\"/nase-reseni/\" class=\"button primary inverted\">Na\u0161e \u0159e\u0161en\xED</a>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n<div
       class=\"sidenote\">\r\n<img srcset=\"{% webpack_static \"img/aging@3x.jpg\"
       %} 2880w, {% webpack_static \"img/aging@2x.jpg\" %} 1920w, {% webpack_static
       \"img/aging@1x.jpg\" %} 960w, {% webpack_static \"img/aging@0.5x.jpg\" %} 480w\"
       src=\"{% webpack_static \"img/aging@1x.jpg\" %}\" class=\"sidenote__media\"
       />\r\n<div class=\"sidenote__body\">\r\n<div class=\"sidenote__body-inner\">\r\n<h2
       class=\"sidenote__headline\">V\xFDchoz\xED situace</h2>\r\n<div class=\"sidenote__content\">\r\n<p>V
-      sou\u010Dasn\xE9 dob\u011B (srpen 2018) je jedna z nejni\u017E\u0161\xEDch \xFArovn\xED
-      nezam\u011Bstnanosti na sv\u011Bt\u011B pr\xE1v\u011B u n\xE1s. I p\u0159esto
-      je v\xEDce ne\u017E 200 000 lid\xED registrov\xE1no na \xDA\u0159ad\u011B pr\xE1ce
-      jako nezam\u011Bstnan\xED (v \u010Dervenci 2018 to bylo 211 tis\xEDc!).</p>\r\n<p>\xDA\u0159ad
-      pr\xE1ce v\u0161ak krom\u011B nezam\u011Bstnan\xFDch eviduje tak\xE9 lidi v
-      hmotn\xE9 nouzi, zdravotn\u011B posti\u017Een\xE9 podstupuj\xEDc\xED pracovn\xED
-      rehabilitaci \u010Di posuzov\xE1n\xED zdravotn\xEDho stavu pro uzn\xE1n\xED
-      invalidity nebo p\u011Bstouny a rodi\u010De mal\xFDch d\u011Bt\xED. By\u0165
-      se tyto skupiny ob\u010Das vz\xE1jemn\u011B prol\xEDnaj\xED, rozhodn\u011B ne
-      v\u0161ichni, kdo chod\xED na \xDA\u0159ad pr\xE1ce, jsou nezam\u011Bstnan\xED
-      a mohou pracovat.</p>\r\n</div>\r\n</div>\r\n</div>\r\n</div>"
+      sou\u010Dasn\xE9 dob\u011B je jedna z nejni\u017E\u0161\xEDch \xFArovn\xED nezam\u011Bstnanosti
+      na sv\u011Bt\u011B pr\xE1v\u011B u n\xE1s - 2,8% (posledn\xED \u0161et\u0159en\xED
+      z 11/2018). \xDA\u0159ad pr\xE1ce eviduje 323 500 voln\xFDch pracovn\xEDch m\xEDst.
+      I p\u0159esto je na \xDA\u0159adu pr\xE1ce registrov\xE1no 215 000 uchaze\u010D\u016F
+      o zam\u011Bstn\xE1n\xED!</p>\r\n<p>\xDA\u0159ad pr\xE1ce v\u0161ak krom\u011B
+      nezam\u011Bstnan\xFDch eviduje tak\xE9 lidi v hmotn\xE9 nouzi, zdravotn\u011B
+      posti\u017Een\xE9 podstupuj\xEDc\xED pracovn\xED rehabilitaci \u010Di zaji\u0161\u0165uje
+      posuzov\xE1n\xED zdravotn\xEDho stavu pro uzn\xE1n\xED invalidity nebo p\u011Bstouny
+      a rodi\u010De mal\xFDch d\u011Bt\xED. By\u0165 se tyto skupiny ob\u010Das vz\xE1jemn\u011B
+      prol\xEDnaj\xED, rozhodn\u011B ne v\u0161ichni, kdo jsou v evidenci \xDA\u0159adu
+      pr\xE1ce, mohou pracovat. Anebo ne bez n\u011Bjak\xE9 dopomoci.</p>\r\n</div>\r\n</div>\r\n</div>\r\n</div>"
     enable_comments: false
     template_name: flatpages/home.html
     registration_required: false
@@ -1475,7 +1548,336 @@
   fields:
     url: /nase-reseni/
     title: "Na\u0161e \u0159e\u0161en\xED"
-    content: OBSAH
+    content: "### Nezabaviteln\xE9 minimum\r\n\r\nNavrhujeme **pom\u011Brn\xE9 zvy\u0161ov\xE1n\xED
+      \u010D\xE1stky** nezabaviteln\xE9ho minima **v z\xE1vislosti na v\xFD\u0161i
+      p\u0159\xEDjm\u016F pr\xE1ce schopn\xE9ho dlu\u017En\xEDka**. Je \u017E\xE1douc\xED,
+      aby pro n\u011Bj bylo v\xFDhodn\u011Bj\u0161\xED pracovat leg\xE1ln\u011B ne\u017E
+      si nech\xE1vat \u010D\xE1st mzdy vypl\xE1cet tzv. na ruku.\r\n\r\n### Dlouhodob\xE1
+      z\xE1vislost na d\xE1vk\xE1ch\r\n\r\nV\xFDzkum *Mezi d\xE1vkami a prac\xED*
+      ukazuje, \u017Ee n\xEDzko kvalifikovan\xFDm lidem se pr\xE1ce \u010Dasto \u201Cnevyplat\xED\u201D,
+      zejm\xE9na, pokud jsou v exekuci. Exeku\u010Dn\xED sr\xE1\u017Eky jsou toti\u017E
+      st\xE1le stejn\xE9, i pokud lid\xE9 do pr\xE1ce chod\xED a d\xE1vky jsou toto\u017En\xE9
+      pro lidi, kte\u0159\xED jsou v hmotn\xE9 nouzi a pracovat nemohou (z d\u016Fvodu
+      nemoci, posti\u017Een\xED \u010Di st\xE1\u0159\xED) a kte\u0159\xED pr\xE1ceschopn\xED
+      jsou.\r\n\r\n*\u0158e\u0161en\xED 1*: Zav\xE9st **rozli\u0161en\xED nezabaviteln\xE9ho
+      minima** podle toho, zda pr\xE1ceschopn\xFD \u010Dlov\u011Bk **pracuje \u010Di
+      nikoli**, a umo\u017Enit tak o n\u011Bco vy\u0161\u0161\xED \u017Eivotn\xED
+      komfort t\u011Bm, kte\u0159\xED svou situaci aktivn\u011B \u0159e\u0161\xED.
+      Bonifikovat tak i z\xEDsk\xE1n\xED l\xE9pe placen\xE9 pr\xE1ce a zejm\xE9na
+      p\u016Fsobit preventivn\u011B proti neleg\xE1ln\xED pr\xE1ci.\r\n\r\n*\u0158e\u0161en\xED
+      2*: **Zv\xFD\u0161it \u017Eivotn\xED a existen\u010Dn\xED minimum** a sou\u010Dasn\u011B
+      **zrevidovat zp\u016Fsob, jak\xFDm se na tyto \u010D\xE1stky v\xE1\u017Ee p\u0159\xEDsp\u011Bvek
+      na \u017Eivobyt\xED**. Po posledn\xED novelizaci pob\xEDr\xE1 existen\u010Dn\xED
+      minimum umo\u017E\u0148uj\xEDc\xED pouh\xE9 p\u0159e\u017Eit\xED p\u0159\xEDli\u0161
+      mnoho skupin, kter\xE9 nemaj\xED re\xE1lnou mo\u017Enost si zvy\u0161ovat p\u0159\xEDjem
+      prac\xED. Zrevidovat lze tak\xE9 vazbu ostatn\xEDch d\xE1vek \u2013 porodn\xE9,
+      p\u0159\xEDdavek na d\xEDt\u011B, p\u0159\xEDsp\u011Bvky na zvl\xE1\u0161tn\xED
+      pom\u016Fcku pro OZP \u2013 na r\u016Fzn\xE9 n\xE1sobky \u017Eivotn\xEDho minima.\r\n\r\n###
+      Doplatek na bydlen\xED, kter\xFD jde obchodn\xEDk\u016Fm s chudobou\r\n\r\nProto\u017Ee
+      v cel\xE9 \u010CR chyb\xED obecn\xED byty, a nen\xED definovan\xFD standard
+      bydlen\xED, dopl\xE1c\xEDme chud\xFDm lidem vysok\xE9 n\xE1jmy i do p\u0159epln\u011Bn\xFDch
+      ubytoven a zcela nevyhovuj\xEDc\xEDch byt\u016F. Pir\xE1ti se dostupn\xE9mu
+      bydlen\xED v\u011Bnuj\xED na webu <a href=\"https://www.socialni-a-dostupne-bydleni.cz/\"
+      target=\"_blank\" rel=\"noopener\">bydlimevsichni.cz</a>, podporuj\xED ho v
+      r\xE1mci diskuz\xED s MMR a MPSV.\r\n\r\n### Mimo\u0159\xE1dn\xE1 okam\u017Eit\xE1
+      pomoc\r\n\r\nPodpo\u0159\xEDme praxi, aby tzv. MOPky \u2013 d\xE1vky mimo\u0159\xE1dn\xE9
+      okam\u017Eit\xE9 pomoci \u2013 byly pou\u017E\xEDv\xE1ny jako **kauce p\u0159i
+      p\u0159echodu z ubytoven nebo jin\xE9ho substandardn\xEDho bydlen\xED do bydlen\xED
+      standardn\xEDho**. \xDAP v sou\u010Dasnosti v\u011Bt\u0161inou aktivn\u011B
+      nenab\xEDz\xED!\r\n\r\n\u201CD\xE1vka mimo\u0159\xE1dn\xE9 okam\u017Eit\xE9
+      pomoci je efektivn\xED n\xE1stroj k \u0159e\u0161en\xED bytov\xE9 nouze. P\u0159ekon\xE1n\xED
+      finan\u010Dn\xED bari\xE9ry pro z\xEDsk\xE1n\xED bytu pom\xE1h\xE1 drtiv\xE9
+      v\u011Bt\u0161in\u011B dom\xE1cnost\xED dostat se z nestandardn\xEDho bydlen\xED,\u201D
+      uvedl odborn\xEDk vl\xE1dn\xED agentury Roman Matou\u0161ek.  \u2013 Zdroj:
+      Aktu\xE1ln\u011B.cz\r\n\r\n### Z\xE1\u0161kol\xE1ctv\xED, n\xEDzk\xE9 dosa\u017Een\xE9
+      vzd\u011Bl\xE1n\xED\r\n\r\nP\u0159ed\u0161koln\xED a \u0161koln\xED doch\xE1zka
+      d\u011Bt\xED z chud\xFDch rodin p\u0159estala b\xFDt pozitivn\u011B podporov\xE1na
+      (d\u0159\xEDve p\u0159\xEDsp\u011Bvky na doj\xED\u017Ed\u011Bn\xED \u017E\xE1k\u016F
+      do Z\u0160 nebo soci\xE1ln\xED p\u0159\xEDplatek pro chud\xE9 rodiny s d\xEDt\u011Btem
+      do 6 let). Projekty hrad\xEDc\xED d\u011Btem ob\u011Bdy (Ob\u011Bdy pro \u0161koly,
+      ob\u011Bdy do \u0161kol) p\u0159itom zab\xEDraj\xED, z\u016Fst\xE1vaj\xED ale
+      v n\u011Bkter\xFDch kraj\xEDch nedostupn\xE9 a jako\u017Eto dota\u010Dn\xED
+      program je jejich trv\xE1n\xED nejist\xE9. Z\u016Fstala jen typick\xE1 \u201Cmotivace
+      sankc\xED\u201D, tj. odeb\xEDr\xE1n\xED d\xE1vek rodi\u010D\u016Fm za \u0161koln\xED
+      absenci d\u011Bt\xED, p\u0159i\u010Dem\u017E nov\u011B navrhov\xE1no je tot\xE9\u017E
+      u rodi\u010D\u016F p\u011Btilet\xFDch d\u011Bt\xED s povinnou \u0161kolkou.
+      V realit\u011B se ale tyto sankce uplat\u0148uj\xED pouze n\u011Bkde.\r\n\r\n*\u0158e\u0161en\xED
+      1*: Znovu **zav\xE9st p\u0159\xEDsp\u011Bvky na doj\xED\u017Ed\u011Bn\xED a
+      na ob\u011Bdy, v\xE1zan\xE9 na skute\u010Dnou \u0161koln\xED doch\xE1zku**.\r\n\r\n*\u0158e\u0161en\xED
+      2*: **P\u0159\xEDsp\u011Bvek na doj\xED\u017Ed\u011Bn\xED a p\u0159\xEDpadn\u011B
+      ubytov\xE1n\xED na intern\xE1tu** by jako pozitivn\xED motivace m\u011Bl podpo\u0159it
+      i ty mlad\xE9 lidi vych\xE1zej\xEDc\xED ze z\xE1kladn\xEDch \u0161kol, kte\u0159\xED
+      kv\u016Fli sv\xE9mu znev\xFDhodn\u011Bn\xED (materi\xE1ln\xEDmu i soci\xE1ln\xEDmu)
+      jinak **st\u0159edn\xED \u0161kolu** s nejv\u011Bt\u0161\xED pravd\u011Bpodobnost\xED
+      nedokon\u010D\xED.\r\n\r\n*K diskuzi \u0159e\u0161en\xED 3*: **prodlou\u017Eit
+      povinnou \u0161koln\xED doch\xE1zku na 13 let**. (Takto podporuj\xED studium
+      na S\u0160 okoln\xED evropsk\xE9 zem\u011B.)\r\n\r\n**Dal\u0161\xED n\xE1stroje**:\r\n\r\n-
+      dnes podfinancovan\xFD: **asistenti pedagoga** pro znev\xFDhodn\u011Bn\xE9 \u017E\xE1ky,
+      podporuj\xEDc\xED pedagogy v segregovan\xFDch \u0161kol\xE1ch\r\n\r\n- vyu\u017E\xEDv\xE1n\xED
+      d\xE1vek mimo\u0159\xE1dn\xE9 okam\u017Eit\xE9 pomoci i na financov\xE1n\xED
+      volno\u010Dasov\xFDch aktivit, krou\u017Ek\u016F a dru\u017Einy\r\n\r\n- podpora
+      p\u0159ed\u0161koln\xEDho vzd\u011Bl\xE1v\xE1n\xED u d\u011Bt\xED se znev\xFDhodn\u011Bn\xEDm\r\n\r\n###
+      Nedostatek soci\xE1ln\xEDch pracovn\xEDk\u016F\r\n\r\nDnes je podm\xEDnkou v\xFDkonu
+      soci\xE1ln\xED pr\xE1ce absolvov\xE1n\xED vysok\xE9 \u0161koly. Soci\xE1ln\xEDch
+      pracovn\xEDk\u016F je u\u017E dnes nedostatek. \r\n\r\n*N\xE1vrh \u0159e\u0161en\xED*:
+      \ osoby s jinou kvalifikac\xED, kter\xE9 se osv\u011Bd\u010D\xED jako pracovn\xEDci
+      v soci\xE1ln\xEDch slu\u017Eb\xE1ch, by **nap\u0159. po 5 letech praxe m\u011Bly
+      mo\u017Enost vykonat zkou\u0161ku odborn\xE9 zp\u016Fsobilosti** \u2013 jako
+      tomu je ve st\xE1tn\xED spr\xE1v\u011B. Na kvalifikaci \u201Cpracovn\xEDk v
+      soci\xE1ln\xEDch slu\u017Eb\xE1ch\u201D by tak mohl nav\xE1zat nap\u0159. \u201Cspecializovan\xFD
+      pracovn\xEDk v soci\xE1ln\xEDch slu\u017Eb\xE1ch\u201D.\r\n\r\n### Pracovn\u011B-pr\xE1vn\xED
+      situace p\u011Bstoun\u016F\r\n\r\n#### P\u0159ehled aktu\xE1ln\xEDho stavu\r\n\r\n**Pracovn\xED
+      doba nen\xED pevn\u011B stanovena** (jako u slu\u017Eebn\xEDho pom\u011Bru voj\xE1ka
+      vyslan\xE9ho na misi), ve \u201Cslu\u017Eb\u011B\u201D 24 h. / 7 dn\xED v t\xFDdnu.
+      \r\n\r\nProto\u017Ee se nejedn\xE1 o pracovn\xED pom\u011Br, **nem\xE1 p\u011Bstoun
+      n\xE1rok na**:\r\n\r\n- standardn\xED rozsah dovolen\xE9 na zotavenou (m\xE1
+      n\xE1rok na 2 t\xFDdny, s d\xEDt\u011Btem do 2 let jedin\u011B spole\u010Dn\u011B)\r\n-
+      odstupn\xE9 p\u0159i ukon\u010Den\xED pracovn\xEDho pom\u011Bru\r\n- standardn\xED
+      ukon\u010Den\xED pracovn\xEDho pom\u011Bru, tj. pracovn\xED pom\u011Br nen\xED
+      ukon\u010Den v\xFDpov\u011Bd\xED, ale rozhodnut\xEDm soudu o ukon\u010Den\xED
+      PP kdykoliv bez v\xFDpov\u011Bdn\xED lh\u016Fty\r\n- pracovn\xED \xFAraz \u010Di
+      dlouhodob\xE9 n\xE1sledky vych\xE1zej\xEDc\xED z pracovn\xEDho \xFArazu. Nen\xED
+      \u0159e\u0161ena ot\xE1zka pracovn\xEDch \xFAraz\u016F ani trval\xFDch n\xE1sledk\u016F
+      z v\xFDkonu povol\xE1n\xED. (pokud nap\u0159. p\u011Bstoun z\xEDsk\xE1 p\u0159i
+      p\xE9\u010Di o novorozence hepatitidu typu C, nem\u016F\u017Ee nad\xE1le vykon\xE1vat
+      pr\xE1ci p\u011Bstouna, ale ani zdravotn\xEDka, pracovat ve \u0161kolstv\xED
+      nebo ve styku s potravinami, je trvale pracovn\u011B omezen)\r\n- \xFAhradu
+      \u0161kody na majetku \u2013 v p\u0159\xEDpad\u011B \u0161kody na majetku v
+      dom\xE1cnosti p\u011Bstouna, kterou zp\u016Fsobilo sv\u011B\u0159en\xE9 d\xEDt\u011B
+      nem\xE1 p\u011Bstoun n\xE1rok na n\xE1hradu t\xE9to \u0161kody (nap\u0159. d\xEDt\u011B
+      zni\u010D\xED televizor, po\u0161kod\xED osobn\xED auto apod.) Pokud se to stane
+      v \xFAstavn\xED p\xE9\u010Di, jsou tyto \u0161kody uhrazeny z rozpo\u010Dtu
+      organizace\r\nslu\u017Eebn\xED cesty. Pokud jede p\u011Bstoun v souvislosti
+      s v\xFDkonem PP sv\xFDm vozidlem a dojde k dopravn\xED nehod\u011B, kterou nezavinil,
+      rozd\xEDl mezi pojistn\xFDm a skute\u010Dnou \u0161kodou nikdo nehrad\xED. Pokud
+      z\xE1rove\u0148 dojde ke \u0161kod\u011B na zdrav\xED p\u011Bstouna, nen\xED
+      to pracovn\xED \xFAraz (viz v\xFD\u0161e), pokud dojde ke \xFAjm\u011B na zdrav\xED
+      sv\u011B\u0159en\xE9ho d\xEDt\u011Bte, je za to nav\xEDc p\u011Bstoun pln\u011B
+      odpov\u011Bdn\xFD a nechr\xE1n\xED ho 6 n\xE1sobek platu v 10 sr\xE1\u017Ek\xE1ch
+      jako zam\u011Bstnance\r\n- \u201Cp\u0159enesenou\u201D  odpov\u011Bdnost za
+      \u0161kodu zp\u016Fsobenou d\xEDt\u011Btem. P\u011Bstoun pln\u011B odpov\xEDd\xE1
+      za \u0161kody zp\u016Fsoben\xE9 sv\u011B\u0159en\xFDm d\xEDt\u011Btem na majetku
+      jin\xFDch osob (m\u011Bl by hradit poji\u0161t\u011Bn\xED odpov\u011Bdnosti
+      \u2013 ve vlastn\xEDm z\xE1jmu, ale pro\u010D ho m\xE1 platit?)\r\n\r\n####
+      Ochrana osobnosti a osobn\xEDch informac\xED a prevence p\u0159ed \u0161ikanou\r\n\r\nP\u0159i
+      projedn\xE1v\xE1n\xED sv\u011B\u0159en\xED do p\xE9\u010De nen\xED nijak chr\xE1n\u011Bna
+      osobnost p\u011Bstouna. P\u016Fvodn\xED (bio) rodina se dozv\xED jak m\xEDsto
+      bydli\u0161t\u011B, tak rodinn\xE9 i majetkov\xE9 pom\u011Bry. Pokud se bio
+      rodina rozhodne p\u011Bstouna po\u0161kodit, \u0161ikanovat apod., v\xED o n\u011Bm
+      prakticky v\u0161e v\u010Detn\u011B informac\xED o biologick\xFDch d\u011Btech
+      p\u011Bstouna. P\u011Bstoun nepo\u017E\xEDv\xE1 nejen zvl\xE1\u0161tn\xED ochrany,
+      ale je mu odep\u0159ena i ochrana osobn\xEDch dat.\r\nJak\xE1 je odm\u011Bna
+      dlouhodob\xFDch p\u011Bstoun\u016F?\r\n\r\nP\u011Bstoun **je pod hranic\xED
+      minim\xE1ln\xED mzdy** (pe\u010Duj\xEDc\xED o jedno d\xEDt\u011B)\r\n\r\nP\u011Bstoun
+      nen\xED st\xE1tn\xED poji\u0161t\u011Bnec, mus\xED z t\xE9to odm\u011Bny dopl\xE1cet
+      povinn\xE9 zdravotn\xED poji\u0161t\u011Bn\xED. \r\nV r. 2016 bylo v evidenci
+      \xDAP 11 075 p\u011Bstoun\u016F, velk\xE1 \u010D\xE1st jsou st\xE1tn\xED poji\u0161t\u011Bnci
+      z jin\xE9ho d\u016Fvodu \u2013 d\u016Fchodci, nebo maj\xED d\xEDt\u011B v p\xE9\u010Di
+      s n\xE1rokem na rodi\u010Dovsk\xFD p\u0159\xEDsp\u011Bvek. V uveden\xE9m po\u010Dtu
+      nen\xED uveden po\u010Det p\u011Bstoun\u016F s v\xEDce d\u011Btmi, kter\xFDch
+      by se tato v\xFDjimka u\u017E nedot\xFDkala stejn\u011B jako p\u011Bstoun\u016F
+      s d\u011Btmi s p\u0159iznan\xFDmi d\xE1vkami zdravotn\xEDho posti\u017Een\xED
+      (p\u0159\xEDsp\u011Bvek na p\xE9\u010Di od II. stupn\u011B). To je soci\xE1ln\xED
+      d\xE1vka v soci\xE1ln\xEDm syst\xE9mu, nen\xED vedena jako zdaniteln\xFD p\u0159\xEDjem
+      \u2013 tento syst\xE9m vede k diskriminaci.\r\n\r\nBanky a \xFAv\u011Brov\xE9
+      spole\u010Dnosti odm\u011Bnu p\u011Bstouna odm\xEDtaj\xED jako p\u0159\xEDjem
+      uznat.\r\n\r\nVe skute\u010Dnosti je p\u011Bstoun st\xE1tn\xED zam\u011Bstnanec
+      stejn\u011B jako \xFA\u0159ednice, u kter\xE9 v\u0161e vy\u0159izuje.\r\n\r\nNav\xEDc
+      p\u011Bstoun nem\xE1 ke sv\u011B\u0159en\xFDm d\u011Btem vy\u017Eivovac\xED
+      povinnost, tak\u017Ee chyb\xED informovanost bank, \u017Ee sv\u011B\u0159en\xE9
+      d\u011Bti by nem\u011Bly b\xFDt zapo\u010Dteny do \u010Dlen\u016F dom\xE1cnosti
+      \u2013 a na druhou stranu by se nem\u011Bly zapo\u010D\xEDt\xE1vat soc. d\xE1vky
+      krom\u011B odm\u011Bny p\u011Bstouna.\r\n\r\n**Mapa syst\xE9mu p\xE9\u010De
+      o ohro\u017Een\xE9 d\u011Bti zde.**\r\n\r\nMo\u017En\xE9 n\xE1vrhy zm\u011Bn
+      ??\r\n\r\n### Rodina je z\xE1klad\r\n\r\n**Mezigenera\u010Dn\xED vztahy**, **dobr\xE9
+      sousedstv\xED**, **vazby v \xFAzk\xE9 i \u0161ir\u0161\xED rodin\u011B** tvo\u0159\xED
+      z\xE1klad spokojen\xFDch \u017Eivot\u016F.\r\n\r\nKa\u017Ed\xE9ho z n\xE1s n\u011Bkdy
+      zas\xE1hne nemoc vlastn\xED nebo bl\xEDzk\xFDch, vztahov\xE9 probl\xE9my, v\xFDchovn\xE9
+      obt\xED\u017Ee, anebo t\u0159eba dluhy a velk\xE9 ekonomick\xE9 obavy. V\u011Bt\u0161ina
+      t\u011Bchto \u201Cokam\u017Eik\u016F oslaben\xED\u201D je p\u0159edv\xEDdateln\xE1
+      a v\xED  se, co v nich pom\xE1h\xE1. Pro fungov\xE1n\xED spole\u010Dnosti se
+      nav\xEDc nejv\xEDc vyplat\xED p\u0159edch\xE1zen\xED probl\xE9m\u016F v z\xE1rodc\xEDch
+      \u2013 **prim\xE1rn\xED prevence**.\r\n\r\nKonkr\xE9tn\xED podporu \u010Dasto
+      realizuj\xED obce a kraje, ale jsou v n\xED d\xEDry:\r\n\r\n- chyb\xED prevence
+      selh\xE1n\xED na za\u010D\xE1tku p\xE9\u010De o mal\xE9 d\xEDt\u011B: depist\xE1\u017Ee
+      v porodnic\xEDch nebo informace o soci\xE1ln\xED pomoci u pediatr\u016F\r\n-
+      rodinn\xE9 poradenstv\xED, p\xE1rov\xE9 terapie, mediace \u2013 b\xFDv\xE1 drah\xE1,
+      anebo s velmi dlouh\xFDmi \u010Dekac\xEDmi lh\u016Ftami\r\n- chyb\xED ter\xE9nn\xED
+      a ambulantn\xED slu\u017Eby pro pe\u010Duj\xEDc\xED \u2013 m\xE1lokde se systematicky
+      staraj\xED o sv\xE9 pe\u010Duj\xEDc\xED, jak jsou na tom oni zdravotn\u011B
+      i soci\xE1ln\u011B (t\u0159eba formou ka\u017Edot\xFDdenn\xEDch n\xE1v\u0161t\u011Bv)\r\n-
+      doprov\xE1zen\xED po opu\u0161t\u011Bn\xED \xFAstavn\xEDch slu\u017Eeb \u2013
+      p\u0159ib\xFDv\xE1 dom\u016F na p\u016Fl cesty a startovac\xEDch byt\u016F,
+      ale st\xE1le je situace po opu\u0161t\u011Bn\xED d\u011Btsk\xE9ho domova \u010Di
+      p\u011Bstounsk\xE9 p\xE9\u010De velmi rizikov\xE1\r\n- velmi obt\xED\u017En\xE9
+      je tak\xE9 st\xE1rnut\xED zdravotn\u011B posti\u017Een\xFDch v rodin\xE1ch,
+      o kter\xE9 pot\xE9 pe\u010Duj\xED jejich rodi\u010De \u2013 senio\u0159i. Dobrou
+      praxi \u2013 spole\u010Dn\xE9 bydlen\xED pro rodi\u010De a d\u011Bti a komunitn\xED
+      bydlen\xED \u2013 nab\xEDzej\xED ojedin\u011Bl\xE1 za\u0159\xEDzen\xED."
+    enable_comments: false
+    template_name: ''
+    registration_required: false
+    sites: [1]
+- model: flatpages.flatpage
+  pk: 4
+  fields:
+    url: /zdroje/
+    title: Zdroje
+    content: "* [Integrovan\xFD port\xE1l MPSV](https://www.mpsv.cz/cs/)\r\n* [https://data.cssz.cz/zakladni-info](https://data.cssz.cz/zakladni-info)\r\n*
+      [Z\xE1kony pro lidi](https://zakonyprolidi.cz)\r\n* P\u0159ehled soci\xE1ln\xEDch
+      d\xE1vek a p\u0159\xEDsp\u011Bvk\u016F 2018, na Skrblik.cz\r\n* Informace o
+      vyplacen\xFDch d\xE1vk\xE1ch v resortu MPSV \u010CR v prosinci 2017\r\n* Statistick\xE1
+      ro\u010Denka z oblasti pr\xE1ce a soci\xE1ln\xEDch v\u011Bc\xED 2016\r\n* [penize.cz](https://penize.cz)"
+    enable_comments: false
+    template_name: ''
+    registration_required: false
+    sites: [1]
+- model: flatpages.flatpage
+  pk: 5
+  fields:
+    url: /zivotni-minimum/
+    title: "Stanoven\xED \u017Eivotn\xEDho minima"
+    content: "Pro v\xFDpo\u010Det n\u011Bkter\xFDch d\xE1vek je z\xE1sadn\xED stanoven\xED
+      **\u017Eivotn\xEDho a existen\u010Dn\xEDho minima** (podle [Z. 110/2006 Sb.,
+      o \u017Eivotn\xEDm a existen\u010Dn\xEDm minimu](https://www.zakonyprolidi.cz/cs/2006-110)).\r\n\r\n####
+      \u010C\xE1stky \u017Eivotn\xEDho minima v K\u010D za m\u011Bs\xEDc\r\n\r\n|po\u010Det
+      a v\u011Bk p\u0159\xEDjemc\u016F|v\xFD\u0161e d\xE1vky|\r\n|:---|:---|\r\n|*pro
+      jednotlivce:*|3 410|\r\n|pro prvn\xED dosp\u011Blou osobu v dom\xE1cnosti| 3
+      140|\r\n|pro druhou a dal\u0161\xED dosp\u011Blou osobu v dom\xE1cnosti | 2
+      830   |\r\n|*pro nezaopat\u0159en\xE9 d\xEDt\u011B ve v\u011Bku:*|    |\r\n|
+      do 6 let | 1 740 |\r\n| 6 a\u017E 15 let | 2 140 |\r\n| 15 a\u017E 26 let (nezaopat\u0159en\xE9)
+      | 2 450 |\r\n\r\n\u017Divotn\xED minimum je sou\u010Dtem v\u0161ech \u010D\xE1stek
+      \u017Eivotn\xEDho minima jednotliv\xFDch \u010Dlen\u016F dom\xE1cnosti.\r\n\r\n####
+      \u010C\xE1stka existen\u010Dn\xEDho minima v K\u010D za m\u011Bs\xEDc\r\n\r\nexisten\u010Dn\xED
+      minimum\t\t\t\t \t**2 200**\r\n\r\nP\u0159\xEDklady \u017Eivotn\xEDho minima
+      r\u016Fzn\xFDch typ\u016F dom\xE1cnost\xED v K\u010D za m\u011Bs\xEDc:\r\n\r\n|po\u010Det
+      a v\u011Bk p\u0159\xEDjemc\u016F|v\xFD\u0161e d\xE1vky|\r\n|:---|:---|\r\n|jednotlivec|3
+      410|\r\n|2 dosp\u011Bl\xED| 3 140 + 2 830 = 5 970|\r\n|1 dosp\u011Bl\xFD, 1
+      d\xEDt\u011B ve v\u011Bku 5 let|\t3 140 + 1 740 = 4 880|\r\n|2 dosp\u011Bl\xED,
+      1 d\xEDt\u011B ve v\u011Bku 5 let|\t3 140 + 2 830 + 1 740 = 7 710|\r\n|2 dosp\u011Bl\xED,
+      2 d\u011Bti ve v\u011Bku 8 a 16 let|\t3 140 + 2 830 + 2 140 + 2 450 = 10 560|\r\n|2
+      dosp\u011Bl\xED, 3 d\u011Bti ve v\u011Bku 5, 8 a 16 let|\t3 140 + 2 830 + 1
+      740 + 2 140 + 2 450 = 12 300|\r\n\r\nS \u017Eivotn\xEDm minimem se porovn\xE1vaj\xED
+      v\u0161echny \u010Dist\xE9 pen\u011B\u017En\xED p\u0159\xEDjmy jednotlivce nebo
+      spole\u010Dn\u011B posuzovan\xFDch osob, nezahrnuj\xED se n\xE1klady a p\u0159\xEDsp\u011Bvek
+      na bydlen\xED.\r\n\r\n**Spole\u010Dn\u011B posuzovan\xE9 osoby:**\r\n\r\n- rodi\u010De
+      a nezletil\xE9 nezaopat\u0159en\xE9 d\u011Bti (co\u017E v praxi vede k fiktivn\xEDmu
+      zapo\u010D\xEDt\xE1n\xED p\u0159\xEDjmu i toho z rodi\u010D\u016F, kter\xFD
+      v dom\xE1cnosti ne\u017Eije a p\u0159\xEDjem do rodiny nep\u0159in\xE1\u0161\xED
+      \u2013 vylou\u010Dit ze spole\u010Dn\xE9ho posuzov\xE1n\xED jej lze a\u017E
+      po 3 m\u011Bs\xEDc\xEDch),\r\n- man\u017Eel\xE9 nebo registrovan\xED partne\u0159i,\r\n-
+      rodi\u010De a d\u011Bti nezletil\xE9 zaopat\u0159en\xE9 nebo zletil\xE9, pokud
+      tyto d\u011Bti s rodi\u010Di u\u017E\xEDvaj\xED byt a nejsou posuzov\xE1ny s
+      jin\xFDmi osobami,\r\n- jin\xE9 osoby spole\u010Dn\u011B u\u017E\xEDvaj\xEDc\xED
+      byt, ubytovac\xED jednotku nebo jin\xFD ne\u017E obytn\xFD prostor, p\u0159\xEDpadn\u011B
+      (pro d\xE1vky st\xE1tn\xED soci\xE1ln\xED podpory) s trval\xFDm pobytem v byt\u011B,
+      pokud neprok\xE1\u017E\xED, \u017Ee spolu trvale ne\u017Eij\xED a spole\u010Dn\u011B
+      neuhrazuj\xED n\xE1klady na sv\xE9 pot\u0159eby.\r\n\r\nSpole\u010Dn\u011B posuzovan\xFDmi
+      osobami jsou i osoby, kter\xE9 se p\u0159echodn\u011B, z d\u016Fvod\u016F soustavn\xE9
+      p\u0159\xEDpravy na budouc\xED povol\xE1n\xED, zdravotn\xEDch nebo pracovn\xEDch
+      (v\u010Detn\u011B dobrovolnick\xE9 slu\u017Eby), zdr\u017Euj\xED mimo bydli\u0161t\u011B."
+    enable_comments: false
+    template_name: ''
+    registration_required: false
+    sites: [1]
+- model: flatpages.flatpage
+  pk: 6
+  fields:
+    url: /rizikove-skupiny/
+    title: "Rizikov\xE9 skupiny"
+    content: "**S\xEDtem soci\xE1ln\xED podpory propad\xE1vaj\xED zejm\xE9na:**\r\n\r\n-
+      osoby, kter\xE9 pe\u010Duj\xED o p\u0159ed\u0161koln\xED d\xEDt\u011B, kter\xE9
+      by mohlo nav\u0161t\u011Bvovat \u0161kolku, ale nen\xED pro n\u011Bj m\xEDsto,\r\n-
+      obecn\u011B rodi\u010De zdrav\xFDch d\u011Bt\xED , pro n\u011B\u017E nen\xED
+      k dispozici dru\u017Eina/\u0161koln\xED klub (pr\xE1v\u011B tam te\u010F dob\u011Bhl
+      \u201Cbaby-boom\u201D) a dokonce i d\u011Bt\xED v I. stupni z\xE1vislosti na
+      p\xE9\u010Di jin\xE9 osoby star\u0161\xED 10 let- i t\u011Bmto (zejm\xE9na)
+      matk\xE1m se sni\u017Euje pomoc v hmotn\xE9 nouzi v dob\u011B, kdy ji pro sv\xE9
+      d\u011Bti pot\u0159ebuj\xED.\r\n- invalidn\xED osoby v 1. stupni (v\xFDjimku
+      maj\xED jen lid\xE9 ve 2. a 3. stupni invalidity).\r\n- lid\xE9 nad 50 let,
+      kte\u0159\xED maj\xED do d\u016Fchodov\xE9ho v\u011Bku je\u0161t\u011B 12-13
+      let\r\n\r\n*V\u0161ichni tito lid\xE9 si mus\xED sv\xE9 \u017Eivotn\xED minimum
+      odpracovat ve ve\u0159ejn\xE9 slu\u017Eb\u011B*, co\u017E je probl\xE9m, kdy\u017E
+      tato nen\xED na v\u011Bt\u0161in\u011B m\xEDst \u010CR (mal\xE9 obce) k dispozici
+      a \xDA\u0159ad pr\xE1ce ani nevede evidenci v rozli\u0161en\xED aspo\u0148 na
+      okresy, kde v\u016Fbec je mo\u017En\xE9 na ve\u0159ejnou slu\u017Ebu nastoupit
+      (\xDAP nem\xE1 ze z\xE1kona povinnost ve\u0159ejnou slu\u017Ebu nab\xEDzet,
+      ani v\xE9st jak\xE9koli evidence).\r\n\r\nF\xEDglem, kter\xFD \xDA\u0159ad pr\xE1ce
+      pou\u017E\xEDv\xE1 jako n\xE1mitku, je tvrzen\xED, \u017Ee ve\u0159ejn\xE1 slu\u017Eba
+      je jen jednou z mo\u017Enost\xED, jak si zachr\xE1nit \u017Eivotn\xED minimum.
+      Tyto mo\u017Enosti jsou ale stejn\u011B nedostupn\xE9, jako ve\u0159ejn\xE1
+      slu\u017Eba. Chud\xFD \u010Dlov\u011Bk nad 6 m\u011Bs\xEDc\u016F se m\u016F\u017Ee
+      p\u0159ed poklesem na existen\u010Dn\xED minimum (2.200 K\u010D m\u011Bs\xED\u010Dn\u011B)
+      ochr\xE1nit u\u017E jen:\r\n\r\n- vstupem do projektu krajsk\xE9 pobo\u010Dky
+      \xDAP (zd\xE1 se, \u017Ee skoro nikde u\u017E \u017E\xE1dn\xE9 neza\u010D\xEDnaj\xED).\r\n-
+      n\xE1stupem na rekvalifikaci (skoro nikde nejsou k dispozici nebo jsou nab\xEDzeny
+      maxim\xE1ln\u011B t\xFDdenn\xED kurzy PC, co\u017E p\u0159\xEDjem ne\u0159e\u0161\xED).\r\n-
+      p\u0159ijmout zam\u011Bstn\xE1n\xED alespo\u0148 na 20 hodin m\u011Bs\xED\u010Dn\u011B,
+      ale u\u017E nejm\xE9n\u011B za minim\xE1ln\xED mzdu 73,20 K\u010D/hod. a ne
+      formou DPP, co\u017E by vedlo k vy\u0159azen\xED dan\xE9ho \u010Dlov\u011Bka
+      z evidence nezam\u011Bstnan\xFDch.\r\n\r\n---\r\n\r\nMimo syst\xE9m d\xE1vek
+      b\u011B\u017E\xED rovn\u011B\u017E projekty **ob\u011Bdy do \u0161kol**, kter\xE9
+      \u0159e\u0161\xED d\u011Bti, jim\u017E rodi\u010De nezvl\xE1daj\xED platit pravidelnou
+      m\u011Bs\xED\u010Dn\xED \u010D\xE1stku za stravov\xE1n\xED ve \u0161koln\xEDm
+      za\u0159\xEDzen\xED. \r\n\r\nProjekty jsou hrazeny z dotac\xED a prost\u0159ednictv\xEDm
+      nadace ze soukrom\xFDch zdroj\u016F. P\u0159i zv\xE1\u017Een\xED soci\xE1ln\xEDho
+      dopadu je ale nasnad\u011B, \u017Ee i zde by bylo vhodn\u011Bj\u0161\xED syst\xE9mov\xE9
+      \u0159e\u0161en\xED.  Rozhodn\u011B je v\u0161ak v takov\xE9m p\u0159\xEDpad\u011B
+      nutn\xE9 zajistit \xFA\u010Del t\xE9to pomoci, j\xED\u017E je diskr\xE9tn\xED
+      \xFAhrada tepl\xE9ho ob\u011Bda \u0161kol\xE1ka nebo p\u0159ed\u0161kol\xE1ka
+      platbou p\u0159\xEDmo \u0161koln\xED j\xEDdeln\u011B. V\xFDhodou t\u011Bchto
+      plateb mimo syst\xE9m soci\xE1ln\xEDch d\xE1vek (podobn\u011B jako p\u0159\xEDsp\u011Bvk\u016F
+      z aktivn\xED politiky zam\u011Bstnanosti) je, \u017Ee nejsou zahrnov\xE1ny do
+      rozhodn\xE9ho p\u0159\xEDjmu pro p\u0159izn\xE1n\xED d\xE1vek, tak\u017Ee se
+      o tyto platby p\u0159\xEDjem rodiny nekr\xE1t\xED."
+    enable_comments: false
+    template_name: ''
+    registration_required: false
+    sites: [1]
+- model: flatpages.flatpage
+  pk: 7
+  fields:
+    url: /exekuce-insolvence/
+    title: Exekuce / Insolvence
+    content: "## Situace: exekuce\r\n\r\nPo\u010Det lid\xED v exekuc\xEDch:  **863
+      tis\xEDc**. V\xEDce ne\u017E polovina z celkov\xE9ho po\u010Dtu m\xE1 v\xEDce
+      ne\u017E 3 exekuce z\xE1rove\u0148.\r\n\r\n#### Probl\xE9my\r\n\r\n- v\xFD\u0161e
+      n\xE1klad\u016F na vym\xE1h\xE1n\xED\r\n- vzd\xE1lenost mezi exekutorem a dlu\u017En\xEDkem
+      (povinn\xFDm). V p\u0159\xEDpad\u011B, \u017Ee m\xE1 povinn\xFD sv\xE9 exekuce
+      spravovan\xE9 v\xEDce exekutory, ka\u017Ed\xE9mu z nich plat\xED krom\u011B
+      odm\u011Bny z vymo\u017Een\xE9 pohled\xE1vky tak\xE9 n\xE1klady na cestu a pau\u0161\xE1ly
+      na hotov\xE9 v\xFDdaje. Z\xE1rove\u0148 m\xE1 ale velice zkomplikovanou cestu
+      k nahl\xE9dnut\xED do vlastn\xEDho spisu \u010Di platbu v hotovosti na pokladn\u011B
+      exeku\u010Dn\xEDho \xFA\u0159adu.\r\n- mo\u017Enost v\u011B\u0159itele (opr\xE1vn\u011Bn\xE9ho)
+      vybrat si sv\xE9ho exekutora. Tento nerovn\xFD vztah je v rozporu s \xFAstavn\xEDm
+      po\u017Eadavkem na nez\xE1visl\xE9ho a nestrann\xE9ho vykonavatele ve\u0159ejn\xE9
+      moci.\r\n\r\n#### Nezabaviteln\xE9 minimum\r\n\r\n- se zv\xFD\u0161en\xEDm mzdy
+      se \u010Dlov\u011Bku v exekuci nijak nezvy\u0161uje komfort, ale z\u016Fst\xE1v\xE1
+      mu st\xE1le stejn\xE9 nezabaviteln\xE9 minimum tvo\u0159en\xE9 \u010D\xE1stkou
+      \u017Eivotn\xEDho minima jednotlivce (3.410 K\u010D) plus \u010D\xE1stkou normativu
+      na bydlen\xED dle z\xE1kona o st\xE1tn\xED soci\xE1ln\xED podpo\u0159e, jako
+      kdyby bydlel s\xE1m v n\xE1jemn\xEDm bydlen\xED v obci od 50 do 99 tis\xEDc
+      obyvatel (m\u011Bn\xED se ka\u017Ed\xFD rok spolu s valorizac\xED normativ\u016F)\r\n-
+      za ka\u017Edou vy\u017Eivovanou osobu (man\u017Eelku, d\u011Bti) pak je dlu\u017En\xEDkovi
+      tato nezabaviteln\xE1 \u010D\xE1stka nav\xFD\u0161ena o 1/4 tohoto sou\u010Dtu.
+      Je tedy stejn\xE9 bez ohledu na tip a v\xFD\u0161i p\u0159\xEDjmu.\r\n\r\nKalkula\u010Dku
+      pro v\xFDpo\u010Det naleznete nap\u0159\xEDklad na [penize.cz](https://www.penize.cz).
+      V\xEDce na [exekuce.pirati.cz](https://exekuce.pirati.cz).\r\n\r\n\r\n## Situace:
+      insolvence\r\n\r\nPokud povinn\xE9mu p\u0159erostou dluhy p\u0159es hlavu a
+      dostane se do situace, kdy je nedok\xE1\u017Ee spl\xE1cet, m\u016F\u017Ee se
+      pokusit o vstup do **insolvence** (tedy do osobn\xEDho bankrotu \u010Di oddlu\u017Een\xED).
+      Nesm\xED se ale jednat o dluhy z podnik\xE1n\xED. Povinn\xFD se mus\xED obr\xE1tit
+      na **akreditovanou osobu, kter\xE1 pod\xE1 n\xE1vrh na oddlu\u017Een\xED insolven\u010Dn\xEDmu
+      soudu**. Pakli\u017Ee jsou spln\u011Bny v\u0161echny form\xE1ln\xED z\xE1le\u017Eitosti,
+      **p\u0159id\u011Bl\xED soud dlu\u017En\xEDkovi insolven\u010Dn\xEDho spr\xE1vce,
+      kter\xFD po dobu p\u011Bti let dohl\xED\u017E\xED na spl\xE1cen\xED pohled\xE1vek**.
+      Aby povinn\xFD opravdu dos\xE1hl oddlu\u017Een\xED, **mus\xED b\u011Bhem t\xE9to
+      doby splatit alespo\u0148 30 procent sv\xFDch pohled\xE1vek** a to jak pomoc\xED
+      spl\xE1tkov\xE9ho kalend\xE1\u0159e, tak zpen\u011B\u017Een\xEDm majetku.\r\n\r\nExekuto\u0159i
+      v pr\u016Fb\u011Bhu insolvence svou moc ztr\xE1cej\xED, tak\u017Ee nezabaviteln\xE9
+      minimum u\u017E nem\xE1 v\xFDznam. Rozhoduj\xEDc\xED je nastaven\xED spl\xE1cen\xED
+      dluhu a plateb insolven\u010Dn\xEDmu spr\xE1vy z rozhodnut\xED soudu, kter\xFD
+      oddlu\u017Een\xED povolil.\r\n\r\n[Kalkul\xE1tor spl\xE1tek](https://insolvence.justice.cz/kalkulator-splatek/)"
     enable_comments: false
     template_name: ''
     registration_required: false
@@ -1489,23 +1891,23 @@
   fields: {name: Odkazy, slug: odkazy, base_url: null, description: ''}
 - model: menu.menuitem
   pk: 1
-  fields: {menu: 1, order: 500, link_url: /davky/prehled/, title: "Orienta\u010Dn\xED
+  fields: {menu: 1, order: 10, link_url: /davky/prehled/, title: "Orienta\u010Dn\xED
       p\u0159ehled d\xE1vek", login_required: false, anonymous_only: false}
 - model: menu.menuitem
   pk: 2
-  fields: {menu: 1, order: 501, link_url: /nase-reseni/, title: "Na\u0161e \u0159e\u0161en\xED",
+  fields: {menu: 1, order: 40, link_url: /nase-reseni/, title: "Na\u0161e \u0159e\u0161en\xED",
     login_required: false, anonymous_only: false}
 - model: menu.menuitem
   pk: 3
-  fields: {menu: 1, order: 502, link_url: /, title: "V\xFDpo\u010Det \u017Eivotn\xEDho
+  fields: {menu: 1, order: 20, link_url: /zivotni-minimum/, title: "Stanoven\xED \u017Eivotn\xEDho
       minima", login_required: false, anonymous_only: false}
 - model: menu.menuitem
   pk: 4
-  fields: {menu: 1, order: 503, link_url: /, title: "Rizikov\xE9 skupiny", login_required: false,
-    anonymous_only: false}
+  fields: {menu: 1, order: 30, link_url: /rizikove-skupiny/, title: "Rizikov\xE9 skupiny",
+    login_required: false, anonymous_only: false}
 - model: menu.menuitem
   pk: 5
-  fields: {menu: 1, order: 504, link_url: /, title: Zdroje, login_required: false,
+  fields: {menu: 1, order: 60, link_url: /zdroje/, title: Zdroje, login_required: false,
     anonymous_only: false}
 - model: menu.menuitem
   pk: 6
@@ -1515,3 +1917,11 @@
   pk: 7
   fields: {menu: 2, order: 20, link_url: 'https://portal.mpsv.cz/', title: "Integrovan\xFD
       port\xE1l MPSV", login_required: false, anonymous_only: false}
+- model: menu.menuitem
+  pk: 8
+  fields: {menu: 1, order: 50, link_url: /exekuce-insolvence/, title: Exekuce / Insolvence,
+    login_required: false, anonymous_only: false}
+- model: menu.menuitem
+  pk: 9
+  fields: {menu: 2, order: 30, link_url: 'https://www.prispevky.cz/', title: "P\u0159\xEDsp\u011Bvky
+      v roce 2018", login_required: false, anonymous_only: false}
