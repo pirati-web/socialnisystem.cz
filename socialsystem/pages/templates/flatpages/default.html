@@ -5,6 +5,9 @@
 {% block page_description %}{% if flatpage.metadata %}{{ flatpage.metadata.description }}{% else %}{{ block.super }}{% endif %}{% endblock %}
 {% block page_keywords %}{% if flatpage.metadata %}{{ flatpage.metadata.keywords }}{% else %}{{ block.super }}{% endif %}{% endblock %}
 
+{% block content_wrapper_classes %}row{% endblock %}
+{% block article_classes %}columns large-8 middle-10 small-12{% endblock %}
+
 {% block article %}
 <div class="content-block">
     {{ flatpage.content | markdown }}
