@@ -6,5 +6,7 @@
 {% block page_keywords %}{% if flatpage.metadata %}{{ flatpage.metadata.keywords }}{% else %}{{ block.super }}{% endif %}{% endblock %}
 
 {% block article %}
-{{ flatpage.content | markdown }}
+<div class="content-block">
+    {{ flatpage.content | markdown }}
+</div>
 {% endblock %}
