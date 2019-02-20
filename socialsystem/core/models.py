@@ -86,7 +86,9 @@ class BenefitManager(models.Manager):
         # Select all requirements that were not matched
         non_matched_requirements = BenefitRequirement.objects.exclude(query)
         # Select all benefits except those which have some unmatched requirement
-        return self.get_queryset().exclude(requirements__pk__in=models.Subquery(non_matched_requirements.values('pk')))
+        return self.get_queryset().filter(searchable=True).exclude(
+            requirements__pk__in=models.Subquery(non_matched_requirements.values('pk')),
+        )
 
 
 class Benefit(models.Model):
@@ -106,6 +108,7 @@ class Benefit(models.Model):
     )
     condition = models.ForeignKey(to='core.LifeCondition', related_name='benefits', on_delete=models.PROTECT, verbose_name='Situace')
     attachments = models.ManyToManyField(to='core.BenefitAttachment', blank=True, related_name='benefits')
+    searchable = models.BooleanField('Lze vyhledat pomocí formuláře?', default=True)
 
     objects = BenefitManager()
 

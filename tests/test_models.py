@@ -28,7 +28,6 @@ def prepare_benefits_with_requirements():
             'name': 'Benefit1',
             'related_law': 'A law',
             'base_description': '...',
-            'usecase_description': '...',
             'claim_description': '...',
             'other_description': '...',
         },
@@ -37,7 +36,6 @@ def prepare_benefits_with_requirements():
             'name': 'Benefit2',
             'related_law': 'A law',
             'base_description': '...',
-            'usecase_description': '...',
             'claim_description': '...',
             'other_description': '...',
         },
@@ -46,9 +44,17 @@ def prepare_benefits_with_requirements():
             'name': 'Benefit3',
             'related_law': 'A law',
             'base_description': '...',
-            'usecase_description': '...',
             'claim_description': '...',
             'other_description': '...',
+        },
+        {
+            'id': 4,
+            'name': 'Benefit4',
+            'related_law': 'A law',
+            'base_description': '...',
+            'claim_description': '...',
+            'other_description': '...',
+            'searchable': False,
         }
     ]
 
@@ -69,6 +75,8 @@ def prepare_benefits_with_requirements():
     benefit1 = Benefit.objects.create(condition=lifecondition1, responsible_office=state_office1, **benefits[0])
     benefit2 = Benefit.objects.create(condition=lifecondition1, responsible_office=state_office1, **benefits[1])
     benefit3 = Benefit.objects.create(condition=lifecondition1, responsible_office=state_office1, **benefits[2])
+    # benefit4 is not searchable
+    benefit4 = Benefit.objects.create(condition=lifecondition1, responsible_office=state_office1, **benefits[3])
 
     # benefit1 requires either bit_5 OR bit_6
     BenefitRequirement.objects.create(benefit=benefit1, **benefit_requirements[0])
@@ -127,4 +135,5 @@ pytestmark = [pytest.mark.django_db]
 def test_benefit__find_by_satisfied_requirements(flags, expected):
     prepare_benefits_with_requirements()
     benefit_names = Benefit.objects.find_claimable(flags).values_list('name', flat=True)
+    print(benefit_names)
     assert list(benefit_names) == expected
