@@ -94,14 +94,16 @@ class Benefit(models.Model):
     A benefit from state social system.
     """
     name = models.CharField('Název', max_length=255)
-    related_law = models.TextField('Související zákon(y)')
+    related_law = models.TextField('Související zákon(y)', null=True, blank=True)
 
     base_description = models.TextField('Základní popis', blank=False)
     claim_description = models.TextField('Kdo má nárok', blank=False)
     other_description = models.TextField('Další informace', blank=True)
     context_description = models.TextField('Kontextové informace', blank=True, help_text='Počet udělených dávek apod.')
 
-    responsible_office = models.ForeignKey(to='core.StateOffice', on_delete=models.PROTECT, verbose_name='Žádost se podává na')
+    responsible_office = models.ForeignKey(
+        to='core.StateOffice', on_delete=models.PROTECT, verbose_name='Žádost se podává na', null=True, blank=True
+    )
     condition = models.ForeignKey(to='core.LifeCondition', related_name='benefits', on_delete=models.PROTECT, verbose_name='Situace')
     attachments = models.ManyToManyField(to='core.BenefitAttachment', blank=True, related_name='benefits')
 

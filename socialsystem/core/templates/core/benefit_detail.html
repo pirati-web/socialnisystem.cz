@@ -13,7 +13,9 @@
         {% endif %}
     </div>
     <h1 class="page__headline">{{ object }}</h1>
+    {% if object.related_law %}
     <div class="page__headline-sub v-benefit-detail__rellaw-wrap content-block">dle <div class="v-benefit-detail__rellaw">{{ object.related_law|markdown:"target_blank" }}</div></div>
+    {% endif %}
 {% endblock %}
 
 {% block content_wrapper_classes %}v-benefit-detail row{% endblock %}
