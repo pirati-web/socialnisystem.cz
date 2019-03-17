@@ -1,12 +1,9 @@
 - id: 0
   ord: 0
-  question: Jsem svobodný/rozvedený, samoživitel
-- id: 1
-  ord: 1
-  question: Jsem svobodná/rozvedená samoživitelka
+  question: Jsem svobodná/ý, rozvedená/ý, samoživitel/ka
 - id: 2
   ord: 2
-  question: Jsme rodina
+  question: Jsme pár
 - id: 3
   ord: 3
   question: Čekám dítě
