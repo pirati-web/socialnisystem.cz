@@ -44,7 +44,7 @@ class BenefitRequirementInline(admin.StackedInline):
 @admin.register(models.Benefit)
 class BenefitAdmin(admin.ModelAdmin):
     exclude = ('attachments',)
-    list_display = ('name', 'condition', 'responsible_office', 'searchable')
+    list_display = ('name', 'condition', 'responsible_office', 'searchable', 'ordering')
     list_select_related = ('condition', 'responsible_office')
     list_filter = ('condition', 'responsible_office', 'searchable')
 

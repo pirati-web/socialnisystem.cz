@@ -37,9 +37,9 @@ class LifeCondition(models.Model):
     Represents a life condition of a benefit applicant. Used primarily for
     categorization.
     """
-    title = models.CharField('Název', max_length=255)
+    title = models.CharField('Název', max_length=255, db_index=True)
     description = models.TextField('Popis', blank=True)
-    ordering = models.PositiveSmallIntegerField('Pořadí', default=1, help_text="Čím vyšší číslo, tím později ve výpisu.")
+    ordering = models.PositiveSmallIntegerField('Pořadí', default=1, help_text="Čím vyšší číslo, tím později ve výpisu.", db_index=True)
 
     objects = LifeConditionManager()
 
@@ -95,7 +95,7 @@ class Benefit(models.Model):
     """
     A benefit from state social system.
     """
-    name = models.CharField('Název', max_length=255)
+    name = models.CharField('Název', max_length=255, db_index=True)
     related_law = models.TextField('Související zákon(y)', null=True, blank=True)
 
     base_description = models.TextField('Základní popis', blank=False)
@@ -109,6 +109,7 @@ class Benefit(models.Model):
     condition = models.ForeignKey(to='core.LifeCondition', related_name='benefits', on_delete=models.PROTECT, verbose_name='Situace')
     attachments = models.ManyToManyField(to='core.BenefitAttachment', blank=True, related_name='benefits')
     searchable = models.BooleanField('Lze vyhledat pomocí formuláře?', default=True)
+    ordering = models.PositiveSmallIntegerField('Pořadí', default=1, help_text="Čím vyšší číslo, tím později ve výpisu.", db_index=True)
 
     objects = BenefitManager()
 
@@ -116,7 +117,7 @@ class Benefit(models.Model):
         app_label = 'core'
         verbose_name = 'Dávka'
         verbose_name_plural = 'Dávky'
-        ordering = ('condition', 'name',)
+        ordering = ('condition', 'ordering', 'name',)
 
     def __str__(self):
         return self.name
