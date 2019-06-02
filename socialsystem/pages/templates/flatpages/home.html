@@ -3,7 +3,7 @@
 {% load markdown_deux_tags %}
 {% load render_html from core %}
 
-{% block page_title_full %}{{ siteinfo.name }}{% endblock %}
+{% block page_title %}{% block headline %}{% if flatpage.metadata.title %}{{ flatpage.metadata.title }}{% else %}{{ flatpage.title }}{% endif %}{% endblock %}{% endblock %}
 {% block page_description %}{% if flatpage.metadata %}{{ flatpage.metadata.description }}{% else %}{{ block.super }}{% endif %}{% endblock %}
 {% block page_keywords %}{% if flatpage.metadata %}{{ flatpage.metadata.keywords }}{% else %}{{ block.super }}{% endif %}{% endblock %}
 
