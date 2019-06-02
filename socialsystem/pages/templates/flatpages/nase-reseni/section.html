@@ -1,0 +1,21 @@
+{% extends "flatpages/default.html" %}
+{% load markdown_deux_tags menubuilder %}
+
+{% block content_wrapper_classes %}row{% endblock %}
+{% block article_classes %}columns small-12{% endblock %}
+
+{% block article %}
+<div class="content-block">
+    <div class="row">
+        <div class="columns small-12 middle-8">
+            {{ flatpage.content | markdown }}
+        </div>
+        <div class="columns small-12 middle-4">
+            {% menu nase-reseni %}
+            <ul>
+                {% for item in menuitems %}<li><a href="{{ item.url }}" title="{{ item.title|escape }}"{% if item.current %} class="current"{% endif %}>{{ item.title }}</a></li>{% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>
+{% endblock %}

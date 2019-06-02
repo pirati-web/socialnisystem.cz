@@ -1,0 +1,11 @@
+{% extends "flatpages/default.html" %}
+{% load menubuilder %}
+
+{% block article %}
+{% menu nase-reseni %}
+<div class="content-block">
+    <ul>
+        {% for item in menuitems %}<li><a href="{{ item.url }}" title="{{ item.title|escape }}"{% if item.current %} class="current"{% endif %}>{{ item.title }}</a></li>{% endfor %}
+    </ul>
+</div>
+{% endblock %}
