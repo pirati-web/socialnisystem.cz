@@ -119,10 +119,18 @@ exposed via NginX proxy at port `80`.
 3. Run migrations (in case there are some DB schema changes):
 
         docker-compose exec --user socialsystem website sh -c "django-admin migrate"
-        
+
 4. Load initial data upon installation:
 
         docker-compose exec --user socialsystem website sh -c "django-admin loaddata socialsystem/fixtures/initial_data.yml"
 
 *Note*: You can easily update the app by the image tag in the compose file. Make
 sure to re-run migrations when updating.
+
+## Running django commands in the container
+
+You can easily run it using `docker exec`. Just make sure you're running it under `socialsystem` user. Otherwise,
+things will break.
+
+    docker-compose exec --user socialsystem website django-admin migrate
+
