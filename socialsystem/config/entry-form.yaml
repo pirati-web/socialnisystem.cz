@@ -24,7 +24,7 @@
   question: Máme doma studenta do 26 let
 - id: 9
   ord: 9
-  question: Jsem senior
+  question: Jsem senior/ka
 - id: 10
   ord: 10
   question: Jsem vdova/vdovec
@@ -36,10 +36,10 @@
   question: Situace ohroženého dítěte
 - id: 13
   ord: 13
-  question: Jsem pěstoun
+  question: Jsem pěstoun/ka
 - id: 14
   ord: 14
-  question: Jsem nezaměstnaný
+  question: Jsem nezaměstnaný/á
 - id: 15
   ord: 15
   question: Chybí mi peníze na živobytí
@@ -51,14 +51,14 @@
   question: Nemám prostředky na placení nájmu
 - id: 18
   ord: 18
-  question: Nemám prostředky na kauci na nájem
+  question: Nemám prostředky na kauci/jistotu na byt
 - id: 19
   ord: 19
   question: Jsem v obtížné životní situaci
   description: vyhořeli jsme, vyplavila nás velká voda, apod.
 - id: 20
   ord: 20
-  question: Jsem nemocný
+  question: Jsem nemocný/á
 - id: 21
   ord: 21
   question: Jsem po úrazu
