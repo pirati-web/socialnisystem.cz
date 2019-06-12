@@ -46,6 +46,7 @@
 - id: 16
   ord: 16
   question: Příjem mojí domácnosti je nižší než 2,7 násobek životního minima
+  description: jak se stanovuje životní minimum se dozvíte <a class="t-anchor" href="/zivotni-minimum/" target="_blank" rel="noopener">zde</a>
 - id: 17
   ord: 17
   question: Nemám prostředky na placení nájmu

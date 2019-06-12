@@ -1,6 +1,12 @@
 {% extends "page.html" %}
 {% load markdown_deux_tags %}
+{% load render_html from core %}
 
+{% block before_headline %}
+    <div class="page__backnav">
+        <a href="/">Úvod &raquo;</a>
+    </div>
+{% endblock %}
 {% block page_title %}{% if submitted %}Vaše nároky{% else %}Na co mohu mít nárok?{% endif %}{% endblock %}
 {% block page_description %}Zjistěte si, na co máte nárok.{% endblock %}
 
@@ -59,7 +65,7 @@
                                         {{ field.label_tag }}
 
                                         {% if field.help_text %}
-                                            <div class="form__field-help"><i class="fas fa-question-circle"></i>&nbsp;{{ field.help_text }}</div>
+                                            <div class="form__field-help"><i class="fas fa-question-circle"></i>&nbsp;{% render_html field.help_text %}</div>
                                         {% endif %}
                                     </div>
                                     <div class="form__field-control form__field-control--{{ field.field.widget.input_type }}">
