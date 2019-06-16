@@ -6,6 +6,10 @@
     height: 100%;
     padding: 1rem;
     background: $light-gray;
+
+    @media print {
+        padding: 0;
+    }
 }
 
 .card__header {

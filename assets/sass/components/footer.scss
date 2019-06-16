@@ -7,6 +7,10 @@
         color: $dark-gray;
         @include anchorStyle();
     }
+
+    @media print {
+        display: none;
+    }
 }
 
 .footer-nav__headline {

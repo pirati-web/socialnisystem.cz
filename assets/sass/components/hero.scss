@@ -9,6 +9,10 @@
         padding: 10rem 0 6rem;
         text-align: left;
     }
+
+    @media print {
+        padding: 1rem 0;
+    }
 }
 
 .hero__headline {
@@ -29,4 +33,8 @@
 
 .hero__cta {
     margin: 0;
+
+    @media print {
+        display: none;
+    }
 }

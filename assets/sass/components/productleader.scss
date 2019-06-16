@@ -5,6 +5,10 @@
     @include breakpoint(medium down) {
         flex-direction: column;
     }
+
+    @media print {
+        display: block;
+    }
 }
 
 .productleader__avatar {
@@ -19,6 +23,10 @@
 
     @include breakpoint(large up) {
         margin-right: 6rem;
+    }
+
+    @media print {
+        text-align: left;
     }
 }
 

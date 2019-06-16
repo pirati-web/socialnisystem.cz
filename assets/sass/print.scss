@@ -1,0 +1,28 @@
+@media print {
+    hr {
+        max-width: none;
+    }
+
+    body {
+        font-size: 12px;
+    }
+
+
+    .row {
+        display: block;
+        max-width: none;
+    }
+
+
+    .columns {
+        display: block;
+        max-width: none;
+        margin-left: 0;
+    }
+
+    .button {
+        text-align: left;
+        padding: 0;
+    }
+}
+

@@ -9,6 +9,12 @@ $color2: fade-out(map-get($custom-palette, accent-sub), 0.15);
     text-align: center;
     min-height: calc(100vh - #{map-get($sitenav-height, small)});
 
+    @media print {
+        display: block;
+        min-height: 0;
+        text-align: left;
+    }
+
     .row,
     .v-home__sidenotes-scroll {
         z-index: 2;
@@ -29,6 +35,10 @@ $color2: fade-out(map-get($custom-palette, accent-sub), 0.15);
                 fade-out(map-get($foundation-palette, primary), 0.2),
                 fade-out(map-get($foundation-palette, primary), 0.9) 150%
             );
+
+        @media print {
+            display: none;
+        }
     }
 
     .v-home__hero-media {
@@ -41,6 +51,10 @@ $color2: fade-out(map-get($custom-palette, accent-sub), 0.15);
         height: 100%;
         z-index: -1;
         object-fit: cover;
+
+        @media print {
+            display: none;
+        }
     }
 
     .v-home__sidenotes-scroll {
@@ -63,6 +77,10 @@ $color2: fade-out(map-get($custom-palette, accent-sub), 0.15);
 
         @include breakpoint(medium up) {
             bottom: 2rem;
+        }
+
+        @media print {
+            display: none;
         }
     }
 
@@ -99,6 +117,10 @@ $color2: fade-out(map-get($custom-palette, accent-sub), 0.15);
     &-headline {
         text-align: center;
         margin-bottom: 3rem;
+
+        @media print {
+            text-align: left;
+        }
     }
 }
 

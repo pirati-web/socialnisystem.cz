@@ -25,6 +25,10 @@
     & + & {
         margin-top: 2rem;
     }
+
+    @media print {
+        padding: 0;
+    }
 }
 
 .page__headline {
@@ -43,6 +47,10 @@
 
         @include headerStyle('h6', alt);
         @include anchorStyle();
+    }
+
+    @media print {
+        display: none;
     }
 }
 
