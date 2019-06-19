@@ -193,7 +193,7 @@ SITEINFO = {
     'twitter_profile_url': 'https://twitter.com/olgarichterova',
     'instagram_profile_url': 'https://www.instagram.com/pirati.cz',
     'benefit_calculator_url': 'https://www.pracevobci.cz/kalkulacka/',
-    # 'piwik_siteid': '',
+    'piwik_siteid': os.environ.get('PIWIK_SITEID', ''),
 }
 
 FOOTER_MENU = (
