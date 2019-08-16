@@ -70,7 +70,7 @@ class BenefitDetailView(DetailView):
         parsed_back_url = urllib.parse.urlparse(back)
 
         # We only allow blank scheme, e.g. relative urls to avoid reflected XSS
-        if back is not None and parsed_back_url.scheme == "":
+        if back is not None and parsed_back_url.scheme == "" and parsed_back_url.netloc == "":
             data['back_link'] = back
 
         return data
