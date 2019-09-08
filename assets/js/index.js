@@ -1,5 +1,6 @@
 require('../sass/main.scss');
 require('./smoothscroll');
+const benefitCalculator = require('./parental-benefit-calculator');
 
 
 function benefitClaimFormController(elem) {
@@ -38,6 +39,7 @@ const forEachNode = (nodelist, callback, scope) => {
 const handlers = [
     {query: '.js-benefit-claim-form.js-benefit-claim-form--submitted', handler: benefitClaimFormController},
     {query: '.js-smooth-scrollto', handler: homeScroll},
+    {query: '.js-parental-benefit-calculator', handler: benefitCalculator},
 ];
 
 handlers.forEach(handler => {

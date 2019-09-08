@@ -32,6 +32,111 @@
         {{ object.claim_description | markdown }}
     </div>
 
+    {% if benefit.name == "Rodičovský příspěvek" %}
+        <div class="v-benefit-detail__other content-block js-parental-benefit-calculator">
+            <h2 class="t-h3">Kalkulačka - odhad 2021</h2>
+            <div id="parents_bonus" class="form">
+                <p>Jedná se o kvalifikovaný odhad valorizace pro rok 2021. Rodičovský příspěvek je možné pobírat do 4 let věku dítěte. Pokud rodičovské dovolené předchází mateřská dovolená, zkracuje se maximální délka čerpání rodičovského příspěvku na 43 měsíců (u vícerčast 41 měsíců).</p>
+
+                <div class="row">
+                    <div class="columns small-12 middle-3">
+                        <div class="form__field">
+                            <div class="form__field-label">
+                                <label for="claim_date">Datum vzniku nároku</label>
+                            </div>
+                            <div class="form__field-control form__field-control-text">
+                                <input id="claim_date" name="claim_date" type="date" required class="form__field-input">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="columns small-12 middle-6">
+                        <div class="form__field">
+                            <div class="form__field-label">
+                                <label for="gross_monthly_income">Hrubý měsiční příjem</label>
+                            </div>
+                            <div class="form__field-control form__field-control-text">
+                                <input id="gross_monthly_income" type="number" required class="form__field-input">
+                            </div>
+                            <div class="form__field-help">Vyplňte 0 Kč, pokud jste osobou bez příjmů, student/ka, uchazeč/ka o zaměstnání, poživatel/ka důchodu, podnikatel/ka neplatící nemocenské pojištění nebo jste pracoval/a formou dohody bez odvodů.</div>
+                        </div>
+                    </div>
+                    <div class="columns small-12 middle-3">
+                        <div class="form__field">
+                            <div class="form__field-label">
+                                <label>Vícerčata</label>
+                            </div>
+                            <div class="form__field-control form__field-control--checkbox">
+                                <label class="form__field-input-wrapper">
+                                    <input type="checkbox" id="multiple_children" name="multiple_children" class="form__field-input">
+                                    <span class="form__field-input-sibling"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form__submit-row">
+                    <button id="compute_total" class="button primary form__submit-button">Vypočítat celkový příspěvek</button>
+                </div>
+
+                <div id="compute_results" style="display: none;">
+                    <div class="row">
+                        <div class="columns small-12 middle-4">
+                            <div class="form__field">
+                                <div class="form__field-label">
+                                    <label for="total_bonus">Váš celkový příspěvek</label>
+                                </div>
+                                <input id="total_bonus" type="text" readonly>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="columns small-12 middle-6">
+                            <div class="form__field">
+                                <div class="form__field-label">
+                                    <label for="period_of_revenue_min">Minimum doby (v měsících) pobírání příspěvku</label>
+                                </div>
+                                <input id="period_of_revenue_min" type="number" readonly>
+                            </div>
+                        </div>
+
+                        <div class="columns small-12 middle-6">
+                            <div class="form__field">
+                                <div class="form__field-label">
+                                    <label for="period_of_revenue_max">Maximum doby (v měsících) pobírání příspěvku</label>
+                                </div>
+                                <input id="period_of_revenue_max" type="number" readonly>
+                            </div>
+                        </div>
+
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="columns small-12 middle-6">
+                            <div class="form__field">
+                                <div class="form__field-label">
+                                    <label for="period_of_revenue">Jak dlouho chcete příspěvek pobírat (v měsících)?</label>
+                                </div>
+                                <input id="period_of_revenue" type="number" required><br>
+                            </div>
+                        </div>
+                        <div class="columns small-12 middle-5">
+                            <div class="form__field">
+                                <div class="form__field-label">
+                                    <label for="monthly_bonus"><strong>Váš měsiční příspěvek</strong></label>
+                                </div>
+                                <div>
+                                    <input id="monthly_bonus" type="text" readonly style="font-weight: bold; font-size: 18px; display: inline-block; max-width: 120px; margin-right: 8px; text-align: right;">
+                                    <strong>Kč</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endif %}
+
     {% if object.other_description %}
         <div class="v-benefit-detail__other content-block">
             <h2 class="t-h3">Další informace</h4>
