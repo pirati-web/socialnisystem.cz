@@ -1,0 +1,121 @@
+{% extends "flatpages/nase-reseni/section.html" %}
+
+{% block after_content %}
+    <div class="v-benefit-detail__other content-block js-parental-benefit-calculator">
+        <h2 class="t-h4">Kalkulačka - odhad 2021</h2>
+        <div id="parents_bonus" class="form">
+            <p>Jedná se o kvalifikovaný odhad valorizace pro rok 2021. Rodičovský příspěvek je možné pobírat do 4 let věku dítěte. Pokud rodičovské dovolené předchází mateřská dovolená, zkracuje se maximální délka čerpání rodičovského příspěvku na 43 měsíců (u vícerčast 41 měsíců).</p>
+
+            <div class="row">
+                <div class="columns small-12 large-3">
+                    <div class="form__field">
+                        <div class="form__field-label">
+                            <label for="claim_date">Datum vzniku nároku</label>
+                        </div>
+                        <div class="form__field-control form__field-control-text">
+                            <input id="claim_date" name="claim_date" type="date" required class="form__field-input">
+                        </div>
+                    </div>
+                </div>
+                <div class="columns small-12 large-6">
+                    <div class="form__field">
+                        <div class="form__field-label">
+                            <label for="gross_monthly_income">Hrubý měsiční příjem v Kč</label>
+                        </div>
+                        <div class="form__field-control form__field-control-text">
+                            <input id="gross_monthly_income" type="number" required class="form__field-input">
+                        </div>
+                        <div class="form__field-help">Vyplňte 0 Kč, pokud jste osobou bez příjmů, student/ka, uchazeč/ka o zaměstnání, poživatel/ka důchodu, podnikatel/ka neplatící nemocenské pojištění nebo jste pracoval/a formou dohody bez odvodů.</div>
+                    </div>
+                </div>
+                <div class="columns small-12 large-3">
+                    <div class="form__field">
+                        <div class="form__field-label">
+                            <label>Vícerčata</label>
+                        </div>
+                        <div class="form__field-control form__field-control--checkbox">
+                            <label class="form__field-input-wrapper">
+                                <input type="checkbox" id="multiple_children" name="multiple_children" class="form__field-input">
+                                <span class="form__field-input-sibling"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form__submit-row">
+                <button id="compute_total" class="button primary form__submit-button">Vypočítat celkový příspěvek</button>
+            </div>
+
+            <div id="compute_results" style="display: none;">
+                <div class="row" style="align-items: center; margin-bottom: 1rem;">
+                    <div class="columns small-12 large-5">
+                        <div class="form__field">
+                            <div class="form__field-label">
+                                <label for="total_bonus">Váš celkový příspěvek:</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="columns small-12 large-3">
+                        <div class="form__field">
+                            <input id="total_bonus" type="text" class="form__field-control form__field-control--textual form__field-control--inline" style="width: 80px; margin-right: 8px; text-align: right;" readonly> Kč
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="align-items: center; margin-bottom: 1rem;">
+                    <div class="columns small-12 large-5">
+                        <div class="form__field">
+                            <div class="form__field-label">
+                                <label for="period_of_revenue_min">Minimální doba pobírání příspěvku:</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="columns small-12 large-3">
+                        <div class="form__field">
+                            <input id="period_of_revenue_min" class="form__field-control form__field-control--textual form__field-control--inline" style="width: 80px; margin-right: 8px; text-align: right;" type="text" readonly>
+                            měsíců
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="align-items: center; margin-bottom: 1rem;">
+                    <div class="columns small-12 large-5">
+                        <div class="form__field">
+                            <div class="form__field-label">
+                                <label for="period_of_revenue_max">Maximální doba pobírání příspěvku:</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="columns small-12 large-3">
+                        <div class="form__field">
+                            <input id="period_of_revenue_max" class="form__field-control form__field-control--textual form__field-control--inline" style="width: 80px; margin-right: 8px; text-align: right;" type="text" readonly>
+                            měsíců
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="columns small-12 large-5">
+                        <div class="form__field">
+                            <div class="form__field-label">
+                                <label for="period_of_revenue">Jak dlouho chcete příspěvek pobírat?</label>
+                            </div>
+                            <input id="period_of_revenue" type="number" required style="font-size: 18px; display: inline-block; max-width: 150px; margin-right: 8px; text-align: right;">
+                            <span>měsíců</span>
+                        </div>
+                    </div>
+                    <div class="columns small-12 large-5">
+                        <div class="form__field">
+                            <div class="form__field-label">
+                                <label for="monthly_bonus"><strong>Váš měsiční příspěvek</strong></label>
+                            </div>
+                            <div>
+                                <input id="monthly_bonus" type="text" class="form__field-control form__field-control--textual form__field-control--inline" readonly style="font-weight: bold; font-size: 18px; max-width: 120px; margin-right: 8px; text-align: right;">
+                                <strong>Kč</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

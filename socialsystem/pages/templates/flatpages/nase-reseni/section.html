@@ -8,7 +8,9 @@
 <div class="content-block">
     <div class="row">
         <div class="columns small-12 middle-8">
+            {% block before_content %}{% endblock %}
             {{ flatpage.content | markdown }}
+            {% block after_content %}{% endblock %}
         </div>
         <div class="columns small-12 middle-4">
             {% menu nase-reseni %}

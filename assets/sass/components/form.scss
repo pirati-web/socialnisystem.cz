@@ -118,6 +118,25 @@
     }
 }
 
+.form__field-control.form__field-control--textual {
+    box-shadow: none;
+    background-color: #eee;
+    border: 1px solid #eaeaea;
+    margin-bottom: 0;
+
+    &:focus {
+        outline: none;
+        background-color: #eee;
+        border: 1px solid #eaeaea;
+    }
+}
+
+
+.form__field-control.form__field-control--inline {
+    display: inline-block;
+    width: auto;
+}
+
 
 .form__submit-row {
     margin: 3rem 0;
