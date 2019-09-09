@@ -5,6 +5,6 @@ from django.views.generic.base import RedirectView
 app_name = 'pages'
 
 urlpatterns = [
-    path('kalkulacka', RedirectView.as_view(url='/nase-reseni/rodicovsky-prispevek/')),
+    path('kalkulacka/', RedirectView.as_view(url='/nase-reseni/rodicovsky-prispevek/', permanent=False)),
     path('<path:url>', flatpage),
 ]
