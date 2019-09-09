@@ -83,7 +83,7 @@
             display: inline-block;
             width: 1.5rem;
             height: 1.5rem;
-            background: $light-gray;
+            background: $medium-gray;
             transition: background-color .5s cubic-bezier(0.075, 0.82, 0.165, 1);
         }
 
@@ -96,7 +96,7 @@
             height: .75rem;
             line-height: .75rem;
             left: .375rem;
-            color: $medium-gray;
+            color: darken($medium-gray, 10);
             transition: color .5s cubic-bezier(0.075, 0.82, 0.165, 1);
         }
     }
