@@ -95,16 +95,27 @@
                 </div>
                 <hr>
                 <div class="row">
-                    <div class="columns small-12 large-5">
+                    <div class="columns small-12 large-8">
                         <div class="form__field">
                             <div class="form__field-label">
                                 <label for="period_of_revenue">Jak dlouho chcete příspěvek pobírat?</label>
                             </div>
-                            <input id="period_of_revenue" type="number" required style="font-size: 18px; display: inline-block; max-width: 150px; margin-right: 8px; text-align: right;">
-                            <span>měsíců</span>
+                            {% comment %} <input id="period_of_revenue" type="number" required style="font-size: 18px; display: inline-block; max-width: 150px; margin-right: 8px; text-align: right;"> {% endcomment %}
+
+                            <div class="form__field-control form__field-control--range">
+                                <div class="form__field-input-wrapper">
+                                    <input id="period_of_revenue" type="range" required>
+                                    <div class="form__field-range-labels">
+                                        <div class="form__field-range-min text-left"><span id="period_of_revenue_range_min"></span> měsíců</div>
+                                        <div class="form__field-range-current text-center"><strong><span id="period_of_revenue_range_current"></span> měsíců</strong></div>
+                                        <div class="form__field-range-max text-right"><span id="period_of_revenue_range_max"></span> měsíců</div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
-                    <div class="columns small-12 large-5">
+                    <div class="columns small-12 large-4">
                         <div class="form__field">
                             <div class="form__field-label">
                                 <label for="monthly_bonus"><strong>Váš měsíční příspěvek</strong></label>

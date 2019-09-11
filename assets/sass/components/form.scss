@@ -71,6 +71,52 @@
     }
 }
 
+.form__field-control.form__field-control--range {
+    input[type='range'] {
+        width: 100%;
+
+        -webkit-appearance: none;  /* Override default CSS styles */
+        appearance: none;
+        width: 100%; /* Full-width */
+        height: .5rem; /* Specified height */
+        background: $medium-gray; /* Grey background */
+        outline: none; /* Remove outline */
+
+        &::-webkit-slider-thumb {
+            -webkit-appearance: none; /* Override default look */
+            appearance: none;
+            width: 1rem; /* Set a specific slider handle width */
+            height: 1rem; /* Slider handle height */
+            background: $black; /* Green background */
+            cursor: pointer; /* Cursor on hover */
+            border-radius: 50%;
+        }
+
+        &::-moz-range-thumb {
+            width: 1rem; /* Set a specific slider handle width */
+            height: 1rem; /* Slider handle height */
+            background: $black; /* Green background */
+            cursor: pointer; /* Cursor on hover */
+            border-radius: 50%;
+        }
+    }
+
+    .form__field-range-labels {
+        display: flex;
+        margin-bottom: 1rem;
+    }
+
+    .form__field-range-min,
+    .form__field-range-max,
+    .form__field-range-current {
+        color: $dark-gray;
+    }
+
+    .form__field-range-current {
+        flex: 1;
+    }
+}
+
 .form__field-control.form__field-control--checkbox {
     .form__field-input-sibling {
         display: flex;

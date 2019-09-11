@@ -35,6 +35,15 @@ function installBenefitCalculator() {
     var period_of_revenue_max_output = document.querySelector(
         'input[id="period_of_revenue_max"]'
     );
+    var period_of_revenue_range_min = document.querySelector(
+        'span[id="period_of_revenue_range_min"]'
+    );
+    var period_of_revenue_range_max = document.querySelector(
+        'span[id="period_of_revenue_range_max"]'
+    );
+    var period_of_revenue_range_current = document.querySelector(
+        'span[id="period_of_revenue_range_current"]'
+    );
 
     var results = document.querySelector('div[id="compute_results"]')
     var resultsMonthly = document.querySelector('div[id="compute_final_results"]')
@@ -45,6 +54,7 @@ function installBenefitCalculator() {
         monthly_bonus_output.value = Math.ceil(
             total_bonus_output.value / period_of_revenue_input.value
         );
+        period_of_revenue_range_current.textContent = period_of_revenue_input.value;
     }
 
     compute_total_button.onclick = function() {
@@ -86,11 +96,11 @@ function installBenefitCalculator() {
         );
         var period_of_revenue_max = revenue_period_absolute_max;
 
-        period_of_revenue_input.min = period_of_revenue_min_output.value = period_of_revenue_min;
-        period_of_revenue_input.max = period_of_revenue_max_output.value = period_of_revenue_max;
+        period_of_revenue_input.min = period_of_revenue_min_output.value = period_of_revenue_range_min.textContent = period_of_revenue_min;
+        period_of_revenue_input.max = period_of_revenue_max_output.value = period_of_revenue_range_max.textContent = period_of_revenue_max;
         period_of_revenue_input.value = period_of_revenue_min;
 
-        period_of_revenue_input.onchange = updateMonthly;
+        period_of_revenue_input.oninput = updateMonthly;
         results.style.display = "block";
 
         updateMonthly();
