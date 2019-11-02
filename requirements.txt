@@ -18,7 +18,7 @@ gunicorn==19.9.0
 html5lib==1.0.1           # via django-htmlmin
 markdown2==2.3.6          # via django-markdown-deux
 markdown==3.0.1           # via django-markdownx
-pillow==5.3.0             # via django-markdownx
+pillow==6.2.0             # via django-markdownx
 psycopg2-binary==2.7.6.1
 pyaml==18.11.0
 pytz==2018.7              # via django
