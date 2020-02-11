@@ -12,7 +12,7 @@ django-markdown-deux==1.0.5
 django-markdownx==2.0.28
 django-menu==0.1.12
 django-webpack-loader==0.6.0
-django==2.1.3
+django==2.2.10
 dsnparse==0.1.12
 gunicorn==19.9.0
 html5lib==1.0.1           # via django-htmlmin
@@ -24,4 +24,5 @@ pyaml==18.11.0
 pytz==2018.7              # via django
 pyyaml==3.13              # via pyaml
 six==1.11.0               # via html5lib
+sqlparse==0.3.0           # via django
 webencodings==0.5.1       # via html5lib
